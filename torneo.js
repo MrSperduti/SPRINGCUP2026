@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const categorieDiv = document.getElementById("categorie");
+  const container = document.getElementById("categorie");
 
   const CATEGORIE = [
     'UNDER 21',
@@ -13,15 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
     '2019/20'
   ];
 
-  categorieDiv.innerHTML = "";
-
   CATEGORIE.forEach(cat => {
     const btn = document.createElement("a");
     btn.className = "btn";
     btn.href = `categoria.html?categoria=${encodeURIComponent(cat)}`;
     btn.textContent = cat;
 
-    categorieDiv.appendChild(btn);
+    container.appendChild(btn);
   });
 
 });
