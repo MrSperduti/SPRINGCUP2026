@@ -1,73 +1,45 @@
-document.addEventListener("DOMContentLoaded", async () => {
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario</title>
 
-  const cat = new URLSearchParams(location.search).get('categoria');
-  const container = document.getElementById("calendarioContainer");
+  <!-- STILE NUOVO -->
+  <link rel="stylesheet" href="theme.css">
+</head>
 
-  const res = await fetch('data/dati.json');
-  const dati = await res.json();
+<body>
 
-  const partite = dati[cat]?.partite || [];
+<main class="page">
 
-  if (!partite.length) {
-    container.innerHTML = "<p>Nessuna partita disponibile</p>";
-    return;
-  }
+  <section class="panel hero">
 
-  // 🔥 raggruppa per giornata (come 2025)
-  const giornate = {};
+    <!-- LOGO -->
+    <img src="logo.png" class="logo">
 
-  partite.forEach(p => {
-    const g = p.giornata || 1;
-    if (!giornate[g]) giornate[g] = [];
-    giornate[g].push(p);
-  });
+    <!-- TITOLO DINAMICO -->
+    <h1 id="titolo"></h1>
 
-  let html = "";
+    <!-- CONTENUTO -->
+    <div id="calendarioContainer"></div>
 
-  Object.keys(giornate)
-    .sort((a, b) => a - b)
-    .forEach(g => {
+    <!-- BOTTONI -->
+    <a class="btn secondary" href="categoria.html">⬅️ Torna indietro</a>
+    <a class="btn" href="index.html">🏠 Torna alla Home</a>
 
-      html += `<h3>Giornata ${g}</h3>`;
+  </section>
 
-      html += `
-        <table>
-        <tr>
-          <th>Squadra A</th>
-          <th>Squadra B</th>
-          <th>Data</th>
-          <th>Ora</th>
-          <th>Campo</th>
-          <th>Risultato</th>
-          <th>Girone</th>
-        </tr>
-      `;
+</main>
 
-      giornate[g].forEach(p => {
+<!-- SCRIPT TITOLO -->
+<script>
+  const categoria = new URLSearchParams(location.search).get('categoria');
+  document.getElementById('titolo').textContent = categoria + " - Calendario";
+</script>
 
-        const risultato = (p.golA != null && p.golB != null)
-          ? `${p.golA} - ${p.golB}`
-          : 'Dettagli';
+<!-- SCRIPT PRINCIPALE -->
+<script src="calendario.js"></script>
 
-        html += `
-          <tr>
-            <td>${p.squadraA}</td>
-            <td>${p.squadraB}</td>
-            <td>${p.data || ''}</td>
-            <td>${p.ora || ''}</td>
-            <td>${p.campo || ''}</td>
-            <td>
-              <a href="partita.html?categoria=${cat}&id=${p.id}">
-                ${risultato}
-              </a>
-            </td>
-            <td>${p.girone || ''}</td>
-          </tr>
-        `;
-      });
-
-      html += `</table>`;
-    });
-
-  container.innerHTML = html;
-});
+</body>
+</html>
