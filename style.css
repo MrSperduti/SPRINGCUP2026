@@ -1,4 +1,4 @@
-/* RESET BASE */
+/* RESET */
 * {
   box-sizing: border-box;
 }
@@ -10,27 +10,23 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: radial-gradient(circle at top, #1a1a1a, #000);
   color: #fff;
-
-  /* centra su desktop */
-  display: flex;
-  justify-content: center;
 }
 
 /* CONTAINER RESPONSIVE */
 .container {
-  width: 100%;
-  max-width: 800px; /* 👈 FIX principale (prima 500px) */
-  margin: 20px auto;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.85);
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  width: 95%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
   text-align: center;
 }
 
 /* LOGO */
 .logo {
-  width: 140px;
+  width: 180px;
   max-width: 80%;
   margin: 20px auto;
   display: block;
@@ -39,12 +35,12 @@ body {
 /* TITOLI */
 h1 {
   color: #FFD54F;
-  font-size: 26px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   opacity: 0.8;
 }
 
@@ -52,56 +48,29 @@ p {
 .btn {
   display: block;
   width: 100%;
-  max-width: 500px; /* 👈 non troppo larghi su desktop */
-  margin: 12px auto;
   padding: 16px;
+  margin: 12px 0;
   font-size: 16px;
   font-weight: bold;
   background: linear-gradient(135deg, #FFD54F, #4CAF50);
   color: #000;
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease;
   text-decoration: none;
 }
 
-.btn:hover {
-  transform: scale(1.03);
-  opacity: 0.9;
-}
-
-/* MOBILE FIX SERIO */
-@media (max-width: 600px) {
-
-  body {
-    display: block; /* 👈 fondamentale per evitare layout piccolo */
-  }
-
-  .container {
-    width: 100%;
-    max-width: 100%;
-    padding: 15px;
-    border-radius: 0;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  .btn {
-    max-width: 100%;
-    font-size: 14px;
-    padding: 12px;
-  }
-
-  .logo {
-    width: 110px;
+/* HOVER SOLO SU DESKTOP */
+@media (hover: hover) {
+  .btn:hover {
+    transform: scale(1.04);
+    opacity: 0.95;
   }
 }
 
-/* TABLE (per dopo) */
+/* TABLE */
 table {
   width: 100%;
   margin-top: 20px;
@@ -113,6 +82,51 @@ table {
 }
 
 th, td {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+
+  .container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 14px;
+  }
+}
+
+/* 💻 DESKTOP GRANDE */
+@media (min-width: 900px) {
+
+  .container {
+    max-width: 700px;
+    padding: 35px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 18px;
+  }
 }
