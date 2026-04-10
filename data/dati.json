@@ -1,147 +1,140 @@
 {
   "UNDER 21": {
     "gironi": {
-      "Girone A": ["Roma", "Lazio", "Milan"],
-      "Girone B": ["Inter", "Napoli", "Juventus"]
+      "Girone A": ["Academy", "New Team", "Ardea CS"],
+      "Girone B": ["Fortitudo Pomezia", "Circolo Master", "Atletico Velletri"]
     },
 
     "partite": [
       {
+        "id": 1,
         "girone": "Girone A",
-        "squadraA": "Roma",
-        "squadraB": "Lazio",
-        "golA": 2,
-        "golB": 1,
-        "marcatori": [
-          { "nome": "Rossi", "gol": 1 },
-          { "nome": "Bianchi", "gol": 1 },
-          { "nome": "Verdi", "gol": 1 }
-        ],
-        "portiere": "De Santis"
+        "squadraA": "Academy",
+        "squadraB": "Ardea CS",
+        "golA": 6,
+        "golB": 4,
+        "data": "03/05/2025",
+        "ora": "19:00",
+        "campo": "Campo A",
+        "marcatoriA": ["Susin (2)", "Gobbi (2)", "Iancu (2)"],
+        "marcatoriB": ["Barchiesi", "Imbesi", "Orsini"],
+        "migliorGiocatore": "Susin Francesco",
+        "migliorPortiere": "Piasco Valerio"
       },
       {
-        "girone": "Girone A",
-        "squadraA": "Milan",
-        "squadraB": "Roma",
-        "golA": 0,
-        "golB": 3,
-        "marcatori": [
-          { "nome": "Rossi", "gol": 2 },
-          { "nome": "Neri", "gol": 1 }
-        ],
-        "portiere": "De Santis"
-      },
-      {
+        "id": 2,
         "girone": "Girone B",
-        "squadraA": "Inter",
-        "squadraB": "Napoli",
-        "golA": 2,
+        "squadraA": "Fortitudo Pomezia",
+        "squadraB": "Atletico Velletri",
+        "golA": 1,
         "golB": 2,
-        "marcatori": [
-          { "nome": "Lautaro", "gol": 1 },
-          { "nome": "Dzeko", "gol": 1 },
-          { "nome": "Osimhen", "gol": 2 }
-        ],
-        "portiere": "Handanovic"
+        "data": "04/05/2025",
+        "ora": "17:00",
+        "campo": "Campo A",
+        "marcatoriA": ["Mazza"],
+        "marcatoriB": ["Giovannozzi", "Proto"],
+        "migliorGiocatore": "Proto Matteo",
+        "migliorPortiere": "Melaro Giovanni"
       }
     ],
 
     "classifica": [
-      { "squadra": "Roma", "punti": 6 },
-      { "squadra": "Lazio", "punti": 0 },
-      { "squadra": "Milan", "punti": 0 }
+      { "squadra": "Academy", "punti": 3 },
+      { "squadra": "Atletico Velletri", "punti": 3 },
+      { "squadra": "Ardea CS", "punti": 0 }
     ],
 
     "rose": {
-      "Roma": [
-        { "nome": "Luca", "cognome": "Rossi" },
-        { "nome": "Marco", "cognome": "Bianchi" },
-        { "nome": "Paolo", "cognome": "Neri" }
+      "Academy": [
+        { "nome": "Susin", "cognome": "Francesco" },
+        { "nome": "Gobbi", "cognome": "Alessandro" }
       ],
-      "Lazio": [
-        { "nome": "Giovanni", "cognome": "Verdi" },
-        { "nome": "Alessio", "cognome": "Blu" }
-      ],
-      "Milan": [
-        { "nome": "Andrea", "cognome": "Gialli" }
+      "Ardea CS": [
+        { "nome": "Barchiesi", "cognome": "Andrea" }
       ]
-    }
+    },
+
+    "marcatori": [
+      { "nome": "Susin Francesco", "squadra": "Academy", "gol": 2 },
+      { "nome": "Gobbi Alessandro", "squadra": "Academy", "gol": 2 }
+    ],
+
+    "migliorGiocatore": [
+      { "nome": "Susin Francesco", "squadra": "Academy", "voti": 1 }
+    ],
+
+    "migliorPortiere": [
+      { "nome": "Piasco Valerio", "squadra": "Ardea CS", "voti": 1 }
+    ]
   },
 
   "UNDER 19": {
-    "gironi": {
-      "Girone A": ["Torino", "Bologna", "Fiorentina"]
-    },
-
-    "partite": [
-      {
-        "girone": "Girone A",
-        "squadraA": "Torino",
-        "squadraB": "Bologna",
-        "golA": 1,
-        "golB": 1,
-        "marcatori": [
-          { "nome": "Ferrari", "gol": 1 },
-          { "nome": "Conti", "gol": 1 }
-        ],
-        "portiere": "Sirigu"
-      }
-    ],
-
-    "classifica": [
-      { "squadra": "Torino", "punti": 1 },
-      { "squadra": "Bologna", "punti": 1 },
-      { "squadra": "Fiorentina", "punti": 0 }
-    ],
-
-    "rose": {
-      "Torino": [
-        { "nome": "Matteo", "cognome": "Ferrari" }
-      ]
-    }
+    "gironi": {},
+    "partite": [],
+    "classifica": [],
+    "rose": {},
+    "marcatori": [],
+    "migliorGiocatore": [],
+    "migliorPortiere": []
   },
 
   "UNDER 17": {
-    "gironi": {
-      "Girone A": ["Atalanta", "Verona", "Udinese"]
-    },
+    "gironi": {},
     "partite": [],
     "classifica": [],
-    "rose": {}
+    "rose": {},
+    "marcatori": [],
+    "migliorGiocatore": [],
+    "migliorPortiere": []
   },
 
   "UNDER 15": {
     "gironi": {},
     "partite": [],
     "classifica": [],
-    "rose": {}
+    "rose": {},
+    "marcatori": [],
+    "migliorGiocatore": [],
+    "migliorPortiere": []
   },
 
   "UNDER 13": {
     "gironi": {},
     "partite": [],
     "classifica": [],
-    "rose": {}
+    "rose": {},
+    "marcatori": [],
+    "migliorGiocatore": [],
+    "migliorPortiere": []
   },
 
   "2015/16": {
     "gironi": {},
     "partite": [],
     "classifica": [],
-    "rose": {}
+    "rose": {},
+    "marcatori": [],
+    "migliorGiocatore": [],
+    "migliorPortiere": []
   },
 
   "2017/18": {
     "gironi": {},
     "partite": [],
     "classifica": [],
-    "rose": {}
+    "rose": {},
+    "marcatori": [],
+    "migliorGiocatore": [],
+    "migliorPortiere": []
   },
 
   "2019/20": {
     "gironi": {},
     "partite": [],
     "classifica": [],
-    "rose": {}
+    "rose": {},
+    "marcatori": [],
+    "migliorGiocatore": [],
+    "migliorPortiere": []
   }
 }
