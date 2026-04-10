@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   const container = document.getElementById("categorie");
 
   const CATEGORIE = [
@@ -21,5 +20,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     container.appendChild(btn);
   });
-
 });
