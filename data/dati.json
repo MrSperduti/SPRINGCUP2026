@@ -1,177 +1,48 @@
 {
   "UNDER 21": {
-    "gironi": {
-      "Girone A": ["Academy", "New Team", "Ardea CS"],
-      "Girone B": ["Fortitudo Pomezia", "Circolo Master", "Atletico Velletri"]
-    },
-
-    "partite": [
+    "calendario": [
       {
-        "giornata": 1,
-        "girone": "Girone A",
-        "squadraA": "Academy",
-        "squadraB": "Ardea CS",
-        "golA": 3,
-        "golB": 1,
-        "data": "03/05/2025",
-        "ora": "19:00",
-        "campo": "Campo A",
-
-        "marcatori": [
-          { "nome": "Susin", "gol": 2, "squadra": "Academy" },
-          { "nome": "Gobbi", "gol": 1, "squadra": "Academy" },
-          { "nome": "Barchiesi", "gol": 1, "squadra": "Ardea CS" }
-        ],
-
-        "giocatore": "Susin Francesco",
-        "squadraGiocatore": "Academy",
-
-        "portiere": "Piasco Valerio",
-        "squadraPortiere": "Ardea CS"
+        "giornata": "Giornata 1",
+        "partite": [
+          {
+            "squadre": "Academy vs Ardea C5",
+            "data": "09/05/2026",
+            "ora": "19:00",
+            "campo": "CAMPO A",
+            "risultato": "6 - 4",
+            "girone": "Girone A"
+          },
+          {
+            "squadre": "Fortitudo Pomezia vs Atletico Velletri",
+            "data": "24/05/2026",
+            "ora": "11:00",
+            "campo": "CAMPO A",
+            "risultato": "10 - 2",
+            "girone": "Girone B"
+          }
+        ]
       },
-
       {
-        "giornata": 1,
-        "girone": "Girone B",
-        "squadraA": "Fortitudo Pomezia",
-        "squadraB": "Atletico Velletri",
-        "golA": 2,
-        "golB": 2,
-        "data": "03/05/2025",
-        "ora": "21:00",
-        "campo": "Campo B",
-
-        "marcatori": [
-          { "nome": "Mazza", "gol": 2, "squadra": "Fortitudo Pomezia" },
-          { "nome": "Proto", "gol": 1, "squadra": "Atletico Velletri" },
-          { "nome": "Giovannozzi", "gol": 1, "squadra": "Atletico Velletri" }
-        ],
-
-        "giocatore": "Mazza Luca",
-        "squadraGiocatore": "Fortitudo Pomezia",
-
-        "portiere": "Melaro Giovanni",
-        "squadraPortiere": "Atletico Velletri"
-      },
-
-      {
-        "giornata": 2,
-        "girone": "Girone A",
-        "squadraA": "New Team",
-        "squadraB": "Academy",
-        "golA": null,
-        "golB": null,
-        "data": "05/05/2025",
-        "ora": "18:00",
-        "campo": "Campo A",
-
-        "marcatori": [],
-        "giocatore": "",
-        "portiere": ""
+        "giornata": "Giornata 2",
+        "partite": [
+          {
+            "squadre": "Ardea C5 vs New Team",
+            "data": "14/05/2026",
+            "ora": "18:00",
+            "campo": "CAMPO B",
+            "risultato": "1 - 4",
+            "girone": "Girone A"
+          },
+          {
+            "squadre": "Fortitudo Pomezia vs Circolo Master",
+            "data": "14/05/2026",
+            "ora": "19:00",
+            "campo": "CAMPO A",
+            "risultato": "1 - 3",
+            "girone": "Girone B"
+          }
+        ]
       }
-    ],
-
-    "classifica": [
-      { "squadra": "Academy", "punti": 3 },
-      { "squadra": "Fortitudo Pomezia", "punti": 1 },
-      { "squadra": "Atletico Velletri", "punti": 1 },
-      { "squadra": "Ardea CS", "punti": 0 }
-    ],
-
-    "rose": {
-      "Academy": [
-        { "nome": "Susin", "cognome": "Francesco" },
-        { "nome": "Gobbi", "cognome": "Alessandro" }
-      ],
-      "Ardea CS": [
-        { "nome": "Barchiesi", "cognome": "Andrea" }
-      ],
-      "Fortitudo Pomezia": [
-        { "nome": "Mazza", "cognome": "Luca" }
-      ]
-    },
-
-    "marcatori": [
-      { "nome": "Susin", "squadra": "Academy", "gol": 2 },
-      { "nome": "Mazza", "squadra": "Fortitudo Pomezia", "gol": 2 }
-    ],
-
-    "migliorGiocatore": [
-      { "nome": "Susin Francesco", "squadra": "Academy", "voti": 1 }
-    ],
-
-    "migliorPortiere": [
-      { "nome": "Piasco Valerio", "squadra": "Ardea CS", "voti": 1 }
     ]
-  },
-
-  "UNDER 19": {
-    "gironi": {},
-    "partite": [],
-    "classifica": [],
-    "rose": {},
-    "marcatori": [],
-    "migliorGiocatore": [],
-    "migliorPortiere": []
-  },
-
-  "UNDER 17": {
-    "gironi": {},
-    "partite": [],
-    "classifica": [],
-    "rose": {},
-    "marcatori": [],
-    "migliorGiocatore": [],
-    "migliorPortiere": []
-  },
-
-  "UNDER 15": {
-    "gironi": {},
-    "partite": [],
-    "classifica": [],
-    "rose": {},
-    "marcatori": [],
-    "migliorGiocatore": [],
-    "migliorPortiere": []
-  },
-
-  "UNDER 13": {
-    "gironi": {},
-    "partite": [],
-    "classifica": [],
-    "rose": {},
-    "marcatori": [],
-    "migliorGiocatore": [],
-    "migliorPortiere": []
-  },
-
-  "2015/16": {
-    "gironi": {},
-    "partite": [],
-    "classifica": [],
-    "rose": {},
-    "marcatori": [],
-    "migliorGiocatore": [],
-    "migliorPortiere": []
-  },
-
-  "2017/18": {
-    "gironi": {},
-    "partite": [],
-    "classifica": [],
-    "rose": {},
-    "marcatori": [],
-    "migliorGiocatore": [],
-    "migliorPortiere": []
-  },
-
-  "2019/20": {
-    "gironi": {},
-    "partite": [],
-    "classifica": [],
-    "rose": {},
-    "marcatori": [],
-    "migliorGiocatore": [],
-    "migliorPortiere": []
   }
 }
