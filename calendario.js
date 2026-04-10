@@ -1,8 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
   const categoria = new URLSearchParams(window.location.search).get("categoria");
   const calendarioContainer = document.getElementById("calendarioContainer");
 
-  // Verifica che la categoria sia corretta
   if (!categoria) {
     calendarioContainer.innerHTML = "<p>Categoria non valida.</p>";
     return;
@@ -31,21 +30,42 @@ document.addEventListener("DOMContentLoaded", function () {
         giornataTitle.textContent = giornata.giornata;
         giornataDiv.appendChild(giornataTitle);
 
+        // Crea la tabella per la giornata
+        let html = `
+          <table>
+            <thead>
+              <tr>
+                <th>Squadra A</th>
+                <th>Squadra B</th>
+                <th>Risultato</th>
+                <th>Data</th>
+                <th>Ora</th>
+                <th>Campo</th>
+              </tr>
+            </thead>
+            <tbody>
+        `;
+
         giornata.partite.forEach((partita) => {
-          const partitaDiv = document.createElement("div");
-          partitaDiv.classList.add("list-card");
-
-          partitaDiv.innerHTML = `
-            <p><strong>Squadre:</strong> ${partita.squadre}</p>
-            <p><strong>Data:</strong> ${partita.data}</p>
-            <p><strong>Ora:</strong> ${partita.ora}</p>
-            <p><strong>Campo:</strong> ${partita.campo}</p>
-            <p><strong>Risultato:</strong> ${partita.risultato}</p>
-            <p><strong>Girone:</strong> ${partita.girone}</p>
+          html += `
+            <tr>
+              <td>${partita.squadre.split(" vs ")[0]}</td>
+              <td>${partita.squadre.split(" vs ")[1]}</td>
+              <td>
+                <a href="partita.html?id=${categoria}-${giornata.partite.indexOf(partita)}">
+                  ${partita.risultato}
+                </a>
+              </td>
+              <td>${partita.data}</td>
+              <td>${partita.ora}</td>
+              <td>${partita.campo}</td>
+            </tr>
           `;
-
-          giornataDiv.appendChild(partitaDiv);
         });
+
+        html += `</tbody></table>`;
+
+        giornataDiv.innerHTML += html;
 
         calendarioContainer.appendChild(giornataDiv);
       });
