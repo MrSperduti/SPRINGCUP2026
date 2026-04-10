@@ -1,24 +1,20 @@
-/* RESET */
 * {
   box-sizing: border-box;
 }
 
-/* BODY */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
   background: radial-gradient(circle at top, #1a1a1a, #000);
   color: #fff;
-
   min-height: 100vh;
 }
 
-/* CONTAINER PRINCIPALE */
 .container {
   width: 92%;
   max-width: 700px;
-  margin: 40px auto;   /* ⬅️ centratura vera */
+  margin: 40px auto;
   padding: 25px;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 20px;
@@ -26,36 +22,23 @@ body {
   text-align: center;
 }
 
-/* LOGO */
 .logo {
-  width: 160px;
+  width: 150px;
   max-width: 80%;
   margin: 15px auto;
   display: block;
 }
 
-/* TITOLI */
 h1 {
   color: #FFD54F;
   font-size: 26px;
-  margin-bottom: 10px;
 }
 
-h2, h3 {
-  margin: 10px 0;
-}
-
-p {
-  font-size: 14px;
-  opacity: 0.85;
-}
-
-/* BOTTONI */
 .btn {
   display: block;
   width: 100%;
   max-width: 420px;
-  margin: 10px auto;
+  margin: 12px auto;
   padding: 15px;
   font-size: 16px;
   font-weight: bold;
@@ -65,52 +48,9 @@ p {
   text-decoration: none;
 }
 
-/* HOVER SOLO DESKTOP */
-@media (hover: hover) {
-  .btn:hover {
-    transform: scale(1.04);
-    opacity: 0.95;
-  }
-}
-
-/* BACK BUTTON */
-.back {
-  margin-top: 20px;
-}
-
-/* TABLE */
-table {
-  width: 100%;
-  margin-top: 20px;
-  border-collapse: collapse;
-  background-color: rgba(255,255,255,0.95);
-  color: #000;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-th {
-  background-color: #FFD54F;
-  color: #000;
-}
-
-th, td {
-  padding: 12px;
-  border: 1px solid #ccc;
-  text-align: center;
-}
-
-/* LISTE DINAMICHE */
-#categorie,
-#menuCategoria {
-  margin-top: 15px;
-}
-
-/* MOBILE */
 @media (max-width: 600px) {
-
   .container {
-    width: 94%;
+    width: 95%;
     margin: 20px auto;
     padding: 18px;
   }
@@ -126,27 +66,5 @@ th, td {
   .btn {
     font-size: 14px;
     padding: 14px;
-  }
-}
-
-/* DESKTOP GRANDE */
-@media (min-width: 900px) {
-
-  .container {
-    max-width: 650px;
-    padding: 35px;
-  }
-
-  .logo {
-    width: 200px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  .btn {
-    font-size: 18px;
-    padding: 18px;
   }
 }
