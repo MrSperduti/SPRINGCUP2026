@@ -2,44 +2,26 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Torneo - Spring Cup</title>
-  <link rel="stylesheet" href="theme.css">
-  <script src="app-common.js"></script>
+  <title>Torneo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <main class="page">
-    <section class="panel hero">
-      <img src="logo.png" alt="Logo Spring Cup" class="logo">
-      <h1>Torneo Spring Cup</h1>
-      <p class="lead">Seleziona la categoria da consultare. Le categorie vengono prese dalla struttura dati della nuova app.</p>
-      <div id="categorie" class="button-grid"></div>
-      <div class="topbar">
-        <a class="btn secondary" href="index.html">🏠 Home</a>
-        <a class="btn green" href="editor.html">🛠️ Editor</a>
-      </div>
-    </section>
-  </main>
-  <script>
-    document.addEventListener('DOMContentLoaded', async () => {
-      const container = document.getElementById('categorie');
-      try {
-        const dati = await loadTournamentData();
-        const cats = CATEGORIE_SPRING_CUP.filter(cat => Object.prototype.hasOwnProperty.call(dati, cat));
-        cats.forEach(cat => {
-          const a = document.createElement('a');
-          a.className = 'btn';
-          a.href = 'categoria.html?categoria=' + encodeURIComponent(cat);
-          a.textContent = cat;
-          container.appendChild(a);
-        });
-        if (!cats.length) {
-          container.innerHTML = '<div class="empty-state panel">Nessuna categoria presente in dati.json.</div>';
-        }
-      } catch (error) {
-        container.innerHTML = '<div class="empty-state panel">Errore nel caricamento delle categorie.</div>';
-      }
-    });
-  </script>
+
+<div class="container">
+
+  <img src="logo.png" class="logo">
+
+  <h1>🏆 Torneo Spring Cup 2026</h1>
+  <p>Seleziona la categoria</p>
+
+  <div id="categorie"></div>
+
+  <a class="btn" href="index.html">🏠 Torna alla Home</a>
+
+</div>
+
+<script src="torneo.js"></script>
+
 </body>
 </html>
