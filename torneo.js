@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <title>Torneo</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+document.addEventListener("DOMContentLoaded", () => {
 
-<body>
+  const categorieDiv = document.getElementById("categorie");
 
-<div class="container">
+  const CATEGORIE = [
+    'UNDER 21',
+    'UNDER 19',
+    'UNDER 17',
+    'UNDER 15',
+    'UNDER 13',
+    '2015/16',
+    '2017/18',
+    '2019/20'
+  ];
 
-  <img src="logo.png" class="logo">
+  categorieDiv.innerHTML = "";
 
-  <h1>🏆 Torneo Spring Cup 2026</h1>
-  <p>Seleziona la categoria</p>
+  CATEGORIE.forEach(cat => {
+    const btn = document.createElement("a");
+    btn.className = "btn";
+    btn.href = `categoria.html?categoria=${encodeURIComponent(cat)}`;
+    btn.textContent = cat;
 
-  <div id="categorie"></div>
+    categorieDiv.appendChild(btn);
+  });
 
-  <a class="btn" href="index.html">🏠 Torna alla Home</a>
-
-</div>
-
-<script src="torneo.js"></script>
-
-</body>
-</html>
+});
