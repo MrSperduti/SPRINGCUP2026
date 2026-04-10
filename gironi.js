@@ -1,54 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", async () => {
 
-  const urlParams = new URLSearchParams(window.location.search);
-  const categoriaSelezionata = (urlParams.get("categoria") || "UNDER 17").toUpperCase();
+  const categoria = new URLSearchParams(window.location.search).get('categoria');
+  const container = document.getElementById("gironiContainer");
 
-  async function loadDatiJson() {
-  const response = await fetch('data/dati.json');
-  const dati = await response.json();
+  const res = await fetch('data/dati.json');
+  const data = await res.json();
 
-  // FIX MATCH CATEGORIA
-  const key = Object.keys(dati).find(
-    k => k.trim().toUpperCase() === categoriaSelezionata.trim().toUpperCase()
+  const key = Object.keys(data).find(
+    k => k.trim().toUpperCase() === categoria.trim().toUpperCase()
   );
 
-  if (key && dati[key].gironi) {
-    return dati[key].gironi;
-  } else {
-    return {};
-  }
-}
+  const gironi = key ? data[key].gironi : {};
 
-  const gironiContainer = document.getElementById("gironiContainer");
-
-  async function renderGironi() {
-    const gironi = await loadDatiJson();
-
-    if (!gironi || Object.keys(gironi).length === 0) {
-      gironiContainer.innerHTML = "<p>Nessun girone disponibile per questa categoria.</p>";
-      return;
-    }
-
-    gironiContainer.innerHTML = "";
-
-    Object.keys(gironi).forEach(girone => {
-      const tableDiv = document.createElement("div");
-      const table = document.createElement("table");
-
-      const headerRow = document.createElement("tr");
-      headerRow.innerHTML = `<th>${girone}</th>`;
-      table.appendChild(headerRow);
-
-      gironi[girone].forEach(squadra => {
-        const row = document.createElement("tr");
-        row.innerHTML = `<td>${squadra}</td>`;
-        table.appendChild(row);
-      });
-
-      tableDiv.appendChild(table);
-      gironiContainer.appendChild(tableDiv);
-    });
+  if (!Object.keys(gironi).length) {
+    container.innerHTML = "<p>Nessun girone disponibile</p>";
+    return;
   }
 
-  renderGironi();
+  let html = "";
+
+  for (let nome in gironi) {
+    html += `<h3>${nome}</h3><ul>`;
+    gironi[nome].forEach(s => html += `<li>${s}</li>`);
+    html += "</ul>";
+  }
+
+  container.innerHTML = html;
 });
