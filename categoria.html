@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Categoria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: linear-gradient(135deg, #d32f2f, #1565c0);
+      font-family: 'Orbitron', Arial, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 640px;
+      padding: 30px 20px;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    }
+    .btn {
+      padding: 16px 18px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 14px;
+      border: none;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(to right, #d32f2f, #1565c0);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      text-align: center;
+      width: 100%;
+      max-width: 280px;
+      margin: 10px auto;
+      display: block;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 22px;
+      }
+      .btn {
+        font-size: 16px;
+        padding: 14px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 id="categoria-titolo"></h2>
+    <div id="menu"></div>
+    <button class="btn" onclick="history.back()">🔙 Torna Indietro</button>
+    <button class="btn" onclick="location.href='index.html'">🏠 Torna alla Home</button>
+  </div>
+  <script src="categoria.js"></script>
+</body>
+</html>
