@@ -9,6 +9,7 @@ async function loadCategoria() {
 
   let html = `
     <a class="btn" href="gironi.html?categoria=${categoria}">📊 Gironi</a>
+    <a class="btn" href="calendario.html?categoria=${categoria}">📅 Calendario</a>
     <a class="btn" href="partite.html?categoria=${categoria}">⚽ Partite</a>
     <a class="btn" href="classifica.html?categoria=${categoria}">🏆 Classifica</a>
     <a class="btn" href="rose.html?categoria=${categoria}">👥 Rose</a>
