@@ -16,7 +16,8 @@
 
   <h1 id="titolo"></h1>
 
-  <div id="contenuto"></div>
+  <!-- 🔥 ID CORRETTO -->
+  <div id="gironiContainer"></div>
 
   <a class="btn secondary" href="torneo.html">⬅️ Torna</a>
 
@@ -28,6 +29,9 @@
 const categoria = new URLSearchParams(location.search).get('categoria');
 document.getElementById('titolo').textContent = categoria + " - Gironi";
 </script>
+
+<!-- 🔥 QUESTO MANCAVA -->
+<script src="gironi.js"></script>
 
 </body>
 </html>
