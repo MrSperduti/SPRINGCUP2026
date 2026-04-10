@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Partite</title>
-<link rel="stylesheet" href="/SPRINGCUP2026/theme.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partite</title>
+  <link rel="stylesheet" href="/SPRINGCUP2026/theme.css">
 </head>
 
 <body>
@@ -12,13 +12,13 @@
 
 <section class="panel hero">
 
-<img src="/SPRINGCUP2026/logo.png" class="logo">
+  <img src="/SPRINGCUP2026/logo.png" class="logo">
 
-<h1 id="titolo"></h1>
+  <h1 id="titolo"></h1>
 
-<div id="contenuto"></div>
+  <div id="partiteContainer"></div>
 
-<a class="btn secondary" href="torneo.html">⬅️ Torna</a>
+  <a class="btn secondary" href="categoria.html">⬅️ Torna</a>
 
 </section>
 
@@ -28,6 +28,8 @@
 const categoria = new URLSearchParams(location.search).get('categoria');
 document.getElementById('titolo').textContent = categoria + " - Partite";
 </script>
+
+<script src="partite.js"></script>
 
 </body>
 </html>
