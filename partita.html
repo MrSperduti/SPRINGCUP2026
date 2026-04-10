@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Partita</title>
-<link rel="stylesheet" href="theme.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riepilogo Partita</title>
+
+  <!-- STILE NUOVO -->
+  <link rel="stylesheet" href="theme.css">
 </head>
 
 <body>
-<div class="container">
 
-<h1 id="titolo"></h1>
+<main class="page">
 
-<div id="contenuto"></div>
+  <section class="panel hero">
 
-<a class="btn" href="javascript:history.back()">⬅️ Torna</a>
+    <img src="logo.png" class="logo">
 
-</div>
+    <h1>Riepilogo Partita</h1>
+
+    <!-- 🔥 ID CORRETTO -->
+    <div id="riepilogo"></div>
+
+    <a class="btn secondary" href="javascript:history.back()">⬅️ Torna</a>
+    <a class="btn" href="index.html">🏠 Home</a>
+
+  </section>
+
+</main>
 
 <script src="partita.js"></script>
 
