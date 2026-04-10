@@ -7,40 +7,74 @@
 
     "partite": [
       {
-        "id": 1,
+        "giornata": 1,
         "girone": "Girone A",
         "squadraA": "Academy",
         "squadraB": "Ardea CS",
-        "golA": 6,
-        "golB": 4,
+        "golA": 3,
+        "golB": 1,
         "data": "03/05/2025",
         "ora": "19:00",
         "campo": "Campo A",
-        "marcatoriA": ["Susin (2)", "Gobbi (2)", "Iancu (2)"],
-        "marcatoriB": ["Barchiesi", "Imbesi", "Orsini"],
-        "migliorGiocatore": "Susin Francesco",
-        "migliorPortiere": "Piasco Valerio"
+
+        "marcatori": [
+          { "nome": "Susin", "gol": 2, "squadra": "Academy" },
+          { "nome": "Gobbi", "gol": 1, "squadra": "Academy" },
+          { "nome": "Barchiesi", "gol": 1, "squadra": "Ardea CS" }
+        ],
+
+        "giocatore": "Susin Francesco",
+        "squadraGiocatore": "Academy",
+
+        "portiere": "Piasco Valerio",
+        "squadraPortiere": "Ardea CS"
       },
+
       {
-        "id": 2,
+        "giornata": 1,
         "girone": "Girone B",
         "squadraA": "Fortitudo Pomezia",
         "squadraB": "Atletico Velletri",
-        "golA": 1,
+        "golA": 2,
         "golB": 2,
-        "data": "04/05/2025",
-        "ora": "17:00",
+        "data": "03/05/2025",
+        "ora": "21:00",
+        "campo": "Campo B",
+
+        "marcatori": [
+          { "nome": "Mazza", "gol": 2, "squadra": "Fortitudo Pomezia" },
+          { "nome": "Proto", "gol": 1, "squadra": "Atletico Velletri" },
+          { "nome": "Giovannozzi", "gol": 1, "squadra": "Atletico Velletri" }
+        ],
+
+        "giocatore": "Mazza Luca",
+        "squadraGiocatore": "Fortitudo Pomezia",
+
+        "portiere": "Melaro Giovanni",
+        "squadraPortiere": "Atletico Velletri"
+      },
+
+      {
+        "giornata": 2,
+        "girone": "Girone A",
+        "squadraA": "New Team",
+        "squadraB": "Academy",
+        "golA": null,
+        "golB": null,
+        "data": "05/05/2025",
+        "ora": "18:00",
         "campo": "Campo A",
-        "marcatoriA": ["Mazza"],
-        "marcatoriB": ["Giovannozzi", "Proto"],
-        "migliorGiocatore": "Proto Matteo",
-        "migliorPortiere": "Melaro Giovanni"
+
+        "marcatori": [],
+        "giocatore": "",
+        "portiere": ""
       }
     ],
 
     "classifica": [
       { "squadra": "Academy", "punti": 3 },
-      { "squadra": "Atletico Velletri", "punti": 3 },
+      { "squadra": "Fortitudo Pomezia", "punti": 1 },
+      { "squadra": "Atletico Velletri", "punti": 1 },
       { "squadra": "Ardea CS", "punti": 0 }
     ],
 
@@ -51,12 +85,15 @@
       ],
       "Ardea CS": [
         { "nome": "Barchiesi", "cognome": "Andrea" }
+      ],
+      "Fortitudo Pomezia": [
+        { "nome": "Mazza", "cognome": "Luca" }
       ]
     },
 
     "marcatori": [
-      { "nome": "Susin Francesco", "squadra": "Academy", "gol": 2 },
-      { "nome": "Gobbi Alessandro", "squadra": "Academy", "gol": 2 }
+      { "nome": "Susin", "squadra": "Academy", "gol": 2 },
+      { "nome": "Mazza", "squadra": "Fortitudo Pomezia", "gol": 2 }
     ],
 
     "migliorGiocatore": [
