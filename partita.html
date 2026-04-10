@@ -1,89 +1,33 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Riepilogo Partita</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #f59e0b, #2563eb);
-      font-family: 'Orbitron', Arial, sans-serif;
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .contenitore {
-      width: 100%;
-      max-width: 640px;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-    h1 {
-      text-align: center;
-      font-size: 28px;
-      margin-top: 20px;
-      text-shadow: 2px 2px 5px black;
-    }
-    h2 {
-      text-align: center;
-      font-size: 24px;
-      margin: 20px 0;
-    }
-    h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: #ffcccb;
-    }
-    .wrapper {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .colonna {
-      flex: 1;
-      min-width: 45%;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 15px;
-      border-radius: 12px;
-    }
-    .info-extra {
-      margin-top: 20px;
-      font-size: 16px;
-    }
-    button {
-      width: 90%;
-      max-width: 300px;
-      padding: 14px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 14px;
-      border: none;
-      margin: 10px auto;
-      background: linear-gradient(to right, #f59e0b, #2563eb);
-      color: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      cursor: pointer;
-      display: block;
-    }
-    button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partite</title>
+<link rel="stylesheet" href="/SPRINGCUP2026/theme.css">
 </head>
+
 <body>
-  <div class="contenitore">
-    <h1>Riepilogo Partita</h1>
-    <div id="riepilogo"></div>
-    <button onclick="history.back()">🔙 Torna Indietro</button>
-    <button onclick="location.href='index.html'">🏠 🏠 Torna alla Home</button>
-  </div>
-  <script src="partita.js"></script>
+<main class="page">
+
+<section class="panel hero">
+
+<img src="/SPRINGCUP2026/logo.png" class="logo">
+
+<h1 id="titolo"></h1>
+
+<div id="contenuto"></div>
+
+<a class="btn secondary" href="torneo.html">⬅️ Torna</a>
+
+</section>
+
+</main>
+
+<script>
+const categoria = new URLSearchParams(location.search).get('categoria');
+document.getElementById('titolo').textContent = categoria + " - Partite";
+</script>
+
 </body>
 </html>
