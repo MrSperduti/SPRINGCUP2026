@@ -4,15 +4,20 @@ document.addEventListener("DOMContentLoaded", function() {
   const categoriaSelezionata = (urlParams.get("categoria") || "UNDER 17").toUpperCase();
 
   async function loadDatiJson() {
-    const response = await fetch('data/dati.json');
-    const dati = await response.json();
+  const response = await fetch('data/dati.json');
+  const dati = await response.json();
 
-    if (dati[categoriaSelezionata] && dati[categoriaSelezionata].gironi) {
-      return dati[categoriaSelezionata].gironi;
-    } else {
-      return {};
-    }
+  // FIX MATCH CATEGORIA
+  const key = Object.keys(dati).find(
+    k => k.trim().toUpperCase() === categoriaSelezionata.trim().toUpperCase()
+  );
+
+  if (key && dati[key].gironi) {
+    return dati[key].gironi;
+  } else {
+    return {};
   }
+}
 
   const gironiContainer = document.getElementById("gironiContainer");
 
