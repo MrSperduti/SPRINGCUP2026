@@ -4,32 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calendario</title>
-  <link rel="stylesheet" href="/SPRINGCUP2026/theme.css">
+
+  <!-- STILE NUOVO -->
+  <link rel="stylesheet" href="theme.css">
 </head>
 
 <body>
+
 <main class="page">
 
-<section class="panel hero">
+  <section class="panel hero">
 
-  <img src="/SPRINGCUP2026/logo.png" class="logo">
+    <!-- LOGO -->
+    <img src="logo.png" class="logo">
 
-  <h1 id="titolo"></h1>
+    <!-- TITOLO DINAMICO -->
+    <h1 id="titolo"></h1>
 
-  <div id="calendarioContainer"></div>
-<script src="calendario.js"></script>
+    <!-- CONTENUTO -->
+    <div id="calendarioContainer"></div>
 
-  <a class="btn secondary" href="categoria.html">⬅️ Torna</a>
+    <!-- BOTTONI -->
+    <a class="btn secondary" href="categoria.html">⬅️ Torna indietro</a>
+    <a class="btn" href="index.html">🏠 Torna alla Home</a>
 
-</section>
+  </section>
 
 </main>
 
+<!-- SCRIPT TITOLO -->
 <script>
-const categoria = new URLSearchParams(location.search).get('categoria');
-document.getElementById('titolo').textContent = categoria + " - Calendario";
+  const categoria = new URLSearchParams(location.search).get('categoria');
+  document.getElementById('titolo').textContent = categoria + " - Calendario";
 </script>
 
+<!-- SCRIPT PRINCIPALE -->
 <script src="calendario.js"></script>
 
 </body>
