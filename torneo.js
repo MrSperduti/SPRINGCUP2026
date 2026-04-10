@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Torneo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <img src="logo.png" class="logo">
+
+  <h1>🏆 Torneo Spring Cup 2026</h1>
+  <p>Seleziona la categoria</p>
+
+  <div id="categorie"></div>
+
+  <a class="btn" href="index.html">🏠 Torna alla Home</a>
+
+</div>
+
+<script src="torneo.js"></script>
+
+</body>
+</html>
