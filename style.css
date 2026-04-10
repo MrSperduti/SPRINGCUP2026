@@ -10,13 +10,17 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: radial-gradient(circle at top, #1a1a1a, #000);
   color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* CONTAINER RESPONSIVE */
+/* CONTAINER PRINCIPALE */
 .container {
   width: 95%;
-  max-width: 600px;
-  margin: 40px auto;
+  max-width: 550px;
   padding: 25px;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 20px;
@@ -26,22 +30,26 @@ body {
 
 /* LOGO */
 .logo {
-  width: 180px;
+  width: 160px;
   max-width: 80%;
-  margin: 20px auto;
+  margin: 15px auto;
   display: block;
 }
 
 /* TITOLI */
 h1 {
   color: #FFD54F;
-  font-size: 28px;
+  font-size: 26px;
   margin-bottom: 10px;
 }
 
+h2, h3 {
+  margin: 10px 0;
+}
+
 p {
-  font-size: 15px;
-  opacity: 0.8;
+  font-size: 14px;
+  opacity: 0.85;
 }
 
 /* BOTTONI */
@@ -62,12 +70,17 @@ p {
   text-decoration: none;
 }
 
-/* HOVER SOLO SU DESKTOP */
+/* HOVER SOLO DESKTOP */
 @media (hover: hover) {
   .btn:hover {
     transform: scale(1.04);
     opacity: 0.95;
   }
+}
+
+/* BACK BUTTON */
+.back {
+  margin-top: 20px;
 }
 
 /* TABLE */
@@ -81,22 +94,38 @@ table {
   overflow: hidden;
 }
 
+th {
+  background-color: #FFD54F;
+  color: #000;
+}
+
 th, td {
   padding: 12px;
   border: 1px solid #ccc;
+  text-align: center;
 }
 
-/* 📱 MOBILE */
+/* LISTE DINAMICHE */
+#categorie,
+#menuCategoria {
+  margin-top: 15px;
+}
+
+/* MOBILE */
 @media (max-width: 600px) {
+
+  body {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
 
   .container {
     width: 95%;
-    margin: 20px auto;
     padding: 20px;
   }
 
   .logo {
-    width: 140px;
+    width: 130px;
   }
 
   h1 {
@@ -109,11 +138,11 @@ th, td {
   }
 }
 
-/* 💻 DESKTOP GRANDE */
+/* DESKTOP GRANDE */
 @media (min-width: 900px) {
 
   .container {
-    max-width: 700px;
+    max-width: 650px;
     padding: 35px;
   }
 
