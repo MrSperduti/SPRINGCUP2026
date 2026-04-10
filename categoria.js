@@ -16,7 +16,12 @@ async function loadCategoria() {
     const res = await fetch('data/dati.json?cache=' + Date.now());
     const data = await res.json();
 
-    const datiCategoria = data[categoria];
+    // 🔥 FIX IMPORTANTE QUI
+    const key = Object.keys(data).find(
+      k => k.trim().toUpperCase() === categoria.trim().toUpperCase()
+    );
+
+    const datiCategoria = data[key];
 
     if (!datiCategoria) {
       menu.innerHTML = '<p>Nessun dato per questa categoria</p>';
@@ -25,7 +30,6 @@ async function loadCategoria() {
 
     let html = '';
 
-    // BOTTONI
     html += `<a class="btn" href="gironi.html?categoria=${categoria}">📊 Gironi</a>`;
     html += `<a class="btn" href="partite.html?categoria=${categoria}">⚽ Partite</a>`;
     html += `<a class="btn" href="classifica.html?categoria=${categoria}">🏆 Classifica</a>`;
