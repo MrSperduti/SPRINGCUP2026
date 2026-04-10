@@ -1,36 +1,31 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rose</title>
-  <link rel="stylesheet" href="/SPRINGCUP2026/theme.css">
-</head>
+document.addEventListener("DOMContentLoaded", async () => {
 
-<body>
-<main class="page">
+  const categoria = new URLSearchParams(window.location.search).get('categoria');
+  const container = document.getElementById("roseContainer");
 
-<section class="panel hero">
+  const res = await fetch('data/dati.json');
+  const data = await res.json();
 
-  <img src="/SPRINGCUP2026/logo.png" class="logo">
+  const key = Object.keys(data).find(
+    k => k.trim().toUpperCase() === categoria.trim().toUpperCase()
+  );
 
-  <h1 id="titolo"></h1>
+  const rose = key ? data[key].rose : {};
 
-  <div id="roseContainer"></div>
-<script src="rose.js"></script>
+  if (!Object.keys(rose).length) {
+    container.innerHTML = "<p>Nessuna rosa disponibile</p>";
+    return;
+  }
 
-  <a class="btn secondary" href="categoria.html">⬅️ Torna</a>
+  let html = "";
 
-</section>
+  for (let squadra in rose) {
+    html += `<h3>${squadra}</h3><ul>`;
+    rose[squadra].forEach(g => {
+      html += `<li>${g.nome} ${g.cognome}</li>`;
+    });
+    html += "</ul>";
+  }
 
-</main>
-
-<script>
-const categoria = new URLSearchParams(location.search).get('categoria');
-document.getElementById('titolo').textContent = categoria + " - Rose";
-</script>
-
-<script src="rose.js"></script>
-
-</body>
-</html>
+  container.innerHTML = html;
+});
