@@ -1,45 +1,54 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendario</title>
+document.addEventListener("DOMContentLoaded", async () => {
+  const categoria = new URLSearchParams(window.location.search).get('categoria');
+  const container = document.getElementById("calendarioContainer");
 
-  <!-- STILE NUOVO -->
-  <link rel="stylesheet" href="theme.css">
-</head>
+  // Verifica che la categoria sia corretta
+  if (!categoria) {
+    container.innerHTML = "<p>Categoria non valida.</p>";
+    return;
+  }
 
-<body>
+  // Funzione per caricare i dati dal file JSON
+  try {
+    const response = await fetch('../data/dati.json');
+    const dati = await response.json();
 
-<main class="page">
+    const categoriaDati = dati[categoria];
 
-  <section class="panel hero">
+    if (!categoriaDati || !categoriaDati.calendario) {
+      container.innerHTML = "<p>Nessun calendario disponibile per questa categoria.</p>";
+      return;
+    }
 
-    <!-- LOGO -->
-    <img src="logo.png" class="logo">
+    container.innerHTML = ""; // Pulisce il contenuto
 
-    <!-- TITOLO DINAMICO -->
-    <h1 id="titolo"></h1>
+    categoriaDati.calendario.forEach((giornata) => {
+      const giornataDiv = document.createElement("div");
+      giornataDiv.classList.add("panel");
 
-    <!-- CONTENUTO -->
-    <div id="calendarioContainer"></div>
+      const giornataTitle = document.createElement("h2");
+      giornataTitle.textContent = giornata.giornata;
+      giornataDiv.appendChild(giornataTitle);
 
-    <!-- BOTTONI -->
-    <a class="btn secondary" href="categoria.html">⬅️ Torna indietro</a>
-    <a class="btn" href="index.html">🏠 Torna alla Home</a>
+      giornata.partite.forEach((partita) => {
+        const partitaDiv = document.createElement("div");
+        partitaDiv.classList.add("list-card");
 
-  </section>
+        partitaDiv.innerHTML = `
+          <p><strong>Squadre:</strong> ${partita.squadre}</p>
+          <p><strong>Data:</strong> ${partita.data}</p>
+          <p><strong>Ora:</strong> ${partita.ora}</p>
+          <p><strong>Campo:</strong> ${partita.campo}</p>
+          <p><strong>Risultato:</strong> ${partita.risultato}</p>
+          <p><strong>Girone:</strong> ${partita.girone}</p>
+        `;
 
-</main>
+        giornataDiv.appendChild(partitaDiv);
+      });
 
-<!-- SCRIPT TITOLO -->
-<script>
-  const categoria = new URLSearchParams(location.search).get('categoria');
-  document.getElementById('titolo').textContent = categoria + " - Calendario";
-</script>
-
-<!-- SCRIPT PRINCIPALE -->
-<script src="calendario.js"></script>
-
-</body>
-</html>
+      container.appendChild(giornataDiv);
+    });
+  } catch (error) {
+    container.innerHTML = "<p>Errore nel caricamento del calendario.</p>";
+  }
+});
