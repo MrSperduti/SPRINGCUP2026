@@ -11,16 +11,14 @@ body {
   background: radial-gradient(circle at top, #1a1a1a, #000);
   color: #fff;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
 /* CONTAINER PRINCIPALE */
 .container {
-  width: 95%;
-  max-width: 550px;
+  width: 92%;
+  max-width: 700px;
+  margin: 40px auto;   /* ⬅️ centratura vera */
   padding: 25px;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 20px;
@@ -56,17 +54,14 @@ p {
 .btn {
   display: block;
   width: 100%;
-  padding: 16px;
-  margin: 12px 0;
+  max-width: 420px;
+  margin: 10px auto;
+  padding: 15px;
   font-size: 16px;
   font-weight: bold;
   background: linear-gradient(135deg, #FFD54F, #4CAF50);
   color: #000;
-  border: none;
-  border-radius: 14px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.25s ease;
+  border-radius: 12px;
   text-decoration: none;
 }
 
@@ -114,26 +109,22 @@ th, td {
 /* MOBILE */
 @media (max-width: 600px) {
 
-  body {
-    align-items: flex-start;
-    padding-top: 20px;
-  }
-
   .container {
-    width: 95%;
-    padding: 20px;
+    width: 94%;
+    margin: 20px auto;
+    padding: 18px;
   }
 
   .logo {
-    width: 130px;
+    width: 120px;
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .btn {
-    font-size: 15px;
+    font-size: 14px;
     padding: 14px;
   }
 }
