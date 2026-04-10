@@ -2,145 +2,34 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Calendario</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #f59e0b, #2563eb);
-      font-family: 'Orbitron', Arial, sans-serif;
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .container {
-      width: 100%;
-      max-width: 640px;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-    h2 {
-      text-align: center;
-      font-size: 26px;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-    .giornata {
-      margin-bottom: 30px;
-      border-radius: 16px;
-      padding: 15px;
-      background-color: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-    .giornata h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
-      color: #ffcccb;
-    }
-    .partita {
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 12px;
-      padding: 10px;
-      margin-bottom: 12px;
-    }
-    .partita div {
-      margin: 4px 0;
-      font-size: 15px;
-    }
-    .label {
-      font-weight: bold;
-      display: inline-block;
-      width: 100px;
-    }
-    a {
-      color: #ffcccb;
-      text-decoration: underline;
-    }
-    button {
-      width: 90%;
-      max-width: 300px;
-      padding: 14px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 14px;
-      border: none;
-      margin: 10px auto;
-      background: linear-gradient(to right, #f59e0b, #2563eb);
-      color: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      cursor: pointer;
-      display: block;
-    }
-    button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
-    }
-  </style>
+  <title>Calendario</title>
+  <link rel="stylesheet" href="/SPRINGCUP2026/theme.css">
 </head>
+
 <body>
-  <div class="container">
-    <h2>Calendario</h2>
-    <div id="calendario"></div>
-  </div>
+<main class="page">
 
-  <script>
-    async function loadCalendar() {
-      const cat = new URLSearchParams(location.search).get('categoria');
-      const res = await fetch('../data/dati.json');
-      const dati = await res.json();
-      const div = document.getElementById('calendario');
-      div.innerHTML = '';
+<section class="panel hero">
 
-      const partite = dati[cat]?.partite || [];
-      const giornate = {};
+  <img src="/SPRINGCUP2026/logo.png" class="logo">
 
-      partite.forEach(p => {
-        const g = p.giornata || 0;
-        if (!giornate[g]) giornate[g] = [];
-        giornate[g].push(p);
-      });
+  <h1 id="titolo"></h1>
 
-      Object.keys(giornate).sort((a, b) => a.localeCompare(b, undefined, {numeric: true})).forEach(g => {
-        const section = document.createElement('div');
-        section.className = 'giornata';
-        const titolo = document.createElement('h3');
-        titolo.textContent = "Giornata " + g;
-        section.appendChild(titolo);
+  <div id="calendarioContainer"></div>
 
-        giornate[g].forEach((p, i) => {
-          const partita = document.createElement('div');
-          partita.className = 'partita';
+  <a class="btn secondary" href="categoria.html">⬅️ Torna</a>
 
-          const idPartita = `${cat}-${partite.indexOf(p)}`;
-          const risultatoHTML = `<a href="partita.html?id=${idPartita}">` +
-            ((p.golA !== null && p.golB !== null) ? `${p.golA} - ${p.golB}` : 'Dettagli') +
-            `</a>`;
+</section>
 
-          partita.innerHTML = `
-            <div><span class="label">Squadre:</span> ${p.squadraA || ''} vs ${p.squadraB || ''}</div>
-            <div><span class="label">Data:</span> ${p.data || ''}</div>
-            <div><span class="label">Ora:</span> ${p.orario || ''}</div>
-            <div><span class="label">Campo:</span> ${p.campo || ''}</div>
-            <div><span class="label">Risultato:</span> ${risultatoHTML}</div>
-            <div><span class="label">Girone:</span> ${p.girone || ''}</div>
-          `;
-          section.appendChild(partita);
-        });
+</main>
 
-        div.appendChild(section);
-      });
-    }
+<script>
+const categoria = new URLSearchParams(location.search).get('categoria');
+document.getElementById('titolo').textContent = categoria + " - Calendario";
+</script>
 
-    document.addEventListener('DOMContentLoaded', loadCalendar);
-  </script>
+<script src="calendario.js"></script>
 
-  <div class="container">
-    <button onclick="history.back()">🔙 Torna Indietro</button>
-    <button onclick="location.href='index.html'">🏠 🏠 Torna alla Home</button>
-  </div>
 </body>
 </html>
