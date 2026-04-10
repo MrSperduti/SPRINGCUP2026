@@ -12,31 +12,30 @@ async function loadCategoria() {
 
   titolo.textContent = categoria;
 
-  // 🔥 BOTTONI SEMPRE VISIBILI
-  let html = `
-    <a class="btn" href="gironi.html?categoria=${categoria}">📊 Gironi</a>
-    <a class="btn" href="partite.html?categoria=${categoria}">⚽ Partite</a>
-    <a class="btn" href="classifica.html?categoria=${categoria}">🏆 Classifica</a>
-    <a class="btn" href="rose.html?categoria=${categoria}">👥 Rose</a>
-  `;
-
-  menu.innerHTML = html;
-
-  // 🔽 POI proviamo a caricare i dati (ma NON blocchiamo i bottoni)
   try {
     const res = await fetch('data/dati.json?cache=' + Date.now());
     const data = await res.json();
 
-    const key = Object.keys(data).find(
-      k => k.trim().toUpperCase() === categoria.trim().toUpperCase()
-    );
+    // 🔥 FIX: compatibile con tutte le strutture
+    const datiCategoria = data[categoria] || data.categorie?.[categoria];
 
-    if (!key) {
-      console.warn("Categoria non trovata nel JSON");
+    // I bottoni devono SEMPRE comparire
+    let html = `
+      <a class="btn" href="gironi.html?categoria=${categoria}">📊 Gironi</a>
+      <a class="btn" href="partite.html?categoria=${categoria}">⚽ Partite</a>
+      <a class="btn" href="classifica.html?categoria=${categoria}">🏆 Classifica</a>
+      <a class="btn" href="rose.html?categoria=${categoria}">👥 Rose</a>
+    `;
+
+    // Se non ci sono dati → avviso sopra
+    if (!datiCategoria) {
+      html = `<p>Nessun dato per questa categoria</p>` + html;
     }
 
+    menu.innerHTML = html;
+
   } catch (err) {
-    console.warn("Errore caricamento JSON");
+    menu.innerHTML = '<p>Errore nel caricamento dati</p>';
   }
 }
 
