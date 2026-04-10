@@ -4,32 +4,9 @@
       "Girone A": ["Roma", "Lazio", "Milan"],
       "Girone B": ["Inter", "Napoli", "Juventus"]
     },
-    "partite": [
-      {
-        "girone": "Girone A",
-        "squadraA": "Roma",
-        "squadraB": "Lazio",
-        "golA": 2,
-        "golB": 1
-      },
-      {
-        "girone": "Girone B",
-        "squadraA": "Inter",
-        "squadraB": "Napoli",
-        "golA": 3,
-        "golB": 3
-      }
-    ],
-    "classifica": [
-      { "squadra": "Roma", "punti": 3 },
-      { "squadra": "Lazio", "punti": 0 }
-    ],
-    "rose": {
-      "Roma": [
-        { "nome": "Luca", "cognome": "Rossi" },
-        { "nome": "Marco", "cognome": "Bianchi" }
-      ]
-    }
+    "partite": [],
+    "classifica": [],
+    "rose": {}
   },
 
   "UNDER 19": {
@@ -42,7 +19,9 @@
   },
 
   "UNDER 17": {
-    "gironi": {},
+    "gironi": {
+      "Girone A": ["Atalanta", "Verona", "Udinese"]
+    },
     "partite": [],
     "classifica": [],
     "rose": {}
