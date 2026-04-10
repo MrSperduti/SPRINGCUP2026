@@ -1,54 +1,55 @@
-document.addEventListener("DOMContentLoaded", async () => {
-
-  const titolo = document.getElementById("titoloCategoria");
-  const menu = document.getElementById("menuCategoria");
-
+async function loadCategoria() {
   const params = new URLSearchParams(window.location.search);
-  const categoria = params.get("categoria");
+  const categoria = params.get('categoria');
+
+  const container = document.getElementById('contenuto');
 
   if (!categoria) {
-    titolo.textContent = "Categoria non trovata";
+    container.innerHTML = '<p>Categoria non valida</p>';
     return;
   }
 
-  titolo.textContent = categoria;
+  document.getElementById('titolo').textContent = categoria;
 
-  // Carico dati torneo
-  let dati = {};
   try {
-    const res = await fetch("data/dati.json");
-    dati = await res.json();
-  } catch {
-    menu.innerHTML = "<div class='card'>Errore caricamento dati</div>";
-    return;
+    const res = await fetch('dati.json?cache=' + Date.now());
+    const data = await res.json();
+
+    const datiCategoria = data[categoria];
+
+    if (!datiCategoria) {
+      container.innerHTML = '<p>Nessun dato per questa categoria</p>';
+      return;
+    }
+
+    // BOTTONI
+    let html = '';
+
+    if (datiCategoria.gironi) {
+      html += `<a class="btn" href="gironi.html?categoria=${categoria}">📊 Gironi</a>`;
+    }
+
+    if (datiCategoria.partite) {
+      html += `<a class="btn" href="partite.html?categoria=${categoria}">⚽ Partite</a>`;
+    }
+
+    if (datiCategoria.classifica) {
+      html += `<a class="btn" href="classifica.html?categoria=${categoria}">🏆 Classifica</a>`;
+    }
+
+    if (datiCategoria.rose) {
+      html += `<a class="btn" href="rose.html?categoria=${categoria}">👥 Rose</a>`;
+    }
+
+    if (!html) {
+      html = '<p>Nessun contenuto disponibile</p>';
+    }
+
+    container.innerHTML = html;
+
+  } catch (err) {
+    container.innerHTML = '<p>Errore nel caricamento dati</p>';
   }
+}
 
-  const dataCategoria = dati[categoria];
-
-  if (!dataCategoria) {
-    menu.innerHTML = "<div class='card'>Nessun dato per questa categoria</div>";
-    return;
-  }
-
-  // MENU SEZIONI
-  const sezioni = [
-    { nome: "Gironi", pagina: "gironi.html" },
-    { nome: "Partite", pagina: "partita.html" },
-    { nome: "Classifica", pagina: "classifica.html" },
-    { nome: "Marcatori", pagina: "classifica-marcatori.html" },
-    { nome: "Portieri", pagina: "classifica-portieri.html" },
-    { nome: "Rose", pagina: "rose.html" }
-  ];
-
-  menu.innerHTML = "";
-
-  sezioni.forEach(s => {
-    const btn = document.createElement("a");
-    btn.className = "btn";
-    btn.href = `${s.pagina}?categoria=${encodeURIComponent(categoria)}`;
-    btn.textContent = s.nome;
-
-    menu.appendChild(btn);
-  });
-
-});
+loadCategoria();
