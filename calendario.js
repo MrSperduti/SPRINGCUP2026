@@ -20,8 +20,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   let html = "";
 
   partite.forEach(p => {
-    html += `<p>${p.squadraA} vs ${p.squadraB}</p>`;
-  });
-
-  container.innerHTML = html;
+  html += `
+    <tr>
+      <td>${p.squadraA}</td>
+      <td>
+        <a href="partita.html?categoria=${categoria}&id=${p.id}">
+          ${p.golA} - ${p.golB}
+        </a>
+      </td>
+      <td>${p.squadraB}</td>
+    </tr>
+  `;
 });
