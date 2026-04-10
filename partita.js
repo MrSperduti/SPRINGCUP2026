@@ -7,7 +7,7 @@ async function caricaPartita() {
   const index = parseInt(indexStr, 10);
   if (!categoria || isNaN(index)) return;
 
-  const res = await fetch('dati.json');
+  const res = await fetch('../data/dati.json');
   const dati = await res.json();
   const partita = dati[categoria]?.partite?.[index];
 

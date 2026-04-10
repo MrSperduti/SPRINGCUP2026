@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   // Funzione per caricare dinamicamente i dati dal file `dati.json`
   async function loadDatiJson() {
-    const response = await fetch('dati.json');
+    const response = await fetch('../data/dati.json');
     const dati = await response.json();
 
     // Verifica se ci sono gironi per la categoria selezionata

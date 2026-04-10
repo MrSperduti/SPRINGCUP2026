@@ -1,7 +1,7 @@
 
 async function loadMarcatori() {
   const cat = new URLSearchParams(location.search).get('categoria');
-  const res = await fetch('dati.json');
+  const res = await fetch('../data/dati.json');
   const dati = await res.json();
   const div = document.getElementById('marcatori');
   const count = {};

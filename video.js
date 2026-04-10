@@ -1,45 +1,27 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', async () => {
   const gallery = document.getElementById('gallery');
-
-  fetch('https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/videoFiles.json')
-    .then(response => response.json())
-    .then(data => {
-      data.videoFiles.forEach(file => {
-        const item = document.createElement('div');
-        item.classList.add('gallery-item');
-
-        const video = document.createElement('video');
-        video.src = file.url;
-        video.controls = true;
-        video.preload = "metadata";
-        video.style.cursor = 'zoom-in';
-        video.style.transition = 'transform 0.3s ease';
-
-        video.onclick = function(event) {
-          event.preventDefault();
-          if (video.requestFullscreen) {
-            video.requestFullscreen();
-          } else if (video.webkitRequestFullscreen) {
-            video.webkitRequestFullscreen();
-          } else if (video.msRequestFullscreen) {
-            video.msRequestFullscreen();
-          }
-          video.style.transform = 'scale(1.03)';
-          setTimeout(() => {
-            video.style.transform = 'scale(1)';
-          }, 300);
-        };
-
-        const desc = document.createElement('p');
-        desc.classList.add('description');
-        desc.textContent = file.description || '';
-
-        item.appendChild(video);
-        item.appendChild(desc);
-        gallery.appendChild(item);
-      });
-    })
-    .catch(error => {
-      console.error('Errore durante il caricamento dei video:', error);
+  try {
+    const data = await fetch('videoFiles.json', { cache: 'no-store' }).then(r => r.json());
+    const files = data.videoFiles || [];
+    if (!files.length) {
+      gallery.innerHTML = '<div class="empty-state panel">Nessun video disponibile.</div>';
+      return;
+    }
+    files.forEach(file => {
+      const item = document.createElement('div');
+      item.className = 'gallery-item';
+      const video = document.createElement('video');
+      video.src = file.url;
+      video.controls = true;
+      video.preload = 'metadata';
+      const desc = document.createElement('p');
+      desc.className = 'description';
+      desc.textContent = file.description || file.title || '';
+      item.appendChild(video);
+      item.appendChild(desc);
+      gallery.appendChild(item);
     });
+  } catch {
+    gallery.innerHTML = '<div class="empty-state panel">Errore nel caricamento dei video.</div>';
+  }
 });

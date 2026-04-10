@@ -1,29 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', async () => {
   const tableBody = document.querySelector('#pdfTable tbody');
-
-  // Carica i file JSON dal repository
-  fetch('https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/regolamentoFiles.json')
-    .then(response => response.json())
-    .then(data => {
-      // Aggiungi i file alla tabella
-      data.regolamentoFiles.forEach(file => {
-        const row = document.createElement('tr');
-        const nameCell = document.createElement('td');
-        const downloadCell = document.createElement('td');
-        const downloadLink = document.createElement('a');
-
-        nameCell.textContent = file.name;
-        downloadLink.href = file.url;
-        downloadLink.innerHTML = '📥 Scarica';
-        downloadLink.download = file.name;
-
-        downloadCell.appendChild(downloadLink);
-        row.appendChild(nameCell);
-        row.appendChild(downloadCell);
-        tableBody.appendChild(row);
-      });
-    })
-    .catch(error => {
-      console.error('Errore durante il caricamento dei file:', error);
+  try {
+    const data = await fetch('regolamentoFiles.json', { cache: 'no-store' }).then(r => r.json());
+    const files = data.regolamentoFiles || [];
+    if (!files.length) {
+      tableBody.innerHTML = '<tr><td colspan="2">Nessun regolamento disponibile.</td></tr>';
+      return;
+    }
+    files.forEach(file => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${file.title || file.name || 'Documento'}</td><td><a href="${file.url}" target="_blank" rel="noopener noreferrer">📥 Apri</a></td>`;
+      tableBody.appendChild(row);
     });
+  } catch {
+    tableBody.innerHTML = '<tr><td colspan="2">Errore nel caricamento del regolamento.</td></tr>';
+  }
 });

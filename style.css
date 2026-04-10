@@ -1,12 +1,63 @@
+
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at top, #1a1a1a, #000);
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/22/22/24/football-1850017_1280.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   color: #fff;
 }
-.container {max-width:900px;margin:auto;padding:20px;text-align:center;}
-.logo {width:180px;margin:20px auto;display:block;}
-h1 {font-size:32px;color:#FFD54F;}
-.btn,button{display:block;width:100%;max-width:320px;margin:10px auto;padding:14px;
-background:linear-gradient(135deg,#FF9800,#4CAF50);border:none;border-radius:12px;color:#fff;}
-.card{background:rgba(255,255,255,0.05);padding:15px;border-radius:12px;margin:10px;}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+button, .category-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff3333, #0047ab);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+}

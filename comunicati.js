@@ -1,27 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', async () => {
   const tableBody = document.querySelector('#pdfTable tbody');
-
-  fetch('https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/comunicatiFiles.json')
-    .then(response => response.json())
-    .then(data => {
-      data.comunicatiFiles.forEach((file, index) => {
-        const row = document.createElement('tr');
-        const nameCell = document.createElement('td');
-        const downloadCell = document.createElement('td');
-        const downloadLink = document.createElement('a');
-
-        nameCell.textContent = 'Comunicato n.' + (index + 1);
-        downloadLink.href = file.url;
-        downloadLink.innerHTML = '📥 Scarica';
-        downloadLink.download = file.name;
-
-        downloadCell.appendChild(downloadLink);
-        row.appendChild(nameCell);
-        row.appendChild(downloadCell);
-        tableBody.appendChild(row);
-      });
-    })
-    .catch(error => {
-      console.error('Errore durante il caricamento dei file:', error);
+  try {
+    const data = await fetch('comunicatiFiles.json', { cache: 'no-store' }).then(r => r.json());
+    const files = data.comunicatiFiles || [];
+    if (!files.length) {
+      tableBody.innerHTML = '<tr><td colspan="2">Nessun comunicato disponibile.</td></tr>';
+      return;
+    }
+    files.forEach((file, index) => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${file.title || ('Comunicato n. ' + (index + 1))}</td><td><a href="${file.url}" target="_blank" rel="noopener noreferrer">📥 Apri</a></td>`;
+      tableBody.appendChild(row);
     });
+  } catch {
+    tableBody.innerHTML = '<tr><td colspan="2">Errore nel caricamento dei comunicati.</td></tr>';
+  }
 });

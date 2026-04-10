@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
   const categoria = new URLSearchParams(location.search).get("categoria");
-  const response = await fetch("dati.json");
+  const response = await fetch('../data/dati.json');
   const dati = await response.json();
   const container = document.getElementById("classifica");
 

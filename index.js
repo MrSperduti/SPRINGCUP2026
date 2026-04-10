@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const res = await fetch('dati.json');
+  const res = await fetch('/data/dati.json');
   const dati = await res.json();
   const container = document.getElementById('categorie');
   Object.keys(dati).forEach(cat => {

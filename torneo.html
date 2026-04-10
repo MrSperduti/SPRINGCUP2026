@@ -2,95 +2,44 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Torneo - SPRING CUP 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background: linear-gradient(135deg, #d32f2f, #1565c0); /* Corretto lo sfondo con gradiente rosso-blu */
-      font-family: 'Orbitron', Arial, sans-serif;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .container {
-      text-align: center;
-      width: 100%;
-      max-width: 640px;
-      padding: 40px 20px;
-    }
-    .logo {
-      max-width: 200px;
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 36px;
-      color: #ff4c4c;
-      margin-bottom: 40px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 100%;
-      align-items: center; /* Centrato su tutti i dispositivi */
-    }
-    .btn {
-      padding: 18px 20px;
-      font-size: 20px;
-      font-weight: bold;
-      border-radius: 14px;
-      border: none;
-      text-decoration: none;
-      color: white;
-      background: linear-gradient(to right, #d32f2f, #1565c0);
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
-      transition: transform 0.2s ease, box-shadow 0.3s ease;
-      text-align: center;
-      width: 80%; /* Bottoni centrati su desktop */
-      max-width: 300px; /* Larghezza dei bottoni su desktop */
-    }
-    .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 28px;
-      }
-      .btn {
-        font-size: 18px;
-        padding: 16px;
-        width: 100%; /* I bottoni occupano tutta la larghezza su mobile */
-      }
-    }
-  </style>
+  <title>Torneo - Spring Cup</title>
+  <link rel="stylesheet" href="theme.css">
+  <script src="app-common.js"></script>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="Logo Spring Cup" class="logo">
-    <h1>Torneo SPRING CUP 2025</h1>
-    <div class="buttons">
-      <a class="btn" href="categoria.html?categoria=Under 17">Under 17</a>
-      <a class="btn" href="categoria.html?categoria=Under 15">Under 15</a>
-      <a class="btn" href="categoria.html?categoria=Under 13">Under 13</a>
-      <a class="btn" href="categoria.html?categoria=2014/15">2014/15</a>
-      <a class="btn" href="categoria.html?categoria=2016/17">2016/17</a>
-      <a class="btn" href="categoria.html?categoria=FEMMINILE">FEMMINILE</a>
-      
-    </div>
-    <div style="margin-top: 30px;">
-      <a href="javascript:history.back()" class="squadra-button">🔙 Torna Indietro</a>
-      <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
-    </div>
-  </div>
+  <main class="page">
+    <section class="panel hero">
+      <img src="logo.png" alt="Logo Spring Cup" class="logo">
+      <h1>Torneo Spring Cup</h1>
+      <p class="lead">Seleziona la categoria da consultare. Le categorie vengono prese dalla struttura dati della nuova app.</p>
+      <div id="categorie" class="button-grid"></div>
+      <div class="topbar">
+        <a class="btn secondary" href="index.html">🏠 Home</a>
+        <a class="btn green" href="editor.html">🛠️ Editor</a>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const container = document.getElementById('categorie');
+      try {
+        const dati = await loadTournamentData();
+        const cats = CATEGORIE_SPRING_CUP.filter(cat => Object.prototype.hasOwnProperty.call(dati, cat));
+        cats.forEach(cat => {
+          const a = document.createElement('a');
+          a.className = 'btn';
+          a.href = 'categoria.html?categoria=' + encodeURIComponent(cat);
+          a.textContent = cat;
+          container.appendChild(a);
+        });
+        if (!cats.length) {
+          container.innerHTML = '<div class="empty-state panel">Nessuna categoria presente in dati.json.</div>';
+        }
+      } catch (error) {
+        container.innerHTML = '<div class="empty-state panel">Errore nel caricamento delle categorie.</div>';
+      }
+    });
+  </script>
 </body>
 </html>
