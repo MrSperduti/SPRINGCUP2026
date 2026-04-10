@@ -2,39 +2,51 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-image: url('https://cdn.pixabay.com/photo/2016/11/22/22/24/football-1850017_1280.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background: radial-gradient(circle at top, #1a1a1a, #000);
   color: #fff;
 }
 
+/* CONTAINER RESPONSIVE */
 .container {
-  max-width: 850px;
-  margin: auto;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
   text-align: center;
 }
 
+/* LOGO */
 .logo {
-  width: 180px;
-  max-width: 90%;
-  display: block;
+  width: 140px;
+  max-width: 80%;
   margin: 20px auto;
+  display: block;
 }
 
+/* TITOLI */
+h1 {
+  color: #FFD54F;
+  font-size: 24px;
+}
+
+p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* BOTTONI */
 .btn {
   display: block;
   width: 100%;
-  padding: 15px;
+  padding: 14px;
   margin: 10px 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
-  background: linear-gradient(135deg, #ff3333, #0047ab);
-  color: white;
+  background: linear-gradient(135deg, #FFD54F, #4CAF50);
+  color: #000;
   border: none;
   border-radius: 12px;
   text-align: center;
@@ -48,28 +60,34 @@ body {
   opacity: 0.9;
 }
 
-a {
-  text-decoration: none;
+/* MOBILE EXTRA */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .container {
+    padding: 15px;
+  }
 }
 
+/* TABLE (per dopo) */
 table {
   width: 100%;
   margin-top: 20px;
   border-collapse: collapse;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255,255,255,0.95);
   color: #000;
   border-radius: 12px;
   overflow: hidden;
 }
 
 th, td {
+  padding: 10px;
   border: 1px solid #ccc;
-  padding: 12px;
-  text-align: center;
-}
-
-h1, h2, h3 {
-  text-align: center;
-  color: #fff;
-  margin-top: 0;
 }
