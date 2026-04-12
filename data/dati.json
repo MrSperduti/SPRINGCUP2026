@@ -1,45 +1,66 @@
 {
-  "UNDER 21": {
+  "Under17": {
     "calendario": [
       {
-        "giornata": "Giornata 1",
+        "giornata": "1",
         "partite": [
           {
-            "squadre": "Academy vs Ardea C5",
-            "data": "09/05/2026",
-            "ora": "19:00",
-            "campo": "CAMPO A",
+            "squadre": "ACADEMY vs ARDEA C5",
             "risultato": "6 - 4",
-            "girone": "Girone A"
+            "data": "2026-04-10",
+            "ora": "18:30",
+            "campo": "Campo Centrale",
+            "marcatori": [
+              { "nome": "SUSIN FRANCESCO", "gol": 2, "squadra": "ACADEMY" },
+              { "nome": "GOBBI ALESSANDRO", "gol": 2, "squadra": "ACADEMY" },
+              { "nome": "IANCU CRISTIAN", "gol": 2, "squadra": "ACADEMY" },
+              { "nome": "BARCHIESI ANDREA", "gol": 1, "squadra": "ARDEA C5" },
+              { "nome": "IMBESI VALERIO", "gol": 1, "squadra": "ARDEA C5" },
+              { "nome": "ORSINI FRANCESCO", "gol": 1, "squadra": "ARDEA C5" },
+              { "nome": "ROSSI LUCA", "gol": 1, "squadra": "ARDEA C5" }
+            ],
+            "giocatore": "SUSIN FRANCESCO",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "PIASCO VALERIO",
+            "squadraPortiere": "ARDEA C5"
           },
           {
-            "squadre": "Fortitudo Pomezia vs Atletico Velletri",
-            "data": "24/05/2026",
-            "ora": "11:00",
-            "campo": "CAMPO A",
-            "risultato": "10 - 2",
-            "girone": "Girone B"
+            "squadre": "SPORTING CLUB vs FUTSAL CITY",
+            "risultato": "3 - 3",
+            "data": "2026-04-11",
+            "ora": "20:00",
+            "campo": "Campo 2",
+            "marcatori": [
+              { "nome": "MARCO BIANCHI", "gol": 2, "squadra": "SPORTING CLUB" },
+              { "nome": "ALESSIO NERI", "gol": 1, "squadra": "SPORTING CLUB" },
+              { "nome": "DANIELE VERDI", "gol": 1, "squadra": "FUTSAL CITY" },
+              { "nome": "SIMONE ROSSI", "gol": 2, "squadra": "FUTSAL CITY" }
+            ],
+            "giocatore": "SIMONE ROSSI",
+            "squadraGiocatore": "FUTSAL CITY",
+            "portiere": "LORENZO GIULI",
+            "squadraPortiere": "SPORTING CLUB"
           }
         ]
       },
       {
-        "giornata": "Giornata 2",
+        "giornata": "2",
         "partite": [
           {
-            "squadre": "Ardea C5 vs New Team",
-            "data": "14/05/2026",
-            "ora": "18:00",
-            "campo": "CAMPO B",
-            "risultato": "1 - 4",
-            "girone": "Girone A"
-          },
-          {
-            "squadre": "Fortitudo Pomezia vs Circolo Master",
-            "data": "14/05/2026",
+            "squadre": "ACADEMY vs SPORTING CLUB",
+            "risultato": "2 - 1",
+            "data": "2026-04-17",
             "ora": "19:00",
-            "campo": "CAMPO A",
-            "risultato": "1 - 3",
-            "girone": "Girone B"
+            "campo": "Campo Centrale",
+            "marcatori": [
+              { "nome": "SUSIN FRANCESCO", "gol": 1, "squadra": "ACADEMY" },
+              { "nome": "IANCU CRISTIAN", "gol": 1, "squadra": "ACADEMY" },
+              { "nome": "MARCO BIANCHI", "gol": 1, "squadra": "SPORTING CLUB" }
+            ],
+            "giocatore": "IANCU CRISTIAN",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "DAVIDE FERRI",
+            "squadraPortiere": "ACADEMY"
           }
         ]
       }
