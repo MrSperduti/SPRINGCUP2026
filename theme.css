@@ -2,6 +2,9 @@
   --bg: #050505;
   --panel: rgba(14, 14, 14, 0.82);
   --panel-light: rgba(255, 255, 255, 0.08);
+  --panel-lighter: rgba(255, 255, 255, 0.06);
+  --border-soft: rgba(255, 255, 255, 0.08);
+
   --text: #ffffff;
   --muted: #d1d5db;
 
@@ -12,7 +15,8 @@
   --danger: #ef4444;
 
   --radius: 18px;
-  --shadow: 0 12px 28px rgba(0,0,0,0.35);
+  --radius-sm: 12px;
+  --shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 
 /* RESET */
@@ -20,7 +24,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   min-height: 100%;
@@ -29,11 +34,9 @@ html, body {
 body {
   font-family: Arial, sans-serif;
   color: var(--text);
-
   background:
     radial-gradient(circle at top, rgba(250, 204, 21, 0.15), transparent 35%),
     linear-gradient(135deg, #111827, #000000 60%, #052e16);
-
   min-height: 100vh;
 }
 
@@ -44,9 +47,16 @@ body {
   padding: 20px 14px 40px;
 }
 
+.container,
+.contenitore {
+  width: min(100%, 860px);
+  margin: 0 auto;
+  padding: 20px 14px 40px;
+}
+
 .panel {
   background: var(--panel);
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid var(--border-soft);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   backdrop-filter: blur(10px);
@@ -64,25 +74,30 @@ body {
   display: block;
   margin: 0 auto 16px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
 /* TITOLI */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0 0 12px;
 }
 
 h1 {
   font-size: clamp(26px, 5vw, 40px);
   color: var(--highlight);
+  text-align: center;
 }
 
 h2 {
   font-size: clamp(20px, 4vw, 28px);
+  color: var(--text);
 }
 
 h3 {
   font-size: 16px;
+  color: var(--text);
 }
 
 /* TESTI */
@@ -98,7 +113,8 @@ p {
   justify-content: center;
 
   width: 100%;
-  padding: 14px;
+  min-height: 52px;
+  padding: 14px 16px;
 
   border-radius: 14px;
   border: none;
@@ -108,12 +124,14 @@ p {
 
   font-size: 15px;
   font-weight: bold;
+  line-height: 1.2;
 
   text-decoration: none;
   cursor: pointer;
 
-  transition: 0.2s;
+  transition: transform 0.2s ease, opacity 0.2s ease;
   margin-top: 10px;
+  text-align: center;
 }
 
 .btn:hover {
@@ -145,6 +163,7 @@ p {
 /* TABELLE */
 .table-wrap {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 table {
@@ -152,7 +171,7 @@ table {
   border-collapse: collapse;
   margin-top: 15px;
 
-  background: rgba(255,255,255,0.98);
+  background: rgba(255, 255, 255, 0.98);
   color: #111827;
 
   border-radius: 12px;
@@ -164,27 +183,22 @@ th {
   color: white;
   padding: 10px;
   font-size: 13px;
+  text-align: center;
 }
 
 td {
   padding: 10px;
   border-bottom: 1px solid #e5e7eb;
   font-size: 13px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 tr:last-child td {
   border-bottom: none;
 }
 
-/* MOBILE TABLE */
-@media (max-width: 500px) {
-  th, td {
-    font-size: 11px;
-    padding: 8px;
-  }
-}
-
-/* CARD */
+/* CARD GENERICHE */
 .list-card {
   padding: 12px;
   margin-top: 10px;
@@ -192,7 +206,7 @@ tr:last-child td {
   border-radius: 12px;
 }
 
-/* PARTITA (IMPORTANTE) */
+/* PARTITA */
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -203,18 +217,78 @@ tr:last-child td {
 .colonna {
   flex: 1;
   min-width: 45%;
-  background: rgba(255,255,255,0.05);
-  padding: 12px;
+  background: var(--panel-lighter);
+  padding: 14px;
   border-radius: 12px;
+  border: 1px solid var(--border-soft);
+}
+
+.colonna h3 {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.colonna div {
+  line-height: 1.45;
+}
+
+.marcatore-item {
+  margin-bottom: 6px;
 }
 
 .info-extra {
   margin-top: 12px;
   font-size: 14px;
+  line-height: 1.5;
+}
+
+/* CALENDARIO MOBILE CARD */
+.mobile-cards {
+  display: none;
+}
+
+.giornata-card {
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.partita-card {
+  background: var(--panel-light);
+  border-radius: 16px;
+  padding: 14px;
+  margin-top: 12px;
+  border: 1px solid var(--border-soft);
+}
+
+.partita-card .squadre {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.partita-card .risultato {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.partita-card .meta {
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.partita-card .meta div {
+  margin-bottom: 4px;
 }
 
 /* FORM */
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
@@ -250,4 +324,265 @@ textarea {
   font-size: 11px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+/* LINK */
+a {
+  color: inherit;
+}
+
+table a,
+.partita-card a {
+  color: #4338ca;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .page,
+  .container,
+  .contenitore {
+    padding: 16px 12px 32px;
+  }
+
+  .panel,
+  .hero,
+  .giornata-card {
+    border-radius: 18px;
+  }
+
+  .hero {
+    padding: 18px 16px;
+  }
+
+  .logo {
+    width: min(250px, 78vw);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-size: clamp(24px, 8vw, 34px);
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: clamp(20px, 6vw, 28px);
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .btn {
+    min-height: 56px;
+    font-size: 16px;
+    border-radius: 18px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .colonna {
+    min-width: 0;
+    padding: 16px 12px;
+    border-radius: 18px;
+  }
+
+  .colonna div {
+    text-align: center;
+    word-break: break-word;
+    font-size: 15px;
+  }
+
+  .info-extra {
+    font-size: 15px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .page,
+  .container,
+  .contenitore {
+    padding: 14px 10px 28px;
+  }
+
+  .hero {
+    padding: 16px 14px;
+    margin-top: 12px;
+  }
+
+  .logo {
+    width: min(240px, 82vw);
+  }
+
+  h1 {
+    font-size: clamp(22px, 9vw, 32px);
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: clamp(18px, 7vw, 24px);
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .btn {
+    min-height: 54px;
+    padding: 14px 12px;
+    font-size: 15px;
+  }
+
+  /* Su mobile il calendario passa a card */
+  table {
+    display: none;
+  }
+
+  .mobile-cards {
+    display: block;
+  }
+
+  .giornata-card {
+    padding: 14px;
+  }
+
+  .partita-card {
+    padding: 14px 12px;
+  }
+
+  .partita-card .squadre {
+    font-size: 15px;
+  }
+
+  .partita-card .risultato {
+    font-size: 17px;
+  }
+
+  .partita-card .meta {
+    font-size: 13px;
+  }
+
+  /* Riepilogo partita */
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .colonna {
+    padding: 14px 10px;
+  }
+
+  .colonna h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .colonna div {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .marcatore-item {
+    margin-bottom: 8px;
+  }
+
+  .info-extra {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 420px) {
+  .page,
+  .container,
+  .contenitore {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .hero,
+  .giornata-card {
+    padding: 14px 10px;
+  }
+
+  .logo {
+    width: min(220px, 84vw);
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    min-height: 52px;
+  }
+
+  th,
+  td {
+    font-size: 11px;
+    padding: 8px;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .colonna {
+    padding: 12px 8px;
+  }
+
+  .colonna h3 {
+    font-size: 14px;
+  }
+
+  .colonna div {
+    font-size: 13px;
+  }
+
+  .info-extra {
+    font-size: 13px;
+  }
+
+  .partita-card .squadre {
+    font-size: 14px;
+  }
+
+  .partita-card .risultato {
+    font-size: 16px;
+  }
+
+  .partita-card .meta {
+    font-size: 12px;
+  }
+}
+
+/* DESKTOP: nasconde le card mobile del calendario */
+@media (min-width: 601px) {
+  .mobile-cards {
+    display: none;
+  }
+
+  table {
+    display: table;
+  }
 }
