@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", async function () {
 
       categoriaDati.calendario.forEach((giornata, giornataIndex) => {
         const giornataDiv = document.createElement("div");
-        giornataDiv.classList.add("panel");
+        giornataDiv.classList.add("panel", "giornata-card");
 
         const giornataTitle = document.createElement("h2");
         giornataTitle.textContent = `Giornata ${giornata.giornata}`;
         giornataDiv.appendChild(giornataTitle);
 
-        let html = `
+        let tableHtml = `
           <table>
             <thead>
               <tr>
@@ -44,34 +44,47 @@ document.addEventListener("DOMContentLoaded", async function () {
             <tbody>
         `;
 
+        let cardsHtml = `<div class="mobile-cards">`;
+
         (giornata.partite || []).forEach((partita, partitaIndex) => {
           const squadre = (partita.squadre || "").split(" vs ");
           const squadraA = squadre[0] || "";
           const squadraB = squadre[1] || "";
           const risultato = partita.risultato || "Dettagli";
+          const link = `partita.html?categoria=${encodeURIComponent(categoria)}&giornata=${giornataIndex}&partita=${partitaIndex}`;
 
-          html += `
+          tableHtml += `
             <tr>
               <td>${squadraA}</td>
               <td>${squadraB}</td>
-              <td>
-                <a href="partita.html?categoria=${encodeURIComponent(categoria)}&giornata=${giornataIndex}&partita=${partitaIndex}">
-                  ${risultato}
-                </a>
-              </td>
+              <td><a href="${link}">${risultato}</a></td>
               <td>${partita.data || ""}</td>
               <td>${partita.ora || ""}</td>
               <td>${partita.campo || ""}</td>
             </tr>
           `;
+
+          cardsHtml += `
+            <div class="partita-card">
+              <div class="squadre">${squadraA} vs ${squadraB}</div>
+              <div class="risultato"><a href="${link}">${risultato}</a></div>
+              <div class="meta">
+                <div><strong>Data:</strong> ${partita.data || ""}</div>
+                <div><strong>Ora:</strong> ${partita.ora || ""}</div>
+                <div><strong>Campo:</strong> ${partita.campo || ""}</div>
+              </div>
+            </div>
+          `;
         });
 
-        html += `
+        tableHtml += `
             </tbody>
           </table>
         `;
 
-        giornataDiv.innerHTML += html;
+        cardsHtml += `</div>`;
+
+        giornataDiv.innerHTML += tableHtml + cardsHtml;
         calendarioContainer.appendChild(giornataDiv);
       });
     } catch (error) {
