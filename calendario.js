@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
       const categoriaDati = dati[categoria];
 
-      if (!categoriaDati || !categoriaDati.calendario) {
+      if (!categoriaDati || !Array.isArray(categoriaDati.calendario)) {
         calendarioContainer.innerHTML = "<p>Nessun calendario disponibile per questa categoria.</p>";
         return;
       }
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         giornataDiv.classList.add("panel");
 
         const giornataTitle = document.createElement("h2");
-        giornataTitle.textContent = giornata.giornata;
+        giornataTitle.textContent = `Giornata ${giornata.giornata}`;
         giornataDiv.appendChild(giornataTitle);
 
         let html = `
@@ -44,18 +44,19 @@ document.addEventListener("DOMContentLoaded", async function () {
             <tbody>
         `;
 
-        giornata.partite.forEach((partita, partitaIndex) => {
+        (giornata.partite || []).forEach((partita, partitaIndex) => {
           const squadre = (partita.squadre || "").split(" vs ");
           const squadraA = squadre[0] || "";
           const squadraB = squadre[1] || "";
+          const risultato = partita.risultato || "Dettagli";
 
           html += `
             <tr>
               <td>${squadraA}</td>
               <td>${squadraB}</td>
               <td>
-                <a href="partita.html?categoria=${encodeURIComponent(categoria)}&giornata=${encodeURIComponent(giornata.giornata)}&partita=${partitaIndex}">
-                  ${partita.risultato || "Dettagli"}
+                <a href="partita.html?categoria=${encodeURIComponent(categoria)}&giornata=${giornataIndex}&partita=${partitaIndex}">
+                  ${risultato}
                 </a>
               </td>
               <td>${partita.data || ""}</td>
@@ -65,7 +66,10 @@ document.addEventListener("DOMContentLoaded", async function () {
           `;
         });
 
-        html += `</tbody></table>`;
+        html += `
+            </tbody>
+          </table>
+        `;
 
         giornataDiv.innerHTML += html;
         calendarioContainer.appendChild(giornataDiv);
