@@ -1,5 +1,6 @@
 {
   "Under17": {
+    "nome": "Under 17",
     "calendario": [
       {
         "giornata": "1",
@@ -7,7 +8,7 @@
           {
             "squadre": "ACADEMY vs ARDEA C5",
             "risultato": "6 - 4",
-            "data": "2026-04-10",
+            "data": "10/04/2026",
             "ora": "18:30",
             "campo": "Campo Centrale",
             "marcatori": [
@@ -27,7 +28,7 @@
           {
             "squadre": "SPORTING CLUB vs FUTSAL CITY",
             "risultato": "3 - 3",
-            "data": "2026-04-11",
+            "data": "11/04/2026",
             "ora": "20:00",
             "campo": "Campo 2",
             "marcatori": [
@@ -49,7 +50,7 @@
           {
             "squadre": "ACADEMY vs SPORTING CLUB",
             "risultato": "2 - 1",
-            "data": "2026-04-17",
+            "data": "17/04/2026",
             "ora": "19:00",
             "campo": "Campo Centrale",
             "marcatori": [
