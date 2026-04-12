@@ -2,15 +2,17 @@ async function loadCategoria() {
   const params = new URLSearchParams(window.location.search);
   const categoriaLabel = params.get("categoria");
 
-  if (!categoriaLabel) {
-    document.getElementById("titoloCategoria").textContent = "Categoria non valida";
-    return;
-  }
-
   const titolo = document.getElementById("titoloCategoria");
   const menu = document.getElementById("menuCategoria");
 
-  titolo.textContent = categoriaLabel;
+  if (!categoriaLabel) {
+    if (titolo) titolo.textContent = "Categoria non valida";
+    return;
+  }
+
+  if (titolo) {
+    titolo.textContent = categoriaLabel;
+  }
 
   function getCategoriaKey(label) {
     const map = {
@@ -30,7 +32,7 @@ async function loadCategoria() {
 
   const categoriaKey = getCategoriaKey(categoriaLabel);
 
-  let html = `
+  const html = `
     <a class="btn" href="calendario.html?categoria=${encodeURIComponent(categoriaKey)}">📅 Calendario</a>
     <a class="btn" href="classifica.html?categoria=${encodeURIComponent(categoriaKey)}">🏆 Classifica</a>
     <a class="btn" href="gironi.html?categoria=${encodeURIComponent(categoriaKey)}">📊 Gironi</a>
@@ -40,7 +42,9 @@ async function loadCategoria() {
     <a class="btn" href="miglior-portiere.html?categoria=${encodeURIComponent(categoriaKey)}">🧤 Miglior Portiere</a>
   `;
 
-  menu.innerHTML = html;
+  if (menu) {
+    menu.innerHTML = html;
+  }
 }
 
 loadCategoria();
