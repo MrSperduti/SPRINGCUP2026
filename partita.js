@@ -1,86 +1,100 @@
 async function caricaPartita() {
-
   const params = new URLSearchParams(location.search);
-  const id = params.get('id');
+  const categoria = params.get("categoria");
+  const giornataParam = params.get("giornata");
+  const partitaIndex = parseInt(params.get("partita"), 10);
 
-  if (!id || !id.includes('-')) return;
+  if (!categoria || giornataParam === null || isNaN(partitaIndex)) {
+    return;
+  }
 
-  const [categoria, indexStr] = id.split(/-(?=\d+$)/);
-  const index = parseInt(indexStr, 10);
+  try {
+    const res = await fetch("data/dati.json?cache=" + Date.now());
+    const dati = await res.json();
 
-  if (!categoria || isNaN(index)) return;
-
-  const res = await fetch('data/dati.json');
-  const dati = await res.json();
-
-  const partita = dati[categoria]?.partite?.[index];
-
-  if (!partita) return;
-
-  const container = document.getElementById('riepilogo');
-  container.innerHTML = '';
-
-  // 🔥 TITOLO
-  const titolo = document.createElement('h2');
-
-  const risultato = (partita.golA != null && partita.golB != null)
-    ? `${partita.squadraA} ${partita.golA} - ${partita.golB} ${partita.squadraB}`
-    : `${partita.squadraA} vs ${partita.squadraB}`;
-
-  titolo.textContent = risultato;
-  container.appendChild(titolo);
-
-  // 🔥 MARCATORI
-  const wrapper = document.createElement('div');
-  wrapper.className = 'wrapper';
-
-  function creaColonna(nomeSquadra, marcatori) {
-    const col = document.createElement('div');
-    col.className = 'colonna';
-
-    const title = document.createElement('h3');
-    title.textContent = nomeSquadra;
-    col.appendChild(title);
-
-    if (marcatori.length === 0) {
-      const empty = document.createElement('div');
-      empty.textContent = 'Nessun marcatore';
-      col.appendChild(empty);
-    } else {
-      marcatori.forEach(m => {
-        const div = document.createElement('div');
-        div.textContent = `${m.nome} (${m.gol})`;
-        col.appendChild(div);
-      });
+    const categoriaDati = dati[categoria];
+    if (!categoriaDati || !categoriaDati.calendario) {
+      return;
     }
 
-    return col;
-  }
+    const giornataObj = categoriaDati.calendario.find(g =>
+      String(g.giornata) === String(giornataParam)
+    );
 
-  const marcatori = partita.marcatori || [];
+    if (!giornataObj || !giornataObj.partite || !giornataObj.partite[partitaIndex]) {
+      return;
+    }
 
-  const marcatoriA = marcatori.filter(m => m.squadra === partita.squadraA);
-  const marcatoriB = marcatori.filter(m => m.squadra === partita.squadraB);
+    const partita = giornataObj.partite[partitaIndex];
+    const container = document.getElementById("riepilogo");
 
-  wrapper.appendChild(creaColonna(partita.squadraA, marcatoriA));
-  wrapper.appendChild(creaColonna(partita.squadraB, marcatoriB));
+    if (!container) return;
 
-  container.appendChild(wrapper);
+    container.innerHTML = "";
 
-  // 🔥 MIGLIOR GIOCATORE
-  if (partita.giocatore) {
-    const div = document.createElement('div');
-    div.className = 'info-extra';
-    div.innerHTML = `<strong>Miglior Giocatore:</strong> ${partita.giocatore}`;
-    container.appendChild(div);
-  }
+    const squadre = (partita.squadre || "").split(" vs ");
+    const squadraA = squadre[0] || "Squadra A";
+    const squadraB = squadre[1] || "Squadra B";
 
-  // 🔥 MIGLIOR PORTIERE
-  if (partita.portiere) {
-    const div = document.createElement('div');
-    div.className = 'info-extra';
-    div.innerHTML = `<strong>Miglior Portiere:</strong> ${partita.portiere}`;
-    container.appendChild(div);
+    const titolo = document.createElement("h2");
+    titolo.textContent = `${squadraA} ${partita.risultato || "vs"} ${squadraB}`;
+    container.appendChild(titolo);
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "wrapper";
+
+    function creaColonna(nomeSquadra, marcatori) {
+      const col = document.createElement("div");
+      col.className = "colonna";
+
+      const title = document.createElement("h3");
+      title.textContent = nomeSquadra;
+      col.appendChild(title);
+
+      if (!marcatori || marcatori.length === 0) {
+        const empty = document.createElement("div");
+        empty.textContent = "Nessun marcatore";
+        col.appendChild(empty);
+      } else {
+        marcatori.forEach(m => {
+          const div = document.createElement("div");
+          const nome = m.nome || "";
+          const gol = m.gol ?? 1;
+          div.textContent = `${nome} (${gol})`;
+          col.appendChild(div);
+        });
+      }
+
+      return col;
+    }
+
+    const marcatori = Array.isArray(partita.marcatori) ? partita.marcatori : [];
+    const marcatoriA = marcatori.filter(m => m.squadra === squadraA);
+    const marcatoriB = marcatori.filter(m => m.squadra === squadraB);
+
+    wrapper.appendChild(creaColonna(squadraA, marcatoriA));
+    wrapper.appendChild(creaColonna(squadraB, marcatoriB));
+    container.appendChild(wrapper);
+
+    if (partita.giocatore) {
+      const div = document.createElement("div");
+      div.className = "info-extra";
+      div.innerHTML =
+        `<strong>Miglior Giocatore:</strong> ${partita.giocatore}` +
+        (partita.squadraGiocatore ? ` (${partita.squadraGiocatore})` : "");
+      container.appendChild(div);
+    }
+
+    if (partita.portiere) {
+      const div = document.createElement("div");
+      div.className = "info-extra";
+      div.innerHTML =
+        `<strong>Miglior Portiere:</strong> ${partita.portiere}` +
+        (partita.squadraPortiere ? ` (${partita.squadraPortiere})` : "");
+      container.appendChild(div);
+    }
+  } catch (error) {
+    console.error("Errore nel caricamento della partita:", error);
   }
 }
 
