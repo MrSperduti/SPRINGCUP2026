@@ -1,10 +1,10 @@
 async function caricaPartita() {
   const params = new URLSearchParams(location.search);
   const categoria = params.get("categoria");
-  const giornataParam = params.get("giornata");
+  const giornataIndex = parseInt(params.get("giornata"), 10);
   const partitaIndex = parseInt(params.get("partita"), 10);
 
-  if (!categoria || giornataParam === null || isNaN(partitaIndex)) {
+  if (!categoria || isNaN(giornataIndex) || isNaN(partitaIndex)) {
     return;
   }
 
@@ -12,22 +12,13 @@ async function caricaPartita() {
     const res = await fetch("data/dati.json?cache=" + Date.now());
     const dati = await res.json();
 
-    const categoriaDati = dati[categoria];
-    if (!categoriaDati || !categoriaDati.calendario) {
+    const partita = dati[categoria]?.calendario?.[giornataIndex]?.partite?.[partitaIndex];
+
+    if (!partita) {
       return;
     }
 
-    const giornataObj = categoriaDati.calendario.find(g =>
-      String(g.giornata) === String(giornataParam)
-    );
-
-    if (!giornataObj || !giornataObj.partite || !giornataObj.partite[partitaIndex]) {
-      return;
-    }
-
-    const partita = giornataObj.partite[partitaIndex];
     const container = document.getElementById("riepilogo");
-
     if (!container) return;
 
     container.innerHTML = "";
@@ -56,11 +47,9 @@ async function caricaPartita() {
         empty.textContent = "Nessun marcatore";
         col.appendChild(empty);
       } else {
-        marcatori.forEach(m => {
+        marcatori.forEach((m) => {
           const div = document.createElement("div");
-          const nome = m.nome || "";
-          const gol = m.gol ?? 1;
-          div.textContent = `${nome} (${gol})`;
+          div.textContent = `${m.nome || ""} (${m.gol ?? 1})`;
           col.appendChild(div);
         });
       }
@@ -69,8 +58,8 @@ async function caricaPartita() {
     }
 
     const marcatori = Array.isArray(partita.marcatori) ? partita.marcatori : [];
-    const marcatoriA = marcatori.filter(m => m.squadra === squadraA);
-    const marcatoriB = marcatori.filter(m => m.squadra === squadraB);
+    const marcatoriA = marcatori.filter((m) => m.squadra === squadraA);
+    const marcatoriB = marcatori.filter((m) => m.squadra === squadraB);
 
     wrapper.appendChild(creaColonna(squadraA, marcatoriA));
     wrapper.appendChild(creaColonna(squadraB, marcatoriB));
