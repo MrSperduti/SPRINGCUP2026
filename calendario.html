@@ -2,21 +2,23 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calendario</title>
   <link rel="stylesheet" href="theme.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1 id="titoloCategoria">Calendario</h1>
+  <main class="page">
+    <section class="panel hero">
+      <div class="badge">Calendario</div>
 
-    <!-- Contenitore del calendario -->
-    <div id="calendarioContainer"></div>
+      <h1 id="titoloCategoria">Calendario</h1>
 
-    <div class="back">
-      <a class="btn" href="categoria.html">⬅️ Torna alla categoria</a>
-    </div>
-  </div>
+      <div id="calendarioContainer"></div>
+
+      <a class="btn secondary" href="javascript:history.back()">⬅️ Torna alla categoria</a>
+    </section>
+  </main>
 
   <script src="calendario.js"></script>
 </body>
