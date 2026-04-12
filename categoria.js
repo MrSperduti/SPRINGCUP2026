@@ -14,11 +14,11 @@ async function loadCategoria() {
 
   function getCategoriaKey(label) {
     const map = {
-      "UNDER 21": "Under 21",
-      "UNDER 19": "Under 19",
-      "UNDER 17": "Under 17",
-      "UNDER 15": "Under 15",
-      "UNDER 13": "Under 13",
+      "UNDER 21": "Under21",
+      "UNDER 19": "Under19",
+      "UNDER 17": "Under17",
+      "UNDER 15": "Under15",
+      "UNDER 13": "Under13",
       "2019/20": "2019/20",
       "2017/18": "2017/18",
       "2015/16": "2015/16",
