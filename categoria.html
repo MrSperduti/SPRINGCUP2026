@@ -1,31 +1,50 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Categoria</title>
-  <link rel="stylesheet" href="/SPRINGCUP2026/theme.css">
-</head>
+async function loadCategoria() {
+  const params = new URLSearchParams(window.location.search);
+  const categoriaLabel = params.get("categoria");
 
-<body>
-<main class="page">
+  const titolo = document.getElementById("titoloCategoria");
+  const menu = document.getElementById("menuCategoria");
 
-<section class="panel hero">
+  if (!categoriaLabel) {
+    if (titolo) titolo.textContent = "Categoria non valida";
+    return;
+  }
 
-  <span class="badge">Categoria</span>
+  if (titolo) {
+    titolo.textContent = categoriaLabel;
+  }
 
-  <img src="/SPRINGCUP2026/logo.png" class="logo">
+  function getCategoriaKey(label) {
+    const map = {
+      "UNDER 21": "Under21",
+      "UNDER 19": "Under19",
+      "UNDER 17": "Under17",
+      "UNDER 15": "Under15",
+      "UNDER 13": "Under13",
+      "2019/20": "2019/20",
+      "2017/18": "2017/18",
+      "2015/16": "2015/16",
+      "2014/15": "2014/15"
+    };
 
-  <h1 id="titoloCategoria"></h1>
+    return map[label] || label;
+  }
 
-  <div id="menuCategoria" class="button-grid one"></div>
+  const categoriaKey = getCategoriaKey(categoriaLabel);
 
-  <a class="btn secondary" href="torneo.html">⬅️ Torna al torneo</a>
+  const html = `
+    <a class="btn" href="calendario.html?categoria=${encodeURIComponent(categoriaKey)}">📅 Calendario</a>
+    <a class="btn" href="classifica.html?categoria=${encodeURIComponent(categoriaKey)}">🏆 Classifica</a>
+    <a class="btn" href="gironi.html?categoria=${encodeURIComponent(categoriaKey)}">📊 Gironi</a>
+    <a class="btn" href="rose.html?categoria=${encodeURIComponent(categoriaKey)}">👥 Rose</a>
+    <a class="btn" href="classifica-marcatori.html?categoria=${encodeURIComponent(categoriaKey)}">⚽ Marcatori</a>
+    <a class="btn" href="miglior-giocatore.html?categoria=${encodeURIComponent(categoriaKey)}">⭐ Miglior Giocatore</a>
+    <a class="btn" href="miglior-portiere.html?categoria=${encodeURIComponent(categoriaKey)}">🧤 Miglior Portiere</a>
+  `;
 
-</section>
+  if (menu) {
+    menu.innerHTML = html;
+  }
+}
 
-</main>
-
-<script src="categoria.js"></script>
-</body>
-</html>
+loadCategoria();
