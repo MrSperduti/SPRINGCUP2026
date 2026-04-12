@@ -49,6 +49,7 @@ async function caricaPartita() {
       } else {
         marcatori.forEach((m) => {
           const div = document.createElement("div");
+          div.className = "marcatore-item";
           div.textContent = `${m.nome || ""} (${m.gol ?? 1})`;
           col.appendChild(div);
         });
