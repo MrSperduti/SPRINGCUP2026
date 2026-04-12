@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     return;
   }
 
-  // Funzione per caricare i dati dal file JSON
   async function loadCalendario() {
     try {
       const response = await fetch("data/dati.json?cache=" + Date.now());
@@ -20,9 +19,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         return;
       }
 
-      calendarioContainer.innerHTML = ""; // Pulisce il contenuto
+      calendarioContainer.innerHTML = "";
 
-      categoriaDati.calendario.forEach((giornata) => {
+      categoriaDati.calendario.forEach((giornata, giornataIndex) => {
         const giornataDiv = document.createElement("div");
         giornataDiv.classList.add("panel");
 
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         giornataTitle.textContent = giornata.giornata;
         giornataDiv.appendChild(giornataTitle);
 
-        // Crea la tabella per la giornata
         let html = `
           <table>
             <thead>
@@ -46,19 +44,23 @@ document.addEventListener("DOMContentLoaded", async function () {
             <tbody>
         `;
 
-        giornata.partite.forEach((partita) => {
+        giornata.partite.forEach((partita, partitaIndex) => {
+          const squadre = (partita.squadre || "").split(" vs ");
+          const squadraA = squadre[0] || "";
+          const squadraB = squadre[1] || "";
+
           html += `
             <tr>
-              <td>${partita.squadre.split(" vs ")[0]}</td>
-              <td>${partita.squadre.split(" vs ")[1]}</td>
+              <td>${squadraA}</td>
+              <td>${squadraB}</td>
               <td>
-                <a href="partita.html?id=${categoria}-${giornata.partite.indexOf(partita)}">
-                  ${partita.risultato}
+                <a href="partita.html?categoria=${encodeURIComponent(categoria)}&giornata=${encodeURIComponent(giornata.giornata)}&partita=${partitaIndex}">
+                  ${partita.risultato || "Dettagli"}
                 </a>
               </td>
-              <td>${partita.data}</td>
-              <td>${partita.ora}</td>
-              <td>${partita.campo}</td>
+              <td>${partita.data || ""}</td>
+              <td>${partita.ora || ""}</td>
+              <td>${partita.campo || ""}</td>
             </tr>
           `;
         });
@@ -66,10 +68,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         html += `</tbody></table>`;
 
         giornataDiv.innerHTML += html;
-
         calendarioContainer.appendChild(giornataDiv);
       });
     } catch (error) {
+      console.error("Errore nel caricamento del calendario:", error);
       calendarioContainer.innerHTML = "<p>Errore nel caricamento del calendario.</p>";
     }
   }
