@@ -1,101 +1,188 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const intervistaInput = document.getElementById("intervistaInput");
+  const albumInput = document.getElementById("albumInput");
   const descriptionInput = document.getElementById("descriptionInput");
   const uploadFileButton = document.getElementById("uploadFileButton");
   const generateJsonButton = document.getElementById("generateJsonButton");
-  const tableBody = document.querySelector('#intervistaTable tbody');
-  const previewDati = document.getElementById('previewDati');
+  const previewDati = document.getElementById("previewDati");
+  const albumsContainer = document.getElementById("albumsContainer");
+  const jsonDownloadContainer = document.getElementById("jsonDownloadContainer");
+
   let downloadJsonLink = null;
 
-  function renderTable(files) {
-    tableBody.innerHTML = '';
-    files.forEach(file => {
-      const row = document.createElement('tr');
-      const nameCell = document.createElement('td');
-      const previewCell = document.createElement('td');
-      const removeCell = document.createElement('td');
-      const video = document.createElement('video');
-      const removeButton = document.createElement('button');
+  function getStoredAlbums() {
+    try {
+      return JSON.parse(localStorage.getItem("intervisteAlbums")) || {};
+    } catch (error) {
+      return {};
+    }
+  }
 
-      nameCell.textContent = file.description || file.name;
-      video.src = file.url;
-      video.controls = true;
-      video.style.width = '100px';
-      video.style.height = '80px';
+  function setStoredAlbums(albums) {
+    localStorage.setItem("intervisteAlbums", JSON.stringify(albums));
+  }
 
-      removeButton.textContent = 'Rimuovi';
-      removeButton.classList.add('remove-button');
-      removeButton.onclick = function() {
-        const updatedFiles = files.filter(f => f.name !== file.name);
-        localStorage.setItem('intervisteFiles', JSON.stringify(updatedFiles));
-        renderTable(updatedFiles);
-      };
+  function normalizeAlbumName(name) {
+    return (name || "").trim().replace(/\s+/g, "_").toUpperCase();
+  }
 
-      previewCell.appendChild(video);
-      removeCell.appendChild(removeButton);
-      row.appendChild(nameCell);
-      row.appendChild(previewCell);
-      row.appendChild(removeCell);
-      tableBody.appendChild(row);
+  function renderAlbums(albums) {
+    albumsContainer.innerHTML = "";
+
+    const albumNames = Object.keys(albums).sort((a, b) => a.localeCompare(b));
+
+    if (!albumNames.length) {
+      albumsContainer.innerHTML = "<p class='empty-state'>Nessuna intervista inserita.</p>";
+      return;
+    }
+
+    albumNames.forEach((albumName) => {
+      const section = document.createElement("div");
+      section.className = "list-card";
+
+      const title = document.createElement("h3");
+      title.textContent = albumName;
+      section.appendChild(title);
+
+      const files = albums[albumName] || [];
+
+      files.forEach((file) => {
+        const card = document.createElement("div");
+        card.className = "list-card";
+
+        const video = document.createElement("video");
+        video.src = file.url;
+        video.controls = true;
+        video.style.width = "100%";
+        video.style.maxWidth = "260px";
+        video.style.borderRadius = "12px";
+        video.style.display = "block";
+        video.style.margin = "0 auto 10px";
+
+        const name = document.createElement("p");
+        name.textContent = file.name;
+
+        const description = document.createElement("p");
+        description.className = "muted";
+        description.textContent = file.description || "";
+
+        const removeBtn = document.createElement("a");
+        removeBtn.href = "#";
+        removeBtn.className = "btn secondary";
+        removeBtn.textContent = "🗑️ Rimuovi";
+        removeBtn.onclick = function (e) {
+          e.preventDefault();
+
+          const updatedAlbums = getStoredAlbums();
+          updatedAlbums[albumName] = (updatedAlbums[albumName] || []).filter((f) => f.name !== file.name);
+
+          if (!updatedAlbums[albumName].length) {
+            delete updatedAlbums[albumName];
+          }
+
+          setStoredAlbums(updatedAlbums);
+          renderAlbums(updatedAlbums);
+        };
+
+        card.appendChild(video);
+        card.appendChild(name);
+
+        if (file.description) {
+          card.appendChild(description);
+        }
+
+        card.appendChild(removeBtn);
+        section.appendChild(card);
+      });
+
+      albumsContainer.appendChild(section);
     });
   }
 
-  uploadFileButton.addEventListener('click', function() {
+  uploadFileButton.addEventListener("click", function (e) {
+    e.preventDefault();
+
     const files = intervistaInput.files;
+    const rawAlbum = albumInput.value;
     const description = descriptionInput.value.trim();
 
-    if (files.length > 0) {
-      let existingFiles = [];
-      if (localStorage.getItem('intervisteFiles')) {
-        existingFiles = JSON.parse(localStorage.getItem('intervisteFiles'));
+    if (!files.length) {
+      alert("Seleziona almeno un file da caricare");
+      return;
+    }
+
+    if (!rawAlbum.trim()) {
+      alert("Inserisci il nome dell'album/cartella");
+      return;
+    }
+
+    const albumName = normalizeAlbumName(rawAlbum);
+    const albums = getStoredAlbums();
+
+    if (!albums[albumName]) {
+      albums[albumName] = [];
+    }
+
+    const uploaded = [];
+
+    Array.from(files).forEach((file) => {
+      const fileName = file.name;
+      const fileURL = `/SPRINGCUP2026/interviste/${encodeURIComponent(albumName)}/${encodeURIComponent(fileName)}`;
+
+      const fileDetails = {
+        name: fileName,
+        url: fileURL,
+        type: file.type,
+        size: file.size,
+        description: description
+      };
+
+      const existingIndex = albums[albumName].findIndex((f) => f.name === fileName);
+      if (existingIndex !== -1) {
+        albums[albumName][existingIndex] = fileDetails;
+      } else {
+        albums[albumName].push(fileDetails);
       }
 
-      Array.from(files).forEach(file => {
-        const fileName = file.name;
-        const fileURL = `https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/${encodeURIComponent(fileName)}`;
+      uploaded.push(fileName);
+    });
 
-        const fileDetails = {
-          name: fileName,
-          url: fileURL,
-          type: file.type,
-          size: file.size,
-          description: description
-        };
+    setStoredAlbums(albums);
+    renderAlbums(albums);
 
-        const existingFileIndex = existingFiles.findIndex(f => f.name === fileName);
-        if (existingFileIndex !== -1) {
-          existingFiles[existingFileIndex] = fileDetails;
-        } else {
-          existingFiles.push(fileDetails);
-        }
-      });
+    previewDati.textContent =
+      `Album: ${albumName}\n` +
+      `Interviste caricate: ${uploaded.length}\n` +
+      uploaded.map((name) => `- ${name}`).join("\n");
 
-      localStorage.setItem('intervisteFiles', JSON.stringify(existingFiles));
-      renderTable(existingFiles);
-
-      previewDati.textContent = `Caricate ${files.length} interviste.`;
-    } else {
-      alert('Seleziona almeno un file da caricare');
-    }
+    intervistaInput.value = "";
+    descriptionInput.value = "";
   });
 
-  generateJsonButton.addEventListener('click', function() {
+  generateJsonButton.addEventListener("click", function (e) {
+    e.preventDefault();
+
     if (downloadJsonLink) {
       downloadJsonLink.remove();
+      downloadJsonLink = null;
     }
-    const jsonBlob = new Blob([JSON.stringify({intervisteFiles: JSON.parse(localStorage.getItem('intervisteFiles'))})], {type: 'application/json'});
+
+    const albums = getStoredAlbums();
+    const jsonBlob = new Blob(
+      [JSON.stringify({ intervisteAlbums: albums }, null, 2)],
+      { type: "application/json" }
+    );
     const jsonURL = URL.createObjectURL(jsonBlob);
 
-    downloadJsonLink = document.createElement('a');
+    downloadJsonLink = document.createElement("a");
     downloadJsonLink.href = jsonURL;
-    downloadJsonLink.download = 'intervisteFiles.json';
-    downloadJsonLink.textContent = '📥 Scarica JSON Generato';
-    downloadJsonLink.style.display = 'block';
-    downloadJsonLink.style.marginTop = '20px';
-    document.body.appendChild(downloadJsonLink);
+    downloadJsonLink.download = "intervisteFiles.json";
+    downloadJsonLink.className = "btn";
+    downloadJsonLink.textContent = "📥 Scarica JSON Generato";
+
+    jsonDownloadContainer.innerHTML = "";
+    jsonDownloadContainer.appendChild(downloadJsonLink);
   });
 
-  if (localStorage.getItem('intervisteFiles')) {
-    renderTable(JSON.parse(localStorage.getItem('intervisteFiles')));
-  }
+  renderAlbums(getStoredAlbums());
 });
