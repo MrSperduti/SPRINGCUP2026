@@ -38,8 +38,8 @@ async function loadCategoria() {
     <a class="btn" href="gironi.html?categoria=${encodeURIComponent(categoriaKey)}">📊 Gironi</a>
     <a class="btn" href="rose.html?categoria=${encodeURIComponent(categoriaKey)}">👥 Rose</a>
     <a class="btn" href="classifica-marcatori.html?categoria=${encodeURIComponent(categoriaKey)}">⚽ Marcatori</a>
-    <a class="btn" href="miglior-giocatore.html?categoria=${encodeURIComponent(categoriaKey)}">⭐ Miglior Giocatore</a>
-    <a class="btn" href="miglior-portiere.html?categoria=${encodeURIComponent(categoriaKey)}">🧤 Miglior Portiere</a>
+    <a class="btn" href="classifica-giocatori.html?categoria=${encodeURIComponent(categoriaKey)}">⭐ Miglior Giocatore</a>
+    <a class="btn" href="classifica-portieri.html?categoria=${encodeURIComponent(categoriaKey)}">🧤 Miglior Portiere</a>
   `;
 
   if (menu) {
