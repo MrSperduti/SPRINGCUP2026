@@ -346,6 +346,12 @@ tr:last-child td {
   color: var(--text);
 }
 
+/* MARCATORI CARD MOBILE */
+.marcatori-cards {
+  display: none;
+  margin-top: 14px;
+}
+
 /* FORM */
 input,
 select,
@@ -573,6 +579,15 @@ table a,
   .classifica-cards {
     display: block;
   }
+
+  /* Marcatori */
+  .marcatori-table-wrap {
+    display: none;
+  }
+
+  .marcatori-cards {
+    display: block;
+  }
 }
 
 /* EXTRA SMALL */
@@ -683,6 +698,14 @@ table a,
   }
 
   .classifica-table-wrap {
+    display: block;
+  }
+
+  .marcatori-cards {
+    display: none;
+  }
+
+  .marcatori-table-wrap {
     display: block;
   }
 }
