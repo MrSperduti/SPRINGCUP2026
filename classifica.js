@@ -52,22 +52,15 @@ document.addEventListener("DOMContentLoaded", async () => {
         ensureTeam(squadraB);
 
         const risultato = (partita.risultato || "").trim();
-
-        if (!risultato || risultato.toLowerCase() === "dettagli") {
-          return;
-        }
+        if (!risultato || risultato.toLowerCase() === "dettagli") return;
 
         const match = risultato.match(/^(\d+)\s*-\s*(\d+)$/);
-        if (!match) {
-          return;
-        }
+        if (!match) return;
 
         const golA = parseInt(match[1], 10);
         const golB = parseInt(match[2], 10);
 
-        if (isNaN(golA) || isNaN(golB)) {
-          return;
-        }
+        if (isNaN(golA) || isNaN(golB)) return;
 
         stats[squadraA].giocate++;
         stats[squadraB].giocate++;
@@ -115,11 +108,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
-    let html = `
-      <div class="table-wrap">
-        <table>
+    let tableHtml = `
+      <div class="table-wrap classifica-table-wrap">
+        <table class="classifica-table">
           <thead>
             <tr>
+              <th>#</th>
               <th>Squadra</th>
               <th>Pt</th>
               <th>G</th>
@@ -134,10 +128,14 @@ document.addEventListener("DOMContentLoaded", async () => {
           <tbody>
     `;
 
-    classifica.forEach((s) => {
+    let cardsHtml = `<div class="classifica-cards">`;
+
+    classifica.forEach((s, index) => {
       const dr = s.gf - s.gs;
-      html += `
+
+      tableHtml += `
         <tr>
+          <td>${index + 1}</td>
           <td>${s.squadra}</td>
           <td>${s.punti}</td>
           <td>${s.giocate}</td>
@@ -149,15 +147,37 @@ document.addEventListener("DOMContentLoaded", async () => {
           <td>${dr}</td>
         </tr>
       `;
+
+      cardsHtml += `
+        <div class="classifica-card">
+          <div class="classifica-card-top">
+            <div class="classifica-posizione">#${index + 1}</div>
+            <div class="classifica-squadra">${s.squadra}</div>
+            <div class="classifica-punti">${s.punti} pt</div>
+          </div>
+
+          <div class="classifica-stats-grid">
+            <div><span>G</span><strong>${s.giocate}</strong></div>
+            <div><span>V</span><strong>${s.vinte}</strong></div>
+            <div><span>N</span><strong>${s.pareggi}</strong></div>
+            <div><span>P</span><strong>${s.perse}</strong></div>
+            <div><span>GF</span><strong>${s.gf}</strong></div>
+            <div><span>GS</span><strong>${s.gs}</strong></div>
+            <div><span>DR</span><strong>${dr}</strong></div>
+          </div>
+        </div>
+      `;
     });
 
-    html += `
+    tableHtml += `
           </tbody>
         </table>
       </div>
     `;
 
-    container.innerHTML = html;
+    cardsHtml += `</div>`;
+
+    container.innerHTML = tableHtml + cardsHtml;
   } catch (error) {
     console.error("Errore nel caricamento della classifica:", error);
     container.innerHTML = "<p class='empty-state'>Errore nel caricamento della classifica.</p>";
