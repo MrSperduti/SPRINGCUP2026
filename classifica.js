@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   if (!categoria) {
     if (titolo) titolo.textContent = "Classifica";
-    if (container) container.innerHTML = "<p class='empty-state'>Categoria non valida.</p>";
+    if (container) {
+      container.innerHTML = "<p class='empty-state'>Categoria non valida.</p>";
+    }
     return;
   }
 
@@ -28,6 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function ensureTeam(nome) {
       if (!nome) return;
+
       if (!stats[nome]) {
         stats[nome] = {
           squadra: nome,
@@ -52,15 +55,22 @@ document.addEventListener("DOMContentLoaded", async () => {
         ensureTeam(squadraB);
 
         const risultato = (partita.risultato || "").trim();
-        if (!risultato || risultato.toLowerCase() === "dettagli") return;
+
+        if (!risultato || risultato.toLowerCase() === "dettagli") {
+          return;
+        }
 
         const match = risultato.match(/^(\d+)\s*-\s*(\d+)$/);
-        if (!match) return;
+        if (!match) {
+          return;
+        }
 
         const golA = parseInt(match[1], 10);
         const golB = parseInt(match[2], 10);
 
-        if (isNaN(golA) || isNaN(golB)) return;
+        if (isNaN(golA) || isNaN(golB)) {
+          return;
+        }
 
         stats[squadraA].giocate++;
         stats[squadraB].giocate++;
