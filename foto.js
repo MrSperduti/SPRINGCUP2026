@@ -22,11 +22,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     albumNames.forEach((albumName) => {
       const count = (albums[albumName] || []).length;
-      const preview = albums[albumName]?.[0];
 
       html += `
         <div class="list-card">
-          ${preview ? `<img src="${preview.url}" alt="${albumName}" class="sponsor-img">` : ""}
           <h2>${albumName}</h2>
           <p class="lead">${count} foto</p>
           <a class="btn" href="album_foto.html?album=${encodeURIComponent(albumName)}">📂 Apri album</a>
