@@ -1,50 +1,134 @@
-
 let dati = {};
 let categoriaSelezionata = "";
 
 const strutturaIniziale = {
-  "Under 17": { gironi: {}, partite: [], finali: [], rose: {} },
-  "Under 15": { gironi: {}, partite: [], finali: [], rose: {} },
-  "Under 13": { gironi: {}, partite: [], finali: [], rose: {} },
-  "2014/15": { gironi: {}, partite: [], finali: [], rose: {} },
-  "2016/17": { gironi: {}, partite: [], finali: [], rose: {} },
-  "Under 15 femminile": { gironi: {}, partite: [], finali: [], rose: {} },
-  "Under 13 femminile": { gironi: {}, partite: [], finali: [], rose: {} }
+  "Under21": { nome: "Under 21", gironi: {}, calendario: [], rose: {} },
+  "Under19": { nome: "Under 19", gironi: {}, calendario: [], rose: {} },
+  "Under17": { nome: "Under 17", gironi: {}, calendario: [], rose: {} },
+  "Under15": { nome: "Under 15", gironi: {}, calendario: [], rose: {} },
+  "Under13": { nome: "Under 13", gironi: {}, calendario: [], rose: {} },
+  "2019/20": { nome: "2019/20", gironi: {}, calendario: [], rose: {} },
+  "2017/18": { nome: "2017/18", gironi: {}, calendario: [], rose: {} },
+  "2015/16": { nome: "2015/16", gironi: {}, calendario: [], rose: {} },
+  "2014/15": { nome: "2014/15", gironi: {}, calendario: [], rose: {} }
 };
 
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("fileInput").addEventListener("change", e => {
-    const reader = new FileReader();
-    reader.onload = function(event) {
-      try {
-        dati = JSON.parse(event.target.result);
-        if (Object.keys(dati).length === 0) {
-          dati = JSON.parse(JSON.stringify(strutturaIniziale));
-          alert("✅ File vuoto caricato: struttura base creata!");
-        }
-        aggiornaCategorie();
-        aggiornaVista();
-      } catch (error) {
-        dati = {};
-        alert("⚠️ Errore: il file caricato non è un JSON valido.");
-      }
-    };
-    reader.readAsText(e.target.files[0]);
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("fileInput").addEventListener("change", handleFileUpload);
+
+  document.getElementById("btnEsporta").addEventListener("click", (e) => {
+    e.preventDefault();
+    esporta();
   });
+
+  document.getElementById("btnAggiungiGirone").addEventListener("click", (e) => {
+    e.preventDefault();
+    aggiungiGirone();
+  });
+
+  document.getElementById("btnAggiungiGiornata").addEventListener("click", (e) => {
+    e.preventDefault();
+    aggiungiGiornataNormale();
+  });
+
+  const btnSemifinale = document.getElementById("btnAggiungiSemifinale");
+  if (btnSemifinale) {
+    btnSemifinale.addEventListener("click", (e) => {
+      e.preventDefault();
+      aggiungiSemifinale();
+    });
+  }
+
+  const btnFinale = document.getElementById("btnAggiungiFinale");
+  if (btnFinale) {
+    btnFinale.addEventListener("click", (e) => {
+      e.preventDefault();
+      aggiungiFinale();
+    });
+  }
+
+  document.getElementById("btnAggiungiGiocatore").addEventListener("click", (e) => {
+    e.preventDefault();
+    aggiungiGiocatore();
+  });
+
+  dati = JSON.parse(JSON.stringify(strutturaIniziale));
+  aggiornaCategorie();
+  aggiornaVista();
 });
+
+function handleFileUpload(e) {
+  const file = e.target.files?.[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = function (event) {
+    try {
+      const parsed = JSON.parse(event.target.result);
+      dati = parsed && Object.keys(parsed).length ? parsed : JSON.parse(JSON.stringify(strutturaIniziale));
+      normalizzaStruttura();
+      aggiornaCategorie();
+      aggiornaVista();
+      alert("✅ File JSON caricato correttamente.");
+    } catch (error) {
+      alert("⚠️ Errore: il file caricato non è un JSON valido.");
+    }
+  };
+  reader.readAsText(file);
+}
+
+function normalizzaStruttura() {
+  Object.keys(dati).forEach((cat) => {
+    if (!dati[cat] || typeof dati[cat] !== "object") {
+      dati[cat] = { nome: cat, gironi: {}, calendario: [], rose: {} };
+    }
+
+    dati[cat].nome = dati[cat].nome || cat;
+    dati[cat].gironi = dati[cat].gironi || {};
+    dati[cat].calendario = Array.isArray(dati[cat].calendario) ? dati[cat].calendario : [];
+    dati[cat].rose = dati[cat].rose || {};
+
+    dati[cat].calendario.forEach((giornata) => {
+      giornata.giornata = giornata.giornata || "";
+      giornata.partite = Array.isArray(giornata.partite) ? giornata.partite : [];
+
+      giornata.partite.forEach((p) => {
+        p.squadre = p.squadre || "";
+        p.risultato = p.risultato || "";
+        p.data = p.data || "";
+        p.ora = p.ora || "";
+        p.campo = p.campo || "";
+        p.marcatori = Array.isArray(p.marcatori) ? p.marcatori : [];
+        p.giocatore = p.giocatore || "";
+        p.squadraGiocatore = p.squadraGiocatore || "";
+        p.portiere = p.portiere || "";
+        p.squadraPortiere = p.squadraPortiere || "";
+      });
+    });
+  });
+}
 
 function aggiornaCategorie() {
   const select = document.getElementById("selectCategoria");
   select.innerHTML = "";
+
   const categorie = Object.keys(dati);
-  if (categorie.length === 0) return;
-  categorie.forEach(cat => {
+  if (!categorie.length) {
+    categoriaSelezionata = "";
+    return;
+  }
+
+  categorie.forEach((cat) => {
     const opt = document.createElement("option");
     opt.value = cat;
     opt.textContent = cat;
     select.appendChild(opt);
   });
-  categoriaSelezionata = categorie[0];
+
+  if (!categoriaSelezionata || !dati[categoriaSelezionata]) {
+    categoriaSelezionata = categorie[0];
+  }
+
   select.value = categoriaSelezionata;
   select.onchange = () => {
     categoriaSelezionata = select.value;
@@ -55,8 +139,7 @@ function aggiornaCategorie() {
 function aggiornaVista() {
   aggiornaPreview();
   renderGironi();
-  renderPartite();
-  renderFinali();
+  renderCalendario();
   renderRose();
 }
 
@@ -77,7 +160,7 @@ function creaInput(val = "", ph = "") {
   return input;
 }
 
-function creaNumber(val = 0, ph = "") {
+function creaNumber(val = "", ph = "") {
   const input = document.createElement("input");
   input.type = "number";
   input.placeholder = ph;
@@ -85,262 +168,341 @@ function creaNumber(val = 0, ph = "") {
   return input;
 }
 
-function creaBottone(label, fn) {
-  const btn = document.createElement("button");
+function creaBottone(label, fn, secondary = false) {
+  const btn = document.createElement("a");
+  btn.href = "#";
+  btn.className = secondary ? "btn secondary" : "btn";
   btn.textContent = label;
-  btn.onclick = fn;
+  btn.onclick = (e) => {
+    e.preventDefault();
+    fn();
+  };
   return btn;
 }
 
 function renderGironi() {
   const div = document.getElementById("listaGironi");
   div.innerHTML = "";
+
   const gironi = dati[categoriaSelezionata]?.gironi || {};
-  Object.keys(gironi).forEach(nome => {
-    const d = document.createElement("div");
-    d.className = "item";
+
+  Object.keys(gironi).forEach((nome) => {
+    const card = document.createElement("div");
+    card.className = "list-card";
+
     const inputNome = creaInput(nome, "Nome Girone");
     const inputSquadre = creaInput(gironi[nome].join(", "), "Squadre separate da virgola");
-    d.appendChild(inputNome);
-    d.appendChild(inputSquadre);
-    const azioni = document.createElement("div");
-    azioni.className = "actions";
-    azioni.appendChild(creaBottone("💾 Salva", () => {
+
+    card.appendChild(inputNome);
+    card.appendChild(inputSquadre);
+
+    const actions = document.createElement("div");
+    actions.appendChild(creaBottone("💾 Salva", () => {
+      const nuovoNome = inputNome.value.trim() || "Nuovo Girone";
+      const squadre = inputSquadre.value.split(",").map((s) => s.trim()).filter(Boolean);
+
       delete gironi[nome];
-      gironi[inputNome.value] = inputSquadre.value.split(",").map(s => s.trim());
+      gironi[nuovoNome] = squadre;
       aggiornaVista();
     }));
-    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
+    actions.appendChild(creaBottone("🗑️ Cancella", () => {
       delete gironi[nome];
       aggiornaVista();
-    }));
-    d.appendChild(azioni);
-    div.appendChild(d);
+    }, true));
+
+    card.appendChild(actions);
+    div.appendChild(card);
   });
 }
 
 function aggiungiGirone() {
   if (!dati[categoriaSelezionata].gironi) dati[categoriaSelezionata].gironi = {};
-  dati[categoriaSelezionata].gironi["Nuovo Girone"] = [];
+
+  let base = "NUOVO GIRONE";
+  let nome = base;
+  let i = 1;
+
+  while (dati[categoriaSelezionata].gironi[nome]) {
+    nome = `${base} ${i++}`;
+  }
+
+  dati[categoriaSelezionata].gironi[nome] = [];
   aggiornaVista();
 }
 
-function renderPartite() {
-  const div = document.getElementById("listaPartite");
+function renderCalendario() {
+  const div = document.getElementById("listaCalendario");
   div.innerHTML = "";
-  const partite = dati[categoriaSelezionata]?.partite || [];
 
-  partite.forEach((p, i) => {
-    const d = document.createElement("div");
-    d.className = "item";
+  const calendario = dati[categoriaSelezionata]?.calendario || [];
 
-    const giornata = creaInput(p.giornata || "", "Giornata");
-    const girone = creaInput(p.girone || "", "Girone");
-    const squadraA = creaInput(p.squadraA || "", "Squadra A");
-    const squadraB = creaInput(p.squadraB || "", "Squadra B");
-    const campo = creaInput(p.campo || "", "Campo");
-    const orario = creaInput(p.orario || "", "Orario");
-    const data = creaInput(p.data || "", "Data");
-    const golA = creaNumber(p.golA || '', "Gol A");
-    const golB = creaNumber(p.golB || '', "Gol B");
-    const portiere = creaInput(p.portiere || "", "Miglior Portiere");
-    const squadraPortiere = creaInput(p.squadraPortiere || "", "Squadra Portiere");
-    const giocatore = creaInput(p.giocatore || "", "Miglior Giocatore");
-    const squadraGiocatore = creaInput(p.squadraGiocatore || "", "Squadra Giocatore");
+  calendario.forEach((giornataObj, giornataIndex) => {
+    const section = document.createElement("div");
+    section.className = "list-card";
 
-    const marcatoriDiv = document.createElement("div");
-    marcatoriDiv.className = "marcatori";
-    const marcatori = p.marcatori || [];
+    const titoloGiornata = creaInput(giornataObj.giornata || "", "Nome giornata / fase");
+    section.appendChild(titoloGiornata);
 
-    function aggiornaMarcatori() {
-      marcatoriDiv.innerHTML = "<h5>Marcatori</h5>";
-      marcatori.forEach((m, idx) => {
-        const riga = document.createElement("div");
-        const nome = creaInput(m.nome, "Nome");
-        const gol = creaNumber(m.gol, "Gol");
-        const squadra = creaInput(m.squadra, "Squadra");
-        nome.oninput = () => m.nome = nome.value;
-        gol.oninput = () => m.gol = parseInt(gol.value);
-        squadra.oninput = () => m.squadra = squadra.value;
-        riga.appendChild(nome);
-        riga.appendChild(gol);
-        riga.appendChild(squadra);
-        const rimuovi = creaBottone("❌", () => {
-          marcatori.splice(idx, 1);
-          aggiornaMarcatori();
+    const topActions = document.createElement("div");
+    topActions.appendChild(creaBottone("💾 Salva fase", () => {
+      giornataObj.giornata = titoloGiornata.value.trim();
+      aggiornaVista();
+    }));
+    topActions.appendChild(creaBottone("➕ Aggiungi partita", () => {
+      giornataObj.partite.push(creaPartitaVuota());
+      aggiornaVista();
+    }));
+    topActions.appendChild(creaBottone("🗑️ Cancella fase", () => {
+      calendario.splice(giornataIndex, 1);
+      aggiornaVista();
+    }, true));
+    section.appendChild(topActions);
+
+    (giornataObj.partite || []).forEach((p, partitaIndex) => {
+      const partitaCard = document.createElement("div");
+      partitaCard.className = "list-card";
+
+      const squadre = creaInput(p.squadre || "", "Squadre es. ACADEMY vs ARDEA C5");
+      const risultato = creaInput(p.risultato || "", "Risultato es. 2 - 1 oppure Dettagli");
+      const data = creaInput(p.data || "", "Data");
+      const ora = creaInput(p.ora || "", "Ora");
+      const campo = creaInput(p.campo || "", "Campo");
+      const giocatore = creaInput(p.giocatore || "", "Miglior Giocatore");
+      const squadraGiocatore = creaInput(p.squadraGiocatore || "", "Squadra Giocatore");
+      const portiere = creaInput(p.portiere || "", "Miglior Portiere");
+      const squadraPortiere = creaInput(p.squadraPortiere || "", "Squadra Portiere");
+
+      partitaCard.appendChild(squadre);
+      partitaCard.appendChild(risultato);
+      partitaCard.appendChild(data);
+      partitaCard.appendChild(ora);
+      partitaCard.appendChild(campo);
+      partitaCard.appendChild(giocatore);
+      partitaCard.appendChild(squadraGiocatore);
+      partitaCard.appendChild(portiere);
+      partitaCard.appendChild(squadraPortiere);
+
+      const marcatoriDiv = document.createElement("div");
+      marcatoriDiv.className = "list-card";
+      const marcatori = p.marcatori || [];
+
+      function renderMarcatori() {
+        marcatoriDiv.innerHTML = "<h3>Marcatori</h3>";
+
+        marcatori.forEach((m, idx) => {
+          const row = document.createElement("div");
+          row.className = "list-card";
+
+          const nome = creaInput(m.nome || "", "Nome");
+          const gol = creaNumber(m.gol ?? 1, "Gol");
+          const squadra = creaInput(m.squadra || "", "Squadra");
+
+          nome.oninput = () => { m.nome = nome.value; };
+          gol.oninput = () => { m.gol = parseInt(gol.value, 10) || 0; };
+          squadra.oninput = () => { m.squadra = squadra.value; };
+
+          row.appendChild(nome);
+          row.appendChild(gol);
+          row.appendChild(squadra);
+          row.appendChild(creaBottone("🗑️ Rimuovi Marcatore", () => {
+            marcatori.splice(idx, 1);
+            renderMarcatori();
+          }, true));
+
+          marcatoriDiv.appendChild(row);
         });
-        riga.appendChild(rimuovi);
-        marcatoriDiv.appendChild(riga);
-      });
-      const aggiungi = creaBottone("➕ Aggiungi Marcatore", () => {
-        marcatori.push({ nome: "", gol: 1, squadra: "" });
-        aggiornaMarcatori();
-      });
-      marcatoriDiv.appendChild(aggiungi);
-    }
 
-    aggiornaMarcatori();
+        marcatoriDiv.appendChild(creaBottone("➕ Aggiungi Marcatore", () => {
+          marcatori.push({ nome: "", gol: 1, squadra: "" });
+          renderMarcatori();
+        }));
+      }
 
-    d.appendChild(giornata);
-    d.appendChild(girone);
-    d.appendChild(squadraA);
-    d.appendChild(squadraB);
-    d.appendChild(campo);
-    d.appendChild(orario);
-    d.appendChild(data);
-    d.appendChild(golA);
-    d.appendChild(golB);
-    d.appendChild(portiere);
-    d.appendChild(squadraPortiere);
-    d.appendChild(giocatore);
-    d.appendChild(squadraGiocatore);
-    d.appendChild(marcatoriDiv);
+      renderMarcatori();
+      partitaCard.appendChild(marcatoriDiv);
 
-    const azioni = document.createElement("div");
-    azioni.className = "actions";
-    azioni.appendChild(creaBottone("💾 Salva", () => {
-      partite[i] = {
-        giornata: giornata.value,
-        girone: girone.value,
-        squadraA: squadraA.value,
-        squadraB: squadraB.value,
-        campo: campo.value,
-        orario: orario.value,
-        data: data.value,
-        golA: golA.value !== '' ? parseInt(golA.value) : null,
-        golB: golB.value !== '' ? parseInt(golB.value) : null,
-        portiere: portiere.value,
-        squadraPortiere: squadraPortiere.value,
-        giocatore: giocatore.value,
-        squadraGiocatore: squadraGiocatore.value,
-        marcatori: marcatori
-      };
-      aggiornaVista();
-    }));
-    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
-      partite.splice(i, 1);
-      aggiornaVista();
-    }));
+      const actions = document.createElement("div");
+      actions.appendChild(creaBottone("💾 Salva partita", () => {
+        giornataObj.partite[partitaIndex] = {
+          squadre: squadre.value.trim(),
+          risultato: risultato.value.trim(),
+          data: data.value.trim(),
+          ora: ora.value.trim(),
+          campo: campo.value.trim(),
+          marcatori: marcatori,
+          giocatore: giocatore.value.trim(),
+          squadraGiocatore: squadraGiocatore.value.trim(),
+          portiere: portiere.value.trim(),
+          squadraPortiere: squadraPortiere.value.trim()
+        };
+        aggiornaVista();
+      }));
+      actions.appendChild(creaBottone("🗑️ Cancella partita", () => {
+        giornataObj.partite.splice(partitaIndex, 1);
+        aggiornaVista();
+      }, true));
 
-    d.appendChild(azioni);
-    div.appendChild(d);
+      partitaCard.appendChild(actions);
+      section.appendChild(partitaCard);
+    });
+
+    div.appendChild(section);
   });
 }
 
-function aggiungiPartita() {
-  if (!dati[categoriaSelezionata].partite) dati[categoriaSelezionata].partite = [];
-  dati[categoriaSelezionata].partite.push({});
+function creaPartitaVuota() {
+  return {
+    squadre: "",
+    risultato: "",
+    data: "",
+    ora: "",
+    campo: "",
+    marcatori: [],
+    giocatore: "",
+    squadraGiocatore: "",
+    portiere: "",
+    squadraPortiere: ""
+  };
+}
+
+function aggiungiGiornataNormale() {
+  if (!dati[categoriaSelezionata].calendario) dati[categoriaSelezionata].calendario = [];
+
+  const prossimoNumero = contaGiornateNumeriche(dati[categoriaSelezionata].calendario) + 1;
+
+  dati[categoriaSelezionata].calendario.push({
+    giornata: String(prossimoNumero),
+    partite: []
+  });
+
   aggiornaVista();
 }
 
-function renderFinali() {
-  const div = document.getElementById("listaFinali");
-  div.innerHTML = "";
-  const finali = dati[categoriaSelezionata]?.finali || [];
-  finali.forEach((p, i) => {
-    const d = document.createElement("div");
-    d.className = "item";
-    const squadraA = creaInput(p.squadraA || "", "Squadra A");
-    const squadraB = creaInput(p.squadraB || "", "Squadra B");
-    const campo = creaInput(p.campo || "", "Campo");
-    const orario = creaInput(p.orario || "", "Orario");
-    const data = creaInput(p.data || "", "Data");
+function contaGiornateNumeriche(calendario) {
+  let max = 0;
 
-    d.appendChild(squadraA);
-    d.appendChild(squadraB);
-    d.appendChild(campo);
-    d.appendChild(orario);
-    d.appendChild(data);
-
-    const azioni = document.createElement("div");
-    azioni.className = "actions";
-    azioni.appendChild(creaBottone("💾 Salva", () => {
-      finali[i] = {
-        squadraA: squadraA.value,
-        squadraB: squadraB.value,
-        campo: campo.value,
-        orario: orario.value,
-        data: data.value
-      };
-      aggiornaVista();
-    }));
-    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
-      finali.splice(i, 1);
-      aggiornaVista();
-    }));
-
-    d.appendChild(azioni);
-    div.appendChild(d);
+  calendario.forEach((g) => {
+    const n = parseInt(g.giornata, 10);
+    if (!isNaN(n) && n > max) max = n;
   });
+
+  return max;
+}
+
+function aggiungiSemifinale() {
+  if (!dati[categoriaSelezionata].calendario) dati[categoriaSelezionata].calendario = [];
+
+  const esisteA = dati[categoriaSelezionata].calendario.some((g) => g.giornata === "SEMIFINALE A");
+  const esisteB = dati[categoriaSelezionata].calendario.some((g) => g.giornata === "SEMIFINALE B");
+
+  let nome = "SEMIFINALE A";
+  if (esisteA && !esisteB) nome = "SEMIFINALE B";
+  if (esisteA && esisteB) nome = `SEMIFINALE ${dati[categoriaSelezionata].calendario.filter(g => g.giornata.startsWith("SEMIFINALE")).length + 1}`;
+
+  dati[categoriaSelezionata].calendario.push({
+    giornata: nome,
+    partite: [creaPartitaVuota()]
+  });
+
+  aggiornaVista();
 }
 
 function aggiungiFinale() {
-  if (!dati[categoriaSelezionata].finali) dati[categoriaSelezionata].finali = [];
-  dati[categoriaSelezionata].finali.push({});
+  if (!dati[categoriaSelezionata].calendario) dati[categoriaSelezionata].calendario = [];
+
+  const opzioni = [
+    "FINALE 3°/4° POSTO",
+    "FINALE"
+  ];
+
+  const nome = prompt(
+    "Inserisci nome finale/fase finale",
+    opzioni.find((x) => !dati[categoriaSelezionata].calendario.some((g) => g.giornata === x)) || "FINALE"
+  );
+
+  if (!nome) return;
+
+  dati[categoriaSelezionata].calendario.push({
+    giornata: nome.trim(),
+    partite: [creaPartitaVuota()]
+  });
+
   aggiornaVista();
 }
 
 function renderRose() {
   const div = document.getElementById("listaRose");
   div.innerHTML = "";
-  const squadre = dati[categoriaSelezionata]?.rose || {};
-  Object.entries(squadre).forEach(([squadra, giocatori]) => {
+
+  const rose = dati[categoriaSelezionata]?.rose || {};
+
+  Object.keys(rose).sort((a, b) => a.localeCompare(b)).forEach((squadra) => {
     const section = document.createElement("div");
-    section.className = "girone-section";
+    section.className = "list-card";
+
     const titolo = document.createElement("h3");
     titolo.textContent = squadra;
     section.appendChild(titolo);
-    const table = document.createElement("table");
-    table.innerHTML = "<tr><th>Cognome</th><th>Nome</th><th>Data di Nascita</th></tr>";
-    giocatori.forEach(g => {
-      const row = document.createElement("tr");
-      row.innerHTML = `<td>${g.cognome}</td><td>${g.nome}</td><td>${g.nascita}</td>`;
-      table.appendChild(row);
+
+    const giocatori = rose[squadra] || [];
+
+    giocatori.forEach((g, idx) => {
+      const row = document.createElement("div");
+      row.className = "list-card";
+
+      const cognome = creaInput(g.cognome || "", "Cognome");
+      const nome = creaInput(g.nome || "", "Nome");
+      const nascita = creaInput(g.nascita || "", "Data di nascita");
+
+      row.appendChild(cognome);
+      row.appendChild(nome);
+      row.appendChild(nascita);
+
+      const actions = document.createElement("div");
+      actions.appendChild(creaBottone("💾 Salva", () => {
+        rose[squadra][idx] = {
+          cognome: cognome.value.trim(),
+          nome: nome.value.trim(),
+          nascita: nascita.value.trim()
+        };
+        aggiornaVista();
+      }));
+      actions.appendChild(creaBottone("🗑️ Cancella", () => {
+        rose[squadra].splice(idx, 1);
+        if (!rose[squadra].length) delete rose[squadra];
+        aggiornaVista();
+      }, true));
+
+      row.appendChild(actions);
+      section.appendChild(row);
     });
-    section.appendChild(table);
+
     div.appendChild(section);
   });
 }
 
 function aggiungiGiocatore() {
-  const contenitore = document.getElementById("listaRose");
-  const wrapper = document.createElement("div");
-  wrapper.className = "item";
-  const squadra = creaInput("", "Nome Squadra");
-  const cognome = creaInput("", "Cognome");
-  const nome = creaInput("", "Nome");
-  const nascita = creaInput("", "Data di Nascita");
+  const squadra = prompt("Nome squadra");
+  if (!squadra) return;
 
-  wrapper.appendChild(squadra);
-  wrapper.appendChild(cognome);
-  wrapper.appendChild(nome);
-  wrapper.appendChild(nascita);
+  if (!dati[categoriaSelezionata].rose) dati[categoriaSelezionata].rose = {};
+  if (!dati[categoriaSelezionata].rose[squadra]) {
+    dati[categoriaSelezionata].rose[squadra] = [];
+  }
 
-  const azioni = document.createElement("div");
-  azioni.className = "actions";
-  azioni.appendChild(creaBottone("💾 Salva", () => {
-    if (!dati[categoriaSelezionata].rose) dati[categoriaSelezionata].rose = {};
-    if (!dati[categoriaSelezionata].rose[squadra.value]) {
-      dati[categoriaSelezionata].rose[squadra.value] = [];
-    }
-    dati[categoriaSelezionata].rose[squadra.value].push({
-      cognome: cognome.value,
-      nome: nome.value,
-      nascita: nascita.value
-    });
-    aggiornaVista();
-  }));
+  dati[categoriaSelezionata].rose[squadra].push({
+    cognome: "",
+    nome: "",
+    nascita: ""
+  });
 
-  azioni.appendChild(creaBottone("🗑️ Cancella", () => {
-    wrapper.remove();
-  }));
-
-  wrapper.appendChild(azioni);
-  contenitore.appendChild(wrapper);
+  aggiornaVista();
 }
 
 function esporta() {
-  const blob = new Blob([JSON.stringify(dati, null, 2)], { type: "application/json" });
+  const blob = new Blob([JSON.stringify(dati, null, 2)], {
+    type: "application/json"
+  });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
