@@ -12,6 +12,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   albumTitle.textContent = album;
 
+  function openFullscreen(el) {
+    if (el.requestFullscreen) {
+      el.requestFullscreen();
+    } else if (el.webkitRequestFullscreen) {
+      el.webkitRequestFullscreen();
+    } else if (el.msRequestFullscreen) {
+      el.msRequestFullscreen();
+    }
+  }
+
   try {
     const res = await fetch("/SPRINGCUP2026/fotoFiles.json?cache=" + Date.now());
 
@@ -28,20 +38,30 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
-    let html = `<div class="sponsor-list">`;
+    const gallery = document.createElement("div");
+    gallery.className = "photo-gallery";
 
     fotoList.forEach((foto) => {
-      html += `
-        <div class="list-card">
-          <img src="${foto.url}" alt="${foto.name}" class="sponsor-img">
-          <p class="muted">${foto.name}</p>
-        </div>
-      `;
+      const item = document.createElement("div");
+      item.className = "photo-item";
+
+      const img = document.createElement("img");
+      img.src = foto.url;
+      img.alt = foto.name;
+      img.className = "photo-thumb";
+      img.onclick = () => openFullscreen(img);
+
+      const caption = document.createElement("p");
+      caption.className = "muted";
+      caption.textContent = foto.name || "";
+
+      item.appendChild(img);
+      item.appendChild(caption);
+      gallery.appendChild(item);
     });
 
-    html += `</div>`;
-
-    container.innerHTML = html;
+    container.innerHTML = "";
+    container.appendChild(gallery);
   } catch (error) {
     console.error("Errore nel caricamento delle foto:", error);
     container.innerHTML = "<p class='empty-state'>Errore nel caricamento delle foto.</p>";
