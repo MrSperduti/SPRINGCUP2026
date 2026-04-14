@@ -1,27 +1,40 @@
-document.addEventListener('DOMContentLoaded', async () => {
-  const gallery = document.getElementById('gallery');
+document.addEventListener("DOMContentLoaded", async () => {
+  const container = document.getElementById("intervisteContainer");
+
   try {
-    const data = await fetch('intervisteFiles.json', { cache: 'no-store' }).then(r => r.json());
-    const files = data.intervisteFiles || [];
-    if (!files.length) {
-      gallery.innerHTML = '<div class="empty-state panel">Nessuna intervista disponibile.</div>';
+    const res = await fetch("/SPRINGCUP2026/intervisteFiles.json?cache=" + Date.now());
+
+    if (!res.ok) {
+      throw new Error("intervisteFiles.json non trovato");
+    }
+
+    const data = await res.json();
+    const albums = data?.intervisteAlbums || {};
+
+    const albumNames = Object.keys(albums).sort((a, b) => a.localeCompare(b));
+
+    if (!albumNames.length) {
+      container.innerHTML = "<p class='empty-state'>Nessun album interviste disponibile.</p>";
       return;
     }
-    files.forEach(file => {
-      const item = document.createElement('div');
-      item.className = 'gallery-item';
-      const video = document.createElement('video');
-      video.src = file.url;
-      video.controls = true;
-      video.preload = 'metadata';
-      const desc = document.createElement('p');
-      desc.className = 'description';
-      desc.textContent = file.description || file.title || '';
-      item.appendChild(video);
-      item.appendChild(desc);
-      gallery.appendChild(item);
+
+    let html = "";
+
+    albumNames.forEach((albumName) => {
+      const count = (albums[albumName] || []).length;
+
+      html += `
+        <div class="list-card">
+          <h2>${albumName}</h2>
+          <p class="lead">${count} interviste</p>
+          <a class="btn" href="album_interviste.html?album=${encodeURIComponent(albumName)}">📂 Apri album</a>
+        </div>
+      `;
     });
-  } catch {
-    gallery.innerHTML = '<div class="empty-state panel">Errore nel caricamento delle interviste.</div>';
+
+    container.innerHTML = html;
+  } catch (error) {
+    console.error("Errore nel caricamento degli album interviste:", error);
+    container.innerHTML = "<p class='empty-state'>Errore nel caricamento degli album interviste.</p>";
   }
 });
