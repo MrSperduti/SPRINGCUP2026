@@ -4,35 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gironi</title>
-  <link rel="stylesheet" href="/SPRINGCUP2026/theme.css">
+  <link rel="stylesheet" href="theme.css">
 </head>
-
 <body>
-<main class="page">
 
-<section class="panel hero">
+  <main class="page">
+    <section class="panel hero">
+      <div class="badge">Gironi</div>
 
-  <img src="/SPRINGCUP2026/logo.png" class="logo">
+      <img src="logo.png" class="logo" alt="Logo Spring Cup">
 
-  <h1 id="titolo"></h1>
+      <h1 id="titolo">Gironi</h1>
 
-  <!-- 🔥 ID CORRETTO -->
-  <div id="gironiContainer"></div>
+      <div id="gironiContainer"></div>
+
+      <a class="btn secondary" href="javascript:history.back()">⬅️ Torna</a>
+      <a class="btn" href="torneo.html">🏠 Home</a>
+    </section>
+  </main>
+
   <script src="gironi.js"></script>
-
-  <a class="btn secondary" href="torneo.html">⬅️ Torna</a>
-
-</section>
-
-</main>
-
-<script>
-const categoria = new URLSearchParams(location.search).get('categoria');
-document.getElementById('titolo').textContent = categoria + " - Gironi";
-</script>
-
-<!-- 🔥 QUESTO MANCAVA -->
-<script src="gironi.js"></script>
-
 </body>
 </html>
