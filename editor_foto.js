@@ -1,99 +1,171 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const pdfInput = document.getElementById("pdfInput");
+document.addEventListener("DOMContentLoaded", function () {
+  const fotoInput = document.getElementById("fotoInput");
+  const albumInput = document.getElementById("albumInput");
   const uploadFileButton = document.getElementById("uploadFileButton");
   const generateJsonButton = document.getElementById("generateJsonButton");
-  const tableBody = document.querySelector('#pdfTable tbody');
-  const previewDati = document.getElementById('previewDati');
-  let fileDetails = null;
+  const previewDati = document.getElementById("previewDati");
+  const albumsContainer = document.getElementById("albumsContainer");
+  const jsonDownloadContainer = document.getElementById("jsonDownloadContainer");
+
   let downloadJsonLink = null;
 
-  function renderTable(files) {
-    tableBody.innerHTML = '';
-    files.forEach(file => {
-      const row = document.createElement('tr');
-      const nameCell = document.createElement('td');
-      const previewCell = document.createElement('td');
-      const removeCell = document.createElement('td');
-      const img = document.createElement('img');
-      const removeButton = document.createElement('button');
+  function getStoredAlbums() {
+    try {
+      return JSON.parse(localStorage.getItem("fotoAlbums")) || {};
+    } catch (error) {
+      return {};
+    }
+  }
 
-      nameCell.textContent = file.name;
-      img.src = file.url;
-      img.alt = file.name;
-      img.style.width = '100px';
-      img.style.height = '80px';
-      img.style.objectFit = 'cover';
-      img.style.borderRadius = '8px';
+  function setStoredAlbums(albums) {
+    localStorage.setItem("fotoAlbums", JSON.stringify(albums));
+  }
 
-      removeButton.textContent = 'Rimuovi';
-      removeButton.classList.add('remove-button');
+  function normalizeAlbumName(name) {
+    return (name || "").trim().replace(/\s+/g, "_").toUpperCase();
+  }
 
-      removeButton.onclick = function() {
-        const updatedFiles = files.filter(f => f.name !== file.name);
-        localStorage.setItem('fotoFiles', JSON.stringify(updatedFiles));
-        renderTable(updatedFiles);
-      };
+  function renderAlbums(albums) {
+    albumsContainer.innerHTML = "";
 
-      previewCell.appendChild(img);
-      removeCell.appendChild(removeButton);
-      row.appendChild(nameCell);
-      row.appendChild(previewCell);
-      row.appendChild(removeCell);
-      tableBody.appendChild(row);
+    const albumNames = Object.keys(albums).sort((a, b) => a.localeCompare(b));
+
+    if (!albumNames.length) {
+      albumsContainer.innerHTML = "<p class='empty-state'>Nessuna foto caricata.</p>";
+      return;
+    }
+
+    albumNames.forEach((albumName) => {
+      const section = document.createElement("div");
+      section.className = "list-card";
+
+      const title = document.createElement("h3");
+      title.textContent = albumName;
+      section.appendChild(title);
+
+      const files = albums[albumName] || [];
+
+      files.forEach((file) => {
+        const card = document.createElement("div");
+        card.className = "list-card";
+
+        const img = document.createElement("img");
+        img.src = file.url;
+        img.alt = file.name;
+        img.style.width = "100%";
+        img.style.maxWidth = "220px";
+        img.style.height = "auto";
+        img.style.borderRadius = "12px";
+        img.style.display = "block";
+        img.style.margin = "0 auto 10px";
+
+        const name = document.createElement("p");
+        name.textContent = file.name;
+
+        const removeBtn = document.createElement("a");
+        removeBtn.href = "#";
+        removeBtn.className = "btn secondary";
+        removeBtn.textContent = "🗑️ Rimuovi";
+        removeBtn.onclick = function (e) {
+          e.preventDefault();
+
+          const updatedAlbums = getStoredAlbums();
+          updatedAlbums[albumName] = (updatedAlbums[albumName] || []).filter((f) => f.name !== file.name);
+
+          if (!updatedAlbums[albumName].length) {
+            delete updatedAlbums[albumName];
+          }
+
+          setStoredAlbums(updatedAlbums);
+          renderAlbums(updatedAlbums);
+        };
+
+        card.appendChild(img);
+        card.appendChild(name);
+        card.appendChild(removeBtn);
+        section.appendChild(card);
+      });
+
+      albumsContainer.appendChild(section);
     });
   }
 
-  uploadFileButton.addEventListener('click', function() {
-    const file = pdfInput.files[0];
-    if (file) {
-      const fileName = file.name;
-      const fileURL = `https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/${encodeURIComponent(fileName)}`;
+  uploadFileButton.addEventListener("click", function (e) {
+    e.preventDefault();
 
-      fileDetails = {
-        name: fileName,
-        url: fileURL,
-        type: file.type,
-        size: file.size
-      };
+    const file = fotoInput.files[0];
+    const rawAlbum = albumInput.value;
 
-      previewDati.textContent = `Nome: ${fileName}\nTipo: ${file.type}\nDimensione: ${file.size} bytes`;
-
-      let existingFiles = [];
-      if (localStorage.getItem('fotoFiles')) {
-        existingFiles = JSON.parse(localStorage.getItem('fotoFiles'));
-      }
-
-      const existingFileIndex = existingFiles.findIndex(file => file.name === fileName);
-      if (existingFileIndex !== -1) {
-        existingFiles[existingFileIndex] = fileDetails;
-      } else {
-        existingFiles.push(fileDetails);
-      }
-
-      localStorage.setItem('fotoFiles', JSON.stringify(existingFiles));
-      renderTable(existingFiles);
-    } else {
-      alert('Seleziona una foto da caricare');
+    if (!file) {
+      alert("Seleziona una foto da caricare");
+      return;
     }
+
+    if (!rawAlbum.trim()) {
+      alert("Inserisci il nome dell'album/cartella");
+      return;
+    }
+
+    const albumName = normalizeAlbumName(rawAlbum);
+    const fileName = file.name;
+    const fileURL = `https://raw.githubusercontent.com/MrSperduti/SPRINGCUP2026/main/foto/${encodeURIComponent(albumName)}/${encodeURIComponent(fileName)}`;
+
+    const fileDetails = {
+      name: fileName,
+      url: fileURL,
+      type: file.type,
+      size: file.size
+    };
+
+    previewDati.textContent =
+      `Album: ${albumName}\n` +
+      `Nome: ${fileName}\n` +
+      `Tipo: ${file.type || "non disponibile"}\n` +
+      `Dimensione: ${file.size} bytes\n` +
+      `URL: ${fileURL}`;
+
+    const albums = getStoredAlbums();
+
+    if (!albums[albumName]) {
+      albums[albumName] = [];
+    }
+
+    const existingIndex = albums[albumName].findIndex((f) => f.name === fileName);
+    if (existingIndex !== -1) {
+      albums[albumName][existingIndex] = fileDetails;
+    } else {
+      albums[albumName].push(fileDetails);
+    }
+
+    setStoredAlbums(albums);
+    renderAlbums(albums);
   });
 
-  generateJsonButton.addEventListener('click', function() {
+  generateJsonButton.addEventListener("click", function (e) {
+    e.preventDefault();
+
     if (downloadJsonLink) {
       downloadJsonLink.remove();
+      downloadJsonLink = null;
     }
-    const jsonBlob = new Blob([JSON.stringify({fotoFiles: JSON.parse(localStorage.getItem('fotoFiles'))})], {type: 'application/json'});
+
+    const albums = getStoredAlbums();
+
+    const jsonBlob = new Blob(
+      [JSON.stringify({ fotoAlbums: albums }, null, 2)],
+      { type: "application/json" }
+    );
     const jsonURL = URL.createObjectURL(jsonBlob);
 
-    downloadJsonLink = document.createElement('a');
+    downloadJsonLink = document.createElement("a");
     downloadJsonLink.href = jsonURL;
-    downloadJsonLink.download = 'fotoFiles.json';
-    downloadJsonLink.textContent = '📥 Scarica JSON Generato';
-    downloadJsonLink.style.display = 'block';
-    downloadJsonLink.style.marginTop = '20px';
-    document.body.appendChild(downloadJsonLink);
+    downloadJsonLink.download = "fotoFiles.json";
+    downloadJsonLink.className = "btn";
+    downloadJsonLink.textContent = "📥 Scarica JSON Generato";
+
+    jsonDownloadContainer.innerHTML = "";
+    jsonDownloadContainer.appendChild(downloadJsonLink);
   });
 
-  if (localStorage.getItem('fotoFiles')) {
-    renderTable(JSON.parse(localStorage.getItem('fotoFiles')));
-  }
+  renderAlbums(getStoredAlbums());
 });
