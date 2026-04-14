@@ -62,9 +62,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const name = document.createElement("p");
         name.textContent = file.name;
 
-        const description = document.createElement("p");
-        description.className = "muted";
-        description.textContent = file.description || "";
+        if (file.description) {
+          const description = document.createElement("p");
+          description.className = "muted";
+          description.textContent = file.description;
+          card.appendChild(description);
+        }
 
         const removeBtn = document.createElement("a");
         removeBtn.href = "#";
@@ -86,11 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         card.appendChild(video);
         card.appendChild(name);
-
-        if (file.description) {
-          card.appendChild(description);
-        }
-
         card.appendChild(removeBtn);
         section.appendChild(card);
       });
