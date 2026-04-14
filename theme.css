@@ -1,3 +1,4 @@
+```css
 :root {
   --bg: #050505;
   --panel: rgba(14, 14, 14, 0.82);
@@ -398,9 +399,16 @@ a {
   color: inherit;
 }
 
-table a,
-.partita-card a {
-  color: #4338ca;
+/* Link calendario: arancioni */
+.giornata-card table a,
+.giornata-card .partita-card a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Altri link in tabella */
+table a {
   font-weight: 700;
   text-decoration: underline;
 }
@@ -709,3 +717,4 @@ table a,
     display: block;
   }
 }
+```
