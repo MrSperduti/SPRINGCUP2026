@@ -1,75 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Classifica Miglior Giocatore</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #f59e0b, #2563eb);
-      font-family: 'Orbitron', Arial, sans-serif;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .container {
-      width: 100%;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    h2 {
-      font-size: 20px;
-      text-align: center;
-      margin-bottom: 12px;
-    }
-    .table-wrapper {
-      overflow-x: auto;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 320px;
-      font-size: 11px;
-    }
-    th, td {
-      border: 1px solid white;
-      padding: 4px 6px;
-      text-align: center;
-    }
-    th {
-      background-color: rgba(0, 0, 0, 0.3);
-      font-size: 12px;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      font-size: 14px;
-      font-weight: bold;
-      border-radius: 10px;
-      border: none;
-      margin: 8px 0;
-      background: linear-gradient(to right, #f59e0b, #2563eb);
-      color: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      cursor: pointer;
-    }
-  </style>
+  <title>Classifica Miglior Giocatore</title>
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Classifica Miglior Giocatore</h2>
-    <div id="giocatori" class="table-wrapper"></div>
-  </div>
-  <div class="container">
-    <button onclick="history.back()">🔙 Torna Indietro</button>
-    <button onclick="location.href='index.html'">🏠 🏠 Torna alla Home</button>
-  </div>
+
+  <main class="page">
+    <section class="panel hero">
+      <div class="badge">Giocatori</div>
+
+      <img src="logo.png" class="logo" alt="Logo Spring Cup">
+
+      <h1 id="titolo">Classifica Miglior Giocatore</h1>
+
+      <div id="giocatoriContainer"></div>
+
+      <a class="btn secondary" href="javascript:history.back()">⬅️ Torna</a>
+      <a class="btn" href="torneo.html">🏠 Home</a>
+    </section>
+  </main>
+
   <script src="classifica-giocatori.js"></script>
 </body>
 </html>
