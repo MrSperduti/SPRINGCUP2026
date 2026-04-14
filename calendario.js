@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     return;
   }
 
+  function getTitoloGiornata(label) {
+    const testo = String(label || "").trim();
+    return /^\d+$/.test(testo) ? `Giornata ${testo}` : testo;
+  }
+
   async function loadCalendario() {
     try {
       const response = await fetch("data/dati.json?cache=" + Date.now());
@@ -26,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         giornataDiv.classList.add("panel", "giornata-card");
 
         const giornataTitle = document.createElement("h2");
-        giornataTitle.textContent = `Giornata ${giornata.giornata}`;
+        giornataTitle.textContent = getTitoloGiornata(giornata.giornata);
         giornataDiv.appendChild(giornataTitle);
 
         let tableHtml = `
