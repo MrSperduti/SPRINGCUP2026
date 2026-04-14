@@ -445,8 +445,8 @@ table a,
     font-size: 15px;
   }
 
-  /* Su mobile il calendario passa a card */
-  table {
+  /* Solo il calendario usa le card mobile */
+  .giornata-card table {
     display: none;
   }
 
@@ -582,7 +582,7 @@ table a,
     display: none;
   }
 
-  table {
+  .giornata-card table {
     display: table;
   }
 }
