@@ -14,34 +14,29 @@ document.addEventListener("DOMContentLoaded", async () => {
     const albumNames = Object.keys(albums).sort((a, b) => a.localeCompare(b));
 
     if (!albumNames.length) {
-      container.innerHTML = "<p class='empty-state'>Nessuna foto disponibile.</p>";
+      container.innerHTML = "<p class='empty-state'>Nessun album disponibile.</p>";
       return;
     }
 
     let html = "";
 
     albumNames.forEach((albumName) => {
+      const count = (albums[albumName] || []).length;
+      const preview = albums[albumName]?.[0];
+
       html += `
         <div class="list-card">
+          ${preview ? `<img src="${preview.url}" alt="${albumName}" class="sponsor-img">` : ""}
           <h2>${albumName}</h2>
-          <div class="sponsor-list">
-      `;
-
-      (albums[albumName] || []).forEach((foto) => {
-        html += `
-          <img src="${foto.url}" alt="${foto.name}" class="sponsor-img">
-        `;
-      });
-
-      html += `
-          </div>
+          <p class="lead">${count} foto</p>
+          <a class="btn" href="album_foto.html?album=${encodeURIComponent(albumName)}">📂 Apri album</a>
         </div>
       `;
     });
 
     container.innerHTML = html;
   } catch (error) {
-    console.error("Errore nel caricamento foto:", error);
-    container.innerHTML = "<p class='empty-state'>Errore nel caricamento delle foto.</p>";
+    console.error("Errore nel caricamento album foto:", error);
+    container.innerHTML = "<p class='empty-state'>Errore nel caricamento degli album.</p>";
   }
 });
