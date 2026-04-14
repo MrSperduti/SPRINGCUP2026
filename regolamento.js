@@ -1,18 +1,46 @@
-document.addEventListener('DOMContentLoaded', async () => {
-  const tableBody = document.querySelector('#pdfTable tbody');
+document.addEventListener("DOMContentLoaded", async () => {
+  const container = document.getElementById("documentiContainer");
+
+  function formatBytes(bytes) {
+    if (!bytes || isNaN(bytes)) return "";
+    if (bytes < 1024) return `${bytes} B`;
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+  }
+
   try {
-    const data = await fetch('regolamentoFiles.json', { cache: 'no-store' }).then(r => r.json());
-    const files = data.regolamentoFiles || [];
+    const res = await fetch("/SPRINGCUP2026/regolamentoFiles.json?cache=" + Date.now());
+
+    if (!res.ok) {
+      throw new Error("File regolamentoFiles.json non trovato");
+    }
+
+    const data = await res.json();
+    const files = Array.isArray(data.regolamentoFiles) ? data.regolamentoFiles : [];
+
     if (!files.length) {
-      tableBody.innerHTML = '<tr><td colspan="2">Nessun regolamento disponibile.</td></tr>';
+      container.innerHTML = "<p class='empty-state'>Nessun documento disponibile.</p>";
       return;
     }
-    files.forEach(file => {
-      const row = document.createElement('tr');
-      row.innerHTML = `<td>${file.title || file.name || 'Documento'}</td><td><a href="${file.url}" target="_blank" rel="noopener noreferrer">📥 Apri</a></td>`;
-      tableBody.appendChild(row);
+
+    let html = "";
+
+    files.forEach((file) => {
+      html += `
+        <div class="list-card">
+          <h3>${file.name || "Documento"}</h3>
+          <p class="muted">
+            ${file.type || "Tipo non disponibile"}
+            ${file.size ? `• ${formatBytes(file.size)}` : ""}
+          </p>
+          <a class="btn" href="${file.url}" target="_blank" rel="noopener noreferrer">📄 Apri documento</a>
+        </div>
+      `;
     });
-  } catch {
-    tableBody.innerHTML = '<tr><td colspan="2">Errore nel caricamento del regolamento.</td></tr>';
+
+    container.innerHTML = html;
+  } catch (error) {
+    console.error("Errore nel caricamento dei documenti:", error);
+    container.innerHTML = "<p class='empty-state'>Errore nel caricamento dei documenti.</p>";
   }
 });
