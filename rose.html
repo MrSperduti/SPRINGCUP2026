@@ -1,31 +1,28 @@
-document.addEventListener("DOMContentLoaded", async () => {
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
 
-  const categoria = new URLSearchParams(window.location.search).get('categoria');
-  const container = document.getElementById("roseContainer");
+  <main class="page">
+    <section class="panel hero">
+      <div class="badge">Rose</div>
 
-  const res = await fetch('data/dati.json');
-  const data = await res.json();
+      <img src="logo.png" class="logo" alt="Logo Spring Cup">
 
-  const key = Object.keys(data).find(
-    k => k.trim().toUpperCase() === categoria.trim().toUpperCase()
-  );
+      <h1 id="titolo">Rose</h1>
 
-  const rose = key ? data[key].rose : {};
+      <div id="roseContainer"></div>
 
-  if (!Object.keys(rose).length) {
-    container.innerHTML = "<p>Nessuna rosa disponibile</p>";
-    return;
-  }
+      <a class="btn secondary" href="javascript:history.back()">⬅️ Torna</a>
+      <a class="btn" href="torneo.html">🏠 Home</a>
+    </section>
+  </main>
 
-  let html = "";
-
-  for (let squadra in rose) {
-    html += `<h3>${squadra}</h3><ul>`;
-    rose[squadra].forEach(g => {
-      html += `<li>${g.nome} ${g.cognome}</li>`;
-    });
-    html += "</ul>";
-  }
-
-  container.innerHTML = html;
-});
+  <script src="rose.js"></script>
+</body>
+</html>
