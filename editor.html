@@ -2,117 +2,54 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Editor SPRING CUP 2025</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Orbitron', Arial, sans-serif;
-      background: linear-gradient(135deg, #d32f2f, #1565c0);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: white;
-      min-height: 100vh;
-    }
-    h2, h3 {
-      margin-top: 20px;
-    }
-    .section {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      margin: 20px;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 900px;
-    }
-    button, select, input[type="file"] {
-      margin-top: 10px;
-      padding: 10px;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    button {
-      background-color: #0d47a1;
-      color: white;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #d32f2f;
-    }
-    pre {
-      background: rgba(255,255,255,0.1);
-      padding: 15px;
-      border-radius: 8px;
-      overflow-x: auto;
-      font-size: 14px;
-    }
-    .item, .girone-section {
-      background: rgba(255, 255, 255, 0.1);
-      margin-top: 10px;
-      padding: 15px;
-      border-radius: 8px;
-    }
-    .actions {
-      margin-top: 10px;
-    }
-    input[type="text"], input[type="number"] {
-      width: 90%;
-      margin: 5px 0;
-      padding: 8px;
-      border-radius: 6px;
-      border: none;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor SPRING CUP 2026</title>
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <h2>Editor SPRING CUP 2025</h2>
 
-  <div class="section">
-    <h3>📂 Carica dati.json</h3>
-    <input type="file" id="fileInput">
-  </div>
+  <main class="page">
+    <section class="panel hero">
+      <div class="badge">Editor</div>
+      <img src="logo.png" class="logo" alt="Logo Spring Cup">
+      <h1>Editor SPRING CUP 2026</h1>
+      <p class="muted">Gestione categorie, gironi, calendario e rose nel formato 2026</p>
+    </section>
 
-  <div class="section">
-    <h3>📋 Seleziona Categoria</h3>
-    <select id="selectCategoria"></select>
-  </div>
+    <section class="panel hero">
+      <h2>📂 Carica dati.json</h2>
+      <input type="file" id="fileInput" accept=".json">
+      <a class="btn" href="#" id="btnEsporta">💾 Esporta dati.json</a>
+    </section>
 
-  <div class="section">
-    <h3>📄 Anteprima dati</h3>
-    <pre id="previewDati">Nessun file caricato.</pre>
-  </div>
+    <section class="panel hero">
+      <h2>📋 Seleziona Categoria</h2>
+      <select id="selectCategoria"></select>
+    </section>
 
-  <div class="section">
-    <h3>🗓️ Partite</h3>
-    <div id="listaPartite"></div>
-    <button onclick="aggiungiPartita()">➕ Aggiungi Partita</button>
-  </div>
+    <section class="panel hero">
+      <h2>📄 Anteprima dati categoria</h2>
+      <pre id="previewDati" class="list-card" style="text-align:left; overflow:auto;">Nessun file caricato.</pre>
+    </section>
 
-  <div class="section">
-    <h3>👥 Gironi</h3>
-    <div id="listaGironi"></div>
-    <button onclick="aggiungiGirone()">➕ Aggiungi Girone</button>
-  </div>
+    <section class="panel hero">
+      <h2>👥 Gironi</h2>
+      <div id="listaGironi"></div>
+      <a class="btn" href="#" id="btnAggiungiGirone">➕ Aggiungi Girone</a>
+    </section>
 
-  <div class="section">
-    <h3>🏆 Finali</h3>
-    <div id="listaFinali"></div>
-    <button onclick="aggiungiFinale()">➕ Aggiungi Finale</button>
-  </div>
+    <section class="panel hero">
+      <h2>🗓️ Calendario</h2>
+      <div id="listaCalendario"></div>
+      <a class="btn" href="#" id="btnAggiungiGiornata">➕ Aggiungi Giornata</a>
+    </section>
 
-  <div class="section">
-    <h3>👤 Gestione Rose</h3>
-    <div id="listaRose"></div>
-    <button onclick="aggiungiGiocatore()">➕ Aggiungi Giocatore</button>
-  </div>
-
-  <div class="section">
-    <button onclick="esporta()">💾 Esporta dati.json</button>
-  </div>
+    <section class="panel hero">
+      <h2>👤 Rose</h2>
+      <div id="listaRose"></div>
+      <a class="btn" href="#" id="btnAggiungiGiocatore">➕ Aggiungi Giocatore</a>
+    </section>
+  </main>
 
   <script src="editor-completo.js"></script>
 </body>
