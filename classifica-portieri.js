@@ -1,27 +1,97 @@
+document.addEventListener("DOMContentLoaded", async () => {
+  const categoria = new URLSearchParams(window.location.search).get("categoria");
+  const titolo = document.getElementById("titolo");
+  const container = document.getElementById("portieriContainer");
 
-async function loadPortieri() {
-  const cat = new URLSearchParams(location.search).get('categoria');
-  const res = await fetch('../data/dati.json');
-  const dati = await res.json();
-  const div = document.getElementById('portieri');
-  const count = {};
+  if (!categoria) {
+    if (titolo) titolo.textContent = "Classifica Miglior Portiere";
+    if (container) container.innerHTML = "<p class='empty-state'>Categoria non valida.</p>";
+    return;
+  }
 
-  (dati[cat]?.partite || []).forEach(p => {
-    const nome = p.portiere;
-    const squadra = p.squadraPortiere || "-";
-    if (!nome) return;
-    const key = nome + "_" + squadra;
-    if (!count[key]) count[key] = { nome, squadra, voti: 0 };
-    count[key].voti += 1;
-  });
+  if (titolo) {
+    titolo.textContent = `${categoria} - Classifica Miglior Portiere`;
+  }
 
-  const table = document.createElement('table');
-  table.innerHTML = '<tr><th>Portiere</th><th>Squadra</th><th>Voti</th></tr>';
-  Object.values(count)
-    .sort((a, b) => b.voti - a.voti)
-    .forEach(info => {
-      table.innerHTML += `<tr><td>${info.nome}</td><td>${info.squadra}</td><td>${info.voti}</td></tr>`;
+  try {
+    const res = await fetch("data/dati.json?cache=" + Date.now());
+    const data = await res.json();
+
+    const categoriaData = data[categoria];
+
+    if (!categoriaData || !Array.isArray(categoriaData.calendario)) {
+      container.innerHTML = "<p class='empty-state'>Nessun dato portieri disponibile.</p>";
+      return;
+    }
+
+    const count = {};
+
+    categoriaData.calendario.forEach((giornata) => {
+      (giornata.partite || []).forEach((partita) => {
+        const nome = (partita.portiere || "").trim();
+        const squadra = (partita.squadraPortiere || "-").trim();
+
+        if (!nome) return;
+
+        const key = `${nome}__${squadra}`;
+
+        if (!count[key]) {
+          count[key] = {
+            nome,
+            squadra,
+            voti: 0
+          };
+        }
+
+        count[key].voti += 1;
+      });
     });
-  div.appendChild(table);
-}
-document.addEventListener('DOMContentLoaded', loadPortieri);
+
+    const portieri = Object.values(count).sort((a, b) => {
+      const diff = b.voti - a.voti;
+      if (diff !== 0) return diff;
+      return a.nome.localeCompare(b.nome);
+    });
+
+    if (!portieri.length) {
+      container.innerHTML = "<p class='empty-state'>Nessun dato portieri disponibile.</p>";
+      return;
+    }
+
+    let html = `
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Portiere</th>
+              <th>Squadra</th>
+              <th>Voti</th>
+            </tr>
+          </thead>
+          <tbody>
+    `;
+
+    portieri.forEach((p, index) => {
+      html += `
+        <tr>
+          <td>${index + 1}</td>
+          <td>${p.nome}</td>
+          <td>${p.squadra}</td>
+          <td>${p.voti}</td>
+        </tr>
+      `;
+    });
+
+    html += `
+          </tbody>
+        </table>
+      </div>
+    `;
+
+    container.innerHTML = html;
+  } catch (error) {
+    console.error("Errore nel caricamento della classifica portieri:", error);
+    container.innerHTML = "<p class='empty-state'>Errore nel caricamento della classifica portieri.</p>";
+  }
+});
