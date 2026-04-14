@@ -106,6 +106,12 @@ p {
   color: var(--muted);
 }
 
+.lead {
+  font-size: 16px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
 /* BOTTONI */
 .btn {
   display: flex;
@@ -149,7 +155,8 @@ p {
 }
 
 @media (min-width: 600px) {
-  .button-grid {
+  .button-grid,
+  .button-grid.two {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -196,6 +203,7 @@ tr:last-child td {
   margin-top: 10px;
   background: var(--panel-light);
   border-radius: 12px;
+  border: 1px solid var(--border-soft);
 }
 
 /* PARTITA */
@@ -352,6 +360,26 @@ tr:last-child td {
   margin-top: 14px;
 }
 
+/* SPONSOR */
+.sponsor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.sponsor-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 /* FORM */
 input,
 select,
@@ -361,10 +389,16 @@ textarea {
   border-radius: 10px;
   border: none;
   margin-top: 6px;
+  font-size: 14px;
 }
 
 textarea {
   min-height: 100px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 /* UTILS */
@@ -398,9 +432,16 @@ a {
   color: inherit;
 }
 
-table a,
-.partita-card a {
-  color: #4338ca;
+/* Link calendario: arancioni */
+.giornata-card table a,
+.giornata-card .partita-card a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Altri link in tabella */
+table a {
   font-weight: 700;
   text-decoration: underline;
 }
@@ -502,7 +543,8 @@ table a,
     font-size: 16px;
   }
 
-  p {
+  p,
+  .lead {
     font-size: 13px;
   }
 
@@ -587,6 +629,16 @@ table a,
 
   .marcatori-cards {
     display: none !important;
+  }
+
+  /* Sponsor */
+  .sponsor-list {
+    gap: 14px;
+  }
+
+  .sponsor-img {
+    border-radius: 12px;
+    padding: 6px;
   }
 }
 
