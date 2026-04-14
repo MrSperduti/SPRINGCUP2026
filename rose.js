@@ -1,78 +1,75 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Recupera la categoria dalla query string dell'URL (se presente)
-  const urlParams = new URLSearchParams(window.location.search);
-  const categoriaSelezionata = urlParams.get("categoria") || "Under 17"; // Default a Under 17 se non presente
-  
-  // Funzione per caricare dinamicamente i dati dal file `dati.json`
-  async function loadDatiJson() {
-    const response = await fetch('../data/dati.json');
-    const dati = await response.json();
+document.addEventListener("DOMContentLoaded", async () => {
+  const categoria = new URLSearchParams(window.location.search).get("categoria");
+  const titolo = document.getElementById("titolo");
+  const container = document.getElementById("roseContainer");
 
-    // Verifica se ci sono dati per la categoria selezionata
-    if (dati[categoriaSelezionata] && dati[categoriaSelezionata].rose) {
-      return dati[categoriaSelezionata].rose;
-    } else {
-      return {};
-    }
+  if (!categoria) {
+    if (titolo) titolo.textContent = "Rose";
+    if (container) container.innerHTML = "<p class='empty-state'>Categoria non valida.</p>";
+    return;
   }
 
-  const squadreButtonsDiv = document.getElementById("squadreButtons");
-  
-  // Funzione per creare i pulsanti delle squadre in base alla categoria selezionata
-  async function mostraSquadre() {
-    const squadre = await loadDatiJson();
+  if (titolo) {
+    titolo.textContent = `${categoria} - Rose`;
+  }
 
-    if (!squadre || Object.keys(squadre).length === 0) {
-      squadreButtonsDiv.innerHTML = "<p>Nessuna squadra disponibile per questa categoria.</p>";
+  try {
+    const res = await fetch("data/dati.json?cache=" + Date.now());
+    const data = await res.json();
+
+    const categoriaData = data[categoria];
+    const rose = categoriaData?.rose || {};
+
+    if (!Object.keys(rose).length) {
+      container.innerHTML = "<p class='empty-state'>Nessuna rosa disponibile.</p>";
       return;
     }
 
-    squadreButtonsDiv.innerHTML = ""; // Pulisce il contenitore dei pulsanti
+    let html = "";
 
-    Object.keys(squadre).forEach(squadra => {
-      const button = Object.assign(document.createElement("button"), { className: 'button' });
-      button.textContent = squadra;
-      button.onclick = function() {
-        // Mostra i giocatori della squadra selezionata
-        mostraGiocatori(squadra);
-      };
-      squadreButtonsDiv.appendChild(button);
-    });
-  }
-
-  // Funzione per mostrare i giocatori della squadra selezionata
-  function mostraGiocatori(squadra) {
-    loadDatiJson().then(giocatori => {
-      const squadraGiocatori = giocatori[squadra] || [];
-      // Ordinamento dei giocatori per cognome in ordine alfabetico
-      squadraGiocatori.sort((a, b) => a.cognome.localeCompare(b.cognome));
-
-      // Contenitore per i giocatori
-      const giocatoriContainer = document.getElementById("giocatoriContainer");
-      giocatoriContainer.innerHTML = "";
-
-      const table = document.createElement("table");
-      table.innerHTML = "<tr><th>Cognome</th><th>Nome</th><th>Data di Nascita</th></tr>";
-
-      squadraGiocatori.forEach(player => {
-        const row = document.createElement("tr");
-        row.innerHTML = `<td>${player.cognome}</td><td>${player.nome}</td><td>${player.nascita}</td>`;
-        table.appendChild(row);
+    Object.keys(rose).sort((a, b) => a.localeCompare(b)).forEach((squadra) => {
+      const giocatori = [...(rose[squadra] || [])].sort((a, b) => {
+        const cognomeA = (a.cognome || "").trim();
+        const cognomeB = (b.cognome || "").trim();
+        return cognomeA.localeCompare(cognomeB);
       });
 
-      // Aggiungi la tabella al contenitore
-      giocatoriContainer.appendChild(table);
+      html += `
+        <div class="list-card">
+          <h3>${squadra}</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Cognome</th>
+                  <th>Nome</th>
+                  <th>Data di nascita</th>
+                </tr>
+              </thead>
+              <tbody>
+      `;
 
-      // Aggiungi il pulsante per chiudere l'elenco
-      const closeButton = Object.assign(document.createElement("button"), { className: 'button' });
-      closeButton.textContent = "❌ Chiudi";
-      closeButton.onclick = function() {
-        giocatoriContainer.innerHTML = ""; // Rimuove la tabella
-      };
-      giocatoriContainer.appendChild(closeButton);
+      giocatori.forEach((g) => {
+        html += `
+          <tr>
+            <td>${g.cognome || ""}</td>
+            <td>${g.nome || ""}</td>
+            <td>${g.nascita || ""}</td>
+          </tr>
+        `;
+      });
+
+      html += `
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
     });
-  }
 
-  // Inizializzazione
-  mostraSquadre();
+    container.innerHTML = html;
+  } catch (error) {
+    console.error("Errore nel caricamento delle rose:", error);
+    container.innerHTML = "<p class='empty-state'>Errore nel caricamento delle rose.</p>";
+  }
 });
