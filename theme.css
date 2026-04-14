@@ -111,24 +111,18 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   min-height: 52px;
   padding: 14px 16px;
-
   border-radius: 14px;
   border: none;
-
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
-
   font-size: 15px;
   font-weight: bold;
   line-height: 1.2;
-
   text-decoration: none;
   cursor: pointer;
-
   transition: transform 0.2s ease, opacity 0.2s ease;
   margin-top: 10px;
   text-align: center;
@@ -170,10 +164,8 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
-
   background: rgba(255, 255, 255, 0.98);
   color: #111827;
-
   border-radius: 12px;
   overflow: hidden;
 }
@@ -283,6 +275,75 @@ tr:last-child td {
 
 .partita-card .meta div {
   margin-bottom: 4px;
+}
+
+/* CLASSIFICA CARD MOBILE */
+.classifica-cards {
+  display: none;
+  margin-top: 14px;
+}
+
+.classifica-card {
+  background: var(--panel-light);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 14px 12px;
+  margin-top: 12px;
+}
+
+.classifica-card-top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.classifica-posizione {
+  font-weight: 700;
+  color: var(--highlight);
+  font-size: 15px;
+}
+
+.classifica-squadra {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.25;
+}
+
+.classifica-punti {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--highlight);
+  white-space: nowrap;
+}
+
+.classifica-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.classifica-stats-grid div {
+  background: var(--panel-lighter);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 8px 6px;
+  text-align: center;
+}
+
+.classifica-stats-grid span {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.classifica-stats-grid strong {
+  display: block;
+  font-size: 15px;
+  color: var(--text);
 }
 
 /* FORM */
@@ -503,6 +564,15 @@ table a,
     font-size: 14px;
     line-height: 1.45;
   }
+
+  /* Classifica */
+  .classifica-table-wrap {
+    display: none;
+  }
+
+  .classifica-cards {
+    display: block;
+  }
 }
 
 /* EXTRA SMALL */
@@ -574,9 +644,31 @@ table a,
   .partita-card .meta {
     font-size: 12px;
   }
+
+  .classifica-card-top {
+    grid-template-columns: auto 1fr;
+  }
+
+  .classifica-punti {
+    grid-column: 1 / -1;
+    text-align: left;
+  }
+
+  .classifica-squadra {
+    font-size: 15px;
+  }
+
+  .classifica-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+  }
+
+  .classifica-stats-grid strong {
+    font-size: 14px;
+  }
 }
 
-/* DESKTOP: nasconde le card mobile del calendario */
+/* DESKTOP */
 @media (min-width: 601px) {
   .mobile-cards {
     display: none;
@@ -584,5 +676,13 @@ table a,
 
   .giornata-card table {
     display: table;
+  }
+
+  .classifica-cards {
+    display: none;
+  }
+
+  .classifica-table-wrap {
+    display: block;
   }
 }
