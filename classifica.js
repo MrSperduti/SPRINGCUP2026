@@ -26,13 +26,25 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
-    const stats = {};
+    const gironiData = categoriaData.gironi || {};
 
-    function ensureTeam(nome) {
-      if (!nome) return;
+    if (!Object.keys(gironiData).length) {
+      container.innerHTML = "<p class='empty-state'>Nessun girone disponibile per questa categoria.</p>";
+      return;
+    }
 
-      if (!stats[nome]) {
-        stats[nome] = {
+    const teamToGirone = {};
+    const statsByGirone = {};
+
+    Object.keys(gironiData).forEach((gironeNome) => {
+      statsByGirone[gironeNome] = {};
+
+      gironiData[gironeNome].forEach((squadra) => {
+        const nome = (squadra || "").trim();
+        if (!nome) return;
+
+        teamToGirone[nome] = gironeNome;
+        statsByGirone[gironeNome][nome] = {
           squadra: nome,
           punti: 0,
           giocate: 0,
@@ -42,8 +54,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           gf: 0,
           gs: 0
         };
-      }
-    }
+      });
+    });
 
     categoriaData.calendario.forEach((giornata) => {
       (giornata.partite || []).forEach((partita) => {
@@ -51,11 +63,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         const squadraA = (squadre[0] || "").trim();
         const squadraB = (squadre[1] || "").trim();
 
-        ensureTeam(squadraA);
-        ensureTeam(squadraB);
+        const gironeA = teamToGirone[squadraA];
+        const gironeB = teamToGirone[squadraB];
+
+        if (!gironeA || !gironeB || gironeA !== gironeB) {
+          return;
+        }
 
         const risultato = (partita.risultato || "").trim();
-
         if (!risultato || risultato.toLowerCase() === "dettagli") {
           return;
         }
@@ -72,122 +87,134 @@ document.addEventListener("DOMContentLoaded", async () => {
           return;
         }
 
-        stats[squadraA].giocate++;
-        stats[squadraB].giocate++;
+        const statsA = statsByGirone[gironeA][squadraA];
+        const statsB = statsByGirone[gironeA][squadraB];
 
-        stats[squadraA].gf += golA;
-        stats[squadraA].gs += golB;
+        if (!statsA || !statsB) {
+          return;
+        }
 
-        stats[squadraB].gf += golB;
-        stats[squadraB].gs += golA;
+        statsA.giocate++;
+        statsB.giocate++;
+
+        statsA.gf += golA;
+        statsA.gs += golB;
+
+        statsB.gf += golB;
+        statsB.gs += golA;
 
         if (golA > golB) {
-          stats[squadraA].punti += 3;
-          stats[squadraA].vinte++;
-          stats[squadraB].perse++;
+          statsA.punti += 3;
+          statsA.vinte++;
+          statsB.perse++;
         } else if (golA < golB) {
-          stats[squadraB].punti += 3;
-          stats[squadraB].vinte++;
-          stats[squadraA].perse++;
+          statsB.punti += 3;
+          statsB.vinte++;
+          statsA.perse++;
         } else {
-          stats[squadraA].punti += 1;
-          stats[squadraB].punti += 1;
-          stats[squadraA].pareggi++;
-          stats[squadraB].pareggi++;
+          statsA.punti += 1;
+          statsB.punti += 1;
+          statsA.pareggi++;
+          statsB.pareggi++;
         }
       });
     });
 
-    const classifica = Object.values(stats).sort((a, b) => {
-      const diffPunti = b.punti - a.punti;
-      if (diffPunti !== 0) return diffPunti;
+    const gironiOrdinati = Object.keys(statsByGirone).sort((a, b) => a.localeCompare(b));
 
-      const diffRetiA = a.gf - a.gs;
-      const diffRetiB = b.gf - b.gs;
-      const diffDifferenzaReti = diffRetiB - diffRetiA;
-      if (diffDifferenzaReti !== 0) return diffDifferenzaReti;
+    let finalHtml = "";
 
-      const diffGf = b.gf - a.gf;
-      if (diffGf !== 0) return diffGf;
+    gironiOrdinati.forEach((gironeNome) => {
+      const classifica = Object.values(statsByGirone[gironeNome]).sort((a, b) => {
+        const diffPunti = b.punti - a.punti;
+        if (diffPunti !== 0) return diffPunti;
 
-      return a.squadra.localeCompare(b.squadra);
-    });
+        const diffRetiA = a.gf - a.gs;
+        const diffRetiB = b.gf - b.gs;
+        const diffDifferenzaReti = diffRetiB - diffRetiA;
+        if (diffDifferenzaReti !== 0) return diffDifferenzaReti;
 
-    if (!classifica.length) {
-      container.innerHTML = "<p class='empty-state'>Nessuna classifica disponibile.</p>";
-      return;
-    }
+        const diffGf = b.gf - a.gf;
+        if (diffGf !== 0) return diffGf;
 
-    let tableHtml = `
-      <div class="table-wrap classifica-table-wrap">
-        <table class="classifica-table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Squadra</th>
-              <th>Pt</th>
-              <th>G</th>
-              <th>V</th>
-              <th>N</th>
-              <th>P</th>
-              <th>GF</th>
-              <th>GS</th>
-              <th>DR</th>
-            </tr>
-          </thead>
-          <tbody>
-    `;
+        return a.squadra.localeCompare(b.squadra);
+      });
 
-    let cardsHtml = `<div class="classifica-cards">`;
+      let tableHtml = `
+        <div class="list-card">
+          <h3>${gironeNome}</h3>
+          <div class="table-wrap classifica-table-wrap">
+            <table class="classifica-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Squadra</th>
+                  <th>Pt</th>
+                  <th>G</th>
+                  <th>V</th>
+                  <th>N</th>
+                  <th>P</th>
+                  <th>GF</th>
+                  <th>GS</th>
+                  <th>DR</th>
+                </tr>
+              </thead>
+              <tbody>
+      `;
 
-    classifica.forEach((s, index) => {
-      const dr = s.gf - s.gs;
+      let cardsHtml = `<div class="classifica-cards">`;
+
+      classifica.forEach((s, index) => {
+        const dr = s.gf - s.gs;
+
+        tableHtml += `
+          <tr>
+            <td>${index + 1}</td>
+            <td>${s.squadra}</td>
+            <td>${s.punti}</td>
+            <td>${s.giocate}</td>
+            <td>${s.vinte}</td>
+            <td>${s.pareggi}</td>
+            <td>${s.perse}</td>
+            <td>${s.gf}</td>
+            <td>${s.gs}</td>
+            <td>${dr}</td>
+          </tr>
+        `;
+
+        cardsHtml += `
+          <div class="classifica-card">
+            <div class="classifica-card-top">
+              <div class="classifica-posizione">#${index + 1}</div>
+              <div class="classifica-squadra">${s.squadra}</div>
+              <div class="classifica-punti">${s.punti} pt</div>
+            </div>
+
+            <div class="classifica-stats-grid">
+              <div><span>G</span><strong>${s.giocate}</strong></div>
+              <div><span>V</span><strong>${s.vinte}</strong></div>
+              <div><span>N</span><strong>${s.pareggi}</strong></div>
+              <div><span>P</span><strong>${s.perse}</strong></div>
+              <div><span>GF</span><strong>${s.gf}</strong></div>
+              <div><span>GS</span><strong>${s.gs}</strong></div>
+              <div><span>DR</span><strong>${dr}</strong></div>
+            </div>
+          </div>
+        `;
+      });
 
       tableHtml += `
-        <tr>
-          <td>${index + 1}</td>
-          <td>${s.squadra}</td>
-          <td>${s.punti}</td>
-          <td>${s.giocate}</td>
-          <td>${s.vinte}</td>
-          <td>${s.pareggi}</td>
-          <td>${s.perse}</td>
-          <td>${s.gf}</td>
-          <td>${s.gs}</td>
-          <td>${dr}</td>
-        </tr>
+              </tbody>
+            </table>
+          </div>
       `;
 
-      cardsHtml += `
-        <div class="classifica-card">
-          <div class="classifica-card-top">
-            <div class="classifica-posizione">#${index + 1}</div>
-            <div class="classifica-squadra">${s.squadra}</div>
-            <div class="classifica-punti">${s.punti} pt</div>
-          </div>
+      cardsHtml += `</div></div>`;
 
-          <div class="classifica-stats-grid">
-            <div><span>G</span><strong>${s.giocate}</strong></div>
-            <div><span>V</span><strong>${s.vinte}</strong></div>
-            <div><span>N</span><strong>${s.pareggi}</strong></div>
-            <div><span>P</span><strong>${s.perse}</strong></div>
-            <div><span>GF</span><strong>${s.gf}</strong></div>
-            <div><span>GS</span><strong>${s.gs}</strong></div>
-            <div><span>DR</span><strong>${dr}</strong></div>
-          </div>
-        </div>
-      `;
+      finalHtml += tableHtml + cardsHtml;
     });
 
-    tableHtml += `
-          </tbody>
-        </table>
-      </div>
-    `;
-
-    cardsHtml += `</div>`;
-
-    container.innerHTML = tableHtml + cardsHtml;
+    container.innerHTML = finalHtml;
   } catch (error) {
     console.error("Errore nel caricamento della classifica:", error);
     container.innerHTML = "<p class='empty-state'>Errore nel caricamento della classifica.</p>";
