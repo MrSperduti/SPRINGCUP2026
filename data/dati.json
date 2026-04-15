@@ -1,1038 +1,522 @@
 {
   "Under21": {
     "nome": "Under 21",
-    "gironi": {
-      "GIRONE A": [
-        "DRAGONS",
-        "WOLVES",
-        "SHARKS"
-      ],
-      "GIRONE B": [
-        "FALCONS",
-        "TIGERS",
-        "LIONS"
-      ]
-    },
-    "calendario": [
-      {
-        "giornata": "1",
-        "partite": [
-          {
-            "squadre": "DRAGONS vs WOLVES",
-            "risultato": "4 - 2",
-            "data": "01/05/2026",
-            "ora": "18:00",
-            "campo": "Campo A",
-            "marcatori": [
-              {
-                "nome": "Marco Sala",
-                "gol": 2,
-                "squadra": "DRAGONS"
-              },
-              {
-                "nome": "Luca Perri",
-                "gol": 1,
-                "squadra": "DRAGONS"
-              },
-              {
-                "nome": "Davide Neri",
-                "gol": 1,
-                "squadra": "DRAGONS"
-              },
-              {
-                "nome": "Paolo Nanni",
-                "gol": 2,
-                "squadra": "WOLVES"
-              }
-            ],
-            "giocatore": "Marco Sala",
-            "squadraGiocatore": "DRAGONS",
-            "portiere": "Matteo Verdi",
-            "squadraPortiere": "DRAGONS"
-          },
-          {
-            "squadre": "FALCONS vs TIGERS",
-            "risultato": "1 - 1",
-            "data": "01/05/2026",
-            "ora": "19:00",
-            "campo": "Campo B",
-            "marcatori": [
-              {
-                "nome": "Nicolò Riva",
-                "gol": 1,
-                "squadra": "FALCONS"
-              },
-              {
-                "nome": "Gabriele Fontana",
-                "gol": 1,
-                "squadra": "TIGERS"
-              }
-            ],
-            "giocatore": "Gabriele Fontana",
-            "squadraGiocatore": "TIGERS",
-            "portiere": "Riccardo Leoni",
-            "squadraPortiere": "FALCONS"
-          }
-        ]
-      },
-      {
-        "giornata": "2",
-        "partite": [
-          {
-            "squadre": "SHARKS vs DRAGONS",
-            "risultato": "2 - 3",
-            "data": "08/05/2026",
-            "ora": "18:00",
-            "campo": "Campo A",
-            "marcatori": [
-              {
-                "nome": "Emanuele Sarti",
-                "gol": 2,
-                "squadra": "SHARKS"
-              },
-              {
-                "nome": "Marco Sala",
-                "gol": 2,
-                "squadra": "DRAGONS"
-              },
-              {
-                "nome": "Luca Perri",
-                "gol": 1,
-                "squadra": "DRAGONS"
-              }
-            ],
-            "giocatore": "Marco Sala",
-            "squadraGiocatore": "DRAGONS",
-            "portiere": "Tommaso Greco",
-            "squadraPortiere": "SHARKS"
-          },
-          {
-            "squadre": "LIONS vs FALCONS",
-            "risultato": "Dettagli",
-            "data": "08/05/2026",
-            "ora": "19:00",
-            "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
-          }
-        ]
-      }
-    ],
-    "rose": {
-      "DRAGONS": [
-        {
-          "cognome": "Sala",
-          "nome": "Marco",
-          "nascita": "12/04/2005"
-        },
-        {
-          "cognome": "Perri",
-          "nome": "Luca",
-          "nascita": "03/08/2006"
-        },
-        {
-          "cognome": "Verdi",
-          "nome": "Matteo",
-          "nascita": "21/01/2005"
-        }
-      ],
-      "WOLVES": [
-        {
-          "cognome": "Nanni",
-          "nome": "Paolo",
-          "nascita": "16/07/2005"
-        },
-        {
-          "cognome": "Rossi",
-          "nome": "Alessio",
-          "nascita": "09/03/2006"
-        }
-      ],
-      "SHARKS": [
-        {
-          "cognome": "Sarti",
-          "nome": "Emanuele",
-          "nascita": "28/05/2005"
-        },
-        {
-          "cognome": "Greco",
-          "nome": "Tommaso",
-          "nascita": "01/11/2006"
-        }
-      ],
-      "FALCONS": [
-        {
-          "cognome": "Riva",
-          "nome": "Nicolò",
-          "nascita": "14/02/2005"
-        },
-        {
-          "cognome": "Leoni",
-          "nome": "Riccardo",
-          "nascita": "22/09/2006"
-        }
-      ],
-      "TIGERS": [
-        {
-          "cognome": "Fontana",
-          "nome": "Gabriele",
-          "nascita": "30/06/2005"
-        }
-      ],
-      "LIONS": [
-        {
-          "cognome": "Marini",
-          "nome": "Fabio",
-          "nascita": "11/12/2006"
-        }
-      ]
-    }
+    "gironi": {},
+    "calendario": [],
+    "rose": {}
   },
   "Under19": {
     "nome": "Under 19",
-    "gironi": {
-      "GIRONE UNICO": [
-        "AURORA",
-        "STELLA",
-        "RAPTORS",
-        "PHOENIX"
-      ]
-    },
-    "calendario": [
-      {
-        "giornata": "1",
-        "partite": [
-          {
-            "squadre": "AURORA vs STELLA",
-            "risultato": "2 - 0",
-            "data": "02/05/2026",
-            "ora": "17:00",
-            "campo": "Campo A",
-            "marcatori": [
-              {
-                "nome": "Andrea Poli",
-                "gol": 1,
-                "squadra": "AURORA"
-              },
-              {
-                "nome": "Samuele Berti",
-                "gol": 1,
-                "squadra": "AURORA"
-              }
-            ],
-            "giocatore": "Andrea Poli",
-            "squadraGiocatore": "AURORA",
-            "portiere": "Mattia Esposito",
-            "squadraPortiere": "AURORA"
-          },
-          {
-            "squadre": "RAPTORS vs PHOENIX",
-            "risultato": "3 - 2",
-            "data": "02/05/2026",
-            "ora": "18:00",
-            "campo": "Campo B",
-            "marcatori": [
-              {
-                "nome": "Giulio Pace",
-                "gol": 2,
-                "squadra": "RAPTORS"
-              },
-              {
-                "nome": "Michele Donati",
-                "gol": 1,
-                "squadra": "RAPTORS"
-              },
-              {
-                "nome": "Kevin Serra",
-                "gol": 2,
-                "squadra": "PHOENIX"
-              }
-            ],
-            "giocatore": "Giulio Pace",
-            "squadraGiocatore": "RAPTORS",
-            "portiere": "Davide Chiesa",
-            "squadraPortiere": "RAPTORS"
-          }
-        ]
-      }
-    ],
-    "rose": {
-      "AURORA": [
-        {
-          "cognome": "Poli",
-          "nome": "Andrea",
-          "nascita": "05/03/2007"
-        },
-        {
-          "cognome": "Berti",
-          "nome": "Samuele",
-          "nascita": "13/07/2007"
-        }
-      ],
-      "STELLA": [
-        {
-          "cognome": "Ruggeri",
-          "nome": "Nicolò",
-          "nascita": "29/01/2008"
-        }
-      ],
-      "RAPTORS": [
-        {
-          "cognome": "Pace",
-          "nome": "Giulio",
-          "nascita": "20/12/2007"
-        },
-        {
-          "cognome": "Chiesa",
-          "nome": "Davide",
-          "nascita": "08/05/2008"
-        }
-      ],
-      "PHOENIX": [
-        {
-          "cognome": "Serra",
-          "nome": "Kevin",
-          "nascita": "17/09/2007"
-        }
-      ]
-    }
+    "gironi": {},
+    "calendario": [],
+    "rose": {}
   },
   "Under17": {
     "nome": "Under 17",
-    "gironi": {
-      "GIRONE A": [
-        "ACADEMY",
-        "ARDEA C5",
-        "SPORTING CLUB",
-        "FUTSAL CITY"
-      ]
-    },
-    "calendario": [
-      {
-        "giornata": "1",
-        "partite": [
-          {
-            "squadre": "ACADEMY vs ARDEA C5",
-            "risultato": "6 - 4",
-            "data": "10/04/2026",
-            "ora": "18:30",
-            "campo": "Campo Centrale",
-            "marcatori": [
-              {
-                "nome": "SUSIN FRANCESCO",
-                "gol": 2,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "GOBBI ALESSANDRO",
-                "gol": 2,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "IANCU CRISTIAN",
-                "gol": 2,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "BARCHIESI ANDREA",
-                "gol": 1,
-                "squadra": "ARDEA C5"
-              },
-              {
-                "nome": "IMBESI VALERIO",
-                "gol": 1,
-                "squadra": "ARDEA C5"
-              },
-              {
-                "nome": "ORSINI FRANCESCO",
-                "gol": 1,
-                "squadra": "ARDEA C5"
-              },
-              {
-                "nome": "ROSSI LUCA",
-                "gol": 1,
-                "squadra": "ARDEA C5"
-              }
-            ],
-            "giocatore": "SUSIN FRANCESCO",
-            "squadraGiocatore": "ACADEMY",
-            "portiere": "PIASCO VALERIO",
-            "squadraPortiere": "ARDEA C5"
-          },
-          {
-            "squadre": "SPORTING CLUB vs FUTSAL CITY",
-            "risultato": "3 - 3",
-            "data": "11/04/2026",
-            "ora": "20:00",
-            "campo": "Campo 2",
-            "marcatori": [
-              {
-                "nome": "MARCO BIANCHI",
-                "gol": 2,
-                "squadra": "SPORTING CLUB"
-              },
-              {
-                "nome": "ALESSIO NERI",
-                "gol": 1,
-                "squadra": "SPORTING CLUB"
-              },
-              {
-                "nome": "DANIELE VERDI",
-                "gol": 1,
-                "squadra": "FUTSAL CITY"
-              },
-              {
-                "nome": "SIMONE ROSSI",
-                "gol": 2,
-                "squadra": "FUTSAL CITY"
-              }
-            ],
-            "giocatore": "SIMONE ROSSI",
-            "squadraGiocatore": "FUTSAL CITY",
-            "portiere": "LORENZO GIULI",
-            "squadraPortiere": "SPORTING CLUB"
-          }
-        ]
-      },
-      {
-        "giornata": "2",
-        "partite": [
-          {
-            "squadre": "ACADEMY vs SPORTING CLUB",
-            "risultato": "2 - 1",
-            "data": "17/04/2026",
-            "ora": "19:00",
-            "campo": "Campo Centrale",
-            "marcatori": [
-              {
-                "nome": "SUSIN FRANCESCO",
-                "gol": 1,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "IANCU CRISTIAN",
-                "gol": 1,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "MARCO BIANCHI",
-                "gol": 1,
-                "squadra": "SPORTING CLUB"
-              }
-            ],
-            "giocatore": "IANCU CRISTIAN",
-            "squadraGiocatore": "ACADEMY",
-            "portiere": "DAVIDE FERRI",
-            "squadraPortiere": "ACADEMY"
-          },
-          {
-            "squadre": "ARDEA C5 vs FUTSAL CITY",
-            "risultato": "Dettagli",
-            "data": "18/04/2026",
-            "ora": "18:00",
-            "campo": "Campo 2",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
-          }
-        ]
-      }
-    ],
+    "gironi": {},
+    "calendario": [],
     "rose": {
-      "ACADEMY": [
+      "Ardea C5": [
         {
-          "cognome": "SUSIN",
-          "nome": "FRANCESCO",
-          "nascita": "30/07/2009"
+          "cognome": "Della Volpe",
+          "nome": "Federico",
+          "nascita": "11/10/2009"
         },
         {
-          "cognome": "GOBBI",
-          "nome": "ALESSANDRO",
-          "nascita": "21/08/2008"
+          "cognome": "Di Canno",
+          "nome": "Simolo",
+          "nascita": ""
         },
         {
-          "cognome": "IANCU",
-          "nome": "CRISTIAN",
-          "nascita": "09/05/2008"
-        }
-      ],
-      "ARDEA C5": [
+          "cognome": "Esposito",
+          "nome": "Simone",
+          "nascita": "03/05/2009"
+        },
         {
-          "cognome": "PIASCO",
-          "nome": "VALERIO",
+          "cognome": "Fofi",
+          "nome": "Daniele",
+          "nascita": "10/07/2009"
+        },
+        {
+          "cognome": "Incitti",
+          "nome": "Alessio",
+          "nascita": "03/09/2010"
+        },
+        {
+          "cognome": "Maffettone",
+          "nome": "Angelo",
+          "nascita": ""
+        },
+        {
+          "cognome": "Orsini",
+          "nome": "Francesco",
+          "nascita": "19/05/2009"
+        },
+        {
+          "cognome": "Piasco",
+          "nome": "Valerio",
           "nascita": "27/03/2009"
         },
         {
-          "cognome": "BARCHIESI",
-          "nome": "ANDREA",
-          "nascita": "29/09/2008"
+          "cognome": "Potrich",
+          "nome": "Valerio",
+          "nascita": "20/08/2009"
         },
         {
-          "cognome": "ORSINI",
-          "nome": "FRANCESCO",
-          "nascita": "19/05/2009"
-        }
-      ],
-      "SPORTING CLUB": [
-        {
-          "cognome": "BIANCHI",
-          "nome": "MARCO",
-          "nascita": "14/01/2009"
+          "cognome": "Romagnoli",
+          "nome": "Simone",
+          "nascita": "04/03/2009"
         },
         {
-          "cognome": "NERI",
-          "nome": "ALESSIO",
-          "nascita": "07/02/2009"
-        }
-      ],
-      "FUTSAL CITY": [
-        {
-          "cognome": "ROSSI",
-          "nome": "SIMONE",
-          "nascita": "18/04/2009"
-        },
-        {
-          "cognome": "VERDI",
-          "nome": "DANIELE",
-          "nascita": "12/06/2009"
+          "cognome": "Sorgatto Tornari",
+          "nome": "Eduardo",
+          "nascita": "02/05/2009"
         }
       ]
     }
   },
   "Under15": {
     "nome": "Under 15",
-    "gironi": {
-      "GIRONE A": [
-        "BLUE STAR",
-        "REAL KIDS",
-        "OLIMPIC"
-      ],
-      "GIRONE B": [
-        "YOUNG BOYS",
-        "JUNIOR TEAM",
-        "CITY BOYS"
-      ]
-    },
-    "calendario": [
-      {
-        "giornata": "1",
-        "partite": [
-          {
-            "squadre": "BLUE STAR vs REAL KIDS",
-            "risultato": "5 - 1",
-            "data": "03/05/2026",
-            "ora": "16:00",
-            "campo": "Campo A",
-            "marcatori": [
-              {
-                "nome": "MIRKO LUNA",
-                "gol": 3,
-                "squadra": "BLUE STAR"
-              },
-              {
-                "nome": "DIEGO VENTI",
-                "gol": 2,
-                "squadra": "BLUE STAR"
-              },
-              {
-                "nome": "FILIPPO NERO",
-                "gol": 1,
-                "squadra": "REAL KIDS"
-              }
-            ],
-            "giocatore": "MIRKO LUNA",
-            "squadraGiocatore": "BLUE STAR",
-            "portiere": "MATTIA ZUCCA",
-            "squadraPortiere": "BLUE STAR"
-          },
-          {
-            "squadre": "YOUNG BOYS vs JUNIOR TEAM",
-            "risultato": "0 - 2",
-            "data": "03/05/2026",
-            "ora": "17:00",
-            "campo": "Campo B",
-            "marcatori": [
-              {
-                "nome": "LEONARDO PACE",
-                "gol": 1,
-                "squadra": "JUNIOR TEAM"
-              },
-              {
-                "nome": "SAMUELE GORI",
-                "gol": 1,
-                "squadra": "JUNIOR TEAM"
-              }
-            ],
-            "giocatore": "LEONARDO PACE",
-            "squadraGiocatore": "JUNIOR TEAM",
-            "portiere": "ELIA PINI",
-            "squadraPortiere": "JUNIOR TEAM"
-          }
-        ]
-      }
-    ],
+    "gironi": {},
+    "calendario": [],
     "rose": {
-      "BLUE STAR": [
+      "ASD REAL CASTEL FONTANA": [
         {
-          "cognome": "LUNA",
-          "nome": "MIRKO",
-          "nascita": "04/09/2011"
+          "cognome": "AREZIO",
+          "nome": "GIANLUCA",
+          "nascita": "10/04/2011"
         },
         {
-          "cognome": "ZUCCA",
-          "nome": "MATTIA",
-          "nascita": "19/01/2011"
-        }
-      ],
-      "REAL KIDS": [
-        {
-          "cognome": "NERO",
-          "nome": "FILIPPO",
-          "nascita": "22/10/2011"
-        }
-      ],
-      "OLIMPIC": [
-        {
-          "cognome": "GIALLO",
-          "nome": "TOMMASO",
-          "nascita": "07/03/2012"
-        }
-      ],
-      "YOUNG BOYS": [
-        {
-          "cognome": "RIVA",
-          "nome": "ANDREA",
-          "nascita": "09/05/2011"
-        }
-      ],
-      "JUNIOR TEAM": [
-        {
-          "cognome": "PACE",
-          "nome": "LEONARDO",
-          "nascita": "18/02/2011"
+          "cognome": "CERVINI",
+          "nome": "ALESSIO",
+          "nascita": "10/11/2012"
         },
         {
-          "cognome": "PINI",
-          "nome": "ELIA",
-          "nascita": "12/11/2011"
-        }
-      ],
-      "CITY BOYS": [
+          "cognome": "CHIARLITTI",
+          "nome": "VALERIO",
+          "nascita": "19/10/2012"
+        },
         {
-          "cognome": "MORO",
-          "nome": "CHRISTIAN",
-          "nascita": "01/08/2011"
+          "cognome": "COLLARINI",
+          "nome": "FRANCESCO",
+          "nascita": "10/10/2013"
+        },
+        {
+          "cognome": "DI STEFANO",
+          "nome": "NICOLO",
+          "nascita": "31/10/2012"
+        },
+        {
+          "cognome": "ERAMO",
+          "nome": "MICHAEL",
+          "nascita": "05/01/2012"
+        },
+        {
+          "cognome": "GAFFI",
+          "nome": "GIANLUCA",
+          "nascita": "10/11/2011"
+        },
+        {
+          "cognome": "GILIBERTI",
+          "nome": "DIEGO",
+          "nascita": "26/01/2012"
+        },
+        {
+          "cognome": "MARFOLI",
+          "nome": "FEDERICO",
+          "nascita": "17/03/2011"
+        },
+        {
+          "cognome": "PASTESINI",
+          "nome": "EMILIANO",
+          "nascita": "22/12/2011"
+        },
+        {
+          "cognome": "PERSICONE",
+          "nome": "SAMUEL",
+          "nascita": "10/01/2012"
+        },
+        {
+          "cognome": "PICCOLI",
+          "nome": "GABRIELE",
+          "nascita": "19/07/2012"
+        },
+        {
+          "cognome": "RUSCITO",
+          "nome": "KEVIN",
+          "nascita": "12/10/2011"
+        },
+        {
+          "cognome": "TEMPERINI",
+          "nome": "SAMUEL",
+          "nascita": "05/12/2012"
+        },
+        {
+          "cognome": "TERSIGNI",
+          "nome": "RICCARDO",
+          "nascita": "27/04/2012"
         }
       ]
     }
   },
   "Under13": {
     "nome": "Under 13",
-    "gironi": {
-      "GIRONE UNICO": [
-        "KIDS ACADEMY",
-        "BABY GOAL",
-        "MINI FUTSAL",
-        "SUPER JUNIOR"
-      ]
-    },
-    "calendario": [
-      {
-        "giornata": "1",
-        "partite": [
-          {
-            "squadre": "KIDS ACADEMY vs BABY GOAL",
-            "risultato": "7 - 2",
-            "data": "04/05/2026",
-            "ora": "15:00",
-            "campo": "Campo A",
-            "marcatori": [
-              {
-                "nome": "NICO BELLI",
-                "gol": 4,
-                "squadra": "KIDS ACADEMY"
-              },
-              {
-                "nome": "TOMMI MARE",
-                "gol": 3,
-                "squadra": "KIDS ACADEMY"
-              },
-              {
-                "nome": "ALEX FIORE",
-                "gol": 2,
-                "squadra": "BABY GOAL"
-              }
-            ],
-            "giocatore": "NICO BELLI",
-            "squadraGiocatore": "KIDS ACADEMY",
-            "portiere": "LUCA RENA",
-            "squadraPortiere": "KIDS ACADEMY"
-          }
-        ]
-      }
-    ],
-    "rose": {
-      "KIDS ACADEMY": [
-        {
-          "cognome": "BELLI",
-          "nome": "NICO",
-          "nascita": "10/01/2013"
-        },
-        {
-          "cognome": "RENA",
-          "nome": "LUCA",
-          "nascita": "15/04/2013"
-        }
-      ],
-      "BABY GOAL": [
-        {
-          "cognome": "FIORE",
-          "nome": "ALEX",
-          "nascita": "08/09/2013"
-        }
-      ],
-      "MINI FUTSAL": [
-        {
-          "cognome": "D'AMICO",
-          "nome": "LEO",
-          "nascita": "12/02/2014"
-        }
-      ],
-      "SUPER JUNIOR": [
-        {
-          "cognome": "GATTO",
-          "nome": "MATTIA",
-          "nascita": "19/07/2013"
-        }
-      ]
-    }
+    "gironi": {},
+    "calendario": [],
+    "rose": {}
   },
   "2019/20": {
     "nome": "2019/20",
-    "gironi": {
-      "GIRONE PRIMAVERA": [
-        "PULCINI BLU",
-        "PULCINI ROSSI",
-        "PICCOLI CAMPIONI"
-      ]
-    },
-    "calendario": [
-      {
-        "giornata": "1",
-        "partite": [
-          {
-            "squadre": "PULCINI BLU vs PULCINI ROSSI",
-            "risultato": "3 - 3",
-            "data": "05/05/2026",
-            "ora": "10:00",
-            "campo": "Campo Mini",
-            "marcatori": [
-              {
-                "nome": "LEO MINI",
-                "gol": 2,
-                "squadra": "PULCINI BLU"
-              },
-              {
-                "nome": "TEO KID",
-                "gol": 1,
-                "squadra": "PULCINI BLU"
-              },
-              {
-                "nome": "NICO SMALL",
-                "gol": 2,
-                "squadra": "PULCINI ROSSI"
-              },
-              {
-                "nome": "MIA STAR",
-                "gol": 1,
-                "squadra": "PULCINI ROSSI"
-              }
-            ],
-            "giocatore": "LEO MINI",
-            "squadraGiocatore": "PULCINI BLU",
-            "portiere": "SARA KID",
-            "squadraPortiere": "PULCINI ROSSI"
-          }
-        ]
-      }
-    ],
+    "gironi": {},
+    "calendario": [],
     "rose": {
-      "PULCINI BLU": [
+      "ASD Nettuno": [
         {
-          "cognome": "MINI",
-          "nome": "LEO",
-          "nascita": "03/03/2019"
+          "cognome": "Battisi",
+          "nome": "Alex",
+          "nascita": "13/11/2020"
+        },
+        {
+          "cognome": "Candiano",
+          "nome": "Thomas",
+          "nascita": "04/10/2019"
+        },
+        {
+          "cognome": "Fassina",
+          "nome": "Mattia",
+          "nascita": "18/04/2020"
+        },
+        {
+          "cognome": "Gallace",
+          "nome": "Giuseppe",
+          "nascita": "12/09/2019"
+        },
+        {
+          "cognome": "Khelia",
+          "nome": "Bayrem",
+          "nascita": "05/07/2019"
+        },
+        {
+          "cognome": "Luongo",
+          "nome": "Gabriele",
+          "nascita": "15/09/2019"
+        },
+        {
+          "cognome": "Sabkhi",
+          "nome": "Ayoub",
+          "nascita": "23/07/2020"
+        },
+        {
+          "cognome": "Sommella",
+          "nome": "Jacopo",
+          "nascita": "24/04/2019"
+        },
+        {
+          "cognome": "Sutter",
+          "nome": "Emanuele",
+          "nascita": "13/08/2020"
+        },
+        {
+          "cognome": "Yassin",
+          "nome": "Alessio",
+          "nascita": "08/10/2019"
         }
       ],
-      "PULCINI ROSSI": [
+      "NUOVA FLORIDA": [
         {
-          "cognome": "SMALL",
-          "nome": "NICO",
-          "nascita": "12/05/2019"
-        }
-      ],
-      "PICCOLI CAMPIONI": [
+          "cognome": "AMIRANTE",
+          "nome": "FLAVIO",
+          "nascita": "18/12/2019"
+        },
         {
-          "cognome": "HERO",
-          "nome": "MATTI",
-          "nascita": "20/09/2019"
+          "cognome": "CASALI",
+          "nome": "FEDERICO",
+          "nascita": ""
+        },
+        {
+          "cognome": "D'AMATO",
+          "nome": "IACOPO",
+          "nascita": "01/10/2019"
+        },
+        {
+          "cognome": "PIZI",
+          "nome": "MATTEO",
+          "nascita": "18/05/2020"
+        },
+        {
+          "cognome": "SINISI",
+          "nome": "CRISTIAN",
+          "nascita": "07/10/2019"
+        },
+        {
+          "cognome": "ZACCARDI",
+          "nome": "GIANMARCO",
+          "nascita": "22/11/2019"
         }
       ]
     }
   },
   "2017/18": {
     "nome": "2017/18",
-    "gironi": {
-      "GIRONE ESTATE": [
-        "LITTLE STARS",
-        "MINI LIONS",
-        "BABY SHARKS"
-      ]
-    },
-    "calendario": [
-      {
-        "giornata": "1",
-        "partite": [
-          {
-            "squadre": "LITTLE STARS vs MINI LIONS",
-            "risultato": "2 - 1",
-            "data": "06/05/2026",
-            "ora": "11:00",
-            "campo": "Campo Mini",
-            "marcatori": [
-              {
-                "nome": "GIULIA POP",
-                "gol": 2,
-                "squadra": "LITTLE STARS"
-              },
-              {
-                "nome": "MATI ROAR",
-                "gol": 1,
-                "squadra": "MINI LIONS"
-              }
-            ],
-            "giocatore": "GIULIA POP",
-            "squadraGiocatore": "LITTLE STARS",
-            "portiere": "ELI SOLE",
-            "squadraPortiere": "LITTLE STARS"
-          }
-        ]
-      }
-    ],
+    "gironi": {},
+    "calendario": [],
     "rose": {
-      "LITTLE STARS": [
+      "Indomita Pomezia": [
         {
-          "cognome": "POP",
-          "nome": "GIULIA",
-          "nascita": "01/04/2017"
+          "cognome": "Atelba",
+          "nome": "Federico",
+          "nascita": "08/08/2017"
+        },
+        {
+          "cognome": "Cavaliere",
+          "nome": "Lorenzo",
+          "nascita": "22/05/2018"
+        },
+        {
+          "cognome": "Ceniccola",
+          "nome": "Matteo",
+          "nascita": "05/06/2018"
+        },
+        {
+          "cognome": "De Maria",
+          "nome": "Mattia",
+          "nascita": "08/02/2018"
+        },
+        {
+          "cognome": "Garra",
+          "nome": "Ivan",
+          "nascita": "28/05/2018"
+        },
+        {
+          "cognome": "Gasperoni",
+          "nome": "Alessio",
+          "nascita": "22/11/2018"
+        },
+        {
+          "cognome": "Meattini",
+          "nome": "Filippo",
+          "nascita": "21/06/2018"
+        },
+        {
+          "cognome": "Petra",
+          "nome": "Francesco Enea",
+          "nascita": "28/06/2017"
+        },
+        {
+          "cognome": "Prozzi",
+          "nome": "Vittorio Gianni",
+          "nascita": "14/02/2018"
         }
       ],
-      "MINI LIONS": [
+      "ASD Nettuno": [
         {
-          "cognome": "ROAR",
-          "nome": "MATI",
-          "nascita": "12/12/2017"
+          "cognome": "Carnenio",
+          "nome": "Roberto",
+          "nascita": "30/07/2017"
+        },
+        {
+          "cognome": "Casaburo",
+          "nome": "Marco",
+          "nascita": "03/12/2018"
+        },
+        {
+          "cognome": "Chiro",
+          "nome": "Alessandro",
+          "nascita": "19/01/2017"
+        },
+        {
+          "cognome": "Ciaravolo",
+          "nome": "Tiziano",
+          "nascita": "16/10/2018"
+        },
+        {
+          "cognome": "De Nardis",
+          "nome": "Giovanni",
+          "nascita": "25/10/2017"
+        },
+        {
+          "cognome": "De Rosa",
+          "nome": "Luigi Christian",
+          "nascita": "15/03/2017"
+        },
+        {
+          "cognome": "Edesuan Osagbe",
+          "nome": "Dentel Hize",
+          "nascita": "23/06/2017"
+        },
+        {
+          "cognome": "Hustata",
+          "nome": "Leonardo Abraho",
+          "nascita": "28/10/2018"
+        },
+        {
+          "cognome": "Maggi",
+          "nome": "Alessandro",
+          "nascita": "15/09/2018"
+        },
+        {
+          "cognome": "Maggi",
+          "nome": "Paolo Maria",
+          "nascita": "04/07/2017"
+        },
+        {
+          "cognome": "Mali",
+          "nome": "Valerio",
+          "nascita": "23/09/2017"
+        },
+        {
+          "cognome": "Mekbal",
+          "nome": "Anass",
+          "nascita": "09/11/2017"
+        },
+        {
+          "cognome": "Pereira",
+          "nome": "Gabriel",
+          "nascita": "12/05/2018"
+        },
+        {
+          "cognome": "Politkovskyi",
+          "nome": "Mark",
+          "nascita": "04/04/2018"
+        },
+        {
+          "cognome": "Rezzo",
+          "nome": "Alessandro",
+          "nascita": "18/09/2017"
+        },
+        {
+          "cognome": "Roberto",
+          "nome": "Francesco",
+          "nascita": "18/09/2018"
+        },
+        {
+          "cognome": "Sanges",
+          "nome": "Cristian Manuel",
+          "nascita": "20/01/2017"
+        },
+        {
+          "cognome": "Santulli",
+          "nome": "Flavio",
+          "nascita": "08/11/2017"
+        },
+        {
+          "cognome": "Wongo",
+          "nome": "Carmine",
+          "nascita": "20/09/2017"
         }
       ],
-      "BABY SHARKS": [
+      "SPORTING NUOVA FLORIDA": [
         {
-          "cognome": "WAVE",
-          "nome": "NINA",
-          "nascita": "05/02/2018"
+          "cognome": "ASLANI",
+          "nome": "AJDAR",
+          "nascita": "27/09/2017"
+        },
+        {
+          "cognome": "BUZZI",
+          "nome": "NICOLAS",
+          "nascita": "20/09/2018"
+        },
+        {
+          "cognome": "CIREDDU",
+          "nome": "ALESSANDRO",
+          "nascita": "20/10/2017"
+        },
+        {
+          "cognome": "CORVESI",
+          "nome": "LORENZO",
+          "nascita": "07/12/2017"
+        },
+        {
+          "cognome": "IMPERI",
+          "nome": "GABRIELE",
+          "nascita": "05/04/2017"
+        },
+        {
+          "cognome": "MENDITTO",
+          "nome": "ALESSIO",
+          "nascita": "05/09/2017"
+        },
+        {
+          "cognome": "PIZI",
+          "nome": "ANDREA",
+          "nascita": "11/10/2018"
+        },
+        {
+          "cognome": "PIZI",
+          "nome": "CHRISTIAN",
+          "nascita": "03/03/2017"
+        },
+        {
+          "cognome": "PIZI",
+          "nome": "MATTEO",
+          "nascita": "18/05/2020"
         }
       ]
     }
   },
   "2015/16": {
     "nome": "2015/16",
-    "gironi": {
-      "GIRONE A": [
-        "SMALL HEROES",
-        "FUTSAL BABIES",
-        "KICKERS"
-      ]
-    },
-    "calendario": [
-      {
-        "giornata": "1",
-        "partite": [
-          {
-            "squadre": "SMALL HEROES vs FUTSAL BABIES",
-            "risultato": "4 - 0",
-            "data": "07/05/2026",
-            "ora": "12:00",
-            "campo": "Campo Mini",
-            "marcatori": [
-              {
-                "nome": "DARIO JOY",
-                "gol": 2,
-                "squadra": "SMALL HEROES"
-              },
-              {
-                "nome": "MATTIA GO",
-                "gol": 2,
-                "squadra": "SMALL HEROES"
-              }
-            ],
-            "giocatore": "DARIO JOY",
-            "squadraGiocatore": "SMALL HEROES",
-            "portiere": "LEO STOP",
-            "squadraPortiere": "SMALL HEROES"
-          }
-        ]
-      }
-    ],
+    "gironi": {},
+    "calendario": [],
     "rose": {
-      "SMALL HEROES": [
+      "SPORTING NUOVA FLORIDA": [
         {
-          "cognome": "JOY",
-          "nome": "DARIO",
-          "nascita": "09/07/2015"
+          "cognome": "ASLANI",
+          "nome": "AJDAR",
+          "nascita": "27/09/2017"
         },
         {
-          "cognome": "STOP",
-          "nome": "LEO",
-          "nascita": "11/11/2015"
-        }
-      ],
-      "FUTSAL BABIES": [
+          "cognome": "CIREDDU",
+          "nome": "ALESSANDRO",
+          "nascita": "20/10/2017"
+        },
         {
-          "cognome": "MINI",
-          "nome": "SIMO",
-          "nascita": "13/08/2016"
-        }
-      ],
-      "KICKERS": [
+          "cognome": "CORVESI",
+          "nome": "LORENZO",
+          "nascita": "07/12/2017"
+        },
         {
-          "cognome": "BALL",
-          "nome": "NICO",
-          "nascita": "22/03/2015"
+          "cognome": "EMANUELLI",
+          "nome": "DAVIDE",
+          "nascita": "26/11/2015"
+        },
+        {
+          "cognome": "FATIBENE",
+          "nome": "DANIELE",
+          "nascita": "18/11/2015"
+        },
+        {
+          "cognome": "IMPERI",
+          "nome": "GABRIELE",
+          "nascita": "05/04/2017"
+        },
+        {
+          "cognome": "IMPERI",
+          "nome": "LEONARDO",
+          "nascita": "11/03/2015"
+        },
+        {
+          "cognome": "MENDITTO",
+          "nome": "ALESSIO",
+          "nascita": "05/09/2017"
+        },
+        {
+          "cognome": "PIZI",
+          "nome": "CHRISTIAN",
+          "nascita": "03/03/2017"
+        },
+        {
+          "cognome": "ZACCARDI",
+          "nome": "GIUSEPPE",
+          "nascita": "12/01/2016"
         }
       ]
     }
   },
   "2014/15": {
     "nome": "2014/15",
-    "gironi": {
-      "GIRONE UNICO": [
-        "ACADEMY ROSSA",
-        "FORTITUDO POMEZIA",
-        "ACADEMY BLU",
-        "LATINA C5"
-      ]
-    },
-    "calendario": [
-      {
-        "giornata": "1",
-        "partite": [
-          {
-            "squadre": "ACADEMY ROSSA vs FORTITUDO POMEZIA",
-            "risultato": "3 - 2",
-            "data": "08/05/2026",
-            "ora": "17:30",
-            "campo": "Campo A",
-            "marcatori": [
-              {
-                "nome": "SOULHI RAYAN",
-                "gol": 2,
-                "squadra": "ACADEMY ROSSA"
-              },
-              {
-                "nome": "MADDALONI FLAVIO",
-                "gol": 1,
-                "squadra": "ACADEMY ROSSA"
-              },
-              {
-                "nome": "RAMUNNO ALESSANDRO",
-                "gol": 2,
-                "squadra": "FORTITUDO POMEZIA"
-              }
-            ],
-            "giocatore": "SOULHI RAYAN",
-            "squadraGiocatore": "ACADEMY ROSSA",
-            "portiere": "CONTENTO LUIGI",
-            "squadraPortiere": "ACADEMY ROSSA"
-          },
-          {
-            "squadre": "ACADEMY BLU vs LATINA C5",
-            "risultato": "1 - 5",
-            "data": "08/05/2026",
-            "ora": "18:30",
-            "campo": "Campo B",
-            "marcatori": [
-              {
-                "nome": "COTUGNO MANUEL",
-                "gol": 1,
-                "squadra": "ACADEMY BLU"
-              },
-              {
-                "nome": "CRUDETTI ANGELO",
-                "gol": 3,
-                "squadra": "LATINA C5"
-              },
-              {
-                "nome": "DI RITA LORENZO",
-                "gol": 2,
-                "squadra": "LATINA C5"
-              }
-            ],
-            "giocatore": "CRUDETTI ANGELO",
-            "squadraGiocatore": "LATINA C5",
-            "portiere": "DE GASPERI NICOLO'",
-            "squadraPortiere": "LATINA C5"
-          }
-        ]
-      }
-    ],
-    "rose": {
-      "ACADEMY ROSSA": [
-        {
-          "cognome": "SOULHI",
-          "nome": "RAYAN",
-          "nascita": "03/06/2014"
-        },
-        {
-          "cognome": "MADDALONI",
-          "nome": "FLAVIO",
-          "nascita": "28/03/2014"
-        },
-        {
-          "cognome": "CONTENTO",
-          "nome": "LUIGI",
-          "nascita": "01/09/2014"
-        }
-      ],
-      "FORTITUDO POMEZIA": [
-        {
-          "cognome": "RAMUNNO",
-          "nome": "ALESSANDRO",
-          "nascita": "21/02/2014"
-        }
-      ],
-      "ACADEMY BLU": [
-        {
-          "cognome": "COTUGNO",
-          "nome": "MANUEL",
-          "nascita": "12/08/2014"
-        }
-      ],
-      "LATINA C5": [
-        {
-          "cognome": "CRUDETTI",
-          "nome": "ANGELO",
-          "nascita": "05/01/2014"
-        },
-        {
-          "cognome": "DI RITA",
-          "nome": "LORENZO",
-          "nascita": "11/10/2014"
-        }
-      ]
-    }
+    "gironi": {},
+    "calendario": [],
+    "rose": {}
   }
 }
