@@ -1,10 +1,28 @@
 {
   "regolamentoFiles": [
     {
-      "name": "lista_gara_spring_cup_2026.pdf",
-      "url": "https://raw.githubusercontent.com/MrSperduti/SPRINGCUP2026/main/lista_gara_spring_cup_2026.pdf",
+      "name": "LISTA_GARA.pdf",
+      "url": "https://raw.githubusercontent.com/MrSperduti/SPRINGCUP2026/main/LISTA_GARA.pdf",
       "type": "application/pdf",
       "size": 111673
+    },
+    {
+      "name": "Modulo Autorizzazione Utilizzo Immagini.pdf",
+      "url": "https://raw.githubusercontent.com/MrSperduti/SPRINGCUP2026/main/Modulo%20Autorizzazione%20Utilizzo%20Immagini.pdf",
+      "type": "application/pdf",
+      "size": 276667
+    },
+    {
+      "name": "modulo_iscrizione_società_spring_cup_2026.pdf",
+      "url": "https://raw.githubusercontent.com/MrSperduti/SPRINGCUP2026/main/modulo_iscrizione_societ%C3%A0_spring_cup_2026.pdf",
+      "type": "application/pdf",
+      "size": 105820
+    },
+    {
+      "name": "modulo_iscrizione_squadra_spring_cup_2026.pdf",
+      "url": "https://raw.githubusercontent.com/MrSperduti/SPRINGCUP2026/main/modulo_iscrizione_squadra_spring_cup_2026.pdf",
+      "type": "application/pdf",
+      "size": 92475
     }
   ]
 }
