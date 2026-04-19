@@ -1,20 +1,437 @@
 {
   "Under21": {
     "nome": "Under 21",
-    "gironi": {},
-    "calendario": [],
+    "gironi": {
+      "Girone Unico": [
+        "FORTITUDO POMEZIA",
+        "AMB FROSINONE",
+        "LAURENTUM",
+        "PARMA LETALE"
+      ]
+    },
+    "calendario": [
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "17:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 1",
+        "partita": "FORTITUDO POMEZIA - AMB FROSINONE"
+      },
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 1",
+        "partita": "LAURENTUM - PARMA LETALE"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "09:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 2",
+        "partita": "FORTITUDO POMEZIA - PARMA LETALE"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "10:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 2",
+        "partita": "LAURENTUM - AMB FROSINONE"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "09:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 3",
+        "partita": "LAURENTUM - FORTITUDO POMEZIA"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "10:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 3",
+        "partita": "PARMA LETALE - AMB FROSINONE"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "18:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Finale 3°/4°"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "18:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Finale 1°/2°"
+      }
+    ],
     "rose": {}
   },
   "Under19": {
     "nome": "Under 19",
-    "gironi": {},
-    "calendario": [],
+    "gironi": {
+      "Girone Unico": [
+        "MIRAFIN",
+        "PARMA LETALE",
+        "CIRCOLO MASTER",
+        "FORTITUDO POMEZIA",
+        "AMB FROSINONE"
+      ]
+    },
+    "calendario": [
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "10:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 1",
+        "partita": "MIRAFIN - PARMA LETALE"
+      },
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "16:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 1",
+        "partita": "CIRCOLO MASTER - FORTITUDO POMEZIA"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "11:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 2",
+        "partita": "FORTITUDO POMEZIA - AMB FROSINONE"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "12:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 2",
+        "partita": "MIRAFIN - CIRCOLO MASTER"
+      },
+      {
+        "data": "19/05/2026",
+        "giorno": "Martedì",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 3",
+        "partita": "CIRCOLO MASTER - PARMA LETALE"
+      },
+      {
+        "data": "19/05/2026",
+        "giorno": "Martedì",
+        "ora": "19:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 3",
+        "partita": "MIRAFIN - AMB FROSINONE"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "11:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 4",
+        "partita": "MIRAFIN - FORTITUDO POMEZIA"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "12:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 4",
+        "partita": "PARMA LETALE - AMB FROSINONE"
+      },
+      {
+        "data": "31/05/2026",
+        "giorno": "Domenica",
+        "ora": "09:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 5",
+        "partita": "FORTITUDO POMEZIA - PARMA LETALE"
+      },
+      {
+        "data": "31/05/2026",
+        "giorno": "Domenica",
+        "ora": "10:00",
+        "campo": "Campo A",
+        "girone": "Girone Unico",
+        "giornata": "Giornata 5",
+        "partita": "CIRCOLO MASTER - AMB FROSINONE"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "17:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "17:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "17:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Finale 3°/4°"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "17:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Finale 1°/2°"
+      }
+    ],
     "rose": {}
   },
   "Under17": {
     "nome": "Under 17",
-    "gironi": {},
-    "calendario": [],
+    "gironi": {
+      "Girone A": [
+        "ACADEMY",
+        "S. PIETRO E PAOLO",
+        "CIRCOLO MASTER",
+        "FF10"
+      ],
+      "Girone B": [
+        "NEW TEAM",
+        "AMB FROSINONE",
+        "ARDEA C5",
+        "FORTITUDO POMEZIA",
+        "FORTE COLLEFERRO",
+        "FROSINONE"
+      ]
+    },
+    "calendario": [
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "09:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "ACADEMY - S. PIETRO E PAOLO"
+      },
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "11:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "CIRCOLO MASTER - FF10"
+      },
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "15:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "NEW TEAM - AMB FROSINONE"
+      },
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "17:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "ARDEA C5 - FORTITUDO POMEZIA"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "15:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "NEW TEAM - FORTITUDO POMEZIA"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "17:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "CIRCOLO MASTER - S. PIETRO E PAOLO"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "09:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "ACADEMY - FF10"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "11:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "ARDEA C5 - FORTE COLLEFERRO"
+      },
+      {
+        "data": "18/05/2026",
+        "giorno": "Lunedì",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "NEW TEAM - FORTE COLLEFERRO"
+      },
+      {
+        "data": "18/05/2026",
+        "giorno": "Lunedì",
+        "ora": "19:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "FORTITUDO POMEZIA - FROSINONE"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "15:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 4",
+        "partita": "AMB FROSINONE - FORTE COLLEFERRO"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "16:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "ACADEMY - CIRCOLO MASTER"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 4",
+        "partita": "ARDEA C5 - NEW TEAM"
+      },
+      {
+        "data": "26/05/2026",
+        "giorno": "Martedì",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "S. PIETRO E PAOLO - FF10"
+      },
+      {
+        "data": "31/05/2026",
+        "giorno": "Domenica",
+        "ora": "11:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 5",
+        "partita": "ARDEA C5 - AMB FROSINONE"
+      },
+      {
+        "data": "31/05/2026",
+        "giorno": "Domenica",
+        "ora": "12:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 5",
+        "partita": "FORTE COLLEFERRO - FORTITUDO POMEZIA"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "16:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "16:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "16:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Finale 3°/4°"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "16:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Finale 1°/2°"
+      }
+    ],
     "rose": {
       "Ardea C5": [
         {
@@ -77,8 +494,236 @@
   },
   "Under15": {
     "nome": "Under 15",
-    "gironi": {},
-    "calendario": [],
+    "gironi": {
+      "Girone B": [
+        "CIRCOLO MASTER",
+        "NEW TEAM",
+        "FF10",
+        "FORTITUDO POMEZIA",
+        "FORTE COLLEFERRO"
+      ],
+      "Girone A": [
+        "ACADEMY",
+        "FAIR PLAY SCHOOL",
+        "ANZIO C5",
+        "REAL CASTEL FONTANA",
+        "S. PIETRO E PAOLO"
+      ]
+    },
+    "calendario": [
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "12:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "CIRCOLO MASTER - NEW TEAM"
+      },
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "ACADEMY - FAIR PLAY SCHOOL"
+      },
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "10:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "ANZIO C5 - REAL CASTEL FONTANA"
+      },
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "11:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "FF10 - FORTITUDO POMEZIA"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "16:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "ACADEMY - S. PIETRO E PAOLO"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "CIRCOLO MASTER - FORTITUDO POMEZIA"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "10:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "FORTE COLLEFERRO - NEW TEAM"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "12:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "ANZIO C5 - FAIR PLAY SCHOOL"
+      },
+      {
+        "data": "21/05/2026",
+        "giorno": "Giovedì",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "CIRCOLO MASTER - FF10"
+      },
+      {
+        "data": "21/05/2026",
+        "giorno": "Giovedì",
+        "ora": "19:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "FORTE COLLEFERRO - FORTITUDO POMEZIA"
+      },
+      {
+        "data": "22/05/2026",
+        "giorno": "Venerdì",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "ACADEMY - REAL CASTEL FONTANA"
+      },
+      {
+        "data": "22/05/2026",
+        "giorno": "Venerdì",
+        "ora": "19:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "S. PIETRO E PAOLO - FAIR PLAY SCHOOL"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "17:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 4",
+        "partita": "CIRCOLO MASTER - FORTE COLLEFERRO"
+      },
+      {
+        "data": "24/05/2026",
+        "giorno": "Domenica",
+        "ora": "11:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 4",
+        "partita": "NEW TEAM - FF10"
+      },
+      {
+        "data": "24/05/2026",
+        "giorno": "Domenica",
+        "ora": "12:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 4",
+        "partita": "REAL CASTEL FONTANA - FAIR PLAY SCHOOL"
+      },
+      {
+        "data": "26/05/2026",
+        "giorno": "Martedì",
+        "ora": "19:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 4",
+        "partita": "S. PIETRO E PAOLO - ANZIO C5"
+      },
+      {
+        "data": "31/05/2026",
+        "giorno": "Domenica",
+        "ora": "15:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 5",
+        "partita": "REAL CASTEL FONTANA - S. PIETRO E PAOLO"
+      },
+      {
+        "data": "31/05/2026",
+        "giorno": "Domenica",
+        "ora": "16:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 5",
+        "partita": "ACADEMY - ANZIO C5"
+      },
+      {
+        "data": "31/05/2026",
+        "giorno": "Domenica",
+        "ora": "17:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 5",
+        "partita": "FORTITUDO POMEZIA - NEW TEAM"
+      },
+      {
+        "data": "31/05/2026",
+        "giorno": "Domenica",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 5",
+        "partita": "FORTE COLLEFERRO - FF10"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "15:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "15:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "15:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Finale 3°/4°"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "15:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Finale 1°/2°"
+      }
+    ],
     "rose": {
       "ASD REAL CASTEL FONTANA": [
         {
@@ -161,14 +806,360 @@
   },
   "Under13": {
     "nome": "Under 13",
-    "gironi": {},
-    "calendario": [],
+    "gironi": {
+      "Girone A": [
+        "ACADEMY A",
+        "S. PIETRO E PAOLO",
+        "FORTITUDO POMEZIA B",
+        "FORTE COLLEFERRO"
+      ],
+      "Girone B": [
+        "ACADEMY B",
+        "LATINA C5",
+        "FORTITUDO POMEZIA A",
+        "FF10",
+        "NEW TEAM",
+        "FORTITUDO POMEZIA B"
+      ]
+    },
+    "calendario": [
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "09:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "ACADEMY A - S. PIETRO E PAOLO"
+      },
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "12:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "ACADEMY B - LATINA C5"
+      },
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "15:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "FORTITUDO POMEZIA B - FORTE COLLEFERRO"
+      },
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "16:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "FORTITUDO POMEZIA A - FF10"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "15:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "ACADEMY A - FORTE COLLEFERRO"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "16:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "FORTITUDO POMEZIA B - S. PIETRO E PAOLO"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "17:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "ACADEMY B - NEW TEAM"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "LATINA C5 - FORTITUDO POMEZIA A"
+      },
+      {
+        "data": "20/05/2026",
+        "giorno": "Mercoledì",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "ACADEMY B - FF10"
+      },
+      {
+        "data": "20/05/2026",
+        "giorno": "Mercoledì",
+        "ora": "19:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "NEW TEAM - LATINA C5"
+      },
+      {
+        "data": "25/05/2026",
+        "giorno": "Lunedì",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "S. PIETRO E PAOLO - FORTE COLLEFERRO"
+      },
+      {
+        "data": "25/05/2026",
+        "giorno": "Lunedì",
+        "ora": "19:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 4",
+        "partita": "NEW TEAM - FORTITUDO POMEZIA B"
+      },
+      {
+        "data": "27/05/2026",
+        "giorno": "Mercoledì",
+        "ora": "18:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "ACADEMY A - FORTITUDO POMEZIA B"
+      },
+      {
+        "data": "27/05/2026",
+        "giorno": "Mercoledì",
+        "ora": "19:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 4",
+        "partita": "LATINA C5 - FF10"
+      },
+      {
+        "data": "30/05/2026",
+        "giorno": "Sabato",
+        "ora": "10:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 5",
+        "partita": "ACADEMY B - FORTITUDO POMEZIA A"
+      },
+      {
+        "data": "30/05/2026",
+        "giorno": "Sabato",
+        "ora": "11:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 5",
+        "partita": "NEW TEAM - FF10"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "12:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "12:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "12:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Finale 3°/4°"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "12:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Finale 1°/2°"
+      }
+    ],
     "rose": {}
   },
   "2019/20": {
     "nome": "2019/20",
-    "gironi": {},
-    "calendario": [],
+    "gironi": {
+      "Girone A": [
+        "ACADEMY",
+        "POMEZIA CALCIO A",
+        "ANZIO C5",
+        "CONIT CISTERNA"
+      ],
+      "Girone B": [
+        "NETTUNO CALCIO",
+        "POMEZIA CALCIO B",
+        "NUOVA FLORIDA",
+        "VALEAS"
+      ]
+    },
+    "calendario": [
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "10:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "ACADEMY - POMEZIA CALCIO A"
+      },
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "11:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "ANZIO C5 - CONIT CISTERNA"
+      },
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "12:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "NETTUNO CALCIO - POMEZIA CALCIO B"
+      },
+      {
+        "data": "10/05/2026",
+        "giorno": "Domenica",
+        "ora": "15:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "NUOVA FLORIDA - VALEAS"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "09:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "NUOVA FLORIDA - POMEZIA CALCIO B"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "10:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "POMEZIA CALCIO A - ANZIO C5"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "15:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "ACADEMY - CONIT CISTERNA"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "16:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "VALEAS - NETTUNO CALCIO"
+      },
+      {
+        "data": "24/05/2026",
+        "giorno": "Domenica",
+        "ora": "10:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "ACADEMY - ANZIO C5"
+      },
+      {
+        "data": "24/05/2026",
+        "giorno": "Domenica",
+        "ora": "10:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "VALEAS - POMEZIA CALCIO B"
+      },
+      {
+        "data": "24/05/2026",
+        "giorno": "Domenica",
+        "ora": "11:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "CONIT CISTERNA - POMEZIA CALCIO A"
+      },
+      {
+        "data": "24/05/2026",
+        "giorno": "Domenica",
+        "ora": "12:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "NETTUNO CALCIO - NUOVA FLORIDA"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "09:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "09:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "09:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Finale 3°/4°"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "09:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Finale 1°/2°"
+      }
+    ],
     "rose": {
       "ASD Nettuno": [
         {
@@ -258,8 +1249,164 @@
   },
   "2017/18": {
     "nome": "2017/18",
-    "gironi": {},
-    "calendario": [],
+    "gironi": {
+      "Girone A": [
+        "MARINO ACADEMY",
+        "INDOMITA POMEZIA",
+        "ACADEMY",
+        "NUOVA FLORIDA",
+        "FORTITUDO POMEZIA",
+        "ANZIO C5"
+      ],
+      "Girone B": [
+        "ANZIO C5",
+        "NETTUNO CALCIO",
+        "FORTE COLLEFERRO",
+        "FORTITUDO POMEZIA"
+      ]
+    },
+    "calendario": [
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "15:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "MARINO ACADEMY - INDOMITA POMEZIA"
+      },
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "16:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "ACADEMY - NUOVA FLORIDA"
+      },
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "17:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "ANZIO C5 - NETTUNO CALCIO"
+      },
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "18:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "FORTE COLLEFERRO - FORTITUDO POMEZIA"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "11:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "FORTITUDO POMEZIA - ANZIO C5"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "17:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "NUOVA FLORIDA - MARINO ACADEMY"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "18:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "FORTE COLLEFERRO - NETTUNO CALCIO"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "10:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "ACADEMY - INDOMITA POMEZIA"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "09:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "INDOMITA POMEZIA - NUOVA FLORIDA"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "10:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "ACADEMY - MARINO ACADEMY"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "11:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "FORTITUDO POMEZIA - NETTUNO CALCIO"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "12:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "ANZIO C5 - FORTE COLLEFERRO"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "10:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "10:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "10:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Finale 3°/4°"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "10:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Finale 1°/2°"
+      }
+    ],
     "rose": {
       "Indomita Pomezia": [
         {
@@ -456,8 +1603,240 @@
   },
   "2015/16": {
     "nome": "2015/16",
-    "gironi": {},
-    "calendario": [],
+    "gironi": {
+      "Girone A": [
+        "ANZIO C5",
+        "NUOVA FLORIDA",
+        "FORTITUDO POMEZIA A",
+        "LATINA C5",
+        "ACADEMY A",
+        "ACADEMY"
+      ],
+      "Girone B": [
+        "FORTE COLLEFERRO",
+        "S. PIETRO E PAOLO",
+        "FORTITUDO POMEZIA B",
+        "NEW TEAM",
+        "ACADEMY A",
+        "NUOVA FLORIDA",
+        "ACADEMY B",
+        "LATINA C5"
+      ]
+    },
+    "calendario": [
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "09:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "ANZIO C5 - NUOVA FLORIDA"
+      },
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "10:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 1",
+        "partita": "FORTITUDO POMEZIA A - LATINA C5"
+      },
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "11:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "FORTE COLLEFERRO - S. PIETRO E PAOLO"
+      },
+      {
+        "data": "09/05/2026",
+        "giorno": "Sabato",
+        "ora": "12:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 1",
+        "partita": "FORTITUDO POMEZIA B - NEW TEAM"
+      },
+      {
+        "data": "16/05/2026",
+        "giorno": "Sabato",
+        "ora": "12:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 2",
+        "partita": "FORTITUDO POMEZIA A - ANZIO C5"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "11:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "ACADEMY A - NUOVA FLORIDA"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "12:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "ACADEMY B - S. PIETRO E PAOLO"
+      },
+      {
+        "data": "17/05/2026",
+        "giorno": "Domenica",
+        "ora": "15:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 2",
+        "partita": "FORTITUDO POMEZIA B - FORTE COLLEFERRO"
+      },
+      {
+        "data": "19/05/2026",
+        "giorno": "Martedì",
+        "ora": "18:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "S. PIETRO E PAOLO - FORTITUDO POMEZIA B"
+      },
+      {
+        "data": "19/05/2026",
+        "giorno": "Martedì",
+        "ora": "19:00",
+        "campo": "Campo A",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "NUOVA FLORIDA - FORTITUDO POMEZIA A"
+      },
+      {
+        "data": "20/05/2026",
+        "giorno": "Mercoledì",
+        "ora": "18:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 3",
+        "partita": "ACADEMY A - LATINA C5"
+      },
+      {
+        "data": "20/05/2026",
+        "giorno": "Mercoledì",
+        "ora": "19:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 3",
+        "partita": "ACADEMY B - NEW TEAM"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "15:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 4",
+        "partita": "ACADEMY A - FORTITUDO POMEZIA A"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "16:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 4",
+        "partita": "ACADEMY B - FORTITUDO POMEZIA B"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "17:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 4",
+        "partita": "ANZIO C5 - LATINA C5"
+      },
+      {
+        "data": "23/05/2026",
+        "giorno": "Sabato",
+        "ora": "18:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 4",
+        "partita": "FORTE COLLEFERRO - NEW TEAM"
+      },
+      {
+        "data": "30/05/2026",
+        "giorno": "Sabato",
+        "ora": "10:00",
+        "campo": "Campo B",
+        "girone": "Girone A",
+        "giornata": "Giornata 5",
+        "partita": "ACADEMY - ANZIO C5"
+      },
+      {
+        "data": "30/05/2026",
+        "giorno": "Sabato",
+        "ora": "11:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 5",
+        "partita": "ACADEMY B - FORTE COLLEFERRO"
+      },
+      {
+        "data": "30/05/2026",
+        "giorno": "Sabato",
+        "ora": "12:00",
+        "campo": "Campo A",
+        "girone": "Girone B",
+        "giornata": "Giornata 5",
+        "partita": "LATINA C5 - NUOVA FLORIDA"
+      },
+      {
+        "data": "30/05/2026",
+        "giorno": "Sabato",
+        "ora": "12:00",
+        "campo": "Campo B",
+        "girone": "Girone B",
+        "giornata": "Giornata 5",
+        "partita": "NEW TEAM - S. PIETRO E PAOLO"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "11:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "06/06/2026",
+        "giorno": "Sabato",
+        "ora": "11:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Semifinale"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "11:00",
+        "campo": "Campo A",
+        "girone": "Fase finale",
+        "giornata": "Finale 3°/4°"
+      },
+      {
+        "data": "07/06/2026",
+        "giorno": "Domenica",
+        "ora": "11:00",
+        "campo": "Campo B",
+        "girone": "Fase finale",
+        "giornata": "Finale 1°/2°"
+      }
+    ],
     "rose": {
       "SPORTING NUOVA FLORIDA": [
         {
