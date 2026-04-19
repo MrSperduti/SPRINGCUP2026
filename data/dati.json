@@ -3,8 +3,8 @@
     "nome": "Under 21",
     "gironi": {
       "Girone Unico": [
-        "AMB FROSINONE",
         "FORTITUDO POMEZIA",
+        "AMB FROSINONE",
         "LAURENTUM",
         "PARMA LETALE"
       ]
@@ -98,7 +98,7 @@
         ]
       },
       {
-        "giornata": "Semifinale",
+        "giornata": "SEMIFINALE A",
         "partite": [
           {
             "squadre": "",
@@ -111,7 +111,12 @@
             "squadraGiocatore": "",
             "portiere": "",
             "squadraPortiere": ""
-          },
+          }
+        ]
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "partite": [
           {
             "squadre": "",
             "risultato": "",
@@ -127,7 +132,7 @@
         ]
       },
       {
-        "giornata": "Finale 3°/4°",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
@@ -144,7 +149,7 @@
         ]
       },
       {
-        "giornata": "Finale 1°/2°",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
@@ -167,12 +172,11 @@
     "nome": "Under 19",
     "gironi": {
       "Girone Unico": [
-        "AMB FROSINONE",
-        "CIRCOLO MASTER",
-        "FORTITUDO",
-        "FORTITUDO POMEZIA",
         "MIRAFIN",
-        "PARMA LETALE"
+        "PARMA LETALE",
+        "CIRCOLO MASTER",
+        "FORTITUDO POMEZIA",
+        "AMB FROSINONE"
       ]
     },
     "calendario": [
@@ -296,7 +300,7 @@
         "giornata": "Giornata 5",
         "partite": [
           {
-            "squadre": "FORTITUDO vs PARMA LETALE",
+            "squadre": "FORTITUDO POMEZIA vs PARMA LETALE",
             "risultato": "",
             "data": "31/05/2026",
             "ora": "09:00",
@@ -322,7 +326,7 @@
         ]
       },
       {
-        "giornata": "Semifinale",
+        "giornata": "SEMIFINALE A",
         "partite": [
           {
             "squadre": "",
@@ -335,7 +339,12 @@
             "squadraGiocatore": "",
             "portiere": "",
             "squadraPortiere": ""
-          },
+          }
+        ]
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "partite": [
           {
             "squadre": "",
             "risultato": "",
@@ -351,7 +360,7 @@
         ]
       },
       {
-        "giornata": "Finale 3°/4°",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
@@ -368,7 +377,7 @@
         ]
       },
       {
-        "giornata": "Finale 1°/2°",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
@@ -392,18 +401,16 @@
     "gironi": {
       "Girone A": [
         "ACADEMY",
+        "S. PIETRO E PAOLO",
         "CIRCOLO MASTER",
-        "FF10",
-        "S.PIETRO E PAOLO"
+        "FF10"
       ],
       "Girone B": [
+        "NEW TEAM",
         "AMB FROSINONE",
         "ARDEA C5",
-        "FORTE COLLEFERRO",
-        "FORTITUDO",
         "FORTITUDO POMEZIA",
-        "FROSINONE",
-        "NEW TEAM"
+        "FORTE COLLEFERRO"
       ]
     },
     "calendario": [
@@ -411,7 +418,7 @@
         "giornata": "Giornata 1",
         "partite": [
           {
-            "squadre": "ACADEMY vs S.PIETRO E PAOLO",
+            "squadre": "ACADEMY vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "09/05/2026",
             "ora": "09:00",
@@ -476,7 +483,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "CIRCOLO MASTER vs S.PIETRO E PAOLO",
+            "squadre": "CIRCOLO MASTER vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "16/05/2026",
             "ora": "17:00",
@@ -529,7 +536,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTITUDO POMEZIA vs FROSINONE",
+            "squadre": "FORTITUDO POMEZIA vs AMB FROSINONE",
             "risultato": "",
             "data": "18/05/2026",
             "ora": "19:00",
@@ -553,7 +560,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "S.PIETRO E PAOLO vs FF10",
+            "squadre": "S. PIETRO E PAOLO vs FF10",
             "risultato": "",
             "data": "26/05/2026",
             "ora": "18:00",
@@ -611,7 +618,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTE COLLEFERRO vs FORTITUDO",
+            "squadre": "FORTE COLLEFERRO vs FORTITUDO POMEZIA",
             "risultato": "",
             "data": "31/05/2026",
             "ora": "12:00",
@@ -625,7 +632,7 @@
         ]
       },
       {
-        "giornata": "Semifinale",
+        "giornata": "SEMIFINALE A",
         "partite": [
           {
             "squadre": "",
@@ -638,7 +645,12 @@
             "squadraGiocatore": "",
             "portiere": "",
             "squadraPortiere": ""
-          },
+          }
+        ]
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "partite": [
           {
             "squadre": "",
             "risultato": "",
@@ -654,7 +666,7 @@
         ]
       },
       {
-        "giornata": "Finale 3°/4°",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
@@ -671,7 +683,7 @@
         ]
       },
       {
-        "giornata": "Finale 1°/2°",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
@@ -688,82 +700,25 @@
         ]
       }
     ],
-    "rose": {
-      "Ardea C5": [
-        {
-          "cognome": "Della Volpe",
-          "nome": "Federico",
-          "nascita": "11/10/2009"
-        },
-        {
-          "cognome": "Di Canno",
-          "nome": "Simolo",
-          "nascita": ""
-        },
-        {
-          "cognome": "Esposito",
-          "nome": "Simone",
-          "nascita": "03/05/2009"
-        },
-        {
-          "cognome": "Fofi",
-          "nome": "Daniele",
-          "nascita": "10/07/2009"
-        },
-        {
-          "cognome": "Incitti",
-          "nome": "Alessio",
-          "nascita": "03/09/2010"
-        },
-        {
-          "cognome": "Maffettone",
-          "nome": "Angelo",
-          "nascita": ""
-        },
-        {
-          "cognome": "Orsini",
-          "nome": "Francesco",
-          "nascita": "19/05/2009"
-        },
-        {
-          "cognome": "Piasco",
-          "nome": "Valerio",
-          "nascita": "27/03/2009"
-        },
-        {
-          "cognome": "Potrich",
-          "nome": "Valerio",
-          "nascita": "20/08/2009"
-        },
-        {
-          "cognome": "Romagnoli",
-          "nome": "Simone",
-          "nascita": "04/03/2009"
-        },
-        {
-          "cognome": "Sorgatto Tornari",
-          "nome": "Eduardo",
-          "nascita": "02/05/2009"
-        }
-      ]
-    }
+    "rose": {}
   },
   "Under15": {
     "nome": "Under 15",
     "gironi": {
       "Girone B": [
         "CIRCOLO MASTER",
+        "NEW TEAM",
         "FF10",
-        "FORTE COLLEFERRO",
         "FORTITUDO POMEZIA",
-        "NEW TEAM"
+        "FORTE COLLEFERRO"
       ],
       "Girone A": [
         "ACADEMY",
-        "ANZIO C5",
         "FAIR PLAY SCHOOL",
+        "ANZIO C5",
         "REAL CASTEL FONTANA",
-        "S.PIETRO E PAOLO"
+        "S. PIETRO E PAOLO",
+        "REAL CASTEL FONTANA -FAIR PLAY SCHOOL"
       ]
     },
     "calendario": [
@@ -824,7 +779,7 @@
         "giornata": "Giornata 2",
         "partite": [
           {
-            "squadre": "ACADEMY vs S.PIETRO E PAOLO",
+            "squadre": "ACADEMY vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "16/05/2026",
             "ora": "16:00",
@@ -913,7 +868,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "S.PIETRO E PAOLO vs FAIR PLAY SCHOOL",
+            "squadre": "S. PIETRO E PAOLO vs FAIR PLAY SCHOOL",
             "risultato": "",
             "data": "22/05/2026",
             "ora": "19:00",
@@ -954,7 +909,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "REAL CASTEL FONTANA -FAIR PLAY SCHOOL",
+            "squadre": "",
             "risultato": "",
             "data": "24/05/2026",
             "ora": "12:00",
@@ -966,7 +921,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "S.PIETRO E PAOLO vs ANZIO C5",
+            "squadre": "S. PIETRO E PAOLO vs ANZIO C5",
             "risultato": "",
             "data": "26/05/2026",
             "ora": "19:00",
@@ -983,7 +938,7 @@
         "giornata": "Giornata 5",
         "partite": [
           {
-            "squadre": "REAL CASTEL FONTANA vs S.PIETRO E PAOLO",
+            "squadre": "REAL CASTEL FONTANA vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "31/05/2026",
             "ora": "15:00",
@@ -1033,7 +988,7 @@
         ]
       },
       {
-        "giornata": "Semifinale",
+        "giornata": "SEMIFINALE A",
         "partite": [
           {
             "squadre": "",
@@ -1046,7 +1001,12 @@
             "squadraGiocatore": "",
             "portiere": "",
             "squadraPortiere": ""
-          },
+          }
+        ]
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "partite": [
           {
             "squadre": "",
             "risultato": "",
@@ -1062,7 +1022,7 @@
         ]
       },
       {
-        "giornata": "Finale 3°/4°",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
@@ -1079,7 +1039,7 @@
         ]
       },
       {
-        "giornata": "Finale 1°/2°",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
@@ -1096,102 +1056,25 @@
         ]
       }
     ],
-    "rose": {
-      "ASD REAL CASTEL FONTANA": [
-        {
-          "cognome": "AREZIO",
-          "nome": "GIANLUCA",
-          "nascita": "10/04/2011"
-        },
-        {
-          "cognome": "CERVINI",
-          "nome": "ALESSIO",
-          "nascita": "10/11/2012"
-        },
-        {
-          "cognome": "CHIARLITTI",
-          "nome": "VALERIO",
-          "nascita": "19/10/2012"
-        },
-        {
-          "cognome": "COLLARINI",
-          "nome": "FRANCESCO",
-          "nascita": "10/10/2013"
-        },
-        {
-          "cognome": "DI STEFANO",
-          "nome": "NICOLO",
-          "nascita": "31/10/2012"
-        },
-        {
-          "cognome": "ERAMO",
-          "nome": "MICHAEL",
-          "nascita": "05/01/2012"
-        },
-        {
-          "cognome": "GAFFI",
-          "nome": "GIANLUCA",
-          "nascita": "10/11/2011"
-        },
-        {
-          "cognome": "GILIBERTI",
-          "nome": "DIEGO",
-          "nascita": "26/01/2012"
-        },
-        {
-          "cognome": "MARFOLI",
-          "nome": "FEDERICO",
-          "nascita": "17/03/2011"
-        },
-        {
-          "cognome": "PASTESINI",
-          "nome": "EMILIANO",
-          "nascita": "22/12/2011"
-        },
-        {
-          "cognome": "PERSICONE",
-          "nome": "SAMUEL",
-          "nascita": "10/01/2012"
-        },
-        {
-          "cognome": "PICCOLI",
-          "nome": "GABRIELE",
-          "nascita": "19/07/2012"
-        },
-        {
-          "cognome": "RUSCITO",
-          "nome": "KEVIN",
-          "nascita": "12/10/2011"
-        },
-        {
-          "cognome": "TEMPERINI",
-          "nome": "SAMUEL",
-          "nascita": "05/12/2012"
-        },
-        {
-          "cognome": "TERSIGNI",
-          "nome": "RICCARDO",
-          "nascita": "27/04/2012"
-        }
-      ]
-    }
+    "rose": {}
   },
   "Under13": {
     "nome": "Under 13",
     "gironi": {
       "Girone A": [
         "ACADEMY A",
-        "FORTE COLLEFERRO",
+        "S. PIETRO E PAOLO",
         "FORTITUDO POMEZIA B",
-        "S.PIETRO E PAOLO"
+        "FORTE COLLEFERRO"
       ],
       "Girone B": [
         "ACADEMY B",
-        "FF10",
-        "FORTITUDO POMEZIA A",
-        "FORTITUDO POMEZIA B",
         "LATINA C5",
-        "NEW TEAM"
+        "FORTITUDO POMEZIA A",
+        "FF10",
+        "NEW TEAM",
+        "S. PIETRO E PAOLO",
+        "FORTE COLLEFERRO"
       ]
     },
     "calendario": [
@@ -1199,7 +1082,7 @@
         "giornata": "Giornata 1",
         "partite": [
           {
-            "squadre": "ACADEMY A vs S.PIETRO E PAOLO",
+            "squadre": "ACADEMY A vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "10/05/2026",
             "ora": "09:00",
@@ -1264,7 +1147,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTITUDO POMEZIA B vs S.PIETRO E PAOLO",
+            "squadre": "FORTITUDO POMEZIA B vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "17/05/2026",
             "ora": "16:00",
@@ -1329,7 +1212,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "S.PIETRO E PAOLO vs FORTE COLLEFERRO",
+            "squadre": "S. PIETRO E PAOLO vs FORTE COLLEFERRO",
             "risultato": "",
             "data": "25/05/2026",
             "ora": "18:00",
@@ -1358,7 +1241,7 @@
         "giornata": "Giornata 4",
         "partite": [
           {
-            "squadre": "NEW TEAM vs FORTITUDO POMEZIA B",
+            "squadre": "NEW TEAM vs FORTITUDO POMEZIA A",
             "risultato": "",
             "data": "25/05/2026",
             "ora": "19:00",
@@ -1413,7 +1296,7 @@
         ]
       },
       {
-        "giornata": "Semifinale",
+        "giornata": "SEMIFINALE A",
         "partite": [
           {
             "squadre": "",
@@ -1426,7 +1309,12 @@
             "squadraGiocatore": "",
             "portiere": "",
             "squadraPortiere": ""
-          },
+          }
+        ]
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "partite": [
           {
             "squadre": "",
             "risultato": "",
@@ -1442,7 +1330,7 @@
         ]
       },
       {
-        "giornata": "Finale 3°/4°",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
@@ -1459,7 +1347,7 @@
         ]
       },
       {
-        "giornata": "Finale 1°/2°",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
@@ -1483,15 +1371,14 @@
     "gironi": {
       "Girone A": [
         "ACADEMY",
+        "POMEZIA CALCIO A",
         "ANZIO C5",
-        "CONIT CISTERNA",
-        "POMEZIA CALCIO A"
+        "CONIT CISTERNA"
       ],
       "Girone B": [
-        "NETTUNO",
         "NETTUNO CALCIO",
-        "NUOVA FLORIDA",
         "POMEZIA CALCIO B",
+        "NUOVA FLORIDA",
         "VALEAS"
       ]
     },
@@ -1589,7 +1476,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "VALEAS vs NETTUNO",
+            "squadre": "VALEAS vs NETTUNO CALCIO",
             "risultato": "",
             "data": "16/05/2026",
             "ora": "16:00",
@@ -1642,7 +1529,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "NETTUNO vs NUOVA FLORIDA",
+            "squadre": "NETTUNO CALCIO vs NUOVA FLORIDA",
             "risultato": "",
             "data": "24/05/2026",
             "ora": "12:00",
@@ -1656,7 +1543,7 @@
         ]
       },
       {
-        "giornata": "Semifinale",
+        "giornata": "SEMIFINALE A",
         "partite": [
           {
             "squadre": "",
@@ -1669,7 +1556,12 @@
             "squadraGiocatore": "",
             "portiere": "",
             "squadraPortiere": ""
-          },
+          }
+        ]
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "partite": [
           {
             "squadre": "",
             "risultato": "",
@@ -1685,7 +1577,7 @@
         ]
       },
       {
-        "giornata": "Finale 3°/4°",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
@@ -1702,7 +1594,7 @@
         ]
       },
       {
-        "giornata": "Finale 1°/2°",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
@@ -1719,111 +1611,22 @@
         ]
       }
     ],
-    "rose": {
-      "ASD Nettuno": [
-        {
-          "cognome": "Battisi",
-          "nome": "Alex",
-          "nascita": "13/11/2020"
-        },
-        {
-          "cognome": "Candiano",
-          "nome": "Thomas",
-          "nascita": "04/10/2019"
-        },
-        {
-          "cognome": "Fassina",
-          "nome": "Mattia",
-          "nascita": "18/04/2020"
-        },
-        {
-          "cognome": "Gallace",
-          "nome": "Giuseppe",
-          "nascita": "12/09/2019"
-        },
-        {
-          "cognome": "Khelia",
-          "nome": "Bayrem",
-          "nascita": "05/07/2019"
-        },
-        {
-          "cognome": "Luongo",
-          "nome": "Gabriele",
-          "nascita": "15/09/2019"
-        },
-        {
-          "cognome": "Sabkhi",
-          "nome": "Ayoub",
-          "nascita": "23/07/2020"
-        },
-        {
-          "cognome": "Sommella",
-          "nome": "Jacopo",
-          "nascita": "24/04/2019"
-        },
-        {
-          "cognome": "Sutter",
-          "nome": "Emanuele",
-          "nascita": "13/08/2020"
-        },
-        {
-          "cognome": "Yassin",
-          "nome": "Alessio",
-          "nascita": "08/10/2019"
-        }
-      ],
-      "NUOVA FLORIDA": [
-        {
-          "cognome": "AMIRANTE",
-          "nome": "FLAVIO",
-          "nascita": "18/12/2019"
-        },
-        {
-          "cognome": "CASALI",
-          "nome": "FEDERICO",
-          "nascita": ""
-        },
-        {
-          "cognome": "D'AMATO",
-          "nome": "IACOPO",
-          "nascita": "01/10/2019"
-        },
-        {
-          "cognome": "PIZI",
-          "nome": "MATTEO",
-          "nascita": "18/05/2020"
-        },
-        {
-          "cognome": "SINISI",
-          "nome": "CRISTIAN",
-          "nascita": "07/10/2019"
-        },
-        {
-          "cognome": "ZACCARDI",
-          "nome": "GIANMARCO",
-          "nascita": "22/11/2019"
-        }
-      ]
-    }
+    "rose": {}
   },
   "2017/18": {
     "nome": "2017/18",
     "gironi": {
       "Girone A": [
-        "ACADEMY",
-        "ANZIO C5",
-        "FORTITUDO POMEZIA",
-        "INDOMITA POMEZIA",
         "MARINO ACADEMY",
+        "INDOMITA POMEZIA",
+        "ACADEMY",
         "NUOVA FLORIDA"
       ],
       "Girone B": [
         "ANZIO C5",
-        "FORTE COLEEFERRO",
+        "NETTUNO CALCIO",
         "FORTE COLLEFERRO",
-        "FORTITUDO POMEZIA",
-        "NETTUNO",
-        "NETTUNO CALCIO"
+        "FORTITUDO POMEZIA"
       ]
     },
     "calendario": [
@@ -1908,7 +1711,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTE COLEEFERRO vs NETTUNO",
+            "squadre": "FORTE COLLEFERRO vs NETTUNO CALCIO",
             "risultato": "",
             "data": "16/05/2026",
             "ora": "18:00",
@@ -1961,7 +1764,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTITUDO POMEZIA vs NETTUNO",
+            "squadre": "FORTITUDO POMEZIA vs NETTUNO CALCIO",
             "risultato": "",
             "data": "23/05/2026",
             "ora": "11:00",
@@ -1987,7 +1790,7 @@
         ]
       },
       {
-        "giornata": "Semifinale",
+        "giornata": "SEMIFINALE A",
         "partite": [
           {
             "squadre": "",
@@ -2000,7 +1803,12 @@
             "squadraGiocatore": "",
             "portiere": "",
             "squadraPortiere": ""
-          },
+          }
+        ]
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "partite": [
           {
             "squadre": "",
             "risultato": "",
@@ -2016,7 +1824,7 @@
         ]
       },
       {
-        "giornata": "Finale 3°/4°",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
@@ -2033,7 +1841,7 @@
         ]
       },
       {
-        "giornata": "Finale 1°/2°",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
@@ -2050,222 +1858,24 @@
         ]
       }
     ],
-    "rose": {
-      "Indomita Pomezia": [
-        {
-          "cognome": "Atelba",
-          "nome": "Federico",
-          "nascita": "08/08/2017"
-        },
-        {
-          "cognome": "Cavaliere",
-          "nome": "Lorenzo",
-          "nascita": "22/05/2018"
-        },
-        {
-          "cognome": "Ceniccola",
-          "nome": "Matteo",
-          "nascita": "05/06/2018"
-        },
-        {
-          "cognome": "De Maria",
-          "nome": "Mattia",
-          "nascita": "08/02/2018"
-        },
-        {
-          "cognome": "Garra",
-          "nome": "Ivan",
-          "nascita": "28/05/2018"
-        },
-        {
-          "cognome": "Gasperoni",
-          "nome": "Alessio",
-          "nascita": "22/11/2018"
-        },
-        {
-          "cognome": "Meattini",
-          "nome": "Filippo",
-          "nascita": "21/06/2018"
-        },
-        {
-          "cognome": "Petra",
-          "nome": "Francesco Enea",
-          "nascita": "28/06/2017"
-        },
-        {
-          "cognome": "Prozzi",
-          "nome": "Vittorio Gianni",
-          "nascita": "14/02/2018"
-        }
-      ],
-      "ASD Nettuno": [
-        {
-          "cognome": "Carnenio",
-          "nome": "Roberto",
-          "nascita": "30/07/2017"
-        },
-        {
-          "cognome": "Casaburo",
-          "nome": "Marco",
-          "nascita": "03/12/2018"
-        },
-        {
-          "cognome": "Chiro",
-          "nome": "Alessandro",
-          "nascita": "19/01/2017"
-        },
-        {
-          "cognome": "Ciaravolo",
-          "nome": "Tiziano",
-          "nascita": "16/10/2018"
-        },
-        {
-          "cognome": "De Nardis",
-          "nome": "Giovanni",
-          "nascita": "25/10/2017"
-        },
-        {
-          "cognome": "De Rosa",
-          "nome": "Luigi Christian",
-          "nascita": "15/03/2017"
-        },
-        {
-          "cognome": "Edesuan Osagbe",
-          "nome": "Dentel Hize",
-          "nascita": "23/06/2017"
-        },
-        {
-          "cognome": "Hustata",
-          "nome": "Leonardo Abraho",
-          "nascita": "28/10/2018"
-        },
-        {
-          "cognome": "Maggi",
-          "nome": "Alessandro",
-          "nascita": "15/09/2018"
-        },
-        {
-          "cognome": "Maggi",
-          "nome": "Paolo Maria",
-          "nascita": "04/07/2017"
-        },
-        {
-          "cognome": "Mali",
-          "nome": "Valerio",
-          "nascita": "23/09/2017"
-        },
-        {
-          "cognome": "Mekbal",
-          "nome": "Anass",
-          "nascita": "09/11/2017"
-        },
-        {
-          "cognome": "Pereira",
-          "nome": "Gabriel",
-          "nascita": "12/05/2018"
-        },
-        {
-          "cognome": "Politkovskyi",
-          "nome": "Mark",
-          "nascita": "04/04/2018"
-        },
-        {
-          "cognome": "Rezzo",
-          "nome": "Alessandro",
-          "nascita": "18/09/2017"
-        },
-        {
-          "cognome": "Roberto",
-          "nome": "Francesco",
-          "nascita": "18/09/2018"
-        },
-        {
-          "cognome": "Sanges",
-          "nome": "Cristian Manuel",
-          "nascita": "20/01/2017"
-        },
-        {
-          "cognome": "Santulli",
-          "nome": "Flavio",
-          "nascita": "08/11/2017"
-        },
-        {
-          "cognome": "Wongo",
-          "nome": "Carmine",
-          "nascita": "20/09/2017"
-        }
-      ],
-      "SPORTING NUOVA FLORIDA": [
-        {
-          "cognome": "ASLANI",
-          "nome": "AJDAR",
-          "nascita": "27/09/2017"
-        },
-        {
-          "cognome": "BUZZI",
-          "nome": "NICOLAS",
-          "nascita": "20/09/2018"
-        },
-        {
-          "cognome": "CIREDDU",
-          "nome": "ALESSANDRO",
-          "nascita": "20/10/2017"
-        },
-        {
-          "cognome": "CORVESI",
-          "nome": "LORENZO",
-          "nascita": "07/12/2017"
-        },
-        {
-          "cognome": "IMPERI",
-          "nome": "GABRIELE",
-          "nascita": "05/04/2017"
-        },
-        {
-          "cognome": "MENDITTO",
-          "nome": "ALESSIO",
-          "nascita": "05/09/2017"
-        },
-        {
-          "cognome": "PIZI",
-          "nome": "ANDREA",
-          "nascita": "11/10/2018"
-        },
-        {
-          "cognome": "PIZI",
-          "nome": "CHRISTIAN",
-          "nascita": "03/03/2017"
-        },
-        {
-          "cognome": "PIZI",
-          "nome": "MATTEO",
-          "nascita": "18/05/2020"
-        }
-      ]
-    }
+    "rose": {}
   },
   "2015/16": {
     "nome": "2015/16",
     "gironi": {
       "Girone A": [
-        "ACADEMY",
-        "ACADEMY A",
-        "ANZIO",
         "ANZIO C5",
+        "NUOVA FLORIDA",
         "FORTITUDO POMEZIA A",
-        "FORTITUDO POOMEZIA A",
         "LATINA C5",
-        "NUOVA FLORIDA"
+        "ACADEMY A"
       ],
       "Girone B": [
-        "ACADEMY A",
-        "ACADEMY B",
         "FORTE COLLEFERRO",
+        "S. PIETRO E PAOLO",
         "FORTITUDO POMEZIA B",
-        "LATINA C5",
         "NEW TEAM",
-        "NUOVA FLORIDA",
-        "S.PIETRO E PAOLO"
+        "ACADEMY B"
       ]
     },
     "calendario": [
@@ -2297,7 +1907,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTE COLLEFERRO vs S.PIETRO E PAOLO",
+            "squadre": "FORTE COLLEFERRO vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "09/05/2026",
             "ora": "11:00",
@@ -2326,7 +1936,7 @@
         "giornata": "Giornata 2",
         "partite": [
           {
-            "squadre": "FORTITUDO POMEZIA A vs ANZIO",
+            "squadre": "FORTITUDO POMEZIA A vs ANZIO C5",
             "risultato": "",
             "data": "16/05/2026",
             "ora": "12:00",
@@ -2350,7 +1960,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "ACADEMY B vs S.PIETRO E PAOLO",
+            "squadre": "ACADEMY B vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "17/05/2026",
             "ora": "12:00",
@@ -2379,7 +1989,7 @@
         "giornata": "Giornata 3",
         "partite": [
           {
-            "squadre": "S.PIETRO E PAOLO vs FORTITUDO POMEZIA B",
+            "squadre": "S. PIETRO E PAOLO vs FORTITUDO POMEZIA B",
             "risultato": "",
             "data": "19/05/2026",
             "ora": "18:00",
@@ -2432,7 +2042,7 @@
         "giornata": "Giornata 4",
         "partite": [
           {
-            "squadre": "ACADEMY A vs FORTITUDO POOMEZIA A",
+            "squadre": "ACADEMY A vs FORTITUDO POMEZIA A",
             "risultato": "",
             "data": "23/05/2026",
             "ora": "15:00",
@@ -2485,7 +2095,7 @@
         "giornata": "Giornata 5",
         "partite": [
           {
-            "squadre": "ACADEMY vs ANZIO C5",
+            "squadre": "ACADEMY A vs ANZIO C5",
             "risultato": "",
             "data": "30/05/2026",
             "ora": "10:00",
@@ -2521,7 +2131,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "NEW TEAM vs S.PIETRO E PAOLO",
+            "squadre": "NEW TEAM vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "30/05/2026",
             "ora": "12:00",
@@ -2535,7 +2145,7 @@
         ]
       },
       {
-        "giornata": "Semifinale",
+        "giornata": "SEMIFINALE A",
         "partite": [
           {
             "squadre": "",
@@ -2548,7 +2158,12 @@
             "squadraGiocatore": "",
             "portiere": "",
             "squadraPortiere": ""
-          },
+          }
+        ]
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "partite": [
           {
             "squadre": "",
             "risultato": "",
@@ -2564,7 +2179,7 @@
         ]
       },
       {
-        "giornata": "Finale 3°/4°",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
@@ -2581,7 +2196,7 @@
         ]
       },
       {
-        "giornata": "Finale 1°/2°",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
@@ -2598,60 +2213,7 @@
         ]
       }
     ],
-    "rose": {
-      "SPORTING NUOVA FLORIDA": [
-        {
-          "cognome": "ASLANI",
-          "nome": "AJDAR",
-          "nascita": "27/09/2017"
-        },
-        {
-          "cognome": "CIREDDU",
-          "nome": "ALESSANDRO",
-          "nascita": "20/10/2017"
-        },
-        {
-          "cognome": "CORVESI",
-          "nome": "LORENZO",
-          "nascita": "07/12/2017"
-        },
-        {
-          "cognome": "EMANUELLI",
-          "nome": "DAVIDE",
-          "nascita": "26/11/2015"
-        },
-        {
-          "cognome": "FATIBENE",
-          "nome": "DANIELE",
-          "nascita": "18/11/2015"
-        },
-        {
-          "cognome": "IMPERI",
-          "nome": "GABRIELE",
-          "nascita": "05/04/2017"
-        },
-        {
-          "cognome": "IMPERI",
-          "nome": "LEONARDO",
-          "nascita": "11/03/2015"
-        },
-        {
-          "cognome": "MENDITTO",
-          "nome": "ALESSIO",
-          "nascita": "05/09/2017"
-        },
-        {
-          "cognome": "PIZI",
-          "nome": "CHRISTIAN",
-          "nascita": "03/03/2017"
-        },
-        {
-          "cognome": "ZACCARDI",
-          "nome": "GIUSEPPE",
-          "nascita": "12/01/2016"
-        }
-      ]
-    }
+    "rose": {}
   },
   "2014/15": {
     "nome": "2014/15",
