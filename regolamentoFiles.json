@@ -23,6 +23,12 @@
       "url": "https://raw.githubusercontent.com/MrSperduti/SPRINGCUP2026/main/modulo_iscrizione_squadra_spring_cup_2026.pdf",
       "type": "application/pdf",
       "size": 92475
+    },
+    {
+      "name": "regolamento_spring_cup_2026.pdf",
+      "url": "https://raw.githubusercontent.com/MrSperduti/SPRINGCUP2026/main/regolamento_spring_cup_2026.pdf",
+      "type": "application/pdf",
+      "size": 2872350
     }
   ]
 }
