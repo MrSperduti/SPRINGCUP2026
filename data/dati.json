@@ -3,8 +3,8 @@
     "nome": "Under 21",
     "gironi": {
       "Girone Unico": [
-        "FORTITUDO POMEZIA",
         "AMB FROSINONE",
+        "FORTITUDO POMEZIA",
         "LAURENTUM",
         "PARMA LETALE"
       ]
@@ -172,11 +172,11 @@
     "nome": "Under 19",
     "gironi": {
       "Girone Unico": [
-        "MIRAFIN",
-        "PARMA LETALE",
+        "AMB FROSINONE",
         "CIRCOLO MASTER",
         "FORTITUDO POMEZIA",
-        "AMB FROSINONE"
+        "MIRAFIN",
+        "PARMA LETALE"
       ]
     },
     "calendario": [
@@ -401,16 +401,16 @@
     "gironi": {
       "Girone A": [
         "ACADEMY",
-        "S. PIETRO E PAOLO",
         "CIRCOLO MASTER",
-        "FF10"
+        "FF10",
+        "S. PIETRO E PAOLO"
       ],
       "Girone B": [
-        "NEW TEAM",
         "AMB FROSINONE",
         "ARDEA C5",
+        "FORTE COLLEFERRO",
         "FORTITUDO POMEZIA",
-        "FORTE COLLEFERRO"
+        "NEW TEAM"
       ]
     },
     "calendario": [
@@ -705,20 +705,19 @@
   "Under15": {
     "nome": "Under 15",
     "gironi": {
-      "Girone B": [
-        "CIRCOLO MASTER",
-        "NEW TEAM",
-        "FF10",
-        "FORTITUDO POMEZIA",
-        "FORTE COLLEFERRO"
-      ],
       "Girone A": [
         "ACADEMY",
-        "FAIR PLAY SCHOOL",
         "ANZIO C5",
+        "FAIR PLAY SCHOOL",
         "REAL CASTEL FONTANA",
-        "S. PIETRO E PAOLO",
-        "REAL CASTEL FONTANA -FAIR PLAY SCHOOL"
+        "S. PIETRO E PAOLO"
+      ],
+      "Girone B": [
+        "CIRCOLO MASTER",
+        "FF10",
+        "FORTE COLLEFERRO",
+        "FORTITUDO POMEZIA",
+        "NEW TEAM"
       ]
     },
     "calendario": [
@@ -909,7 +908,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "",
+            "squadre": "REAL CASTEL FONTANA vs FAIR PLAY SCHOOL",
             "risultato": "",
             "data": "24/05/2026",
             "ora": "12:00",
@@ -1063,18 +1062,16 @@
     "gironi": {
       "Girone A": [
         "ACADEMY A",
-        "S. PIETRO E PAOLO",
+        "FORTE COLLEFERRO",
         "FORTITUDO POMEZIA B",
-        "FORTE COLLEFERRO"
+        "S. PIETRO E PAOLO"
       ],
       "Girone B": [
         "ACADEMY B",
-        "LATINA C5",
-        "FORTITUDO POMEZIA A",
         "FF10",
-        "NEW TEAM",
-        "S. PIETRO E PAOLO",
-        "FORTE COLLEFERRO"
+        "FORTITUDO POMEZIA A",
+        "LATINA C5",
+        "NEW TEAM"
       ]
     },
     "calendario": [
@@ -1371,14 +1368,14 @@
     "gironi": {
       "Girone A": [
         "ACADEMY",
-        "POMEZIA CALCIO A",
         "ANZIO C5",
-        "CONIT CISTERNA"
+        "CONIT CISTERNA",
+        "POMEZIA CALCIO A"
       ],
       "Girone B": [
         "NETTUNO CALCIO",
-        "POMEZIA CALCIO B",
         "NUOVA FLORIDA",
+        "POMEZIA CALCIO B",
         "VALEAS"
       ]
     },
@@ -1617,16 +1614,16 @@
     "nome": "2017/18",
     "gironi": {
       "Girone A": [
-        "MARINO ACADEMY",
-        "INDOMITA POMEZIA",
         "ACADEMY",
+        "INDOMITA POMEZIA",
+        "MARINO ACADEMY",
         "NUOVA FLORIDA"
       ],
       "Girone B": [
         "ANZIO C5",
-        "NETTUNO CALCIO",
         "FORTE COLLEFERRO",
-        "FORTITUDO POMEZIA"
+        "FORTITUDO POMEZIA",
+        "NETTUNO CALCIO"
       ]
     },
     "calendario": [
@@ -1864,18 +1861,18 @@
     "nome": "2015/16",
     "gironi": {
       "Girone A": [
+        "ACADEMY A",
         "ANZIO C5",
-        "NUOVA FLORIDA",
         "FORTITUDO POMEZIA A",
         "LATINA C5",
-        "ACADEMY A"
+        "NUOVA FLORIDA"
       ],
       "Girone B": [
+        "ACADEMY B",
         "FORTE COLLEFERRO",
-        "S. PIETRO E PAOLO",
         "FORTITUDO POMEZIA B",
         "NEW TEAM",
-        "ACADEMY B"
+        "S. PIETRO E PAOLO"
       ]
     },
     "calendario": [
