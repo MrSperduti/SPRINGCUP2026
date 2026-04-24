@@ -420,8 +420,8 @@
           {
             "squadre": "ACADEMY vs S. PIETRO E PAOLO",
             "risultato": "",
-            "data": "09/05/2026",
-            "ora": "09:00",
+            "data": "08/05/2026",
+            "ora": "18:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -908,7 +908,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "REAL CASTEL FONTANA vs FAIR PLAY SCHOOL",
+            "squadre": "REAL CASTEL FONTANA -FAIR PLAY SCHOOL",
             "risultato": "",
             "data": "24/05/2026",
             "ora": "12:00",
@@ -1079,6 +1079,18 @@
         "giornata": "Giornata 1",
         "partite": [
           {
+            "squadre": "FORTITUDO POMEZIA B vs FORTE COLLEFERRO",
+            "risultato": "",
+            "data": "08/05/2026",
+            "ora": "19:00",
+            "campo": "Campo A",
+            "marcatori": [],
+            "giocatore": "",
+            "squadraGiocatore": "",
+            "portiere": "",
+            "squadraPortiere": ""
+          },
+          {
             "squadre": "ACADEMY A vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "10/05/2026",
@@ -1095,18 +1107,6 @@
             "risultato": "",
             "data": "10/05/2026",
             "ora": "12:00",
-            "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
-          },
-          {
-            "squadre": "FORTITUDO POMEZIA B vs FORTE COLLEFERRO",
-            "risultato": "",
-            "data": "10/05/2026",
-            "ora": "15:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -1238,7 +1238,7 @@
         "giornata": "Giornata 4",
         "partite": [
           {
-            "squadre": "NEW TEAM vs FORTITUDO POMEZIA A",
+            "squadre": "NEW TEAM vs FORTITUDO POMEZIA B",
             "risultato": "",
             "data": "25/05/2026",
             "ora": "19:00",
@@ -1364,12 +1364,12 @@
     "rose": {}
   },
   "2019/20": {
-    "nome": "2019/20",
+    "nome": "2019/20/21",
     "gironi": {
       "Girone A": [
         "ACADEMY",
         "ANZIO C5",
-        "CONIT CISTERNA",
+        "CISTERNA C5",
         "POMEZIA CALCIO A"
       ],
       "Girone B": [
@@ -1396,7 +1396,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "ANZIO C5 vs CONIT CISTERNA",
+            "squadre": "ANZIO C5 vs CISTERNA C5",
             "risultato": "",
             "data": "10/05/2026",
             "ora": "11:00",
@@ -1461,7 +1461,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "ACADEMY vs CONIT CISTERNA",
+            "squadre": "ACADEMY vs CISTERNA C5",
             "risultato": "",
             "data": "16/05/2026",
             "ora": "15:00",
@@ -1514,7 +1514,7 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "CONIT CISTERNA vs POMEZIA CALCIO A",
+            "squadre": "CISTERNA C5 vs POMEZIA CALCIO A",
             "risultato": "",
             "data": "24/05/2026",
             "ora": "11:00",
@@ -1669,8 +1669,8 @@
           {
             "squadre": "FORTE COLLEFERRO vs FORTITUDO POMEZIA",
             "risultato": "",
-            "data": "09/05/2026",
-            "ora": "18:00",
+            "data": "11/05/2026",
+            "ora": "19:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -1904,10 +1904,10 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTE COLLEFERRO vs S. PIETRO E PAOLO",
+            "squadre": "FORTITUDO POMEZIA B vs NEW TEAM",
             "risultato": "",
             "data": "09/05/2026",
-            "ora": "11:00",
+            "ora": "12:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -1916,10 +1916,10 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTITUDO POMEZIA B vs NEW TEAM",
+            "squadre": "FORTE COLLEFERRO vs S. PIETRO E PAOLO",
             "risultato": "",
-            "data": "09/05/2026",
-            "ora": "12:00",
+            "data": "11/05/2026",
+            "ora": "18:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
