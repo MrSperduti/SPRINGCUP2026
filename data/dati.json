@@ -442,6 +442,18 @@
             "squadraPortiere": ""
           },
           {
+            "squadre": "ARDEA C5 vs FORTITUDO POMEZIA",
+            "risultato": "",
+            "data": "09/05/2026",
+            "ora": "17:00",
+            "campo": "Campo A",
+            "marcatori": [],
+            "giocatore": "",
+            "squadraGiocatore": "",
+            "portiere": "",
+            "squadraPortiere": ""
+          },
+          {
             "squadre": "NEW TEAM vs AMB FROSINONE",
             "risultato": "",
             "data": "11/05/2026",
@@ -453,18 +465,6 @@
             "portiere": "",
             "squadraPortiere": ""
           },
-          {
-            "squadre": "ARDEA C5 vs FORTITUDO POMEZIA",
-            "risultato": "",
-            "data": "09/05/2026",
-            "ora": "17:00",
-            "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
-          }
         ]
       },
       {
