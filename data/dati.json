@@ -358,11 +358,6 @@
           "nascita": "2008-03-18"
         },
         {
-          "cognome": "CANALE",
-          "nome": "MICHELE",
-          "nascita": "2005-06-04"
-        },
-        {
           "cognome": "IANCU",
           "nome": "NICOLO' ALEX",
           "nascita": "2005-09-17"
@@ -391,6 +386,16 @@
           "cognome": "GALLI",
           "nome": "SIMONE",
           "nascita": "2006"
+        },
+        {
+          "cognome": "PASSARO",
+          "nome": "SIMONE",
+          "nascita": "2008"
+        },
+        {
+          "cognome": "CAPUTO",
+          "nome": "FRANCESCO",
+          "nascita": "2007"
         }
       ]
     }
