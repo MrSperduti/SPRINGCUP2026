@@ -166,7 +166,28 @@
         ]
       }
     ],
-    "rose": {}
+    "rose": {
+      "AMB FROSINONE": [
+        "SAMUELE TAGLIAFERRI",
+        "NICOLO MAGGIO",
+        "GIUSEPPE CIOTOLI",
+        "PIERGIORGIO MAURI",
+        "GABRIELE SARANDREA",
+        "RICCARDO ARCESE",
+        "JACOPO ROSSI",
+        "ALESSANDRO GRANDE",
+        "GIACOMO D'ARCE",
+        "FOTI SIMONE",
+        "MATTIA BOTTONI",
+        "TOMMASO CAMPOLI",
+        "LORENZO DI TULLIO",
+        "EL IDRISSI WALID",
+        "LUCIANO ARMENIA",
+        "IACUISSI GIACOMO",
+        "SAVERIO LO PRESTI",
+        "DAMIANO FEDERICO"
+      ]
+    }
   },
   "Under19": {
     "nome": "Under 19",
@@ -394,7 +415,26 @@
         ]
       }
     ],
-    "rose": {}
+    "rose": {
+      "AMB FROSINONE": [
+        "SAMUELE TAGLIAFERRI",
+        "YOUNASS EL IDRISSI",
+        "MATTEO SANTORO",
+        "MASSIMILIANO CAPPELLA",
+        "GABRIELE SARANDREA",
+        "GIUSEPPE NARDOZI",
+        "DAMIANO FEDERICO",
+        "ALESSANDRO GRANDE",
+        "SAVERIO LO PRESTI",
+        "SPAGNOLI GIOVANNI",
+        "MATTIA BOTTONI",
+        "TOMMASO CAMPOLI",
+        "LORENZO DI TULLIO",
+        "WALID EL IDRISSI",
+        "LUCIANO ARMENIA",
+        "IACUISSI GIACOMO"
+      ]
+    }
   },
   "Under17": {
     "nome": "Under 17",
@@ -700,7 +740,37 @@
         ]
       }
     ],
-    "rose": {}
+    "rose": {
+      "AMB FROSINONE": [
+        "JACOPO REALE",
+        "YOUNASS EL IDRISSI",
+        "MATTEO SANTORO",
+        "MASSIMILIANO CAPPELLA",
+        "NICOLAS ZITELLI",
+        "GIUSEPPE NARDOZI",
+        "DIEGO BOTTONI",
+        "MATTIA SHEMBITRAKU",
+        "LORENZO PIGLIACELLI",
+        "ALESSIO CAPERNA",
+        "LORENZO SANTORO",
+        "LEONARDO VELOCCI",
+        "EDOARDO DI TULLIO",
+        "DAVIDE MARTELLACCI"
+      ],
+      "MIRAFIN": [
+        "EDUARD RICCARDO CLATEA",
+        "NYKOLAS ROCCO VARDARO",
+        "LUCIANO COLICINO",
+        "FRANCESCO SUSIN",
+        "GIOVANNI MELIADO’",
+        "VALENTIN DAVIDE TABACILA",
+        "CHRISTIAN CRISPI",
+        "DIEGO LUPO",
+        "GIAMMARCO CAMPIONI",
+        "GIORDANO CANTATORE",
+        "ALESSANDRO MIRRA"
+      ]
+    }
   },
   "Under15": {
     "nome": "Under 15",
@@ -1055,7 +1125,27 @@
         ]
       }
     ],
-    "rose": {}
+    "rose": {
+      "ACADEMY": [
+        "MATTIA BARBARESCHI",
+        "DANIELE BOZZA",
+        "MATTEO COTUGNO",
+        "CHRISTIAN CRISPI",
+        "ROBERTO D'ANDORA",
+        "MATTEO D'ANTONI",
+        "CHRISTIAN FALSETTI",
+        "SIMONE LELI",
+        "ALESSANDRO MIRRA",
+        "NOEMI NEGRI",
+        "ANGELO OLIVIERI",
+        "MATTEO PASSARELLI",
+        "FLAVIO PROIETTI",
+        "DIEGO ROMEI",
+        "GABRIELE DI BARTOLOMEO",
+        "SARA ROMANO",
+        "ASIA GILARDINI"
+      ]
+    }
   },
   "Under13": {
     "nome": "Under 13",
@@ -1361,7 +1451,22 @@
         ]
       }
     ],
-    "rose": {}
+    "rose": {
+      "ANZIO C5": [
+        "GIUSEPPE ARDITO",
+        "LORENZO APICELLA",
+        "VINCENZO DI FRANCIA",
+        "DIEGO SABELLICO",
+        "ALESSIO CERRONE",
+        "SIMONE SANTELLI",
+        "EMANUELE ORIZIO",
+        "JOELE ALESSANDRONI",
+        "MIRCO MENICHELLI",
+        "ROMOLO DE BARTOLO",
+        "MATTEO GIUSTINI",
+        "SAMUELE NOVELLI"
+      ]
+    }
   },
   "2019/20": {
     "nome": "2019/20/21",
@@ -1608,7 +1713,34 @@
         ]
       }
     ],
-    "rose": {}
+    "rose": {
+      "ACADEMY": [
+        "ALBERT ALEXANDRU CALAH",
+        "ANDREA D'ANGELO",
+        "ALESSIO OBERMAYER",
+        "FRANCESCO VALENZA",
+        "MATTIA CICCONE",
+        "EDOARDO MAZZAROPPI",
+        "NICOLA JULIAN TSVETANOV",
+        "DIEGO AMBROGI",
+        "SAMUELE SCUTO",
+        "DAVID VONCILE",
+        "MARCO NOCERA"
+      ],
+      "ANZIO C5": [
+        "KEVIN CAPONI",
+        "JAD KHODJA",
+        "SAMUELE MAZZA",
+        "ALESSANDRO ORIGLIA",
+        "CHRISTIAN PERICA",
+        "SANTIAGO MAGGI",
+        "LEONARDO GALLOTTI",
+        "AARON ASTRANDREI",
+        "SAMUELE DI DONATO",
+        "NICHOLAS GENNARI",
+        "NICHOLAS DI DONATO"
+      ]
+    }
   },
   "2017/18": {
     "nome": "2017/18",
@@ -1855,7 +1987,35 @@
         ]
       }
     ],
-    "rose": {}
+    "rose": {
+      "ACADEMY": [
+        "DULIO GRAZIOSI",
+        "CHRISTIAN OLIVA",
+        "NOAH CRISTIAN CAFFY",
+        "GINEVRA DI CUZZO",
+        "EVA PALOMBO",
+        "SARA NOCERINO",
+        "RICCARDO BRAIDICH",
+        "DANIELE SMOCOVICH",
+        "FRANCESCO DENTI",
+        "ANGELO SUTO",
+        "MARCO NOCERA",
+        "DAVID VOUCIUC"
+      ],
+      "ANZIO C5": [
+        "ANDREA PISTIDDA",
+        "SANTIAGO TORREGLIA",
+        "DARIO ZAMBRUNO",
+        "ANDREA BELLINI",
+        "MANUEL MAURIZI",
+        "TOMMASO CRADONNA",
+        "MATTEO BRESCIA",
+        "VALERIO SPECCA",
+        "ANTONIO DE TURCO",
+        "DAVIDE HOLUNGA",
+        "DIEGO TRANCHILLO"
+      ]
+    }
   },
   "2015/16": {
     "nome": "2015/16",
@@ -2210,7 +2370,47 @@
         ]
       }
     ],
-    "rose": {}
+    "rose": {
+      "ACADEMY A": [
+        "LORENZO ANDREOLI",
+        "MATTIA MARANETTI",
+        "ANDREA CONTENTE",
+        "FEDERICO ANDREOLI",
+        "TOMMASO TOSKA",
+        "ROCCO SANTABRIA",
+        "CRISTIANO MARIANETTI",
+        "DANIELE NIGRO",
+        "JIN ZEHAO",
+        "EDOARDO VENANZONI",
+        "FLAVIO CELLINI",
+        "MANUEL COTUGNO"
+      ],
+      "ACADEMY B": [
+        "THIAGO COSIMATO",
+        "MATTEO ANGELI",
+        "MATTIA MOSCHELLA",
+        "MANUEL SINOCCHI",
+        "DANILO DI GIANVITTORIO",
+        "MATTEO CODELLA",
+        "LEONARDO TORTORELLA",
+        "LEONARDO TOGNI",
+        "SIMONE DI SANNO",
+        "LORENZO MARZOLI",
+        "DAVIDE GABIDON",
+        "GABRIELE VESCOVO"
+      ],
+      "ANZIO C5": [
+        "ANDREA DE PIANO",
+        "MANUEL CARTA",
+        "DANIELE PROIETTI",
+        "LEONARDO MARUCCI",
+        "SAMUEL CAMPANALE",
+        "JASER KHOUTA",
+        "EDOARDO MATTEI",
+        "LEONARDO MATTEI",
+        "ALEXANDRO ASTRANDREI"
+      ]
+    }
   },
   "2014/15": {
     "nome": "2014/15",
