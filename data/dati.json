@@ -885,8 +885,8 @@
           {
             "squadre": "NEW TEAM vs AMB FROSINONE",
             "risultato": "",
-            "data": "13/05/2026",
-            "ora": "20:00",
+            "data": "Data da destinarsi",
+            "ora": "",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -4739,8 +4739,8 @@
           {
             "squadre": "FORTITUDO POMEZIA B vs NEW TEAM",
             "risultato": "",
-            "data": "09/05/2026",
-            "ora": "12:00",
+            "data": "11/05/2026",
+            "ora": "18:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
