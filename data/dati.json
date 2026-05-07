@@ -1744,8 +1744,8 @@
           {
             "squadre": "ANZIO C5 vs REAL CASTEL FONTANA",
             "risultato": "",
-            "data": "12/05/2026",
-            "ora": "18:00",
+            "data": "10/05/2026",
+            "ora": "10:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -4713,10 +4713,10 @@
         "giornata": "Giornata 1",
         "partite": [
           {
-            "squadre": "ANZIO C5 vs NUOVA FLORIDA",
+            "squadre": "FORTITUDO POMEZIA A vs LATINA C5",
             "risultato": "",
             "data": "09/05/2026",
-            "ora": "09:00",
+            "ora": "10:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -4725,10 +4725,10 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTITUDO POMEZIA A vs LATINA C5",
+            "squadre": "ANZIO C5 vs NUOVA FLORIDA",
             "risultato": "",
             "data": "09/05/2026",
-            "ora": "10:00",
+            "ora": "17:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
