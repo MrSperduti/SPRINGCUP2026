@@ -848,15 +848,66 @@
         "partite": [
           {
             "squadre": "ACADEMY vs S. PIETRO E PAOLO",
-            "risultato": "",
+            "risultato": "28 - 1",
             "data": "08/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "FRANCESCO SUSIN",
+                "gol": 8,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DANIELE BOZZA",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "CHRISTIAN CRISPI",
+                "gol": 4,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "ALESSANDRO MIRRA",
+                "gol": 5,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DIEGO LUPO",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DOMENICO ROMANO",
+                "gol": 4,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "GIAMMARCO CAMPIONI",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "NYKOLAS VARDARO",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "LUCIANO COLICINO",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "CRISTIAN GALASSO",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
+              }
+            ],
+            "giocatore": "DOMENICO ROMANO",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "CAPOMAGI MANUEL",
+            "squadraPortiere": "S. PIETRO E PAOLO"
           },
           {
             "squadre": "CIRCOLO MASTER vs FF10",
