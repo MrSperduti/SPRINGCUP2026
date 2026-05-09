@@ -848,7 +848,7 @@
         "partite": [
           {
             "squadre": "ACADEMY vs S. PIETRO E PAOLO",
-            "risultato": "28 - 1",
+            "risultato": "28 - 2",
             "data": "08/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
@@ -902,9 +902,14 @@
                 "nome": "CRISTIAN GALASSO",
                 "gol": 1,
                 "squadra": "S. PIETRO E PAOLO"
+              },
+              {
+                "nome": "ANDREA SANTORO",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
               }
             ],
-            "giocatore": "DOMENICO ROMANO",
+            "giocatore": "FRANCESCO SUSIN",
             "squadraGiocatore": "ACADEMY",
             "portiere": "CAPOMAGI MANUEL",
             "squadraPortiere": "S. PIETRO E PAOLO"
@@ -2803,15 +2808,46 @@
         "partite": [
           {
             "squadre": "FORTITUDO POMEZIA B vs FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "5 - 3",
             "data": "08/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "LORENZO CALLIPO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "MATTIA BRUNI",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "FRANCESCO TOCCA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "LEONARDO TOCCA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "EMANUEL SCUNGIO",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "LORENZO SCUNGIO",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "DANIEL MAENZA",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "EDOARDO LANZI",
+            "squadraPortiere": "FORTE COLLEFERRO"
           },
           {
             "squadre": "ACADEMY A vs S. PIETRO E PAOLO",
