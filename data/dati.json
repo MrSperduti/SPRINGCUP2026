@@ -432,15 +432,61 @@
         "partite": [
           {
             "squadre": "MIRAFIN vs PARMA LETALE",
-            "risultato": "",
+            "risultato": "11 - 1",
             "data": "09/05/2026",
             "ora": "10:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "CIRO CAVAGNOLI",
+                "gol": 2,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "GABRIELE PATELLA",
+                "gol": 2,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "NYKOLAS VARDARO",
+                "gol": 2,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "LUCIANO COLICINO",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "DIEGO LUPO",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "CHRISTIAN IANCU",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "ALESSANDRO GOBBI",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "FRANCESCO SUSIN",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "RICCARDO SASSU",
+                "gol": 1,
+                "squadra": "PARMA LETALE"
+              }
+            ],
+            "giocatore": "DIEGO LUPO",
+            "squadraGiocatore": "MIRAFIN",
+            "portiere": "DEMITRI NICOLO'",
+            "squadraPortiere": "PARMA LETALE"
           },
           {
             "squadre": "CIRCOLO MASTER vs FORTITUDO POMEZIA",
