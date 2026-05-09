@@ -1847,15 +1847,36 @@
         "partite": [
           {
             "squadre": "CIRCOLO MASTER vs NEW TEAM",
-            "risultato": "",
+            "risultato": "1 - 4",
             "data": "09/05/2026",
             "ora": "12:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "FRANCESCO TOSI",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "TIZIANO LEONARDI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "CRISTIAN  LADOGANA",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "MATTEO CARBONE",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              }
+            ],
+            "giocatore": "FRANCESCO TOSI",
+            "squadraGiocatore": "NEW TEAM",
+            "portiere": "GABRIELE MUZZI",
+            "squadraPortiere": "CIRCOLO MASTER"
           },
           {
             "squadre": "ACADEMY vs FAIR PLAY SCHOOL",
