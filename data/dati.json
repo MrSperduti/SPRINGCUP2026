@@ -4108,15 +4108,41 @@
         "partite": [
           {
             "squadre": "MARINO ACADEMY vs INDOMITA POMEZIA",
-            "risultato": "",
+            "risultato": "13 - 1",
             "data": "09/05/2026",
             "ora": "15:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "EDOARDO CINI",
+                "gol": 8,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "JACOPO LA TRECCHIA",
+                "gol": 2,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "CHRISTIAN PISTELLA",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "FLAVIO CHINEA",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "MATTIA DE MARIA",
+                "gol": 1,
+                "squadra": "INDOMITA POMEZIA"
+              }
+            ],
+            "giocatore": "EDOARDO CINI",
+            "squadraGiocatore": "MARINO ACADEMY",
+            "portiere": "VITTORIO GIANNI PIOZZI",
+            "squadraPortiere": "INDOMITA POMEZIA"
           },
           {
             "squadre": "ACADEMY vs NUOVA FLORIDA",
