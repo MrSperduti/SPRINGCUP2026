@@ -4146,15 +4146,31 @@
           },
           {
             "squadre": "ACADEMY vs NUOVA FLORIDA",
-            "risultato": "",
+            "risultato": "5 - 3",
             "data": "09/05/2026",
             "ora": "16:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "FRANCESCO DENNI",
+                "gol": 4,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DANIELE SMOCOVICH",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "CHRISTIAN PIZI",
+                "gol": 3,
+                "squadra": "NUOVA FLORIDA"
+              }
+            ],
+            "giocatore": "FRANCESCO DENNI",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "ALESSIO MENDITTO",
+            "squadraPortiere": "NUOVA FLORIDA"
           },
           {
             "squadre": "ANZIO C5 vs NETTUNO CALCIO",
