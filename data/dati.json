@@ -490,15 +490,36 @@
           },
           {
             "squadre": "CIRCOLO MASTER vs FORTITUDO POMEZIA",
-            "risultato": "",
+            "risultato": "2 - 4",
             "data": "09/05/2026",
             "ora": "16:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DAVIDE VERBENI",
+                "gol": 3,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "METIN KRCISTA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "GIOVANNI DI GIUSEPPE",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "DAMIANO MUSTO",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              }
+            ],
+            "giocatore": "DAVIDE VERBENI",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "CHRISTIAN MIOTTO",
+            "squadraPortiere": "CIRCOLO MASTER"
           }
         ]
       },
