@@ -962,15 +962,41 @@
           },
           {
             "squadre": "CIRCOLO MASTER vs FF10",
-            "risultato": "",
+            "risultato": "6 - 3",
             "data": "09/05/2026",
             "ora": "11:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DAVIDE ANNIBALLI",
+                "gol": 2,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "CHIAPPINI CRISTIAN",
+                "gol": 3,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "LUIGI SACCO",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "DAVIDE ANTOLINI",
+                "gol": 2,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "DANIELE ROMANI",
+                "gol": 1,
+                "squadra": "FF10"
+              }
+            ],
+            "giocatore": "CRISTIAN CHIAPPINI",
+            "squadraGiocatore": "CIRCOLO MASTER",
+            "portiere": "SIMONE CORBO",
+            "squadraPortiere": "CIRCOLO MASTER"
           },
           {
             "squadre": "ARDEA C5 vs FORTITUDO POMEZIA",
