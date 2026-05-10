@@ -3826,15 +3826,36 @@
           },
           {
             "squadre": "NUOVA FLORIDA vs VALEAS",
-            "risultato": "",
+            "risultato": "11 - 1",
             "data": "10/05/2026",
             "ora": "15:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "CRISTIAN SINISI",
+                "gol": 2,
+                "squadra": "NUOVA FLORIDA"
+              },
+              {
+                "nome": "CRISTIAN PIZI",
+                "gol": 2,
+                "squadra": "NUOVA FLORIDA"
+              },
+              {
+                "nome": "ANDREA PIZI",
+                "gol": 3,
+                "squadra": "NUOVA FLORIDA"
+              },
+              {
+                "nome": "MATTEO FERRAZZA",
+                "gol": 1,
+                "squadra": "VALEAS"
+              }
+            ],
+            "giocatore": "ANDREA PIZI",
+            "squadraGiocatore": "NUOVA FLORIDA",
+            "portiere": "MATTEO FERRAZZA",
+            "squadraPortiere": "VALEAS"
           }
         ]
       },
