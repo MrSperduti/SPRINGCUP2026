@@ -3657,15 +3657,36 @@
           },
           {
             "squadre": "ANZIO C5 vs CISTERNA C5",
-            "risultato": "",
+            "risultato": "1 - 4",
             "data": "10/05/2026",
             "ora": "11:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "CRISTIAN TORSELLO",
+                "gol": 2,
+                "squadra": "CISTERNA C5"
+              },
+              {
+                "nome": "IACOPO FAVORITO",
+                "gol": 1,
+                "squadra": "CISTERNA C5"
+              },
+              {
+                "nome": "FABRIZIO MILITO",
+                "gol": 1,
+                "squadra": "CISTERNA C5"
+              },
+              {
+                "nome": "AXEL MAGGI",
+                "gol": 1,
+                "squadra": "ANZIO C5"
+              }
+            ],
+            "giocatore": "CRISTIAN TORSELLO",
+            "squadraGiocatore": "CISTERNA C5",
+            "portiere": "ARON ASMARANDUCAI",
+            "squadraPortiere": "ANZIO C5"
           },
           {
             "squadre": "NETTUNO CALCIO vs POMEZIA CALCIO B",
