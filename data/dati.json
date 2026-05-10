@@ -1901,51 +1901,15 @@
           },
           {
             "squadre": "ACADEMY vs FAIR PLAY SCHOOL",
-            "risultato": "11 - 4",
+            "risultato": "",
             "data": "09/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [
-              {
-                "nome": "CHRISTIAN CRISPI",
-                "gol": 4,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "DANIELE BOZZA",
-                "gol": 4,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "ALESSANDRO MIRRA",
-                "gol": 2,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "ANGELO OLIVIERI",
-                "gol": 1,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "NICOLO MARCATO",
-                "gol": 2,
-                "squadra": "FAIR PLAY SCHOOL"
-              },
-              {
-                "nome": "ALESSANDRO MARZANO",
-                "gol": 1,
-                "squadra": "FAIR PLAY SCHOOL"
-              },
-              {
-                "nome": "TIZIANO CARPINA",
-                "gol": 1,
-                "squadra": "FAIR PLAY SCHOOL"
-              }
-            ],
-            "giocatore": "ANGELO OLIVIERI",
-            "squadraGiocatore": "ACADEMY",
-            "portiere": "PARZIALE ALESSANDR0",
-            "squadraPortiere": "FAIR PLAY SCHOOL"
+            "marcatori": [],
+            "giocatore": "",
+            "squadraGiocatore": "",
+            "portiere": "",
+            "squadraPortiere": ""
           },
           {
             "squadre": "ANZIO C5 vs REAL CASTEL FONTANA",
@@ -3001,41 +2965,15 @@
           },
           {
             "squadre": "ACADEMY A vs S. PIETRO E PAOLO",
-            "risultato": "8 - 2",
+            "risultato": "",
             "data": "10/05/2026",
             "ora": "09:00",
             "campo": "Campo A",
-            "marcatori": [
-              {
-                "nome": "GABRIELE PICCINI",
-                "gol": 3,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "ASIA GILARDINI",
-                "gol": 2,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "FLAVIO MADDALONI",
-                "gol": 2,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "JONAS MARCOTULLI",
-                "gol": 1,
-                "squadra": "ACADEMY"
-              },
-              {
-                "nome": "LORENZO CIOFFI",
-                "gol": 2,
-                "squadra": "S. PIETRO E PAOLO"
-              }
-            ],
-            "giocatore": "JONAS MARCOTULLI",
-            "squadraGiocatore": "ACADEMY",
-            "portiere": "CHRISTIAN SCHETTINI",
-            "squadraPortiere": "ACADEMY"
+            "marcatori": [],
+            "giocatore": "",
+            "squadraGiocatore": "",
+            "portiere": "",
+            "squadraPortiere": ""
           },
           {
             "squadre": "ACADEMY B vs LATINA C5",
@@ -3691,15 +3629,31 @@
         "partite": [
           {
             "squadre": "ACADEMY vs POMEZIA CALCIO A",
-            "risultato": "",
+            "risultato": "1 - 3",
             "data": "10/05/2026",
             "ora": "10:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ALESSIO D'ILARIO",
+                "gol": 2,
+                "squadra": "POMEZIA CALCIO A"
+              },
+              {
+                "nome": "VALERIO FEDRIZZI",
+                "gol": 1,
+                "squadra": "POMEZIA CALCIO A"
+              },
+              {
+                "nome": "NOCERINO SARA",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              }
+            ],
+            "giocatore": "GINEVRA DI CUZZO",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "CRISAFULLI CAMILLA",
+            "squadraPortiere": "POMEZIA CALCIO A"
           },
           {
             "squadre": "ANZIO C5 vs CISTERNA C5",
@@ -5031,36 +4985,15 @@
           },
           {
             "squadre": "ANZIO C5 vs NUOVA FLORIDA",
-            "risultato": "11 - 1",
+            "risultato": "",
             "data": "09/05/2026",
             "ora": "17:00",
             "campo": "Campo B",
-            "marcatori": [
-              {
-                "nome": "SAMUEL CAMPANDIO",
-                "gol": 2,
-                "squadra": "ANZIO C5"
-              },
-              {
-                "nome": "DILAN MARANO",
-                "gol": 5,
-                "squadra": "ANZIO C5"
-              },
-              {
-                "nome": "ALEXANDRO ASTRANDEY",
-                "gol": 3,
-                "squadra": "ANZIO C5"
-              },
-              {
-                "nome": "CHRISTIAN PIZI",
-                "gol": 1,
-                "squadra": "NUOVA FLORIDA"
-              }
-            ],
-            "giocatore": "DILAN MARANO",
-            "squadraGiocatore": "ANZIO C5",
-            "portiere": "ROBERTO ZACCARIA",
-            "squadraPortiere": "NUOVA FLORIDA"
+            "marcatori": [],
+            "giocatore": "",
+            "squadraGiocatore": "",
+            "portiere": "",
+            "squadraPortiere": ""
           },
           {
             "squadre": "FORTITUDO POMEZIA B vs NEW TEAM",
