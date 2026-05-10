@@ -3009,22 +3009,22 @@
               {
                 "nome": "GABRIELE PICCINI",
                 "gol": 3,
-                "squadra": "ACADEMY"
+                "squadra": "ACADEMY A"
               },
               {
                 "nome": "ASIA GILARDINI",
                 "gol": 2,
-                "squadra": "ACADEMY"
+                "squadra": "ACADEMY A"
               },
               {
                 "nome": "FLAVIO MADDALONI",
                 "gol": 2,
-                "squadra": "ACADEMY"
+                "squadra": "ACADEMY A"
               },
               {
                 "nome": "JONAS MARCOTULLI",
                 "gol": 1,
-                "squadra": "ACADEMY"
+                "squadra": "ACADEMY A"
               },
               {
                 "nome": "LORENZO CIOFFI",
@@ -3039,15 +3039,51 @@
           },
           {
             "squadre": "ACADEMY B vs LATINA C5",
-            "risultato": "",
+            "risultato": "6 - 9",
             "data": "10/05/2026",
             "ora": "12:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DAMIANO ANDREOLI",
+                "gol": 2,
+                "squadra": "ACADEMY B"
+              },
+              {
+                "nome": "RYAN SOULHI",
+                "gol": 3,
+                "squadra": "ACADEMY B"
+              },
+              {
+                "nome": "AURORA AMATO",
+                "gol": 1,
+                "squadra": "ACADEMY B"
+              },
+              {
+                "nome": "SIMONE PAGANO",
+                "gol": 3,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "CRISTIANO GALANTE",
+                "gol": 2,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "REALI LEONARDO",
+                "gol": 2,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "ANDREA RAPACCINI",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              }
+            ],
+            "giocatore": "SIMONE PAGANO",
+            "squadraGiocatore": "LATINA C5",
+            "portiere": "LUIGI CONTENTO",
+            "squadraPortiere": "ACADEMY B"
           },
           {
             "squadre": "FORTITUDO POMEZIA A vs FF10",
