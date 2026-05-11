@@ -5303,27 +5303,94 @@
           },
           {
             "squadre": "FORTITUDO POMEZIA B vs NEW TEAM",
-            "risultato": "",
+            "risultato": "1 - 7",
             "data": "11/05/2026",
             "ora": "18:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ANDREA TALARICO",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "DAVIDE RUZZOLINI",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "VALERIO SCHENA ",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LORENZO MASSARONI ",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "SAMUELE D'AMORE",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA B"
+              }
+            ],
+            "giocatore": "ANDREA TALARICO",
+            "squadraGiocatore": "NEW TEAM",
+            "portiere": "VALERIO SCOPONI",
+            "squadraPortiere": "FORTITUDO POMEZIA B"
           },
           {
             "squadre": "FORTE COLLEFERRO vs S. PIETRO E PAOLO",
-            "risultato": "",
+            "risultato": "7 - 2",
             "data": "11/05/2026",
             "ora": "18:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "NICOLAS LIBURDI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICOLO' FANTINI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "ALESSANDRO ROSSI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "DAVIDE SUSSARELLO",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "LEO TOMMASSO",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "FRANCESCO BATTINIELLO",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "ALESSANDRO DIAGNE",
+                "gol": 1,
+                "squadra": "S. PIETRO PAOLO"
+              },
+              {
+                "nome": "FRANCESCO GIANNINI ",
+                "gol": 1,
+                "squadra": "S. PIETRO PAOLO"
+              }
+            ],
+            "giocatore": "GIULIA SQUITERI",
+            "squadraGiocatore": "S. PIETRO PAOLO",
+            "portiere": "FILIPPO MARIA BATTINIELLO",
+            "squadraPortiere": "FORTE COLLEFERRO"
           }
         ]
       },
