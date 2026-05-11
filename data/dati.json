@@ -15,27 +15,89 @@
         "partite": [
           {
             "squadre": "FORTITUDO POMEZIA vs AMB FROSINONE",
-            "risultato": "",
+            "risultato": "5 - 2",
             "data": "10/05/2026",
             "ora": "17:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "LORENZO BINZARU",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "DAVIDE VERBENI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "SIMONE INCITTI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "METIN KRCISTA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "SAVERIO LO PRESTI",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "SAMUELE TAGLIAFERRI",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              }
+            ],
+            "giocatore": "LORENZO BINZARU",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "SIMONE FOTI",
+            "squadraPortiere": "AMB FROSINONE"
           },
           {
             "squadre": "LAURENTUM vs PARMA LETALE",
-            "risultato": "",
+            "risultato": "5 - 3",
             "data": "10/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "EMANUELE BUFANO",
+                "gol": 2,
+                "squadra": "LAURENTUM"
+              },
+              {
+                "nome": "FEDERICO MARTINELLI",
+                "gol": 1,
+                "squadra": "LAURENTUM"
+              },
+              {
+                "nome": "FRANCESCO BOZZA",
+                "gol": 1,
+                "squadra": "LAURENTUM"
+              },
+              {
+                "nome": "VALERIO RELUCENTI",
+                "gol": 1,
+                "squadra": "LAURENTUM"
+              },
+              {
+                "nome": "FLAVIO SCHIRMO",
+                "gol": 2,
+                "squadra": "PARMA LETALE"
+              },
+              {
+                "nome": "MATTEO PETRELLI",
+                "gol": 1,
+                "squadra": "PARMA LETALE"
+              }
+            ],
+            "giocatore": "EMANUELE BUFANO",
+            "squadraGiocatore": "LAURENTUM",
+            "portiere": "VITTORIO SPURIO",
+            "squadraPortiere": "PARMA LETALE"
           }
         ]
       },
@@ -2966,22 +3028,22 @@
               {
                 "nome": "LORENZO CALLIPO",
                 "gol": 1,
-                "squadra": "FORTITUDO POMEZIA"
+                "squadra": "FORTITUDO POMEZIA A"
               },
               {
                 "nome": "MATTIA BRUNI",
                 "gol": 2,
-                "squadra": "FORTITUDO POMEZIA"
+                "squadra": "FORTITUDO POMEZIA B"
               },
               {
                 "nome": "FRANCESCO TOCCA",
                 "gol": 1,
-                "squadra": "FORTITUDO POMEZIA"
+                "squadra": "FORTITUDO POMEZIA B"
               },
               {
                 "nome": "LEONARDO TOCCA",
                 "gol": 1,
-                "squadra": "FORTITUDO POMEZIA"
+                "squadra": "FORTITUDO POMEZIA B"
               },
               {
                 "nome": "EMANUEL SCUNGIO",
@@ -3087,15 +3149,46 @@
           },
           {
             "squadre": "FORTITUDO POMEZIA A vs FF10",
-            "risultato": "",
+            "risultato": "4 - 3",
             "data": "10/05/2026",
             "ora": "16:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DANIEL MAENZA",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "ELIA VARONE",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "LORENZO CALLIPO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "MATTIA PIRROCCO",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "MANUELE PARTE",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "NICCOLO'  DE PAOLIS",
+                "gol": 1,
+                "squadra": "FF10"
+              }
+            ],
+            "giocatore": "DANIEL MAENZA",
+            "squadraGiocatore": "FORTITUDO POMEZIA A",
+            "portiere": "DONATO CARRIERO",
+            "squadraPortiere": "FORTITUDO POMEZIA A"
           }
         ]
       },
@@ -3826,7 +3919,7 @@
           },
           {
             "squadre": "NUOVA FLORIDA vs VALEAS",
-            "risultato": "11 - 1",
+            "risultato": "7 - 1",
             "data": "10/05/2026",
             "ora": "15:00",
             "campo": "Campo B",
@@ -4377,15 +4470,41 @@
           },
           {
             "squadre": "ANZIO C5 vs NETTUNO CALCIO",
-            "risultato": "",
+            "risultato": "3 - 5",
             "data": "10/05/2026",
             "ora": "16:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "TOMMASO CARADONNA",
+                "gol": 1,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "DIEGO TRANCHILLO",
+                "gol": 1,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "GIOVANNI DE NARDIS",
+                "gol": 2,
+                "squadra": "NETTUNO CALCIO "
+              },
+              {
+                "nome": "CHRISTIAN DI ROSA",
+                "gol": 2,
+                "squadra": "NETTUNO CALCIO "
+              },
+              {
+                "nome": "TIZIANO CIARAVOLO",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO "
+              }
+            ],
+            "giocatore": "CHRISTIAN DI ROSA",
+            "squadraGiocatore": "NETTUNO CALCIO",
+            "portiere": "ANDREA PISTIDDA",
+            "squadraPortiere": "ANZIO C5"
           },
           {
             "squadre": "FORTE COLLEFERRO vs FORTITUDO POMEZIA",
