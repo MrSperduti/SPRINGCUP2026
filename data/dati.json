@@ -4508,15 +4508,41 @@
           },
           {
             "squadre": "FORTE COLLEFERRO vs FORTITUDO POMEZIA",
-            "risultato": "",
+            "risultato": "3 - 4",
             "data": "11/05/2026",
             "ora": "19:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MATTIA MIDDEI",
+                "gol": 3,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "CRISTIAN BRUNI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "FRANCESCO PODDA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICO PANETTA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "CHRISTIAN NASTASI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "MATTIA MIDDEI",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "ETHAN ANTONIO BECK",
+            "squadraPortiere": "FORTE COLLEFERRO"
           }
         ]
       },
