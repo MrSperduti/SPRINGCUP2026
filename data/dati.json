@@ -1164,10 +1164,10 @@
         "giornata": "Giornata 3",
         "partite": [
           {
-            "squadre": "NEW TEAM vs FORTE COLLEFERRO",
+            "squadre": "FORTITUDO POMEZIA vs AMB FROSINONE",
             "risultato": "",
             "data": "18/05/2026",
-            "ora": "18:00",
+            "ora": "19:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -1176,10 +1176,10 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTITUDO POMEZIA vs AMB FROSINONE",
+            "squadre": "NEW TEAM vs FORTE COLLEFERRO",
             "risultato": "",
             "data": "18/05/2026",
-            "ora": "19:00",
+            "ora": "20:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
