@@ -2011,15 +2011,41 @@
           },
           {
             "squadre": "ANZIO C5 vs REAL CASTEL FONTANA",
-            "risultato": "",
+            "risultato": "4 - 6",
             "data": "12/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DIEGO GILBERTI",
+                "gol": 3,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "RICCARDO TERSIGNI",
+                "gol": 2,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "SAMUEL PERSICONE",
+                "gol": 1,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "DIEGO SABELLICO",
+                "gol": 3,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "SIMONE SANDELLI ",
+                "gol": 1,
+                "squadra": "ANZIO C5"
+              }
+            ],
+            "giocatore": "DIEGO GILBERTI",
+            "squadraGiocatore": "REAL CASTEL FONTANA",
+            "portiere": "MICHAEL ERAMO",
+            "squadraPortiere": "REAL CASTEL FONTANA"
           },
           {
             "squadre": "FF10 vs FORTITUDO POMEZIA",
