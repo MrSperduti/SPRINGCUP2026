@@ -194,14 +194,14 @@
         ]
       },
       {
-        "giornata": "FINALE 3°/4° POSTO",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "18:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -211,14 +211,14 @@
         ]
       },
       {
-        "giornata": "FINALE",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "18:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -736,14 +736,14 @@
         ]
       },
       {
-        "giornata": "FINALE 3°/4° POSTO",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "17:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -753,14 +753,14 @@
         ]
       },
       {
-        "giornata": "FINALE",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "17:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -1111,6 +1111,18 @@
         "giornata": "Giornata 2",
         "partite": [
           {
+            "squadre": "ACADEMY vs FF10",
+            "risultato": "",
+            "data": "16/05/2026",
+            "ora": "10:00",
+            "campo": "Campo B",
+            "marcatori": [],
+            "giocatore": "",
+            "squadraGiocatore": "",
+            "portiere": "",
+            "squadraPortiere": ""
+          },
+          {
             "squadre": "NEW TEAM vs FORTITUDO POMEZIA",
             "risultato": "",
             "data": "16/05/2026",
@@ -1135,23 +1147,11 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "ACADEMY vs FF10",
-            "risultato": "",
-            "data": "16/05/2026",
-            "ora": "10:00",
-            "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
-          },
-          {
             "squadre": "ARDEA C5 vs FORTE COLLEFERRO",
             "risultato": "",
             "data": "16/05/2026",
             "ora": "18:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -1306,14 +1306,14 @@
         ]
       },
       {
-        "giornata": "FINALE 3°/4° POSTO",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "16:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -1323,14 +1323,14 @@
         ]
       },
       {
-        "giornata": "FINALE",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "16:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -2063,10 +2063,10 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTE COLLEFERRO vs NEW TEAM",
+            "squadre": "ANZIO C5 vs FAIR PLAY SCHOOL",
             "risultato": "",
-            "data": "16/05/2026",
-            "ora": "19:00",
+            "data": "17/05/2026",
+            "ora": "09:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -2075,11 +2075,11 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "ANZIO C5 vs FAIR PLAY SCHOOL",
+            "squadre": "FORTE COLLEFERRO vs NEW TEAM",
             "risultato": "",
-            "data": "17/05/2026",
-            "ora": "09:00",
-            "campo": "Campo A",
+            "data": "Data da destinarsi",
+            "ora": "",
+            "campo": "Campo da definire",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -2282,14 +2282,14 @@
         ]
       },
       {
-        "giornata": "FINALE 3°/4° POSTO",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "15:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -2299,14 +2299,14 @@
         ]
       },
       {
-        "giornata": "FINALE",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "15:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -3198,8 +3198,8 @@
           {
             "squadre": "ACADEMY A vs FORTE COLLEFERRO",
             "risultato": "",
-            "data": "15/05/2026",
-            "ora": "18:00",
+            "data": "16/05/2026",
+            "ora": "19:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -3391,14 +3391,14 @@
         ]
       },
       {
-        "giornata": "FINALE 3°/4° POSTO",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "12:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -3408,14 +3408,14 @@
         ]
       },
       {
-        "giornata": "FINALE",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "12:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -3956,22 +3956,10 @@
         "giornata": "Giornata 2",
         "partite": [
           {
-            "squadre": "NUOVA FLORIDA vs POMEZIA CALCIO B",
+            "squadre": "VALEAS vs NETTUNO CALCIO",
             "risultato": "",
-            "data": "18/05/2026",
-            "ora": "18:00",
-            "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
-          },
-          {
-            "squadre": "POMEZIA CALCIO A vs ANZIO C5",
-            "risultato": "",
-            "data": "18/05/2026",
-            "ora": "19:00",
+            "data": "16/05/2026",
+            "ora": "16:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -3992,10 +3980,22 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "VALEAS vs NETTUNO CALCIO",
+            "squadre": "NUOVA FLORIDA vs POMEZIA CALCIO B",
             "risultato": "",
-            "data": "16/05/2026",
-            "ora": "16:00",
+            "data": "18/05/2026",
+            "ora": "18:00",
+            "campo": "Campo B",
+            "marcatori": [],
+            "giocatore": "",
+            "squadraGiocatore": "",
+            "portiere": "",
+            "squadraPortiere": ""
+          },
+          {
+            "squadre": "POMEZIA CALCIO A vs ANZIO C5",
+            "risultato": "",
+            "data": "18/05/2026",
+            "ora": "19:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -4093,14 +4093,14 @@
         ]
       },
       {
-        "giornata": "FINALE 3°/4° POSTO",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "09:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -4110,14 +4110,14 @@
         ]
       },
       {
-        "giornata": "FINALE",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "09:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -4550,6 +4550,18 @@
         "giornata": "Giornata 2",
         "partite": [
           {
+            "squadre": "FORTE COLLEFERRO vs NETTUNO CALCIO",
+            "risultato": "",
+            "data": "15/05/2026",
+            "ora": "19:00",
+            "campo": "Campo A",
+            "marcatori": [],
+            "giocatore": "",
+            "squadraGiocatore": "",
+            "portiere": "",
+            "squadraPortiere": ""
+          },
+          {
             "squadre": "FORTITUDO POMEZIA vs ANZIO C5",
             "risultato": "",
             "data": "16/05/2026",
@@ -4567,18 +4579,6 @@
             "data": "16/05/2026",
             "ora": "17:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
-          },
-          {
-            "squadre": "FORTE COLLEFERRO vs NETTUNO CALCIO",
-            "risultato": "",
-            "data": "15/05/2026",
-            "ora": "19:00",
-            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -4687,14 +4687,14 @@
         ]
       },
       {
-        "giornata": "FINALE 3°/4° POSTO",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "10:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -4704,14 +4704,14 @@
         ]
       },
       {
-        "giornata": "FINALE",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "10:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -5283,18 +5283,6 @@
         "giornata": "Giornata 1",
         "partite": [
           {
-            "squadre": "FORTITUDO POMEZIA A vs LATINA C5",
-            "risultato": "",
-            "data": "12/05/2026",
-            "ora": "19:00",
-            "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
-          },
-          {
             "squadre": "ANZIO C5 vs NUOVA FLORIDA",
             "risultato": "11 - 1",
             "data": "09/05/2026",
@@ -5326,44 +5314,6 @@
             "squadraGiocatore": "ANZIO C5",
             "portiere": "ROBERTO ZACCARIA",
             "squadraPortiere": "NUOVA FLORIDA"
-          },
-          {
-            "squadre": "FORTITUDO POMEZIA B vs NEW TEAM",
-            "risultato": "1 - 7",
-            "data": "11/05/2026",
-            "ora": "18:00",
-            "campo": "Campo B",
-            "marcatori": [
-              {
-                "nome": "ANDREA TALARICO",
-                "gol": 2,
-                "squadra": "NEW TEAM"
-              },
-              {
-                "nome": "DAVIDE RUZZOLINI",
-                "gol": 2,
-                "squadra": "NEW TEAM"
-              },
-              {
-                "nome": "VALERIO SCHENA ",
-                "gol": 2,
-                "squadra": "NEW TEAM"
-              },
-              {
-                "nome": "LORENZO MASSARONI ",
-                "gol": 1,
-                "squadra": "NEW TEAM"
-              },
-              {
-                "nome": "SAMUELE D'AMORE",
-                "gol": 1,
-                "squadra": "FORTITUDO POMEZIA B"
-              }
-            ],
-            "giocatore": "ANDREA TALARICO",
-            "squadraGiocatore": "NEW TEAM",
-            "portiere": "VALERIO SCOPONI",
-            "squadraPortiere": "FORTITUDO POMEZIA B"
           },
           {
             "squadre": "FORTE COLLEFERRO vs S. PIETRO E PAOLO",
@@ -5417,12 +5367,74 @@
             "squadraGiocatore": "S. PIETRO PAOLO",
             "portiere": "FILIPPO MARIA BATTINIELLO",
             "squadraPortiere": "FORTE COLLEFERRO"
+          },
+          {
+            "squadre": "FORTITUDO POMEZIA B vs NEW TEAM",
+            "risultato": "1 - 7",
+            "data": "11/05/2026",
+            "ora": "18:00",
+            "campo": "Campo B",
+            "marcatori": [
+              {
+                "nome": "ANDREA TALARICO",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "DAVIDE RUZZOLINI",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "VALERIO SCHENA ",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LORENZO MASSARONI ",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "SAMUELE D'AMORE",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA B"
+              }
+            ],
+            "giocatore": "ANDREA TALARICO",
+            "squadraGiocatore": "NEW TEAM",
+            "portiere": "VALERIO SCOPONI",
+            "squadraPortiere": "FORTITUDO POMEZIA B"
+          },
+          {
+            "squadre": "FORTITUDO POMEZIA A vs LATINA C5",
+            "risultato": "",
+            "data": "12/05/2026",
+            "ora": "19:00",
+            "campo": "Campo B",
+            "marcatori": [],
+            "giocatore": "",
+            "squadraGiocatore": "",
+            "portiere": "",
+            "squadraPortiere": ""
           }
         ]
       },
       {
         "giornata": "Giornata 2",
         "partite": [
+          {
+            "squadre": "FORTITUDO POMEZIA B vs FORTE COLLEFERRO",
+            "risultato": "",
+            "data": "15/05/2026",
+            "ora": "18:00",
+            "campo": "Campo A",
+            "marcatori": [],
+            "giocatore": "",
+            "squadraGiocatore": "",
+            "portiere": "",
+            "squadraPortiere": ""
+          },
           {
             "squadre": "FORTITUDO POMEZIA A vs ANZIO C5",
             "risultato": "",
@@ -5453,18 +5465,6 @@
             "data": "17/05/2026",
             "ora": "12:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
-          },
-          {
-            "squadre": "FORTITUDO POMEZIA B vs FORTE COLLEFERRO",
-            "risultato": "",
-            "data": "17/05/2026",
-            "ora": "15:00",
-            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -5667,14 +5667,14 @@
         ]
       },
       {
-        "giornata": "FINALE 3°/4° POSTO",
+        "giornata": "FINALE",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "11:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -5684,14 +5684,14 @@
         ]
       },
       {
-        "giornata": "FINALE",
+        "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
             "squadre": "",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "11:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
