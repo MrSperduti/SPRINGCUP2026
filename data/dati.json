@@ -3196,18 +3196,6 @@
         "giornata": "Giornata 2",
         "partite": [
           {
-            "squadre": "ACADEMY A vs FORTE COLLEFERRO",
-            "risultato": "",
-            "data": "16/05/2026",
-            "ora": "19:00",
-            "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
-          },
-          {
             "squadre": "FORTITUDO POMEZIA B vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "17/05/2026",
@@ -3236,6 +3224,18 @@
             "risultato": "",
             "data": "17/05/2026",
             "ora": "18:00",
+            "campo": "Campo A",
+            "marcatori": [],
+            "giocatore": "",
+            "squadraGiocatore": "",
+            "portiere": "",
+            "squadraPortiere": ""
+          },
+          {
+            "squadre": "ACADEMY A vs FORTE COLLEFERRO",
+            "risultato": "",
+            "data": "18/05/2026",
+            "ora": "19:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -5424,11 +5424,11 @@
         "giornata": "Giornata 2",
         "partite": [
           {
-            "squadre": "FORTITUDO POMEZIA B vs FORTE COLLEFERRO",
+            "squadre": "FORTITUDO POMEZIA A vs ANZIO C5",
             "risultato": "",
-            "data": "15/05/2026",
-            "ora": "18:00",
-            "campo": "Campo A",
+            "data": "16/05/2026",
+            "ora": "12:00",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -5436,11 +5436,11 @@
             "squadraPortiere": ""
           },
           {
-            "squadre": "FORTITUDO POMEZIA A vs ANZIO C5",
+            "squadre": "FORTITUDO POMEZIA B vs FORTE COLLEFERRO",
             "risultato": "",
             "data": "16/05/2026",
-            "ora": "12:00",
-            "campo": "Campo B",
+            "ora": "19:00",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
