@@ -5434,15 +5434,51 @@
           },
           {
             "squadre": "FORTITUDO POMEZIA A vs LATINA C5",
-            "risultato": "",
+            "risultato": "5 - 2",
             "data": "12/05/2026",
             "ora": "19:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "CHRISTOPHER FORTINI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "MATTIA CIUCCIOVINO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "CHRISTIAN PECORAIO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "DANILO PEROGI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "MATTIA MIDDEI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "DAVIDE VERRENGIA",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "GIORGIO MAGGIO",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              }
+            ],
+            "giocatore": "NICOLO' BRAZIOLI",
+            "squadraGiocatore": "FORTITUDO POMEZIA A",
+            "portiere": "RAOUL VIOLA",
+            "squadraPortiere": "FORTITUDO POMEZIA A"
           }
         ]
       },
