@@ -2049,15 +2049,61 @@
           },
           {
             "squadre": "FF10 vs FORTITUDO POMEZIA",
-            "risultato": "",
+            "risultato": "2 - 10",
             "data": "13/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "CHRISTIAN LESSA",
+                "gol": 3,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "FLAVIO ERDI",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "DAVIDE MASCARO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "LUCA NOLANO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "MATTEO BINZARU",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "MANCINI VALERIO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "LORENZO BELLO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "NICOLO' CIAFFI",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "CHRISTIAN GRECO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              }
+            ],
+            "giocatore": "CHRISTIAN LESSA",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "GABRIELE GALLI",
+            "squadraPortiere": "FF10"
           }
         ]
       },
@@ -2079,7 +2125,7 @@
           {
             "squadre": "CIRCOLO MASTER vs FORTITUDO POMEZIA",
             "risultato": "",
-            "data": "16/05/2026",
+            "data": "18/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
             "marcatori": [],
@@ -5525,7 +5571,7 @@
             "squadre": "ACADEMY B vs S. PIETRO E PAOLO",
             "risultato": "",
             "data": "17/05/2026",
-            "ora": "12:00",
+            "ora": "11:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
