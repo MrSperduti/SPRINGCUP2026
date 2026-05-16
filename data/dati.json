@@ -1279,15 +1279,51 @@
           },
           {
             "squadre": "NEW TEAM vs FORTITUDO POMEZIA",
-            "risultato": "",
+            "risultato": "7 - 3",
             "data": "16/05/2026",
             "ora": "15:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DENNIS DEL DUCA",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "ALEXANDRU ARTENE",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "DAVIDE D'ANTONI DI CARLO",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "EMANUELE D'ANTONI DI CARLO",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "EDOARDO SORICETTI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "RICCARDO PORTALE",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "RICCARDO PANNUNZIO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              }
+            ],
+            "giocatore": "DENNIS DEL DUCA",
+            "squadraGiocatore": "NEW TEAM",
+            "portiere": "ROBERTO FIONCHETTI",
+            "squadraPortiere": "FORTITUDO POMEZIA"
           },
           {
             "squadre": "CIRCOLO MASTER vs S. PIETRO E PAOLO",
