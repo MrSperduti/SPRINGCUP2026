@@ -4888,27 +4888,99 @@
           },
           {
             "squadre": "FORTITUDO POMEZIA vs ANZIO C5",
-            "risultato": "",
+            "risultato": "6 - 6",
             "data": "16/05/2026",
             "ora": "11:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MATTIA MIDDEI",
+                "gol": 5,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "ALESSANDRO FAZIO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "",
+                "gol": 2,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "",
+                "gol": 2,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "",
+                "gol": 2,
+                "squadra": "ANZIO C5"
+              }
+            ],
+            "giocatore": "MATTIA MIDDEI",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "ANDREA PISTIDDA",
+            "squadraPortiere": "ANZIO C5"
           },
           {
             "squadre": "NUOVA FLORIDA vs MARINO ACADEMY",
-            "risultato": "",
+            "risultato": "2 - 14",
             "data": "16/05/2026",
             "ora": "17:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "EDOARDO CINI",
+                "gol": 4,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "FLAVIO CHINEA",
+                "gol": 3,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "GIORDANO MOGAVERO",
+                "gol": 2,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "RICCARDO SABATUCCI",
+                "gol": 2,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "JACOPO RUSSO",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "EDOARDO LA TRECCHIA",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "JACOPO LA TRECCHIA",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "ANDREA PIZI",
+                "gol": 1,
+                "squadra": "NUOVA FLORIDA"
+              },
+              {
+                "nome": "CHRISTIAN PIZI",
+                "gol": 1,
+                "squadra": "NUOVA FLORIDA"
+              }
+            ],
+            "giocatore": "EDOARDO CINI",
+            "squadraGiocatore": "MARINO ACADEMY",
+            "portiere": "ALESSIO MENDITTO",
+            "squadraPortiere": "NUOVA FLORIDA"
           },
           {
             "squadre": "ACADEMY vs INDOMITA POMEZIA",
