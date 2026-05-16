@@ -106,27 +106,74 @@
         "partite": [
           {
             "squadre": "FORTITUDO POMEZIA vs PARMA LETALE",
-            "risultato": "",
+            "risultato": "4 - 3",
             "data": "16/05/2026",
             "ora": "09:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "CRISTIAN PARENTE",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "METIN KRCISTA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "SIMONE SILVERI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "DAVIDE VERBENI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "FLAVIO SCHIRMA",
+                "gol": 2,
+                "squadra": "PARMA LETALE"
+              },
+              {
+                "nome": "MATTEO PETRELLI",
+                "gol": 1,
+                "squadra": "PARMA LETALE"
+              }
+            ],
+            "giocatore": "SIMONE SILVERI",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "ALESSANDRO SPORTELLI",
+            "squadraPortiere": "PARMA LETALE"
           },
           {
             "squadre": "LAURENTUM vs AMB FROSINONE",
-            "risultato": "",
+            "risultato": "3 - 6",
             "data": "16/05/2026",
             "ora": "10:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "LUCIANO ARMENIA",
+                "gol": 3,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "GIACOMO D'ARCE",
+                "gol": 2,
+                "squadra": "LUCIANO ARMENIA"
+              },
+              {
+                "nome": "PIERGIORGIO MAURI",
+                "gol": 1,
+                "squadra": "LAURENTUM"
+              }
+            ],
+            "giocatore": "LUCIANO ARMENIA",
+            "squadraGiocatore": "AMB FROSINONE",
+            "portiere": "MATTEO CONTINI",
+            "squadraPortiere": "LAURENTUM"
           }
         ]
       },
