@@ -637,27 +637,94 @@
         "partite": [
           {
             "squadre": "FORTITUDO POMEZIA vs AMB FROSINONE",
-            "risultato": "",
+            "risultato": "7 - 3",
             "data": "16/05/2026",
             "ora": "11:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
+            "marcatori": [
+              {
+                "nome": "MARCO DI GIOVANBATTISTA",
+                "gol": 3,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "IVANSCHI FABRIZIO",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "METIN KRCISTA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "DAVIDE VERBENI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "WALID EL IDRISSI",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "ALESSIO DEL VESCOVO",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "LUCIANO ARMENIA",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              }
+            ],
+            "giocatore": "MARCO DI GIOVANBATTISTA",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
             "portiere": "",
-            "squadraPortiere": ""
+            "squadraPortiere": "AMB FROSINONE"
           },
           {
             "squadre": "MIRAFIN vs CIRCOLO MASTER",
-            "risultato": "",
+            "risultato": "8 - 4",
             "data": "16/05/2026",
             "ora": "12:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ALESSANDRO GOBBI",
+                "gol": 3,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "CHRISTIAN IANCU",
+                "gol": 2,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "CIRO CAVAGNOLI",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "DAMIANO MUSTO",
+                "gol": 2,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "ALESSIO LORENZINI",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              }
+            ],
+            "giocatore": "CIRO CAVAGNOLI",
+            "squadraGiocatore": "MIRAFIN",
+            "portiere": "DANIELE ATTANASIO",
+            "squadraPortiere": "CIRCOLO MASTER"
           }
         ]
       },
@@ -5657,15 +5724,51 @@
         "partite": [
           {
             "squadre": "FORTITUDO POMEZIA A vs ANZIO C5",
-            "risultato": "",
+            "risultato": "7 - 1",
             "data": "16/05/2026",
             "ora": "12:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MATTIA MIDDEI",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "DANILO PEROGI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "NICOLO' BRAZIOLI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "CHRISTOPHER FORTINI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "DAVIDE PIRA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "ALESSANDRO RAMUNNO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "",
+                "gol": 1,
+                "squadra": "ANZIO C5"
+              }
+            ],
+            "giocatore": "MATTIA MIDDEI",
+            "squadraGiocatore": "FORTITUDO POMEZIA A",
+            "portiere": "RAOUL VIOLA",
+            "squadraPortiere": "FORTITUDO POMEZIA A"
           },
           {
             "squadre": "FORTITUDO POMEZIA B vs FORTE COLLEFERRO",
