@@ -1159,15 +1159,56 @@
         "partite": [
           {
             "squadre": "ACADEMY vs FF10",
-            "risultato": "",
+            "risultato": "8 - 3",
             "data": "16/05/2026",
             "ora": "10:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DAVIDE TABACILA",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "FRANCESCO SUSIN",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "ALESSANDRO MIRRA",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "CHRISTIAN CRISPI",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "NYKOLAS VARDARO",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DOMENICO ROMANO",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DANIELE ROMANI",
+                "gol": 2,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "DAVIDE ANTONINI",
+                "gol": 1,
+                "squadra": "FF10"
+              }
+            ],
+            "giocatore": "FRANCESCO SUSIN",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "GIOVANNI MELIADO'",
+            "squadraPortiere": "ACADEMY"
           },
           {
             "squadre": "NEW TEAM vs FORTITUDO POMEZIA",
