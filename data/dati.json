@@ -5993,15 +5993,26 @@
           },
           {
             "squadre": "FORTITUDO POMEZIA B vs FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "0 - 4",
             "data": "16/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ANDREA FANFONI",
+                "gol": 3,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "DIEGO PANETTA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "DIEGO PANETTA",
+            "squadraGiocatore": "FORTE COLLEFERRO",
+            "portiere": "ANDREA ARMELLIN",
+            "squadraPortiere": "FORTITUDO POMEZIA B"
           },
           {
             "squadre": "ACADEMY A vs NUOVA FLORIDA",
