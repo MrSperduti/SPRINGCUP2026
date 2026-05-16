@@ -4220,15 +4220,41 @@
         "partite": [
           {
             "squadre": "VALEAS vs NETTUNO CALCIO",
-            "risultato": "",
+            "risultato": "4 - 7",
             "data": "16/05/2026",
             "ora": "16:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "TIZIANO CIARAVOLO",
+                "gol": 6,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "MARCO CASABURO",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "GABRIELE CIRULLI",
+                "gol": 2,
+                "squadra": "VALEAS"
+              },
+              {
+                "nome": "CHRISTIAN CERVELLIERI",
+                "gol": 1,
+                "squadra": "VALEAS"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "VALEAS"
+              }
+            ],
+            "giocatore": "TIZIANO CIARAVOLO",
+            "squadraGiocatore": "NETTUNO CALCIO",
+            "portiere": "ENEA CARMACIU",
+            "squadraPortiere": "VALEAS"
           },
           {
             "squadre": "ACADEMY vs CISTERNA C5",
