@@ -1327,15 +1327,56 @@
           },
           {
             "squadre": "CIRCOLO MASTER vs S. PIETRO E PAOLO",
-            "risultato": "",
+            "risultato": "15 - 1",
             "data": "16/05/2026",
             "ora": "17:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MATTEO PROTO",
+                "gol": 3,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "MIRCO MORRESI",
+                "gol": 3,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "FEDERICO BORRELLI",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "CRISTIANO LOMBARDI",
+                "gol": 4,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "FRANCESCO MONTEIRO DA CRUZ",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "LORENZO CATINO",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "PAOLO DI MICCO",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 2,
+                "squadra": "CIRCOLO MASTER"
+              }
+            ],
+            "giocatore": "CRISTIANO LOMBARDI",
+            "squadraGiocatore": "CIRCOLO MASTER",
+            "portiere": "MANUEL CAPOMAGI",
+            "squadraPortiere": "S. PIETRO E PAOLO"
           },
           {
             "squadre": "ARDEA C5 vs FORTE COLLEFERRO",
@@ -1343,11 +1384,57 @@
             "data": "16/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "GABRIELE CARAMANICA",
+                "gol": 3,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "SOLGATO FORNARI EDUARDO",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "VALERIO POTRICH",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "SIMONE ROMAGNOLI",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "FRANCESCO ORSINI",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "FEDERICO MORE'",
+                "gol": 3,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "ALESSIO MARCHETTI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "JACOPO BOVI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "FEDERICO MORE'",
+            "squadraGiocatore": "FORTE COLLEFERRO",
+            "portiere": "VALERIO PIASCO",
+            "squadraPortiere": "ARDEA C5"
           }
         ]
       },
