@@ -4623,15 +4623,51 @@
         "partite": [
           {
             "squadre": "FORTE COLLEFERRO vs NETTUNO CALCIO",
-            "risultato": "",
+            "risultato": "6 - 6",
             "data": "15/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "GIOVANNI DE NARDIS",
+                "gol": 3,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "VALERIO MARI",
+                "gol": 3,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "FILIPPO RONZONI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICO PANETTA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "DIEGO PANETTA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICOLO' FANTINI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "ALESSANDRO ROSSI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "GIOVANNI DE NARDIS",
+            "squadraGiocatore": "NETTUNO CALCIO",
+            "portiere": "ETHAN ANTONIO BECK",
+            "squadraPortiere": "FORTE COLLEFERRO"
           },
           {
             "squadre": "FORTITUDO POMEZIA vs ANZIO C5",
@@ -5557,15 +5593,31 @@
           },
           {
             "squadre": "ACADEMY A vs NUOVA FLORIDA",
-            "risultato": "",
+            "risultato": "4 - 1",
             "data": "15/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "LEONARDO TORTORELLA",
+                "gol": 3,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "SIMONE DI SAVINO",
+                "gol": 1,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "CHRISTIAN PIZI",
+                "gol": 1,
+                "squadra": "NUOVA FLORIDA"
+              }
+            ],
+            "giocatore": "LEONARDO TORTORELLA",
+            "squadraGiocatore": "ACADEMY A",
+            "portiere": "ROBERTO ZACCARIA",
+            "squadraPortiere": "NUOVA FLORIDA"
           },
           {
             "squadre": "ACADEMY B vs S. PIETRO E PAOLO",
