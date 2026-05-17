@@ -3593,15 +3593,41 @@
         "partite": [
           {
             "squadre": "FORTITUDO POMEZIA B vs S. PIETRO E PAOLO",
-            "risultato": "",
+            "risultato": "4 - 7",
             "data": "17/05/2026",
             "ora": "16:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "GABRIEL SCOGNAMIGLIO",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA B"
+              },
+              {
+                "nome": "EMMA MINCHELLA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA B"
+              },
+              {
+                "nome": "CHRISTOFER FORTINI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA B"
+              },
+              {
+                "nome": "LORENZO CIOFFI",
+                "gol": 5,
+                "squadra": "FORTITUDO POMEZIA B"
+              },
+              {
+                "nome": "FRANCESCO CAMPANELLA",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA B"
+              }
+            ],
+            "giocatore": "LORENZO CIOFFI",
+            "squadraGiocatore": "S. PIETRO E PAOLO",
+            "portiere": "GABRIELE LONERO",
+            "squadraPortiere": "FORTITUDO POMEZIA B"
           },
           {
             "squadre": "ACADEMY B vs NEW TEAM",
@@ -4391,15 +4417,31 @@
           },
           {
             "squadre": "ACADEMY vs CISTERNA C5",
-            "risultato": "",
+            "risultato": "2 - 5",
             "data": "17/05/2026",
             "ora": "15:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "NOAH GAFITA",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "CRISTIAN TORSELLI",
+                "gol": 3,
+                "squadra": "CISTERNA C5"
+              },
+              {
+                "nome": "JACOPO FAVORITO",
+                "gol": 2,
+                "squadra": "CISTERNA C5"
+              }
+            ],
+            "giocatore": "GINEVRA DI CUZZO",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "LEONARDO ZAPPETTI",
+            "squadraPortiere": "CISTERNA C5"
           },
           {
             "squadre": "NUOVA FLORIDA vs POMEZIA CALCIO B",
