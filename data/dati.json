@@ -6126,15 +6126,41 @@
           },
           {
             "squadre": "ACADEMY B vs S. PIETRO E PAOLO",
-            "risultato": "",
+            "risultato": "3 - 4",
             "data": "17/05/2026",
             "ora": "11:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MANUEL COTUGNO",
+                "gol": 2,
+                "squadra": "ACADEMY B"
+              },
+              {
+                "nome": "GABRIELE VESCOVO",
+                "gol": 1,
+                "squadra": "ACADEMY B"
+              },
+              {
+                "nome": "MANUEL MAZZUCCHI",
+                "gol": 2,
+                "squadra": "S. PIETRO E PAOLO"
+              },
+              {
+                "nome": "ALESSIO MARCUCCI",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
+              },
+              {
+                "nome": "GABRIELE BANDINU",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
+              }
+            ],
+            "giocatore": "MANUEL MAZZUCCHI",
+            "squadraGiocatore": "S. PIETRO E PAOLO",
+            "portiere": "GABRIELE BANDINU",
+            "squadraPortiere": "S. PIETRO E PAOLO"
           }
         ]
       },
