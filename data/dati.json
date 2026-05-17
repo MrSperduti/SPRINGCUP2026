@@ -2429,15 +2429,46 @@
           },
           {
             "squadre": "ANZIO C5 vs FAIR PLAY SCHOOL",
-            "risultato": "",
+            "risultato": "0 -13",
             "data": "17/05/2026",
             "ora": "10:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "NICOLO' MARCATO",
+                "gol": 5,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "ANOIR HARRADA",
+                "gol": 2,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "EMANUELE BAGNAIA",
+                "gol": 2,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "SIMONE MAZZA",
+                "gol": 1,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "EDOARDO ORSINI",
+                "gol": 1,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "DIEGO PERNA",
+                "gol": 1,
+                "squadra": "FAIR PLAY SCHOOL"
+              }
+            ],
+            "giocatore": "NICOLO' MARCATO",
+            "squadraGiocatore": "FAIR PLAY SCHOOL",
+            "portiere": "ALESSANDRO PARZIALE",
+            "squadraPortiere": "FAIR PLAY SCHOOL"
           },
           {
             "squadre": "FORTE COLLEFERRO vs NEW TEAM",
@@ -5086,15 +5117,51 @@
           },
           {
             "squadre": "ACADEMY vs INDOMITA POMEZIA",
-            "risultato": "",
+            "risultato": "4 - 6",
             "data": "17/05/2026",
             "ora": "10:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MARZIO BACCINI",
+                "gol": 4,
+                "squadra": "INDOMITA POMEZIA"
+              },
+              {
+                "nome": "IVAN GARRA",
+                "gol": 1,
+                "squadra": "INDOMITA POMEZIA"
+              },
+              {
+                "nome": "MATTIA DE MARIA",
+                "gol": 1,
+                "squadra": "INDOMITA POMEZIA"
+              },
+              {
+                "nome": "FEDERICO AFELBA",
+                "gol": 1,
+                "squadra": "INDOMITA POMEZIA"
+              },
+              {
+                "nome": "FRANCESCO DENNI",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "NOAH GAFITA",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "GINEVRA DI CUZZO",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              }
+            ],
+            "giocatore": "MARZIO BACCINI",
+            "squadraGiocatore": "INDOMITA POMEZIA",
+            "portiere": "SARA NOCERINO",
+            "squadraPortiere": "ACADEMY"
           }
         ]
       },
