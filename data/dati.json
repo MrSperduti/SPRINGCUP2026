@@ -3631,27 +3631,84 @@
           },
           {
             "squadre": "ACADEMY B vs NEW TEAM",
-            "risultato": "",
+            "risultato": "1 - 7",
             "data": "17/05/2026",
             "ora": "17:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "PIETRO FOLLEGA",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "ALESSANDRO AROLDI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LORENZO FOLLI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "ALESSIO MOSCA",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "GABRIELE TRENTA",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "MATTIA PALOMBO",
+                "gol": 1,
+                "squadra": "ACADEMY B"
+              }
+            ],
+            "giocatore": "PIETRO FOLLEGA",
+            "squadraGiocatore": "NEW TEAM",
+            "portiere": "LUIGI CONTENTO",
+            "squadraPortiere": "ACADEMY B"
           },
           {
             "squadre": "LATINA C5 vs FORTITUDO POMEZIA A",
-            "risultato": "",
+            "risultato": "3 - 6",
             "data": "17/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ELIA VARONE",
+                "gol": 5,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "MATTIA BRUNI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "ANGELO CRUDETTI",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "SIMONE PAGANO",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "LORENZO BORGOGNO",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              }
+            ],
+            "giocatore": "ELIA VARONE",
+            "squadraGiocatore": "FORTITUDO POMEZIA A",
+            "portiere": "DONATO CARRIERO",
+            "squadraPortiere": "FORTITUDO POMEZIA A"
           },
           {
             "squadre": "ACADEMY A vs FORTE COLLEFERRO",
