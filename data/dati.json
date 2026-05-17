@@ -162,10 +162,25 @@
               {
                 "nome": "GIACOMO D'ARCE",
                 "gol": 2,
-                "squadra": "LUCIANO ARMENIA"
+                "squadra": "AMB FROSINONE"
               },
               {
                 "nome": "PIERGIORGIO MAURI",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "EMANUELE BUFANO",
+                "gol": 1,
+                "squadra": "LAURENTUM"
+              },
+              {
+                "nome": "FEDERICO MARTINELLI",
+                "gol": 1,
+                "squadra": "LAURENTUM"
+              },
+              {
+                "nome": "VALERIO RELUCENTI",
                 "gol": 1,
                 "squadra": "LAURENTUM"
               }
@@ -1380,7 +1395,7 @@
           },
           {
             "squadre": "ARDEA C5 vs FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "8 - 5",
             "data": "16/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
