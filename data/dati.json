@@ -1470,15 +1470,51 @@
           },
           {
             "squadre": "NEW TEAM vs FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "4 - 9",
             "data": "18/05/2026",
             "ora": "20:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DAVIDE D'ANTONI DI CARLO",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LORENZO MAVIGLIA",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "DENNIS DEL DUCA",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "NICOLA MARINO",
+                "gol": 3,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "MATTEO LIBRUDI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "ALESSIO MARCHETTI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "VALERIO TRULLI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "VALERIO TRULLI",
+            "squadraGiocatore": "FORTE COLLEFERRO",
+            "portiere": "FLAVIO CARDINALI",
+            "squadraPortiere": "NEW TEAM"
           },
           {
             "squadre": "ACADEMY vs CIRCOLO MASTER",
@@ -3712,15 +3748,46 @@
           },
           {
             "squadre": "ACADEMY A vs FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "8 - 2",
             "data": "18/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "GABRIELE PICCINI",
+                "gol": 4,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "FRANCESCO BRADARICH",
+                "gol": 1,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "LEONARDO GENOVESE",
+                "gol": 2,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "NICOLAS SPERDUTI",
+                "gol": 1,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "LORENZO BRUNI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "DAVIDE SUSSARELLO",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "JONAS MARCOTULLI",
+            "squadraGiocatore": "ACADEMY A",
+            "portiere": "MATTIA BARBARESCHI",
+            "squadraPortiere": "ACADEMY A"
           }
         ]
       },
@@ -4502,27 +4569,74 @@
           },
           {
             "squadre": "NUOVA FLORIDA vs POMEZIA CALCIO B",
-            "risultato": "",
+            "risultato": "3 - 5",
             "data": "18/05/2026",
             "ora": "18:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MATTEO PIZI",
+                "gol": 1,
+                "squadra": "NUOVA FLORIDA"
+              },
+              {
+                "nome": "ANDREA PIZI",
+                "gol": 1,
+                "squadra": "NUOVA FLORIDA"
+              },
+              {
+                "nome": "GIANMARCO ZACCARDI",
+                "gol": 1,
+                "squadra": "NUOVA FLORIDA"
+              },
+              {
+                "nome": "EMANUELE DE MARZO",
+                "gol": 1,
+                "squadra": "POMEZIA CALCIO B"
+              },
+              {
+                "nome": "MARIO MICHAEL ",
+                "gol": 1,
+                "squadra": "POMEZIA CALCIO B"
+              },
+              {
+                "nome": "NICOLO ANTONACCI",
+                "gol": 1,
+                "squadra": "POMEZIA CALCIO B"
+              }
+            ],
+            "giocatore": "MATTEO PIZI",
+            "squadraGiocatore": "NUOVA FLORIDA",
+            "portiere": "CAMILLA CRISAFULLI",
+            "squadraPortiere": "POMEZIA CALCIO B"
           },
           {
             "squadre": "POMEZIA CALCIO A vs ANZIO C5",
-            "risultato": "",
+            "risultato": "7 - 2",
             "data": "18/05/2026",
             "ora": "19:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ALESSIO D'ILARIO",
+                "gol": 2,
+                "squadra": "POMEZIA CALCIO A"
+              },
+              {
+                "nome": "VALERIO FEDRIZZI",
+                "gol": 2,
+                "squadra": "POMEZIA CALCIO A"
+              },
+              {
+                "nome": "CHRISTIANO KAMARA",
+                "gol": 1,
+                "squadra": "POMEZIA CALCIO A"
+              }
+            ],
+            "giocatore": "ALESSIO D'ILARIO",
+            "squadraGiocatore": "POMEZIA CALCIO A",
+            "portiere": "AARON ASMARANDUCAI",
+            "squadraPortiere": "ANZIO C5"
           }
         ]
       },
