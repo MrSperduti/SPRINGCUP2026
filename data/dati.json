@@ -748,15 +748,36 @@
         "partite": [
           {
             "squadre": "CIRCOLO MASTER vs PARMA LETALE",
-            "risultato": "",
+            "risultato": "5 - 1",
             "data": "19/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "GIOVANNI DI GIUSEPPE",
+                "gol": 2,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "MATTEO PROTO",
+                "gol": 2,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "DAMIANO MUSTO",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "PAOLO SEBASTIANELLI",
+                "gol": 1,
+                "squadra": "PARMA LETALE"
+              }
+            ],
+            "giocatore": "GIOVANNI DI GIUSEPPE",
+            "squadraGiocatore": "CIRCOLO MASTER",
+            "portiere": "ALESSANDRO SPORTELLI",
+            "squadraPortiere": "PARMA LETALE"
           },
           {
             "squadre": "MIRAFIN vs AMB FROSINONE",
@@ -2537,15 +2558,36 @@
           },
           {
             "squadre": "FORTE COLLEFERRO vs FORTITUDO POMEZIA",
-            "risultato": "",
+            "risultato": "4 - 1",
             "data": "19/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ALESSIO MARCHETTI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "FEDERICO MORE'",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "LUCREZIA MACIOCE",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "LUCA NOLANO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              }
+            ],
+            "giocatore": "LUCREZIA MACIOCE",
+            "squadraGiocatore": "FORTE COLLEFERRO",
+            "portiere": "ERIC MIHAI AELENEI LAU",
+            "squadraPortiere": "FORTITUDO POMEZIA"
           },
           {
             "squadre": "ACADEMY vs REAL CASTEL FONTANA",
@@ -6382,27 +6424,94 @@
         "partite": [
           {
             "squadre": "S. PIETRO E PAOLO vs FORTITUDO POMEZIA B",
-            "risultato": "",
+            "risultato": "3 - 3",
             "data": "19/05/2026",
             "ora": "18:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MANUEL MAZZUCCHI",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
+              },
+              {
+                "nome": "LUCA MARINITU",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
+              },
+              {
+                "nome": "JORDAN KIFLE",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
+              },
+              {
+                "nome": "LUCA ANDREI BARBARASA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA B"
+              },
+              {
+                "nome": "SAMUELE D'AMORE",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA B"
+              },
+              {
+                "nome": "PIETRO FERRARA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA B"
+              }
+            ],
+            "giocatore": "LUCA MARINITU",
+            "squadraGiocatore": "S. PIETRO E PAOLO",
+            "portiere": "ANDREA ARMELLIN",
+            "squadraPortiere": "FORTITUDO POMEZIA B"
           },
           {
             "squadre": "NUOVA FLORIDA vs FORTITUDO POMEZIA A",
-            "risultato": "",
+            "risultato": "0 - 13",
             "data": "19/05/2026",
             "ora": "19:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MATTIA CIUCCIOVINO",
+                "gol": 3,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "CHRISTOPHER FORTINI",
+                "gol": 3,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "DANILO PEROGI",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "MATTIA MIDDEI",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "NICOLO' BRAZIOLI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "CHRISTIAN PECORAIO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              }
+            ],
+            "giocatore": "CHRISTOPHER FORTINI",
+            "squadraGiocatore": "FORTITUDO POMEZIA A",
+            "portiere": "ROBERTO ZACCARIA",
+            "squadraPortiere": "NUOVA FLORIDA"
           },
           {
             "squadre": "ACADEMY A vs LATINA C5",
