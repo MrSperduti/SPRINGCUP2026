@@ -3838,27 +3838,79 @@
         "partite": [
           {
             "squadre": "ACADEMY B vs FF10",
-            "risultato": "",
+            "risultato": "3 - 5",
             "data": "20/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "NICCOLO' DE PAOLIS",
+                "gol": 2,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "GABRIELE LOMBARDI",
+                "gol": 2,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "SIMONE TANTALO",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "RYAN SOULHI",
+                "gol": 2,
+                "squadra": "ACADEMY B"
+              },
+              {
+                "nome": "DAMIANO ANDREOLI",
+                "gol": 1,
+                "squadra": "ACADEMY B"
+              }
+            ],
+            "giocatore": "GABRIELE LOMBARDI",
+            "squadraGiocatore": "FF10",
+            "portiere": "TIZIANO ROSSETTI",
+            "squadraPortiere": "FF10"
           },
           {
             "squadre": "NEW TEAM vs LATINA C5",
-            "risultato": "",
+            "risultato": "3 - 9",
             "data": "20/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "SIMONE PAGANO",
+                "gol": 3,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "LORENZO DI RITA",
+                "gol": 2,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "ANGELO CRUDETTI",
+                "gol": 2,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "VINCENZO CORCIONE",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "DIEGO COLAZZO",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              }
+            ],
+            "giocatore": "SIMONE PAGANO",
+            "squadraGiocatore": "LATINA C5",
+            "portiere": "MATTEO COLANTONIO",
+            "squadraPortiere": "NEW TEAM"
           },
           {
             "squadre": "S. PIETRO E PAOLO vs FORTE COLLEFERRO",
@@ -6542,15 +6594,51 @@
           },
           {
             "squadre": "ACADEMY B vs NEW TEAM",
-            "risultato": "",
+            "risultato": "0 - 11",
             "data": "20/05/2026",
             "ora": "19:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "FRANCESCO LEONARDI",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "NICOLO' MALIZIA",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "VALERIO SCHENA",
+                "gol": 3,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "FILIPPO DAVOLI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LORENZO MASSARONI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "DAVIDE RUZZOLINI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "ANDREA TALARICO",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              }
+            ],
+            "giocatore": "ANDREA TALARICO",
+            "squadraGiocatore": "NEW TEAM",
+            "portiere": "MATTEO ANGELI",
+            "squadraPortiere": "NEW TEAM"
           }
         ]
       },
