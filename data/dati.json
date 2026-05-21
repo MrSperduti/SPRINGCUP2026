@@ -2603,15 +2603,61 @@
           },
           {
             "squadre": "S. PIETRO E PAOLO vs FAIR PLAY SCHOOL",
-            "risultato": "",
+            "risultato": "1 - 13",
             "data": "22/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "NICHOLAS RAPICANO",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
+              },
+              {
+                "nome": "DIEGO PERNA",
+                "gol": 3,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "SOUFIANE ENNOUNI",
+                "gol": 3,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "NICOLO' MARCATO",
+                "gol": 2,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "ANOIR HARRADA",
+                "gol": 1,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "EDOARDO ORSINI",
+                "gol": 1,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "SIMONE MAZZA",
+                "gol": 1,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "ALESSANDRO ORSINI",
+                "gol": 1,
+                "squadra": "FAIR PLAY SCHOOL"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "FAIR PLAY SCHOOL"
+              }
+            ],
+            "giocatore": "NICOLO' MARCATO",
+            "squadraGiocatore": "FAIR PLAY SCHOOL",
+            "portiere": "MANUEL CAPOMAGI",
+            "squadraPortiere": "S. PIETRO E PAOLO"
           }
         ]
       },
