@@ -1234,14 +1234,50 @@
           {
             "squadre": "FORTITUDO POMEZIA vs ARDEA C5",
             "risultato": "",
-            "data": "09/05/2026",
-            "ora": "17:00",
+            "data": "21/05/2026",
+            "ora": "20:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "FRANCESCO ORSINI",
+                "gol": 4,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "GIOVANNI MAFFETTONE",
+                "gol": 2,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "DANIELE FOFI",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "SIMONE ESPOSITO",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "VALERIO PIASCO",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "RICCARDO PORTALE",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "RICCARDO PANNUNZIO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              }
+            ],
+            "giocatore": "DANIELE FOFI",
+            "squadraGiocatore": "ARDEA C5",
+            "portiere": "VALERIO PIASCO",
+            "squadraPortiere": "ARDEA C5"
           },
           {
             "squadre": "NEW TEAM vs AMB FROSINONE",
@@ -2272,6 +2308,7 @@
         "FORTE COLLEFERRO",
         "FORTITUDO POMEZIA",
         "NEW TEAM"
+
       ]
     },
     "calendario": [
@@ -2604,7 +2641,7 @@
           {
             "squadre": "S. PIETRO E PAOLO vs FAIR PLAY SCHOOL",
             "risultato": "1 - 13",
-            "data": "22/05/2026",
+            "data": "21/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
             "marcatori": [
