@@ -782,8 +782,8 @@
           {
             "squadre": "MIRAFIN vs AMB FROSINONE",
             "risultato": "",
-            "data": "24/05/2026",
-            "ora": "12:00",
+            "data": "19/05/2026",
+            "ora": "19:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -811,8 +811,8 @@
           {
             "squadre": "PARMA LETALE vs AMB FROSINONE",
             "risultato": "",
-            "data": "28/05/2026",
-            "ora": "19:00",
+            "data": "23/05/2026",
+            "ora": "12:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -828,8 +828,8 @@
           {
             "squadre": "FORTITUDO POMEZIA vs PARMA LETALE",
             "risultato": "",
-            "data": "30/05/2026",
-            "ora": "11:00",
+            "data": "31/05/2026",
+            "ora": "09:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -841,7 +841,7 @@
             "squadre": "CIRCOLO MASTER vs AMB FROSINONE",
             "risultato": "",
             "data": "31/05/2026",
-            "ora": "12:00",
+            "ora": "10:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -1234,8 +1234,8 @@
           {
             "squadre": "FORTITUDO POMEZIA vs ARDEA C5",
             "risultato": "",
-            "data": "21/05/2026",
-            "ora": "20:00",
+            "data": "09/05/2026",
+            "ora": "17:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -1263,9 +1263,9 @@
           {
             "squadre": "ACADEMY vs FF10",
             "risultato": "8 - 3",
-            "data": "16/05/2026",
-            "ora": "10:00",
-            "campo": "Campo B",
+            "data": "17/05/2026",
+            "ora": "09:00",
+            "campo": "Campo A",
             "marcatori": [
               {
                 "nome": "DAVIDE TABACILA",
@@ -1417,8 +1417,8 @@
           {
             "squadre": "ARDEA C5 vs FORTE COLLEFERRO",
             "risultato": "8 - 5",
-            "data": "16/05/2026",
-            "ora": "18:00",
+            "data": "17/05/2026",
+            "ora": "11:00",
             "campo": "Campo A",
             "marcatori": [
               {
@@ -1480,7 +1480,7 @@
           {
             "squadre": "FORTITUDO POMEZIA vs AMB FROSINONE",
             "risultato": "",
-            "data": "03/06/2026",
+            "data": "18/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
             "marcatori": [],
@@ -1493,7 +1493,7 @@
             "squadre": "NEW TEAM vs FORTE COLLEFERRO",
             "risultato": "4 - 9",
             "data": "18/05/2026",
-            "ora": "20:00",
+            "ora": "18:00",
             "campo": "Campo A",
             "marcatori": [
               {
@@ -1569,8 +1569,8 @@
           {
             "squadre": "AMB FROSINONE vs FORTE COLLEFERRO",
             "risultato": "",
-            "data": "05/06/2026",
-            "ora": "19:00",
+            "data": "23/05/2026",
+            "ora": "15:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -1581,9 +1581,9 @@
           {
             "squadre": "ARDEA C5 vs NEW TEAM",
             "risultato": "",
-            "data": "24/05/2026",
-            "ora": "10:00",
-            "campo": "Campo B",
+            "data": "23/05/2026",
+            "ora": "18:00",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -1610,8 +1610,8 @@
           {
             "squadre": "FORTE COLLEFERRO vs FORTITUDO POMEZIA",
             "risultato": "",
-            "data": "04/06/2026",
-            "ora": "18:00",
+            "data": "31/05/2026",
+            "ora": "12:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -2463,8 +2463,8 @@
           {
             "squadre": "ACADEMY vs S. PIETRO E PAOLO",
             "risultato": "",
-            "data": "25/05/2026",
-            "ora": "18:00",
+            "data": "16/05/2026",
+            "ora": "16:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -2475,8 +2475,8 @@
           {
             "squadre": "CIRCOLO MASTER vs FORTITUDO POMEZIA",
             "risultato": "",
-            "data": "04/06/2026",
-            "ora": "19:00",
+            "data": "16/05/2026",
+            "ora": "18:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -2488,7 +2488,7 @@
             "squadre": "ANZIO C5 vs FAIR PLAY SCHOOL",
             "risultato": "0 -13",
             "data": "17/05/2026",
-            "ora": "10:00",
+            "ora": "12:00",
             "campo": "Campo A",
             "marcatori": [
               {
@@ -2547,8 +2547,8 @@
           {
             "squadre": "CIRCOLO MASTER vs FF10",
             "risultato": "",
-            "data": "27/05/2026",
-            "ora": "20:00",
+            "data": "21/05/2026",
+            "ora": "18:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -2559,7 +2559,7 @@
           {
             "squadre": "FORTE COLLEFERRO vs FORTITUDO POMEZIA",
             "risultato": "4 - 1",
-            "data": "19/05/2026",
+            "data": "21/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
             "marcatori": [
@@ -2592,7 +2592,7 @@
           {
             "squadre": "ACADEMY vs REAL CASTEL FONTANA",
             "risultato": "",
-            "data": "03/06/2026",
+            "data": "22/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
             "marcatori": [],
@@ -2604,7 +2604,7 @@
           {
             "squadre": "S. PIETRO E PAOLO vs FAIR PLAY SCHOOL",
             "risultato": "",
-            "data": "21/05/2026",
+            "data": "22/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
             "marcatori": [],
@@ -2621,9 +2621,9 @@
           {
             "squadre": "CIRCOLO MASTER vs FORTE COLLEFERRO",
             "risultato": "",
-            "data": "26/05/2026",
-            "ora": "19:00",
-            "campo": "Campo B",
+            "data": "23/05/2026",
+            "ora": "17:00",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -2634,7 +2634,7 @@
             "squadre": "NEW TEAM vs FF10",
             "risultato": "",
             "data": "24/05/2026",
-            "ora": "16:00",
+            "ora": "11:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -2645,8 +2645,8 @@
           {
             "squadre": "REAL CASTEL FONTANA vs FAIR PLAY SCHOOL",
             "risultato": "",
-            "data": "04/06/2026",
-            "ora": "18:00",
+            "data": "24/05/2026",
+            "ora": "12:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -2710,8 +2710,8 @@
           {
             "squadre": "FORTE COLLEFERRO vs FF10",
             "risultato": "",
-            "data": "04/06/2026",
-            "ora": "19:00",
+            "data": "31/05/2026",
+            "ora": "18:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -3791,8 +3791,8 @@
           {
             "squadre": "ACADEMY A vs FORTE COLLEFERRO",
             "risultato": "8 - 2",
-            "data": "18/05/2026",
-            "ora": "19:00",
+            "data": "17/05/2026",
+            "ora": "15:00",
             "campo": "Campo A",
             "marcatori": [
               {
@@ -3928,7 +3928,7 @@
             "squadre": "ACADEMY A vs FORTITUDO POMEZIA B",
             "risultato": "",
             "data": "27/05/2026",
-            "ora": "17:00",
+            "ora": "18:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -4636,7 +4636,7 @@
           {
             "squadre": "ACADEMY vs CISTERNA C5",
             "risultato": "2 - 5",
-            "data": "17/05/2026",
+            "data": "16/05/2026",
             "ora": "15:00",
             "campo": "Campo B",
             "marcatori": [
@@ -4664,8 +4664,8 @@
           {
             "squadre": "NUOVA FLORIDA vs POMEZIA CALCIO B",
             "risultato": "3 - 5",
-            "data": "18/05/2026",
-            "ora": "18:00",
+            "data": "16/05/2026",
+            "ora": "09:00",
             "campo": "Campo B",
             "marcatori": [
               {
@@ -4707,8 +4707,8 @@
           {
             "squadre": "POMEZIA CALCIO A vs ANZIO C5",
             "risultato": "7 - 2",
-            "data": "18/05/2026",
-            "ora": "19:00",
+            "data": "16/05/2026",
+            "ora": "10:00",
             "campo": "Campo B",
             "marcatori": [
               {
@@ -4756,7 +4756,7 @@
             "squadre": "ACADEMY vs ANZIO C5",
             "risultato": "",
             "data": "24/05/2026",
-            "ora": "15:00",
+            "ora": "10:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -4769,7 +4769,7 @@
             "risultato": "",
             "data": "24/05/2026",
             "ora": "10:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -4791,8 +4791,8 @@
           {
             "squadre": "NETTUNO CALCIO vs NUOVA FLORIDA",
             "risultato": "",
-            "data": "25/05/2026",
-            "ora": "17:00",
+            "data": "24/05/2026",
+            "ora": "12:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -5296,9 +5296,9 @@
           {
             "squadre": "FORTE COLLEFERRO vs NETTUNO CALCIO",
             "risultato": "6 - 6",
-            "data": "15/05/2026",
-            "ora": "19:00",
-            "campo": "Campo A",
+            "data": "16/05/2026",
+            "ora": "18:00",
+            "campo": "Campo B",
             "marcatori": [
               {
                 "nome": "GIOVANNI DE NARDIS",
@@ -5493,8 +5493,8 @@
           {
             "squadre": "INDOMITA POMEZIA vs NUOVA FLORIDA",
             "risultato": "",
-            "data": "25/05/2026",
-            "ora": "19:00",
+            "data": "23/05/2026",
+            "ora": "09:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -5517,9 +5517,9 @@
           {
             "squadre": "FORTITUDO POMEZIA vs NETTUNO CALCIO",
             "risultato": "",
-            "data": "22/05/2026",
-            "ora": "18:00",
-            "campo": "Campo A",
+            "data": "23/05/2026",
+            "ora": "11:00",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -6297,9 +6297,9 @@
           {
             "squadre": "FORTITUDO POMEZIA A vs LATINA C5",
             "risultato": "5 - 2",
-            "data": "12/05/2026",
-            "ora": "19:00",
-            "campo": "Campo A",
+            "data": "09/05/2026",
+            "ora": "10:00",
+            "campo": "Campo B",
             "marcatori": [
               {
                 "nome": "CHRISTOPHER FORTINI",
@@ -6398,9 +6398,9 @@
           {
             "squadre": "FORTITUDO POMEZIA B vs FORTE COLLEFERRO",
             "risultato": "0 - 4",
-            "data": "16/05/2026",
-            "ora": "19:00",
-            "campo": "Campo A",
+            "data": "17/05/2026",
+            "ora": "15:00",
+            "campo": "Campo B",
             "marcatori": [
               {
                 "nome": "ANDREA FANFONI",
@@ -6421,9 +6421,9 @@
           {
             "squadre": "ACADEMY A vs NUOVA FLORIDA",
             "risultato": "4 - 1",
-            "data": "15/05/2026",
-            "ora": "18:00",
-            "campo": "Campo A",
+            "data": "17/05/2026",
+            "ora": "11:00",
+            "campo": "Campo B",
             "marcatori": [
               {
                 "nome": "LEONARDO TORTORELLA",
@@ -6450,8 +6450,8 @@
             "squadre": "ACADEMY B vs S. PIETRO E PAOLO",
             "risultato": "3 - 4",
             "data": "17/05/2026",
-            "ora": "11:00",
-            "campo": "Campo A",
+            "ora": "12:00",
+            "campo": "Campo B",
             "marcatori": [
               {
                 "nome": "MANUEL COTUGNO",
@@ -6537,7 +6537,7 @@
             "risultato": "0 - 13",
             "data": "19/05/2026",
             "ora": "19:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [
               {
                 "nome": "MATTIA CIUCCIOVINO",
@@ -6583,9 +6583,9 @@
           {
             "squadre": "ACADEMY A vs LATINA C5",
             "risultato": "",
-            "data": "22/05/2026",
-            "ora": "19:00",
-            "campo": "Campo A",
+            "data": "20/05/2026",
+            "ora": "18:00",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -6648,8 +6648,8 @@
           {
             "squadre": "ACADEMY A vs FORTITUDO POMEZIA A",
             "risultato": "",
-            "data": "27/05/2026",
-            "ora": "17:00",
+            "data": "23/05/2026",
+            "ora": "15:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -6660,8 +6660,8 @@
           {
             "squadre": "ACADEMY B vs FORTITUDO POMEZIA B",
             "risultato": "",
-            "data": "27/05/2026",
-            "ora": "19:00",
+            "data": "23/05/2026",
+            "ora": "16:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -6672,8 +6672,8 @@
           {
             "squadre": "ANZIO C5 vs LATINA C5",
             "risultato": "",
-            "data": "24/05/2026",
-            "ora": "15:00",
+            "data": "23/05/2026",
+            "ora": "17:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -6713,8 +6713,8 @@
           {
             "squadre": "ACADEMY B vs FORTE COLLEFERRO",
             "risultato": "",
-            "data": "03/06/2026",
-            "ora": "17:00",
+            "data": "30/05/2026",
+            "ora": "11:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
