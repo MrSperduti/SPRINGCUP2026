@@ -2308,7 +2308,6 @@
         "FORTE COLLEFERRO",
         "FORTITUDO POMEZIA",
         "NEW TEAM"
-
       ]
     },
     "calendario": [
@@ -5599,15 +5598,46 @@
           },
           {
             "squadre": "FORTITUDO POMEZIA vs NETTUNO CALCIO",
-            "risultato": "",
+            "risultato": "5 - 2",
             "data": "23/05/2026",
             "ora": "11:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MATTIA MIDDEI",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "ALESSANDRO FAZIO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "DAVIDE IVANSCHI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "SANTIAGO CAPPELLARI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "GIOVANNI DE NARDIS",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "VALERIO MARI",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              }
+            ],
+            "giocatore": "MATTIA MIDDEI",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "MATTIA IORIO",
+            "squadraPortiere": "FORTITUDO POMEZIA"
           },
           {
             "squadre": "ANZIO C5 vs FORTE COLLEFERRO",
