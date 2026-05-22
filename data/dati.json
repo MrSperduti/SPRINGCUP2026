@@ -6695,15 +6695,46 @@
           },
           {
             "squadre": "ACADEMY A vs LATINA C5",
-            "risultato": "",
+            "risultato": "1 - 9",
             "data": "20/05/2026",
             "ora": "18:00",
-            "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "campo": "Campo A",
+            "marcatori": [
+              {
+                "nome": "ALESSANDRO GONFIANTINI",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "SIMONE PAGANO",
+                "gol": 2,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "GIORGIO MAGGI",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "FRANCESCO CORCIONE",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "ANDREA COLONNA",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "ROCCO SANTARPIA",
+                "gol": 1,
+                "squadra": "ACADEMY A"
+              }
+            ],
+            "giocatore": "SIMONE PAGANO",
+            "squadraGiocatore": "LATINA C5",
+            "portiere": "THIAGO COSIMATO",
+            "squadraPortiere": "ACADEMY A"
           },
           {
             "squadre": "ACADEMY B vs NEW TEAM",
