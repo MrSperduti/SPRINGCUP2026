@@ -250,15 +250,66 @@
           },
           {
             "squadre": "PARMA LETALE vs AMB FROSINONE",
-            "risultato": "",
+            "risultato": "6 - 10",
             "data": "23/05/2026",
             "ora": "10:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "TOMMASO CAMPOLI",
+                "gol": 2,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "PIERGIORGIO MAURI",
+                "gol": 2,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "SAVERIO LO PRESTI",
+                "gol": 2,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "NICOLO' MAGGIO",
+                "gol": 2,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "ALESSIO DEL VESCOVO",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "LORENZO DI TULLIO",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "FLAVIO SCHIRMO",
+                "gol": 2,
+                "squadra": "PARMA LETALE"
+              },
+              {
+                "nome": "DANIELE CALISTA",
+                "gol": 2,
+                "squadra": "PARMA LETALE"
+              },
+              {
+                "nome": "MATTEO PETRELLI",
+                "gol": 1,
+                "squadra": "PARMA LETALE"
+              },
+              {
+                "nome": "SIMONE DEL VECCHIO",
+                "gol": 1,
+                "squadra": "PARMA LETALE"
+              }
+            ],
+            "giocatore": "SAVERIO LO PRESTI",
+            "squadraGiocatore": "AMB FROSINONE",
+            "portiere": "MIRKO MEREU",
+            "squadraPortiere": "PARMA LETALE"
           }
         ]
       },
@@ -5718,15 +5769,46 @@
           },
           {
             "squadre": "ANZIO C5 vs FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "2 - 5",
             "data": "23/05/2026",
             "ora": "12:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "SOL GABRIEL BECK",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "FILIPPO RONZONI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICO PANETTA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "SAMUEL ROSATI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "TOMMASO CARADONNA",
+                "gol": 1,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "VALERIO SMECCA",
+                "gol": 1,
+                "squadra": "ANZIO C5"
+              }
+            ],
+            "giocatore": "VALERIO SMECCA",
+            "squadraGiocatore": "ANZIO C5",
+            "portiere": "ETHAN BECK ANTONIO",
+            "squadraPortiere": "FORTE COLLEFERRO"
           }
         ]
       },
