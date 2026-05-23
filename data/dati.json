@@ -869,8 +869,8 @@
           {
             "squadre": "FORTITUDO POMEZIA vs PARMA LETALE",
             "risultato": "",
-            "data": "31/05/2026",
-            "ora": "09:00",
+            "data": "30/05/2026",
+            "ora": "11:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -882,7 +882,7 @@
             "squadre": "CIRCOLO MASTER vs AMB FROSINONE",
             "risultato": "",
             "data": "31/05/2026",
-            "ora": "10:00",
+            "ora": "12:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -1658,9 +1658,9 @@
           {
             "squadre": "ARDEA C5 vs NEW TEAM",
             "risultato": "",
-            "data": "23/05/2026",
-            "ora": "18:00",
-            "campo": "Campo A",
+            "data": "24/05/2026",
+            "ora": "10:00",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -4879,7 +4879,7 @@
             "squadre": "ACADEMY vs ANZIO C5",
             "risultato": "",
             "data": "24/05/2026",
-            "ora": "10:00",
+            "ora": "15:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -5616,9 +5616,9 @@
           {
             "squadre": "INDOMITA POMEZIA vs NUOVA FLORIDA",
             "risultato": "",
-            "data": "23/05/2026",
-            "ora": "09:00",
-            "campo": "Campo B",
+            "data": "25/05/2026",
+            "ora": "18:00",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -5676,9 +5676,9 @@
           {
             "squadre": "FORTITUDO POMEZIA vs NETTUNO CALCIO",
             "risultato": "5 - 2",
-            "data": "23/05/2026",
-            "ora": "11:00",
-            "campo": "Campo B",
+            "data": "22/05/2026",
+            "ora": "18:00",
+            "campo": "Campo A",
             "marcatori": [
               {
                 "nome": "MATTIA MIDDEI",
@@ -6727,7 +6727,7 @@
             "risultato": "0 - 13",
             "data": "19/05/2026",
             "ora": "19:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [
               {
                 "nome": "MATTIA CIUCCIOVINO",
@@ -6773,8 +6773,8 @@
           {
             "squadre": "ACADEMY A vs LATINA C5",
             "risultato": "1 - 9",
-            "data": "20/05/2026",
-            "ora": "18:00",
+            "data": "22/05/2026",
+            "ora": "19:00",
             "campo": "Campo A",
             "marcatori": [
               {
