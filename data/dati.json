@@ -197,15 +197,56 @@
         "partite": [
           {
             "squadre": "LAURENTUM vs FORTITUDO POMEZIA",
-            "risultato": "",
+            "risultato": "6 - 7",
             "data": "23/05/2026",
             "ora": "09:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "SIMONE PALMA",
+                "gol": 3,
+                "squadra": "LAURENTUM"
+              },
+              {
+                "nome": "VALERIO RELUCENTI",
+                "gol": 2,
+                "squadra": "LAURENTUM"
+              },
+              {
+                "nome": "FRANCESCO BOZZA",
+                "gol": 1,
+                "squadra": "LAURENTUM"
+              },
+              {
+                "nome": "GABRIEL DURANTE",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "MATTEO DORANGRICCHIA",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "DAVIDE VERBENI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "SIMONE SILVERI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              }
+            ],
+            "giocatore": "DAVIDE VERBENI",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "GABRIEL FORTINI",
+            "squadraPortiere": "FORTITUDO POMEZIA"
           },
           {
             "squadre": "PARMA LETALE vs AMB FROSINONE",
