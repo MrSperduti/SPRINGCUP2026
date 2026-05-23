@@ -204,12 +204,12 @@
             "marcatori": [
               {
                 "nome": "SIMONE PALMA",
-                "gol": 2,
+                "gol": 3,
                 "squadra": "LAURENTUM"
               },
               {
                 "nome": "VALERIO RELUCENTI",
-                "gol": 3,
+                "gol": 2,
                 "squadra": "LAURENTUM"
               },
               {
@@ -4088,15 +4088,46 @@
           },
           {
             "squadre": "S. PIETRO E PAOLO vs FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "5 - 9",
             "data": "23/05/2026",
             "ora": "15:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "LORENZO CIOFFI",
+                "gol": 5,
+                "squadra": "S. PIETRO E PAOLO"
+              },
+              {
+                "nome": "LORENZO BRUNI",
+                "gol": 3,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "ANDREA FANFONI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "EMANUEL SCUNGIU",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "DIEGO PANETTA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "KAROL JOSEPH BECK",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "LORENZO CIOFFI",
+            "squadraGiocatore": "S. PIETRO E PAOLO",
+            "portiere": "EDOARDO LANZI",
+            "squadraPortiere": "FORTE COLLEFERRO"
           },
           {
             "squadre": "ACADEMY A vs FORTITUDO POMEZIA B",
@@ -5437,7 +5468,7 @@
                 "squadra": "FORTITUDO POMEZIA"
               },
               {
-                "nome": "CHRISTIAN BRUNI",
+                "nome": "CRISTIAN BRUNI",
                 "gol": 1,
                 "squadra": "FORTE COLLEFERRO"
               },
@@ -5495,12 +5526,12 @@
                 "squadra": "FORTE COLLEFERRO"
               },
               {
-                "nome": "SOL GABRIEL BECK",
+                "nome": "GABRIEL SOL BECK",
                 "gol": 1,
                 "squadra": "FORTE COLLEFERRO"
               },
               {
-                "nome": "CHRISTIAN NASTASI",
+                "nome": "FEDERICO NASTASI",
                 "gol": 1,
                 "squadra": "FORTE COLLEFERRO"
               },
@@ -5812,7 +5843,7 @@
             ],
             "giocatore": "VALERIO SMECCA",
             "squadraGiocatore": "ANZIO C5",
-            "portiere": "ETHAN ANTONIO BECK",
+            "portiere": "ETHAN BECK ANTONIO",
             "squadraPortiere": "FORTE COLLEFERRO"
           }
         ]
