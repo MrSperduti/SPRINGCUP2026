@@ -839,7 +839,7 @@
         "partite": [
           {
             "squadre": "MIRAFIN vs FORTITUDO POMEZIA",
-            "risultato": "",
+            "risultato": "6 - 0",
             "data": "23/05/2026",
             "ora": "11:00",
             "campo": "Campo A",
@@ -5627,15 +5627,51 @@
           },
           {
             "squadre": "ACADEMY vs MARINO ACADEMY",
-            "risultato": "",
+            "risultato": "0 - 7",
             "data": "23/05/2026",
             "ora": "10:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "FLAVIO CHINEA",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "EDOARDO CINI",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "CHRISTIAN PISTELLA",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "TOMMASO MARCHI",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "GIORDANO MOGAVERO",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "RICCARDO SABATUCCI",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "EDOARDO LA TRECCHIA",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              }
+            ],
+            "giocatore": "FRANCESCO DENNI",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "ALESSANDRO LAINO",
+            "squadraPortiere": "MARINO ACADEMY"
           },
           {
             "squadre": "FORTITUDO POMEZIA vs NETTUNO CALCIO",
