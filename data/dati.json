@@ -1667,15 +1667,51 @@
           },
           {
             "squadre": "ACADEMY vs CIRCOLO MASTER",
-            "risultato": "",
+            "risultato": "7 - 3",
             "data": "23/05/2026",
             "ora": "16:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ALESSANDRO MIRRA",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DANIELE BOZZA",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "NIKOLAS VARDARO",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "LUCIANO COLICINO",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DOMENICO ROMANO",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "CRISTIAN CHIAPPINI",
+                "gol": 2,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "DAVIDE ANNIBALI",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              }
+            ],
+            "giocatore": "FRANCESCO SUSIN",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "RICCARDO CLATEA",
+            "squadraPortiere": "ACADEMY"
           },
           {
             "squadre": "S. PIETRO E PAOLO vs FF10",
