@@ -873,15 +873,41 @@
           },
           {
             "squadre": "MIRAFIN vs AMB FROSINONE",
-            "risultato": "",
+            "risultato": "9 - 2",
             "data": "24/05/2026",
             "ora": "12:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "CIRO CAVAGNOLI",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "CHRISTIAN IANCU",
+                "gol": 3,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "ALESSANDRO GOBBI",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "CHRISTIAN CRISPI",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "LUCIANO COLICINO",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              }
+            ],
+            "giocatore": "CIRO CAVAGNOLI",
+            "squadraGiocatore": "MIRAFIN",
+            "portiere": "DANIELE ATTANASIO",
+            "squadraPortiere": "MIRAFIN"
           }
         ]
       },
@@ -4239,7 +4265,7 @@
         "giornata": "Giornata 4",
         "partite": [
           {
-            "squadre": "NEW TEAM vs FORTITUDO POMEZIA A",
+            "squadre": "NEW TEAM vs FORTITUDO POMEZIA B",
             "risultato": "",
             "data": "25/05/2026",
             "ora": "19:00",
@@ -5051,15 +5077,36 @@
         "partite": [
           {
             "squadre": "ACADEMY vs ANZIO C5",
-            "risultato": "",
+            "risultato": "4 - 2",
             "data": "24/05/2026",
             "ora": "15:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DUILIO GRAZIOSI",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "EDOARDO MAZZAROPPI",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "GINEVRA DI CUZZO",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "KEVIN CAPONI",
+                "gol": 2,
+                "squadra": "ANZIO C5"
+              }
+            ],
+            "giocatore": "KEVIN CAPONI",
+            "squadraGiocatore": "ANZIO C5",
+            "portiere": "ALBERT ALEXANDU CALAH",
+            "squadraPortiere": "ACADEMY"
           },
           {
             "squadre": "VALEAS vs POMEZIA CALCIO B",
