@@ -2532,7 +2532,7 @@
             "campo": "Campo A",
             "marcatori": [
               {
-                "nome": "FRANCESCO TOSI",
+                "nome": "LORENZO BADARACCHI",
                 "gol": 2,
                 "squadra": "NEW TEAM"
               },
@@ -2552,7 +2552,7 @@
                 "squadra": "CIRCOLO MASTER"
               }
             ],
-            "giocatore": "FRANCESCO TOSI",
+            "giocatore": "LORENZO BADARACCHI",
             "squadraGiocatore": "NEW TEAM",
             "portiere": "GABRIELE MUZZI",
             "squadraPortiere": "CIRCOLO MASTER"
@@ -2924,15 +2924,41 @@
           },
           {
             "squadre": "NEW TEAM vs FF10",
-            "risultato": "",
+            "risultato": "5 - 5",
             "data": "24/05/2026",
             "ora": "16:30",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "LORENZO BADARACCHI",
+                "gol": 4,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LUCA FABRIZIO ",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "CRISTIAN CAMPANILE",
+                "gol": 2,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "EMANUELE PIRROCCO",
+                "gol": 2,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "GABRIELE LOMBARDI",
+                "gol": 1,
+                "squadra": "FF10"
+              }
+            ],
+            "giocatore": "LORENZO BADARACCHI",
+            "squadraGiocatore": "NEW TEAM",
+            "portiere": "GABRIELE GALLI",
+            "squadraPortiere": "FF10"
           },
           {
             "squadre": "REAL CASTEL FONTANA vs FAIR PLAY SCHOOL",
