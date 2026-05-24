@@ -5105,7 +5105,7 @@
             ],
             "giocatore": "KEVIN CAPONI",
             "squadraGiocatore": "ANZIO C5",
-            "portiere": "DIEGO AMBROGI",
+            "portiere": "ALBERT ALEXANDU CALAH",
             "squadraPortiere": "ACADEMY"
           },
           {
@@ -7186,15 +7186,61 @@
           },
           {
             "squadre": "ANZIO C5 vs LATINA C5",
-            "risultato": "",
+            "risultato": "6 - 6",
             "data": "24/05/2026",
             "ora": "15:30",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "VALERIO SMECCA",
+                "gol": 4,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "DILAN MARANO",
+                "gol": 1,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "ASMARANDUCAI ALEXANDRU",
+                "gol": 1,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "NICOLAS DI FIORE",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "SIMONE PAGANO",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "DAVIDE VERRENGIA",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "ALESSANDRO GONFIANTINI",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "GAIA CAPOZZI",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              }
+            ],
+            "giocatore": "VALERIO SMECCA",
+            "squadraGiocatore": "ANZIO C5",
+            "portiere": "FRANCESCO MACCHIARULLO",
+            "squadraPortiere": "LATINA C5"
           },
           {
             "squadre": "FORTE COLLEFERRO vs NEW TEAM",
