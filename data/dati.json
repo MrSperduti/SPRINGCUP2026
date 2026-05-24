@@ -1744,15 +1744,71 @@
           },
           {
             "squadre": "ARDEA C5 vs NEW TEAM",
-            "risultato": "",
+            "risultato": "13 - 4",
             "data": "24/05/2026",
             "ora": "10:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "FRANCESCO ORSINI",
+                "gol": 3,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "GABRIELE CARAMANICA",
+                "gol": 3,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "DANIELE FOFI",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "FEDERICO DELLA VOLPE",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "VALERIO POTRICH",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "ALESSIO INCITTI",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "VALERIO PIASCO",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "DAVIDE D'ANTONI",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LORENZO MAVIGLIA",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "ALEXANDRU ARTENE",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              }
+            ],
+            "giocatore": "FRANCESCO ORSINI",
+            "squadraGiocatore": "ARDEA C5",
+            "portiere": "VALERIO PIASCO",
+            "squadraPortiere": "ARDEA C5"
           }
         ]
       },
@@ -5007,27 +5063,64 @@
           },
           {
             "squadre": "VALEAS vs POMEZIA CALCIO B",
-            "risultato": "",
+            "risultato": "5 - 6",
             "data": "24/05/2026",
             "ora": "10:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MATTEO FERRAZZA",
+                "gol": 3,
+                "squadra": "VALEAS"
+              },
+              {
+                "nome": "GABRIELE CIRULLI",
+                "gol": 1,
+                "squadra": "VALEAS"
+              },
+              {
+                "nome": "NICHOLAS BONATO",
+                "gol": 3,
+                "squadra": "POMEZIA CALCIO B"
+              },
+              {
+                "nome": "EMANUELE DE MARZO",
+                "gol": 2,
+                "squadra": "POMEZIA CALCIO B"
+              },
+              {
+                "nome": "NICOLO' ANTONACCI",
+                "gol": 1,
+                "squadra": "POMEZIA CALCIO B"
+              }
+            ],
+            "giocatore": "NICOLAS BONATO",
+            "squadraGiocatore": "POMEZIA CALCIO B",
+            "portiere": "MASSIMO MEUTI",
+            "squadraPortiere": "VALEAS"
           },
           {
             "squadre": "CISTERNA C5 vs POMEZIA CALCIO A",
-            "risultato": "",
+            "risultato": "1 - 1",
             "data": "24/05/2026",
             "ora": "11:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "CRISTIAN TORSELLO",
+                "gol": 1,
+                "squadra": "CISTERNA C5"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "POMEZIA CALCIO A"
+              }
+            ],
+            "giocatore": "CRISTIAN TORSELLO",
+            "squadraGiocatore": "CISTERNA C5",
+            "portiere": "LEONARDO ZAPPATERRENI",
+            "squadraPortiere": "CISTERNA C5"
           },
           {
             "squadre": "NETTUNO CALCIO vs NUOVA FLORIDA",
