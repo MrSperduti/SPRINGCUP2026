@@ -317,7 +317,7 @@
         "giornata": "SEMIFINALE A",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "FORTITUDO POMEZIA vs PARMA LETALE",
             "risultato": "",
             "data": "06/06/2026",
             "ora": "18:00",
@@ -334,7 +334,7 @@
         "giornata": "SEMIFINALE B",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "LAURENTUM vs AMB FROSINONE",
             "risultato": "",
             "data": "06/06/2026",
             "ora": "18:00",
@@ -1324,7 +1324,7 @@
                 "squadra": "CIRCOLO MASTER"
               },
               {
-                "nome": "CHIAPPINI CRISTIAN",
+                "nome": "CRISTIAN CHIAPPINI",
                 "gol": 3,
                 "squadra": "CIRCOLO MASTER"
               },
@@ -1485,7 +1485,7 @@
                 "squadra": "NEW TEAM"
               },
               {
-                "nome": "DAVIDE D'ANTONI DI CARLO",
+                "nome": "DAVIDE D'ANTONI",
                 "gol": 1,
                 "squadra": "NEW TEAM"
               },
@@ -2870,7 +2870,7 @@
                 "squadra": "FAIR PLAY SCHOOL"
               },
               {
-                "nome": "NICOLO' MARCATO",
+                "nome": "NICOLO MARCATO",
                 "gol": 2,
                 "squadra": "FAIR PLAY SCHOOL"
               },
@@ -4830,7 +4830,7 @@
                 "squadra": "POMEZIA CALCIO A"
               }
             ],
-            "giocatore": "DI CUZZO GINEVRA",
+            "giocatore": "GINEVRA DI CUZZO",
             "squadraGiocatore": "ACADEMY",
             "portiere": "CAMILLA CRISAFULLI",
             "squadraPortiere": "POMEZIA CALCIO A"
@@ -4848,7 +4848,7 @@
                 "squadra": "ANZIO C5"
               },
               {
-                "nome": "CRISTIAN TORSELLO",
+                "nome": "CRISTIAN TORSELLI",
                 "gol": 2,
                 "squadra": "CISTERNA C5"
               },
@@ -5007,7 +5007,7 @@
             ],
             "giocatore": "GINEVRA DI CUZZO",
             "squadraGiocatore": "ACADEMY",
-            "portiere": "LEONARDO ZAPPETTI",
+            "portiere": "LEONARDO ZAPPATERRENI",
             "squadraPortiere": "CISTERNA C5"
           },
           {
