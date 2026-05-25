@@ -7368,15 +7368,36 @@
           },
           {
             "squadre": "FORTE COLLEFERRO vs NEW TEAM",
-            "risultato": "",
+            "risultato": "3 - 2",
             "data": "25/05/2026",
             "ora": "19:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "LORENZO MASSARONI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "VALERIO SCHENA",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "ANDREA FANFONI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "TOMMASO LEO",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "TOMMASO LEO",
+            "squadraGiocatore": "FORTE COLLEFERRO",
+            "portiere": "FILIPPO DAVOLI",
+            "squadraPortiere": "NEW TEAM"
           }
         ]
       },
