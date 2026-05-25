@@ -1361,7 +1361,7 @@
           },
           {
             "squadre": "FORTITUDO POMEZIA vs ARDEA C5",
-            "risultato": "3 - 9",
+            "risultato": "3 - 11",
             "data": "21/05/2026",
             "ora": "20:00",
             "campo": "Campo A",
@@ -1400,6 +1400,16 @@
                 "nome": "RICCARDO PANNUNZIO",
                 "gol": 1,
                 "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "GABRIELE CARAMANICA",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "VALERIO POTRICH",
+                "gol": 1,
+                "squadra": "ARDEA C5"
               }
             ],
             "giocatore": "DANIELE FOFI",
@@ -1591,12 +1601,7 @@
                 "squadra": "ARDEA C5"
               },
               {
-                "nome": "SOLGATO FORNARI EDUARDO",
-                "gol": 1,
-                "squadra": "ARDEA C5"
-              },
-              {
-                "nome": "VALERIO POTRICH",
+                "nome": "DANIELE FOFI",
                 "gol": 1,
                 "squadra": "ARDEA C5"
               },
@@ -1607,11 +1612,11 @@
               },
               {
                 "nome": "FRANCESCO ORSINI",
-                "gol": 1,
+                "gol": 2,
                 "squadra": "ARDEA C5"
               },
               {
-                "nome": "AUTOGOAL",
+                "nome": "EDUARDO SORGATTO FORNARI",
                 "gol": 1,
                 "squadra": "ARDEA C5"
               },
@@ -1802,7 +1807,7 @@
               },
               {
                 "nome": "FEDERICO DELLA VOLPE",
-                "gol": 1,
+                "gol": 2,
                 "squadra": "ARDEA C5"
               },
               {
@@ -2718,15 +2723,46 @@
         "partite": [
           {
             "squadre": "ACADEMY vs S. PIETRO E PAOLO",
-            "risultato": "",
+            "risultato": "15 - 1",
             "data": "25/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "CHRISTIAN CRISPI",
+                "gol": 4,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "ANGELO OLIVIERI",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "GABRIELE DI BARTOLOMEI",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DANIELE BOZZA",
+                "gol": 6,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "MATTEO PASSARELLI",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "ALESSANDRO MIRRA",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              }
+            ],
+            "giocatore": "CHRISTIAN CRISPI",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "MANUEL CAPOMAGI",
+            "squadraPortiere": "S. PIETRO E PAOLO"
           },
           {
             "squadre": "CIRCOLO MASTER vs FORTITUDO POMEZIA",
@@ -5207,15 +5243,51 @@
           },
           {
             "squadre": "NETTUNO CALCIO vs NUOVA FLORIDA",
-            "risultato": "",
+            "risultato": "6 - 1",
             "data": "25/05/2026",
             "ora": "17:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ALESSIO YASSIN",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "TIZIANO CIARAVOLO",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "LEONARDO MUSTAFA",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "MARK POLITOSKY",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "MARCO CASABURO",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "TIZIANO CIARAVOLO",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "MATTEO PIZI",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              }
+            ],
+            "giocatore": "ALESSIO YASSIN",
+            "squadraGiocatore": "NETTUNO CALCIO",
+            "portiere": "GIUSEPPE GALLACE",
+            "squadraPortiere": "NETTUNO CALCIO"
           }
         ]
       },
@@ -5909,15 +5981,31 @@
         "partite": [
           {
             "squadre": "INDOMITA POMEZIA vs NUOVA FLORIDA",
-            "risultato": "",
+            "risultato": "1 - 4",
             "data": "25/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "VITTORIO GIANNI PIOZZI",
+                "gol": 1,
+                "squadra": "INDOMITA POMEZIA"
+              },
+              {
+                "nome": "CHRISTIAN PIZI",
+                "gol": 2,
+                "squadra": "NUOVA FLORIDA"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "NUOVA FLORIDA"
+              }
+            ],
+            "giocatore": "CHRISTIAN PIZI",
+            "squadraGiocatore": "NUOVA FLORIDA",
+            "portiere": "ALESSIO GASPERONI",
+            "squadraPortiere": "INDOMITA POMEZIA"
           },
           {
             "squadre": "ACADEMY vs MARINO ACADEMY",
