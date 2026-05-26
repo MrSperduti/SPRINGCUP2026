@@ -1756,15 +1756,61 @@
           },
           {
             "squadre": "S. PIETRO E PAOLO vs FF10",
-            "risultato": "",
+            "risultato": "1 - 14",
             "data": "26/05/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MATTIA CIARDIELLO",
+                "gol": 5,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "THOMAS GRECO",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "LORENZO ROSSETTI",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "DAVIDE LUNETTA",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "DAVIDE ANTOLINI",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "DANIELE ROMANI",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "FRANCESCO CREMONA",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "LUCA CICCHINELLI",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "CRISTIAN IFTIME",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
+              }
+            ],
+            "giocatore": "MATTIA CIARDIELLO",
+            "squadraGiocatore": "FF10",
+            "portiere": "MANUEL CAPOMAGI",
+            "squadraPortiere": "S. PIETRO E PAOLO"
           }
         ]
       },
