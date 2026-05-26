@@ -3071,15 +3071,31 @@
           },
           {
             "squadre": "S. PIETRO E PAOLO vs ANZIO C5",
-            "risultato": "",
+            "risultato": "1 - 6",
             "data": "26/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DIEGO SABELLICO",
+                "gol": 4,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "LORENZO APICELLA",
+                "gol": 2,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "DAVIDE SCHIAVONE",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
+              }
+            ],
+            "giocatore": "DIEGO SABELLICO",
+            "squadraGiocatore": "ANZIO C5",
+            "portiere": "MANUEL CAPOMAGI",
+            "squadraPortiere": "S. PIETRO E PAOLO"
           }
         ]
       },
