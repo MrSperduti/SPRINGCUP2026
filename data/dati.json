@@ -4388,15 +4388,51 @@
           },
           {
             "squadre": "ACADEMY A vs FORTITUDO POMEZIA B",
-            "risultato": "",
+            "risultato": "8 - 2",
             "data": "27/05/2026",
-            "ora": "17:00",
+            "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "GABRIELE PICCINI",
+                "gol": 3,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "NICOLAS SPERDUTI",
+                "gol": 2,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "FRANCESCO BRADICH",
+                "gol": 1,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "JONAS MARCOTULLI",
+                "gol": 1,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "FLAVIO MADDALONI",
+                "gol": 1,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "CHRISTOPHER FORTINI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "FLAVIO FALCO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              }
+            ],
+            "giocatore": "JONAS MARCOTULLI",
+            "squadraGiocatore": "ACADEMY A",
+            "portiere": "SIMONE AVENI",
+            "squadraPortiere": "FORTITUDO POMEZIA B"
           }
         ]
       },
@@ -4417,15 +4453,61 @@
           },
           {
             "squadre": "LATINA C5 vs FF10",
-            "risultato": "",
+            "risultato": "12 - 2",
             "data": "27/05/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "VINCENZO CORCIONE",
+                "gol": 3,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "ANGELO CRUDETTI",
+                "gol": 2,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "CRISTIANO GALANTE",
+                "gol": 2,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "YURI ODORICO",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "DIEGO COLAZZO",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "SIMONE PAGANO",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "LORENZO DI RITA",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "GENNARO CHIANESE",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "FRANCESCO CHIANESE",
+                "gol": 1,
+                "squadra": "FF10"
+              }
+            ],
+            "giocatore": "VINCENZO CORCIONE",
+            "squadraGiocatore": "LATINA C5",
+            "portiere": "GIULIO FUSCIELLO",
+            "squadraPortiere": "LATINA C5"
           }
         ]
       },
@@ -7353,27 +7435,79 @@
         "partite": [
           {
             "squadre": "ACADEMY A vs FORTITUDO POMEZIA A",
-            "risultato": "",
+            "risultato": "1 - 11",
             "data": "27/05/2026",
             "ora": "17:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MATTIA MIDDEI",
+                "gol": 5,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "MATTIA CIUCCIOVINO",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "NICOLO BRAZIOLI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "CHRISTOPHER FORTINI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "DAVIDE PIRA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "LEONARDO TORTORELLA",
+                "gol": 1,
+                "squadra": "ACADEMY A"
+              }
+            ],
+            "giocatore": "MATTIA MIDDEI",
+            "squadraGiocatore": "FORTITUDO POMEZIA A",
+            "portiere": "RAOUL VIOLA",
+            "squadraPortiere": "FORTITUDO POMEZIA A"
           },
           {
             "squadre": "ACADEMY B vs FORTITUDO POMEZIA B",
-            "risultato": "",
+            "risultato": "2 - 6",
             "data": "27/05/2026",
             "ora": "19:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "THOMAS BERNARD",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA B"
+              },
+              {
+                "nome": "LEONARDO DE LUCA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA B"
+              },
+              {
+                "nome": "SAMUELE D'AMORE",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA B"
+              },
+              {
+                "nome": "PIETRO FERRARA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA B"
+              }
+            ],
+            "giocatore": "THOMAS BERNARD",
+            "squadraGiocatore": "FORTITUDO POMEZIA B",
+            "portiere": "THIAGO COSIMATO",
+            "squadraPortiere": "ACADEMY B"
           },
           {
             "squadre": "ANZIO C5 vs LATINA C5",
