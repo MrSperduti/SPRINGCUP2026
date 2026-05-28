@@ -2889,15 +2889,36 @@
         "partite": [
           {
             "squadre": "CIRCOLO MASTER vs FF10",
-            "risultato": "",
+            "risultato": "0 - 6",
             "data": "27/05/2026",
             "ora": "20:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "EMANUELE PIRROCCO",
+                "gol": 3,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "SIMONE TANTALO",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "MATTIA PIRROCCO",
+                "gol": 1,
+                "squadra": "FF10"
+              },
+              {
+                "nome": "GENNARO CHIANESE",
+                "gol": 1,
+                "squadra": "FF10"
+              }
+            ],
+            "giocatore": "EMANUELE PIRROCCO",
+            "squadraGiocatore": "FF10",
+            "portiere": "TIZIANO ROSSETTI",
+            "squadraPortiere": "FF10"
           },
           {
             "squadre": "FORTE COLLEFERRO vs FORTITUDO POMEZIA",
