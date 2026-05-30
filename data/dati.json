@@ -1904,15 +1904,61 @@
         "partite": [
           {
             "squadre": "ARDEA C5 vs AMB FROSINONE",
-            "risultato": "",
-            "data": "31/05/2026",
-            "ora": "11:00",
-            "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "risultato": "19 - 1",
+            "data": "29/05/2026",
+            "ora": "18:00",
+            "campo": "Campo B",
+            "marcatori": [
+              {
+                "nome": "FRANCESCO ORSINI",
+                "gol": 5,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "GABRIELE CARAMANICA",
+                "gol": 3,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "DANIELE FOFI",
+                "gol": 2,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "SIMONE ESPOSITO",
+                "gol": 2,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "EDUARDO SORGATTO FORNARI",
+                "gol": 2,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "GIOVANNI MAFFETTONE",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "ALESSIO INCITTI",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "FEDERICO DELLA VOLPE",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "LEONARDO VELOCCI",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              }
+            ],
+            "giocatore": "DANIELE FOFI",
+            "squadraGiocatore": "ARDEA C5",
+            "portiere": "VALERIO PIASCO",
+            "squadraPortiere": "ARDEA C5"
           },
           {
             "squadre": "FORTE COLLEFERRO vs FORTITUDO POMEZIA",
@@ -4537,27 +4583,94 @@
         "partite": [
           {
             "squadre": "ACADEMY B vs FORTITUDO POMEZIA A",
-            "risultato": "",
-            "data": "30/05/2026",
-            "ora": "10:00",
-            "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "risultato": "6 - 1",
+            "data": "29/05/2026",
+            "ora": "19:30",
+            "campo": "Campo B",
+            "marcatori": [
+              {
+                "nome": "RYAN SOULHI",
+                "gol": 1,
+                "squadra": "ACADEMY B"
+              },
+              {
+                "nome": "MATTIA BRUNI",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "ELIA VARONE",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "LORANZO CALLIPO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "DANIEL MAENZA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              }
+            ],
+            "giocatore": "AURORA AMATO",
+            "squadraGiocatore": "ACADEMY B",
+            "portiere": "DONATO CARRIERO",
+            "squadraPortiere": "FORTITUDO POMEZIA A"
           },
           {
             "squadre": "NEW TEAM vs FF10",
-            "risultato": "",
+            "risultato": "3 - 5",
             "data": "30/05/2026",
             "ora": "11:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "FLAVIO LAURINI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "DANIELE MAURI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "MATTEO TALARICO",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "GIOVANNI RUMBO",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "GABRIELE LOMBARDI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "MATTIA PIRROCCO ",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "ALESSIO D'ANNUNZIO BERTOLLINI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              }
+            ],
+            "giocatore": "MATTIA PIRROCCO",
+            "squadraGiocatore": "FF10",
+            "portiere": "DAVIDE VITALE",
+            "squadraPortiere": "NEW TEAM"
           }
         ]
       },
@@ -7628,15 +7741,36 @@
         "partite": [
           {
             "squadre": "ACADEMY A vs ANZIO C5",
-            "risultato": "",
+            "risultato": "1 - 9",
             "data": "30/05/2026",
             "ora": "10:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ASMARANDUCAI ALEXANDRU",
+                "gol": 4,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "VALERIO SMECCA",
+                "gol": 4,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "DILAN MARANO",
+                "gol": 1,
+                "squadra": "ANZIO C5"
+              },
+              {
+                "nome": "LORENZO ANDREOLI",
+                "gol": 1,
+                "squadra": "ANZIO C5"
+              }
+            ],
+            "giocatore": "ASMARANDUCAI ALEXANDRU",
+            "squadraGiocatore": "ANZIO C5",
+            "portiere": "ANDREA DE PIANO",
+            "squadraPortiere": "ANZIO C5"
           },
           {
             "squadre": "ACADEMY B vs FORTE COLLEFERRO",
@@ -7652,27 +7786,104 @@
           },
           {
             "squadre": "LATINA C5 vs NUOVA FLORIDA",
-            "risultato": "",
+            "risultato": "12 - 1",
             "data": "30/05/2026",
             "ora": "12:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "SIMONE PAGANO",
+                "gol": 3,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "EMILIANO ACERBO",
+                "gol": 2,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "LORENZO ANTOBENEDETTO",
+                "gol": 2,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "NICOLAS DI FIORE",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "NICOLO FABIANI",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "FRANCESCO CORCIONE",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "VALENTINA TRAPELLA",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "ALESSANDRO GONFIANTINI",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "ROBERTO ZACCARIA",
+                "gol": 1,
+                "squadra": "NUOVA FLORIDA"
+              }
+            ],
+            "giocatore": "SIMONE PAGANO",
+            "squadraGiocatore": "LATINA C5",
+            "portiere": "LUDOVICO DEGLI STEFANI",
+            "squadraPortiere": "LATINA C5"
           },
           {
             "squadre": "NEW TEAM vs S. PIETRO E PAOLO",
-            "risultato": "",
+            "risultato": "10 - 1",
             "data": "30/05/2026",
             "ora": "12:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "VALERIO SCHENA",
+                "gol": 5,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "FRANCESCO GALEOTA",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LORENZO MASSARONI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "DAVIDE RUZZOLINI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "VALERIO SALVATORI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "JORDAN KIFLE",
+                "gol": 1,
+                "squadra": "S. PIETRO E PAOLO"
+              }
+            ],
+            "giocatore": "VALERIO SCHENA",
+            "squadraGiocatore": "NEW TEAM",
+            "portiere": "GABRIELE BANDINU",
+            "squadraPortiere": "S. PIETRO E PAOLO"
           }
         ]
       },
