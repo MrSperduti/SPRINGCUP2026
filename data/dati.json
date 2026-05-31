@@ -3171,27 +3171,94 @@
         "partite": [
           {
             "squadre": "REAL CASTEL FONTANA vs S. PIETRO E PAOLO",
-            "risultato": "",
+            "risultato": "17 - 0",
             "data": "31/05/2026",
             "ora": "15:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "CLAUDIO BUONACQUISTO",
+                "gol": 5,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "ALESSIO CERVINI",
+                "gol": 4,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "DIEGO GILIBERTI",
+                "gol": 2,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "SIMONE LEO",
+                "gol": 2,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "NICOLO DI STEFANO",
+                "gol": 1,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "LORENZO LEO",
+                "gol": 1,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "GIANLUCA GAFFI",
+                "gol": 1,
+                "squadra": "REAL CASTEL FONTANA"
+              }
+            ],
+            "giocatore": "GIANLUCA GAFFI",
+            "squadraGiocatore": "REAL CASTEL FONTANA",
+            "portiere": "SAMUEL TEMPERINI",
+            "squadraPortiere": "REAL CASTEL FONTANA"
           },
           {
             "squadre": "ACADEMY vs ANZIO C5",
-            "risultato": "",
+            "risultato": "10 - 0",
             "data": "31/05/2026",
             "ora": "16:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DANIELE BOZZA",
+                "gol": 4,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "MATTEO COTUGNO",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "FLAVIO PROIETTI",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "CRISTIAN FALZETTI",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "ANGELO OLIVIERI",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "MATTEO D'ANTONI",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              }
+            ],
+            "giocatore": "DANIELE BOZZA",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "MATTIA BARBARESCHI",
+            "squadraPortiere": "ACADEMY"
           },
           {
             "squadre": "FORTITUDO POMEZIA vs NEW TEAM",
