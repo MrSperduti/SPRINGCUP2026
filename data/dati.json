@@ -4833,10 +4833,10 @@
         "giornata": "SEMIFINALE A",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "ACADEMY A - FORTITUDO A",
             "risultato": "",
             "data": "06/06/2026",
-            "ora": "12:00",
+            "ora": "19:00",
             "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
@@ -4850,11 +4850,11 @@
         "giornata": "SEMIFINALE B",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "LATINA C5 - FORTE COLLEFERRO",
             "risultato": "",
             "data": "06/06/2026",
             "ora": "12:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
