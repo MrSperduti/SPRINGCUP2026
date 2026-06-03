@@ -3001,15 +3001,41 @@
           },
           {
             "squadre": "ACADEMY vs REAL CASTEL FONTANA",
-            "risultato": "",
+            "risultato": "8 - 7",
             "data": "03/06/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ALESSANDRO MIRRA",
+                "gol": 5,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "CHRISTIAN CRISPI",
+                "gol": 3,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DANIELE BOZZA",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DIEGO GILIBERTI",
+                "gol": 6,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "SAMUEL PERSICONE",
+                "gol": 1,
+                "squadra": "REAL CASTEL FONTANA"
+              }
+            ],
+            "giocatore": "CHRISTIAN CRISPI",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "MATTIA BARBARESCHI",
+            "squadraPortiere": "ACADEMY"
           },
           {
             "squadre": "S. PIETRO E PAOLO vs FAIR PLAY SCHOOL",
@@ -4574,16 +4600,37 @@
         "giornata": "Giornata 4",
         "partite": [
           {
-            "squadre": "NEW TEAM vs FORTITUDO POMEZIA B",
-            "risultato": "",
-            "data": "25/05/2026",
-            "ora": "19:00",
+            "squadre": "NEW TEAM vs FORTITUDO POMEZIA A",
+            "risultato": "4 - 2",
+            "data": "03/06/2026",
+            "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "FLAVIO LAURINI",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LORENZO REITANO",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LORENZO CALLIPO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "MATTIA BRUNI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              }
+            ],
+            "giocatore": "FLAVIO LAURINI",
+            "squadraGiocatore": "NEW TEAM",
+            "portiere": "MATTEO COLANTONIO",
+            "squadraPortiere": "NEW TEAM"
           },
           {
             "squadre": "LATINA C5 vs FF10",
@@ -7845,7 +7892,13 @@
             "data": "03/06/2026",
             "ora": "17:00",
             "campo": "Campo B",
-            "marcatori": [],
+            "marcatori": [
+              {
+                "nome": "",
+                "gol": 1,
+                "squadra": ""
+              }
+            ],
             "giocatore": "",
             "squadraGiocatore": "",
             "portiere": "",
