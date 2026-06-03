@@ -1648,15 +1648,56 @@
         "partite": [
           {
             "squadre": "FORTITUDO POMEZIA vs AMB FROSINONE",
-            "risultato": "",
+            "risultato": "3 - 10",
             "data": "03/06/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MASSIMILIANO CAPPELLA",
+                "gol": 4,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "LORENZO PIGLIACELLI",
+                "gol": 3,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "OTHMAN ZERAQALI",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "DIEGO BOTTONI",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "JACOPO REALE",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "RICCARDO PORTALE",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "MATTIA NOCELLA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "RICCARDO SPADANO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              }
+            ],
+            "giocatore": "MASSIMILIANO CAPPELLA",
+            "squadraGiocatore": "AMB FROSINONE",
+            "portiere": "ROBERTO FIONCHETTI",
+            "squadraPortiere": "FORTITUDO POMEZIA"
           },
           {
             "squadre": "NEW TEAM vs FORTE COLLEFERRO",
@@ -7888,21 +7929,41 @@
           },
           {
             "squadre": "ACADEMY B vs FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "1 - 12",
             "data": "03/06/2026",
             "ora": "17:00",
             "campo": "Campo B",
             "marcatori": [
               {
-                "nome": "",
+                "nome": "DAVIDE SUSSARELLO",
+                "gol": 5,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICO PANETTA",
+                "gol": 3,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "ANDREA FANFONI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICOLAS LIBURDI",
                 "gol": 1,
-                "squadra": ""
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "DIEGO PANETTA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
               }
             ],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "giocatore": "DIEGO PANETTA",
+            "squadraGiocatore": "FORTE COLLEFERRO",
+            "portiere": "THIAGO COSIMATO",
+            "squadraPortiere": "ACADEMY B"
           },
           {
             "squadre": "LATINA C5 vs NUOVA FLORIDA",
