@@ -204,12 +204,12 @@
             "marcatori": [
               {
                 "nome": "SIMONE PALMA",
-                "gol": 3,
+                "gol": 2,
                 "squadra": "LAURENTUM"
               },
               {
                 "nome": "VALERIO RELUCENTI",
-                "gol": 2,
+                "gol": 3,
                 "squadra": "LAURENTUM"
               },
               {
@@ -8913,3 +8913,4 @@
     }
   }
 }
+
