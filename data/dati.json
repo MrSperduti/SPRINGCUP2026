@@ -1860,15 +1860,56 @@
         "partite": [
           {
             "squadre": "AMB FROSINONE vs FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "5 - 12",
             "data": "05/06/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "VALERIO TRULLI",
+                "gol": 3,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "MATTEO LIBRUDI",
+                "gol": 3,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "RICCARDO ADDUCI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "JACOPI BOVI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "ALESSIO MARCHETTI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "OTHMAN ZEROVALI",
+                "gol": 2,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "LORENZO PIGLIACELLI",
+                "gol": 2,
+                "squadra": "AMB FROSINONE"
+              },
+              {
+                "nome": "YOUNASS EL IDRISSI",
+                "gol": 1,
+                "squadra": "AMB FROSINONE"
+              }
+            ],
+            "giocatore": "VALERIO TRULLI",
+            "squadraGiocatore": "FORTE COLLEFERRO",
+            "portiere": "DIEGO PORFIRI",
+            "squadraPortiere": "FORTE COLLEFERRO"
           },
           {
             "squadre": "ARDEA C5 vs NEW TEAM",
