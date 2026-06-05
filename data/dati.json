@@ -3036,15 +3036,56 @@
           },
           {
             "squadre": "FORTE COLLEFERRO vs NEW TEAM",
-            "risultato": "",
+            "risultato": "11 - 5",
             "data": "05/06/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "RICCARDO ADDUCI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICOLA MARINO",
+                "gol": 4,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "ALESSIO MARCHETTI",
+                "gol": 3,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "JACOPO BOVI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "FEDERICO MORE'",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "TIZIANO LEONARDI",
+                "gol": 3,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "MANUEL FOLLEGA",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LORENZO BADARACCHI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              }
+            ],
+            "giocatore": "ALESSIO MARCHETTI",
+            "squadraGiocatore": "FORTE COLLEFERRO",
+            "portiere": "LORENZO BADARACCHI",
+            "squadraPortiere": "NEW TEAM"
           }
         ]
       },
