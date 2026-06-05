@@ -2003,15 +2003,66 @@
           },
           {
             "squadre": "FORTE COLLEFERRO vs FORTITUDO POMEZIA",
-            "risultato": "",
+            "risultato": "6 - 7",
             "data": "04/06/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "RICCARDO PANNUNZIO",
+                "gol": 3,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "FLAVIO CRESCIMBENE",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "BASILIO D'AMORE",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "FILIPPO VECCHIARELLI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "RICCARDO SPADANO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "MATTEO LIBURDI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "ALESSIO MARCHETTI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "FEDERICO MORE'",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "VALERIO TRULLI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICOLA MARINO",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "RICCARDO PANNUNZIO",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "CHRISTIAN MAZZAROPPI",
+            "squadraPortiere": "FORTITUDO POMEZIA"
           }
         ]
       },
@@ -2904,15 +2955,41 @@
           },
           {
             "squadre": "CIRCOLO MASTER vs FORTITUDO POMEZIA",
-            "risultato": "",
+            "risultato": "0 - 5",
             "data": "04/06/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DAVIDE MASCARO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "MARCO BARATTA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "FLAVIO ERDI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "VALERIO MANCINI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "BASILIO D'AMORE",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              }
+            ],
+            "giocatore": "MARCO BARATTA",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "GABRIEL MUZZI",
+            "squadraPortiere": "FORTITUDO POMEZIA"
           },
           {
             "squadre": "ANZIO C5 vs FAIR PLAY SCHOOL",
@@ -3193,15 +3270,41 @@
           },
           {
             "squadre": "REAL CASTEL FONTANA vs FAIR PLAY SCHOOL",
-            "risultato": "",
+            "risultato": "4 - 3",
             "data": "04/06/2026",
             "ora": "18:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ALESSIO CERVINI",
+                "gol": 1,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "NICOLO' DI STEFANO",
+                "gol": 1,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "DIEGO GILBERTI",
+                "gol": 1,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "NICOLO MARCATO",
+                "gol": 2,
+                "squadra": "FAIRPLAY SCHOOL"
+              },
+              {
+                "nome": "SIMONE MAZZA",
+                "gol": 1,
+                "squadra": "FAIRPLAY SCHOOL"
+              }
+            ],
+            "giocatore": "NICOLO' MARCATO",
+            "squadraGiocatore": "FAIR PLAY SCHOOL",
+            "portiere": "ALESSANDRO PARZIALE",
+            "squadraPortiere": "FAIR PLAY SCHOOL"
           },
           {
             "squadre": "S. PIETRO E PAOLO vs ANZIO C5",
@@ -6608,15 +6711,46 @@
         "partite": [
           {
             "squadre": "ACADEMY vs FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "3 - 4",
             "data": "06/06/2026",
             "ora": "10:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "FRANCESCO DENNI",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DANIELE SMOCOVICH",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "GABRIEL BECK SOL",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "CRISTIAN BRUNI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "FLAVIO IACONO",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICO PANETTA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "GABRIEL BECK SOL",
+            "squadraGiocatore": "FORTE COLLEFERRO",
+            "portiere": "SARA NOCERINO",
+            "squadraPortiere": "ACADEMY"
           }
         ]
       },
