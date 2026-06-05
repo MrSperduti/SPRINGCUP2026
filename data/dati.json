@@ -3473,19 +3473,35 @@
           },
           {
             "squadre": "FORTITUDO POMEZIA vs NEW TEAM",
-            "risultato": "",
+            "risultato": "2 - 8",
             "data": "26/05/2026",
             "ora": "18:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "LORENZO BADARACCHI ",
+                "gol": 4,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "TIZIANO LEONARDI",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "GABRIELE TRENTA",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              }
+            ],
+            "giocatore": "LORENZO BADARACCHI",
+            "squadraGiocatore": "NEW TEAM",
+            "portiere": "SAMUELE PATRIZI",
+            "squadraPortiere": "NEW TEAM"
           },
           {
             "squadre": "FORTE COLLEFERRO vs FF10",
-            "risultato": "",
+            "risultato": "6 - 0",
             "data": "04/06/2026",
             "ora": "19:00",
             "campo": "Campo A",
