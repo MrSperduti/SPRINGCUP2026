@@ -3558,16 +3558,42 @@
         "giornata": "SEMIFINALE A",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "ACADEMY vs NEW TEAM",
             "risultato": "",
             "data": "06/06/2026",
             "ora": "15:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "CHRISTIAN CRISPI",
+                "gol": 3,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "ALESSANDRO MIRRA",
+                "gol": 3,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "DANIELE BOZZA",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "LUCA FABRIZIO",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "TIZIANO LEONARDI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              }
+            ],
+            "giocatore": "CHRISTIAN CRISPI",
+            "squadraGiocatore": "ACADEMY",
+            "portiere": "MATTIA BARBARESCHI",
+            "squadraPortiere": "ACADEMY"
           }
         ]
       },
@@ -3575,16 +3601,52 @@
         "giornata": "SEMIFINALE B",
         "partite": [
           {
-            "squadre": "",
-            "risultato": "",
+            "squadre": "FORTE COLLEFERRO vs REAL CASTEL FONTANA",
+            "risultato": "10 - 7",
             "data": "06/06/2026",
             "ora": "15:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "SAMUEL PERSICONE",
+                "gol": 3,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "NICOLO' DI STEFANO",
+                "gol": 2,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "DIEGO GILIBERTI",
+                "gol": 1,
+                "squadra": "REAL CASTEL FONTANA"
+              },
+              {
+                "nome": "JACOPO BOVI",
+                "gol": 3,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "RICCARDO ADDUCI",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "ALESSIO MARCHETTI",
+                "gol": 4,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICOLA MARINO",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "SAMUEL PERSICONE",
+            "squadraGiocatore": "REAL CASTEL FONTANA",
+            "portiere": "DENIS BELOTTI",
+            "squadraPortiere": "FORTE COLLEFERRO"
           }
         ]
       },
