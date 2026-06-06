@@ -5518,7 +5518,7 @@
             "giocatore": "GINEVRA DI CUZZO",
             "squadraGiocatore": "ACADEMY",
             "portiere": "CAMILLA CRISAFULLI",
-            "squadraPortiere": "POMEZIA CALCIO B"
+            "squadraPortiere": "POMEZIA CALCIO A"
           },
           {
             "squadre": "ANZIO C5 vs CISTERNA C5",
@@ -5736,7 +5736,7 @@
             "giocatore": "MATTEO PIZI",
             "squadraGiocatore": "NUOVA FLORIDA",
             "portiere": "CAMILLA CRISAFULLI",
-            "squadraPortiere": "POMEZIA CALCIO B"
+            "squadraPortiere": "POMEZIA CALCIO A"
           },
           {
             "squadre": "POMEZIA CALCIO A vs ANZIO C5",
@@ -6834,15 +6834,36 @@
         "partite": [
           {
             "squadre": "MARINO ACADEMY vs FORTITUDO POMEZIA",
-            "risultato": "",
+            "risultato": "7 - 3",
             "data": "06/06/2026",
             "ora": "10:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "EDOARDO CINI",
+                "gol": 3,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "GIORDANO MOGAVERO",
+                "gol": 3,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "TOMMASO MARCHI",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "MATTIA MIDDEI",
+                "gol": 3,
+                "squadra": "FORTITUDO POMEZIA"
+              }
+            ],
+            "giocatore": "MATTIA MIDDEI",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "MATTIA IORIO",
+            "squadraPortiere": "FORTITUDO POMEZIA"
           }
         ]
       },
