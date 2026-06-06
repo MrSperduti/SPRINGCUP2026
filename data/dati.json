@@ -5934,21 +5934,21 @@
         "giornata": "SEMIFINALE A",
         "partite": [
           {
-            "squadre": "POMEZIA A vs NETTUNO CALCIO",
+            "squadre": "POMEZIA CALCIO A vs NETTUNO CALCIO",
             "risultato": "4 - 5",
             "data": "06/06/2026",
             "ora": "09:00",
             "campo": "Campo A",
             "marcatori": [
               {
-                "nome": "ALESSIO D' ILARIO",
+                "nome": "ALESSIO D'ILARIO",
                 "gol": 3,
-                "squadra": "POMEZIA A"
+                "squadra": "POMEZIA CALCIO A"
               },
               {
                 "nome": "EMANUELE DE MARZO",
                 "gol": 1,
-                "squadra": "POMEZIA A"
+                "squadra": "POMEZIA CALCIO A"
               },
               {
                 "nome": "TIZIANO CIARAVOLO",
@@ -5966,10 +5966,10 @@
                 "squadra": "NETTUNO CALCIO"
               }
             ],
-            "giocatore": "ALESSIO D' ILARIO",
-            "squadraGiocatore": "POMEZIA A",
+            "giocatore": "ALESSIO D'ILARIO",
+            "squadraGiocatore": "POMEZIA CALCIO A",
             "portiere": "LEONARDO CIPRIANI",
-            "squadraPortiere": "POMEZIA A"
+            "squadraPortiere": "POMEZIA CALCIO A"
           }
         ]
       },
@@ -8367,16 +8367,47 @@
         "giornata": "SEMIFINALE A",
         "partite": [
           {
-            "squadre": "",
-            "risultato": "",
+            "squadre": "FORTITUDO POMEZIA vs NEW TEAM",
+            "risultato": "2 - 7",
             "data": "06/06/2026",
             "ora": "11:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "VALERIO SCHENA",
+                "gol": 3,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "ANDREA TALARICO",
+                "gol": 2,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "LORENZO MASSARONI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "FRANCESCO LEONARDI",
+                "gol": 1,
+                "squadra": "NEW TEAM"
+              },
+              {
+                "nome": "MATTIA MIDDEI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "CHRISTOPHER FORTINI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              }
+            ],
+            "giocatore": "ANDREA TALARICO",
+            "squadraGiocatore": "NEW TEAM",
+            "portiere": "VALERIO SCOPONI",
+            "squadraPortiere": "NEW TEAM"
           }
         ]
       },
@@ -8384,16 +8415,62 @@
         "giornata": "SEMIFINALE B",
         "partite": [
           {
-            "squadre": "",
-            "risultato": "",
+            "squadre": "FORTE COLLEFERRO vs LATINA C5",
+            "risultato": "8 - 3",
             "data": "06/06/2026",
             "ora": "11:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ANDREA FANFONI",
+                "gol": 3,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "TOMMASO LEO",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICOLAS LIBURDI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "DIEGO PANETTA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICO PANETTA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "DAVIDE SUSSARELLO",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "SIMONE PAGANO",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "FRANCESCO CORCIONE",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              },
+              {
+                "nome": "JACOPO RAPONI",
+                "gol": 1,
+                "squadra": "LATINA C5"
+              }
+            ],
+            "giocatore": "ANDREA FANFONI",
+            "squadraGiocatore": "FORTE COLLEFERRO",
+            "portiere": "FRANCESCO MACCHIARULO",
+            "squadraPortiere": "LATINA C5"
           }
         ]
       },
