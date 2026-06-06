@@ -5934,16 +5934,42 @@
         "giornata": "SEMIFINALE A",
         "partite": [
           {
-            "squadre": "POMEZIA A vs NETTUNO",
-            "risultato": "",
+            "squadre": "POMEZIA A vs NETTUNO CALCIO",
+            "risultato": "4 - 5",
             "data": "06/06/2026",
             "ora": "09:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "ALESSIO D' ILARIO",
+                "gol": 3,
+                "squadra": "POMEZIA A"
+              },
+              {
+                "nome": "EMANUELE DE MARZO",
+                "gol": 1,
+                "squadra": "POMEZIA A"
+              },
+              {
+                "nome": "TIZIANO CIARAVOLO",
+                "gol": 2,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "LEONARDO MUSTAFA",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              },
+              {
+                "nome": "MARK POLITFONSKY",
+                "gol": 1,
+                "squadra": "NETTUNO CALCIO"
+              }
+            ],
+            "giocatore": "ALESSIO D' ILARIO",
+            "squadraGiocatore": "POMEZIA A",
+            "portiere": "LEONARDO CIPRIANI",
+            "squadraPortiere": "POMEZIA A"
           }
         ]
       },
@@ -5952,15 +5978,31 @@
         "partite": [
           {
             "squadre": "CISTERNA C5 vs POMEZIA B",
-            "risultato": "",
+            "risultato": "7 - 0",
             "data": "06/06/2026",
             "ora": "09:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "JACOPO FAVORITO ",
+                "gol": 3,
+                "squadra": "CISTERNA C5"
+              },
+              {
+                "nome": "FABRIZIO MILITO",
+                "gol": 3,
+                "squadra": "CISTERNA C5"
+              },
+              {
+                "nome": "FABRIZIO MILITO",
+                "gol": 1,
+                "squadra": "CISTERNA C5"
+              }
+            ],
+            "giocatore": "JACOPO FAVORITO",
+            "squadraGiocatore": "CISTERNA C5",
+            "portiere": "CAMILLA CRISAFULLI",
+            "squadraPortiere": "POMEZIA B"
           }
         ]
       },
@@ -5968,10 +6010,10 @@
         "giornata": "FINALE",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "NETTUNO CALCIO vs CISTERNA C5",
             "risultato": "",
-            "data": "07/06/2026",
-            "ora": "09:00",
+            "data": "08/06/2026",
+            "ora": "18:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -5985,11 +6027,11 @@
         "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "POMEZIA A vs POMEZIA B",
             "risultato": "",
-            "data": "07/06/2026",
-            "ora": "09:00",
-            "campo": "Campo A",
+            "data": "08/06/2026",
+            "ora": "18:00",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -8913,4 +8955,3 @@
     }
   }
 }
-
