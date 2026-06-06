@@ -318,7 +318,7 @@
         "partite": [
           {
             "squadre": "FORTITUDO POMEZIA vs PARMA LETALE",
-            "risultato": "",
+            "risultato": "6 - 0",
             "data": "06/06/2026",
             "ora": "18:00",
             "campo": "Campo A",
@@ -335,15 +335,26 @@
         "partite": [
           {
             "squadre": "LAURENTUM vs AMB FROSINONE",
-            "risultato": "",
+            "risultato": "1 - 1",
             "data": "06/06/2026",
             "ora": "18:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MATTEO PAIARDINI",
+                "gol": 1,
+                "squadra": "LAURENTUM"
+              },
+              {
+                "nome": "ALESSIO DEL VESCOVO",
+                "gol": 1,
+                "squadra": "AMBFROSINONE"
+              }
+            ],
+            "giocatore": "EMANUELE BUFANO",
+            "squadraGiocatore": "LAURENTUM",
+            "portiere": "MATTEO CONTINI",
+            "squadraPortiere": "LAURENTUM"
           }
         ]
       },
@@ -984,15 +995,46 @@
         "partite": [
           {
             "squadre": "MIRAFIN vs AMB FROSINONE",
-            "risultato": "",
+            "risultato": "3 - 2",
             "data": "06/06/2026",
             "ora": "17:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "LUCIANO COLICINO",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "ALESSANDRO GOBBI",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "GABRIELE PATELLA",
+                "gol": 1,
+                "squadra": "MIRAFIN"
+              },
+              {
+                "nome": "WALID EL IDRISSI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "SAVERIO LO PRESTI",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA A"
+              },
+              {
+                "nome": "",
+                "gol": 1,
+                "squadra": ""
+              }
+            ],
+            "giocatore": "GABRIELE PATELLA",
+            "squadraGiocatore": "MIRAFIN",
+            "portiere": "GIOVANNI MELIADO'",
+            "squadraPortiere": "MIRAFIN"
           }
         ]
       },
@@ -1001,15 +1043,56 @@
         "partite": [
           {
             "squadre": "FORTITUDO POMEZIA vs CIRCOLO MASTER",
-            "risultato": "",
+            "risultato": "8 - 7",
             "data": "06/06/2026",
             "ora": "17:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "MARCO DI GIOVAMBATTISTA",
+                "gol": 3,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "RICCARDO PORTALE",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "DAVIDE VERBENI",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "TIZIANO MAENZA",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "TOMMASO RICCIARDI",
+                "gol": 3,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "DAVIDE ANNIBALLI",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "VALERIO CERILLI",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              },
+              {
+                "nome": "ADRIANO BOGHI ",
+                "gol": 1,
+                "squadra": "CIRCOLO MASTER"
+              }
+            ],
+            "giocatore": "DAVIDE VERBENI",
+            "squadraGiocatore": "FORTITUDO POMEZIA",
+            "portiere": "CHRISTIAN MIOTTO",
+            "squadraPortiere": "CIRCOLO MASTER"
           }
         ]
       },
@@ -2111,16 +2194,42 @@
         "giornata": "SEMIFINALE A",
         "partite": [
           {
-            "squadre": "",
-            "risultato": "",
+            "squadre": "ARDEA C5 vs CIRCOLO MASTER",
+            "risultato": "6 - 0",
             "data": "06/06/2026",
             "ora": "16:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "DANIELE FOFI",
+                "gol": 2,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "SIMONE ESPOSITO",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "FRANCESCO ORSINI",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "EDUARDO SORGATO FORNARI",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              },
+              {
+                "nome": "GABRIELE CARAMANICA",
+                "gol": 1,
+                "squadra": "ARDEA C5"
+              }
+            ],
+            "giocatore": "GABRIELE CARAMANICA",
+            "squadraGiocatore": "ARDEA C5",
+            "portiere": "VALERIO PIASCO",
+            "squadraPortiere": "ARDEA C5"
           }
         ]
       },
@@ -2128,16 +2237,52 @@
         "giornata": "SEMIFINALE B",
         "partite": [
           {
-            "squadre": "",
-            "risultato": "",
+            "squadre": "ACADEMY vs FORTE COLLEFERRO",
+            "risultato": "5 - 8",
             "data": "06/06/2026",
             "ora": "16:00",
             "campo": "Campo B",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "FRANCESCO SUSIN",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "CHRISTIAN CRISPI",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "ALESSANDRO MIRRA",
+                "gol": 1,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "VALERIO TRULLI",
+                "gol": 4,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "NICOLA MARINO",
+                "gol": 2,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "MATTEO LIBRUDI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "JACOPO BOVI",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
+            "giocatore": "VALERIO TRULLI",
+            "squadraGiocatore": "FORTE COLLEFERRO",
+            "portiere": "RICCARDO CLATEA",
+            "squadraPortiere": "ACADEMY"
           }
         ]
       },
@@ -5097,15 +5242,41 @@
         "partite": [
           {
             "squadre": "ACADEMY A - FORTITUDO A",
-            "risultato": "",
+            "risultato": "5 - 7",
             "data": "06/06/2026",
             "ora": "19:00",
             "campo": "Campo A",
-            "marcatori": [],
-            "giocatore": "",
-            "squadraGiocatore": "",
-            "portiere": "",
-            "squadraPortiere": ""
+            "marcatori": [
+              {
+                "nome": "GABRIELE PICCINI",
+                "gol": 5,
+                "squadra": "ACADEMY A"
+              },
+              {
+                "nome": "MATTIA BRUNI",
+                "gol": 4,
+                "squadra": "FORTITUDO A"
+              },
+              {
+                "nome": "MATTIA VARONE",
+                "gol": 1,
+                "squadra": "FORTITUDO A"
+              },
+              {
+                "nome": "DAVID BARBARASA",
+                "gol": 1,
+                "squadra": "FORTITUDO A"
+              },
+              {
+                "nome": "DANIELE MAENZA",
+                "gol": 1,
+                "squadra": "FORTITUDO A"
+              }
+            ],
+            "giocatore": "GABRIELE PICCINI",
+            "squadraGiocatore": "ACADEMY A",
+            "portiere": "DONATO CARRIERO",
+            "squadraPortiere": "FORTITUDO A"
           }
         ]
       },
@@ -5114,7 +5285,7 @@
         "partite": [
           {
             "squadre": "LATINA C5 - FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "6 - 0",
             "data": "06/06/2026",
             "ora": "12:00",
             "campo": "Campo A",
