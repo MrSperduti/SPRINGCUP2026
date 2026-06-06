@@ -362,11 +362,11 @@
         "giornata": "FINALE",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "LAURENTUM - FORTITUDO POMEZIA",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "18:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -379,8 +379,8 @@
         "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
-            "squadre": "",
-            "risultato": "",
+            "squadre": "AMB FROSINONE vs PARMA LETALE",
+            "risultato": "6 - 0",
             "data": "07/06/2026",
             "ora": "18:00",
             "campo": "Campo A",
@@ -1024,11 +1024,6 @@
                 "nome": "SAVERIO LO PRESTI",
                 "gol": 1,
                 "squadra": "FORTITUDO POMEZIA A"
-              },
-              {
-                "nome": "",
-                "gol": 1,
-                "squadra": ""
               }
             ],
             "giocatore": "GABRIELE PATELLA",
@@ -1100,7 +1095,7 @@
         "giornata": "FINALE",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "MIRAFIN - FORTITUDO POMEZIA",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "17:00",
@@ -1117,11 +1112,11 @@
         "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "CIRCOLO MASTER - AMB FROSINONE",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "17:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -2290,7 +2285,7 @@
         "giornata": "FINALE",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "ARDEA C5 vs FORTE COLLEFERRO",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "16:00",
@@ -2307,7 +2302,7 @@
         "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "ACADEMY vs CIRCOLO MASTER",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "16:00",
@@ -3799,11 +3794,11 @@
         "giornata": "FINALE",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "ACADEMY vs FORTE COLLEFERRO",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "15:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -3816,11 +3811,11 @@
         "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "NEW TEAM vs REAL CASTEL FONTANA",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "15:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -5301,11 +5296,11 @@
         "giornata": "FINALE",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "LATINA C5 vs FORTITUDO POMEZIA A",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "12:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -5318,11 +5313,11 @@
         "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "ACADEMY A vs FORTE COLLEFERRO",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "12:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -6246,8 +6241,8 @@
             "squadre": "NETTUNO CALCIO vs CISTERNA C5",
             "risultato": "",
             "data": "08/06/2026",
-            "ora": "18:00",
-            "campo": "Campo B",
+            "ora": "19:00",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -6263,7 +6258,7 @@
             "squadre": "POMEZIA A vs POMEZIA B",
             "risultato": "",
             "data": "08/06/2026",
-            "ora": "18:00",
+            "ora": "19:00",
             "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
@@ -7152,11 +7147,11 @@
         "giornata": "FINALE",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "MARINO ACADEMY vs FORTE COLLEFERRO",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "10:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -7169,11 +7164,11 @@
         "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "FORTITUDO POMEZIA vs ACADEMY",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "10:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -8711,11 +8706,11 @@
         "giornata": "FINALE",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "NEW TEAM vs FORTE COLLEFERRO",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "11:00",
-            "campo": "Campo B",
+            "campo": "Campo A",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
@@ -8728,11 +8723,11 @@
         "giornata": "FINALE 3°/4° POSTO",
         "partite": [
           {
-            "squadre": "",
+            "squadre": "FORTITUDO POMEZIA vs LATINA C5",
             "risultato": "",
             "data": "07/06/2026",
             "ora": "11:00",
-            "campo": "Campo A",
+            "campo": "Campo B",
             "marcatori": [],
             "giocatore": "",
             "squadraGiocatore": "",
