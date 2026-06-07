@@ -7148,11 +7148,37 @@
         "partite": [
           {
             "squadre": "MARINO ACADEMY vs FORTE COLLEFERRO",
-            "risultato": "",
+            "risultato": "8 - 2",
             "data": "07/06/2026",
             "ora": "10:00",
             "campo": "Campo A",
-            "marcatori": [],
+            "marcatori": [
+              {
+                "nome": "EDOARDO CINI",
+                "gol": 5,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "FLAVIO CHINEA",
+                "gol": 2,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "RICCARDO SABATUCCI",
+                "gol": 1,
+                "squadra": "MARINO ACADEMY"
+              },
+              {
+                "nome": "NICO PANETTA",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              },
+              {
+                "nome": "AUTOGOAL",
+                "gol": 1,
+                "squadra": "FORTE COLLEFERRO"
+              }
+            ],
             "giocatore": "",
             "squadraGiocatore": "",
             "portiere": "",
@@ -7165,11 +7191,27 @@
         "partite": [
           {
             "squadre": "FORTITUDO POMEZIA vs ACADEMY",
-            "risultato": "",
+            "risultato": "2 - 3",
             "data": "07/06/2026",
             "ora": "10:00",
             "campo": "Campo B",
-            "marcatori": [],
+            "marcatori": [
+              {
+                "nome": "FRANCESCO DENNY",
+                "gol": 2,
+                "squadra": "ACADEMY"
+              },
+              {
+                "nome": "MATTIA MIDDEI",
+                "gol": 2,
+                "squadra": "FORTITUDO POMEZIA"
+              },
+              {
+                "nome": "ALESSANDRO FAZIO",
+                "gol": 1,
+                "squadra": "FORTITUDO POMEZIA"
+              }
+            ],
             "giocatore": "",
             "squadraGiocatore": "",
             "portiere": "",
